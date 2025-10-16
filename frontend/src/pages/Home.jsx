@@ -27,7 +27,7 @@ export default function Home() {
             <p className="text-body text-white/90 mb-8 max-w-3xl mx-auto">
               Join leading researchers, practitioners, and students in computer science 
               for a premier academic conference featuring cutting-edge research, 
-              innovative technologies, and networking opportunities.
+              innovative technologies, and networking opportunities. Welcome to ICCI-2025!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="btn-primary bg-accent hover:bg-accent-dark text-primary">
