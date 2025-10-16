@@ -30,7 +30,7 @@ export default function Home() {
               innovative technologies, and networking opportunities. Welcome to ICCI-2025!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary bg-accent hover:bg-accent-dark text-primary">
+              <button className="btn-primary bg-accent hover:bg-accent-dark text-primary flex items-center justify-center">
                 Submit Paper
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
@@ -173,7 +173,7 @@ export default function Home() {
             and network with peers in the computer science community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">
+            <button className="btn-primary flex items-center justify-center">
               Submit Your Paper
               <ArrowRight className="ml-2 h-4 w-4" />
             </button>
