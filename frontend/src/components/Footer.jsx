@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { SleekLogo } from './ModernLogo';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -24,7 +25,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <div className="text-2xl font-bold mb-4">ICCI-2025</div>
+              <div className="mb-4">
+                <SleekLogo className="text-white" />
+              </div>
               <p className="text-small text-white/80 leading-relaxed">
                 1st International Conference on Computing & Innovation - Bringing together 
                 researchers, practitioners, and students in computing and innovation from around the world.

@@ -1,4 +1,5 @@
 import { Target, Eye, Users, Award, BookOpen, Globe } from 'lucide-react';
+import { IconLogo } from '../components/Logo';
 
 export default function About() {
   return (

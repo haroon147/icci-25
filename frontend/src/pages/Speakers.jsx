@@ -3,7 +3,7 @@ import { Mic, Award, Globe, Users } from 'lucide-react';
 export default function Speakers() {
   const keynoteSpeakers = [
     {
-      name: "Prof. Dr. Sarah Johnson",
+      name: "Prof. Dr. Aisha Rahman",
       title: "Director of AI Research",
       affiliation: "Stanford University, USA",
       expertise: "Artificial Intelligence & Machine Learning",
@@ -19,7 +19,7 @@ export default function Speakers() {
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "Prof. Dr. Maria Garcia",
+      name: "Prof. Dr. Fatima Al-Zahra",
       title: "Head of Cybersecurity Lab",
       affiliation: "University of Cambridge, UK",
       expertise: "Cybersecurity & Privacy",
@@ -30,22 +30,22 @@ export default function Speakers() {
 
   const invitedSpeakers = [
     {
-      name: "Dr. Chen Wei",
+      name: "Dr. Omar Abdullah",
       affiliation: "Tsinghua University, China",
       topic: "Quantum Computing Applications"
     },
     {
-      name: "Prof. Dr. Raj Patel",
+      name: "Prof. Dr. Zainab Malik",
       affiliation: "IIT Delhi, India",
       topic: "Data Science & Analytics"
     },
     {
-      name: "Dr. Emma Thompson",
+      name: "Dr. Yusuf Ibrahim",
       affiliation: "University of Melbourne, Australia",
       topic: "Human-Computer Interaction"
     },
     {
-      name: "Prof. Dr. Carlos Rodriguez",
+      name: "Prof. Dr. Khadija Al-Rashid",
       affiliation: "Universidad de Madrid, Spain",
       topic: "Software Engineering"
     }
