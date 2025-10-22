@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import ModernLogo from './ModernLogo';
+import ConferenceLogo from './ConferenceLogo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center">
-            <ModernLogo size="default" />
+            <ConferenceLogo size="default" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { SleekLogo } from './ModernLogo';
+import { IconConferenceLogo } from './ConferenceLogo';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <div className="mb-4">
-                <SleekLogo className="text-white" />
+                <IconConferenceLogo className="text-white" />
               </div>
               <p className="text-small text-white/80 leading-relaxed">
                 1st International Conference on Computing & Innovation - Bringing together 

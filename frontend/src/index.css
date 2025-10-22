@@ -47,4 +47,69 @@
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
   }
+  
+  .blink {
+    animation: blink 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .rotating-text-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 2.8rem;
+    width: 100%;
+    min-width: 600px;
+  }
+  
+  .rotating-text {
+    position: relative;
+    width: 100%;
+  }
+  
+  .rotating-text span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    animation: fadeInOut 6s infinite ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .rotating-text span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .rotating-text span:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .rotating-text span:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 8% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(15px) scale(0.98);
+    }
+    12%, 75% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0) scale(1);
+    }
+    83%, 100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-15px) scale(0.98);
+    }
+  }
 }

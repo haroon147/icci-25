@@ -20,20 +20,38 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">
-              1st International Conference on
+              
+              International Conference on
               <br />
               <span className="text-accent">Computing & Innovation</span>
+              <br />
+              <span className="text-accent">(ICCI-2025)</span>
             </h1>
+            
+            {/* Conference Date */}
+            <div className="mb-6 flex justify-center">
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
+                <div className="text-white/90 text-xl font-medium text-center">
+                  📅 10-12 December 2025
+                </div>
+                <div className="text-white/90 text-xl font-medium text-center">
+                  📍 Riphah International University, Lahore
+                </div>
+              </div>
+            </div>
             <p className="text-body text-white/90 mb-8 max-w-3xl mx-auto">
-              Join leading researchers, practitioners, and students in computer science 
-              for a premier academic conference featuring cutting-edge research, 
-              innovative technologies, and networking opportunities. Welcome to ICCI-2025!
+            Join leading researchers, innovators, practitioners, and students in computer science and related
+disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
+emerging technologies, and transformative ideas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary bg-accent hover:bg-accent-dark text-primary flex items-center justify-center">
-                Submit Paper
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center relative">
+              <div className="relative flex items-center justify-center">
+               
+                <button className="btn-primary bg-accent hover:bg-accent-dark text-primary flex items-center justify-center relative z-10">
+                  Submission
+            
+                </button>
+              </div>
               <button className="btn-secondary border-white text-white hover:bg-white hover:text-primary">
                 Register Now
               </button>
@@ -50,11 +68,17 @@ export default function Home() {
               Conference Overview
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
-              ICCI-2025 brings together the global computing and innovation community to share 
-              knowledge, explore emerging trends, and foster collaboration in advancing 
-              the field of computing and innovation.
-            </p>
+            <div className="text-center max-w-4xl mx-auto">
+              <p className="text-body text-text-secondary leading-relaxed mb-6">
+                The 1st International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+              </p>
+              <p className="text-body text-text-secondary leading-relaxed mb-6">
+                It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
+              </p>
+              <p className="text-body text-text-secondary leading-relaxed mb-8">
+                Together, let's pave the way for a smarter, more connected future. The 1st ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 9th - 10th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -78,8 +102,8 @@ export default function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
               <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Paper Submissions</h3>
-              <p className="text-body text-text-secondary">100+ Papers</p>
+              <h3 className="text-subheading font-medium text-text-primary mb-2">Total Submissions</h3>
+              <p className="text-body text-text-secondary">100+</p>
             </div>
           </div>
         </div>
@@ -98,11 +122,10 @@ export default function Home() {
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
-                      Cutting-Edge Research
+                    	Knowledge Transfer 
                     </h3>
                     <p className="text-body text-text-secondary">
-                      Present and discover the latest advances in computer science 
-                      across all major research areas.
+                    Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.
                     </p>
                   </div>
                 </div>
@@ -111,11 +134,10 @@ export default function Home() {
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
-                      Expert Keynote Speakers
+                  	Skill Development
                     </h3>
                     <p className="text-body text-text-secondary">
-                      Learn from distinguished researchers and industry leaders 
-                      shaping the future of computer science.
+                     Hands-on workshops will equip participants with emerging technological competencies.
                     </p>
                   </div>
                 </div>
@@ -124,16 +146,27 @@ export default function Home() {
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
-                      Networking Opportunities
+                    Research Collaboration
                     </h3>
                     <p className="text-body text-text-secondary">
-                      Connect with peers, potential collaborators, and industry 
-                      professionals from around the world.
+                    Facilitate networking for joint research, funded projects, and innovation ecosystems.
+                    </p>
+                  </div>
+                </div>
+                 <div className="flex items-start">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="text-subheading font-medium text-text-primary mb-2">
+                    Research Collaboration
+                    </h3>
+                    <p className="text-body text-text-secondary">
+                    Facilitate networking for joint research, funded projects, and innovation ecosystems.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+         
             
             <div className="bg-primary p-8 rounded-lg text-white">
               <h3 className="text-subheading font-medium mb-4">
@@ -141,7 +174,7 @@ export default function Home() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-body">Paper Submission Deadline</span>
+                  <span className="text-body">Submissions Deadline</span>
                   <span className="text-body font-medium">November 15, 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -174,11 +207,11 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary flex items-center justify-center">
-              Submit Your Paper
+              Submission
               <ArrowRight className="ml-2 h-4 w-4" />
             </button>
             <button className="btn-secondary">
-              Register for Conference
+              Register Now
             </button>
           </div>
         </div>
