@@ -216,7 +216,7 @@ export default function Contact() {
               {/* Interactive Google Map */}
               <div className="h-64 rounded-lg mb-8 overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1234567890!2d74.2412!3d31.3947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a1234567%3A0x1234567890abcdef!2sRiphah%20International%20University%20Lahore%20Campus%2C%20Raiwind%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1234567890!2d74.230755!3d31.377381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a1234567%3A0x1234567890abcdef!2sRiphah%20International%20University%20Lahore%20Campus!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s&cid=18052060383196551890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -230,7 +230,7 @@ export default function Contact() {
               {/* Alternative Map Link */}
               <div className="text-center mb-4">
                 <a 
-                  href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
+                  href="https://www.google.com/maps?ll=31.377381,74.230755&z=10&t=m&hl=en-GB&gl=US&mapclient=embed&cid=18052060383196551890"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300"
