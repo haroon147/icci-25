@@ -213,13 +213,31 @@ export default function Contact() {
                 The venue offers state-of-the-art facilities and is easily accessible.
               </p>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 h-64 rounded-lg mb-8 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <p className="text-body text-text-secondary">Interactive Map</p>
-                    <p className="text-small text-text-muted">Riphah International University, Raiwind Road Lahore</p>
-                </div>
+              {/* Interactive Google Map */}
+              <div className="h-64 rounded-lg mb-8 overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1234567890!2d74.2412!3d31.3947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a1234567%3A0x1234567890abcdef!2sRiphah%20International%20University%20Lahore%20Campus%2C%20Raiwind%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Riphah International University Location"
+                ></iframe>
+              </div>
+              
+              {/* Alternative Map Link */}
+              <div className="text-center mb-4">
+                <a 
+                  href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                >
+                  <MapPin className="h-4 w-4 mr-2" />
+                  Open in Google Maps
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm">
