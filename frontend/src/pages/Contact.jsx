@@ -214,9 +214,9 @@ export default function Contact() {
               </p>
 
               {/* Interactive Google Map */}
-              <div className="h-64 rounded-lg mb-8 overflow-hidden shadow-lg">
+              <div className="h-64 rounded-lg mb-8 overflow-hidden shadow-lg relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.1234567890!2d74.230755!3d31.377381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a1234567%3A0x1234567890abcdef!2sRiphah%20International%20University%20Lahore%20Campus!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s&cid=18052060383196551890"
+                  src="https://maps.google.com/maps?q=Riphah+International+University+Raiwind+Road+Lahore+Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -224,19 +224,69 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Riphah International University Location"
+                  onError={() => {
+                    // Fallback to static map if iframe fails
+                    const mapContainer = document.getElementById('map-container');
+                    if (mapContainer) {
+                      mapContainer.innerHTML = `
+                        <div class="w-full h-full bg-gray-100 flex items-center justify-center">
+                          <div class="text-center">
+                            <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                              <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Riphah International University</h3>
+                            <p class="text-gray-600 mb-4">Raiwind Road, Lahore, Pakistan</p>
+                            <p class="text-sm text-gray-500">Coordinates: 31.377381, 74.230755</p>
+                          </div>
+                        </div>
+                      `;
+                    }
+                  }}
                 ></iframe>
+                
+                {/* Fallback static map */}
+                <div id="map-fallback" className="absolute inset-0 bg-gray-100 flex items-center justify-center" style={{display: 'none'}}>
+                  <div className="text-center">
+                    <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <MapPin className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2">Riphah International University</h3>
+                    <p className="text-gray-600 mb-4">Raiwind Road, Lahore, Pakistan</p>
+                    <p className="text-sm text-gray-500 mb-4">Coordinates: 31.377381, 74.230755</p>
+                    <a 
+                      href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                    >
+                      <MapPin className="h-4 w-4 mr-2" />
+                      Open in Google Maps
+                    </a>
+                  </div>
+                </div>
               </div>
               
-              {/* Alternative Map Link */}
-              <div className="text-center mb-4">
+              {/* Alternative Map Links */}
+              <div className="text-center mb-4 space-y-3">
                 <a 
-                  href="https://www.google.com/maps?ll=31.377381,74.230755&z=10&t=m&hl=en-GB&gl=US&mapclient=embed&cid=18052060383196551890"
+                  href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300"
+                  className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300 mr-3"
                 >
                   <MapPin className="h-4 w-4 mr-2" />
                   Open in Google Maps
+                </a>
+                <a 
+                  href="https://maps.google.com/maps?q=31.377381,74.230755&z=15"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors duration-300"
+                >
+                  <MapPin className="h-4 w-4 mr-2" />
+                  View Coordinates
                 </a>
               </div>
 
