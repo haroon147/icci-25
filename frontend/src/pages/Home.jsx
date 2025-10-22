@@ -280,45 +280,47 @@ emerging technologies, and transformative ideas.
             <div className="flex animate-scroll">
               {/* First set */}
               {collaborators.map((collaborator, index) => (
-                <div key={`first-${index}`} className="flex-shrink-0 w-64 mx-4">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-32 flex flex-col justify-center">
-                    <div className="w-16 h-16 mx-auto mb-3 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div key={`first-${index}`} className="flex-shrink-0 w-80 mx-6">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 text-center h-48 flex flex-col justify-center border border-gray-100 hover:border-primary/20 hover:scale-105">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden bg-white shadow-lg flex items-center justify-center border-2 border-gray-100">
                       <img
                         src={collaborator.logo}
                         alt={collaborator.name}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain p-2"
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
                       <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Globe className="h-8 w-8 text-white" />
+                        <Globe className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-sm font-semibold text-text-primary">{collaborator.name}</h3>
+                    <h3 className="text-lg font-bold text-text-primary mb-2">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed">{collaborator.description}</p>
                   </div>
                 </div>
               ))}
               {/* Second set for seamless loop */}
               {collaborators.map((collaborator, index) => (
-                <div key={`second-${index}`} className="flex-shrink-0 w-64 mx-4">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-32 flex flex-col justify-center">
-                    <div className="w-16 h-16 mx-auto mb-3 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div key={`second-${index}`} className="flex-shrink-0 w-80 mx-6">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 text-center h-48 flex flex-col justify-center border border-gray-100 hover:border-primary/20 hover:scale-105">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden bg-white shadow-lg flex items-center justify-center border-2 border-gray-100">
                       <img
                         src={collaborator.logo}
                         alt={collaborator.name}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain p-2"
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
                       <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Globe className="h-8 w-8 text-white" />
+                        <Globe className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-sm font-semibold text-text-primary">{collaborator.name}</h3>
+                    <h3 className="text-lg font-bold text-text-primary mb-2">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed">{collaborator.description}</p>
                   </div>
                 </div>
               ))}
@@ -341,47 +343,71 @@ emerging technologies, and transformative ideas.
             <div className="flex animate-scroll-reverse">
               {/* First set */}
               {sponsors.map((sponsor, index) => (
-                <div key={`sponsor-first-${index}`} className="flex-shrink-0 w-64 mx-4">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-32 flex flex-col justify-center">
-                    <div className="w-16 h-16 mx-auto mb-3 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div key={`sponsor-first-${index}`} className="flex-shrink-0 w-80 mx-6">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 text-center h-48 flex flex-col justify-center border border-gray-100 hover:border-accent/20 hover:scale-105 relative overflow-hidden">
+                    {/* Sponsor tier badge */}
+                    <div className="absolute top-4 right-4">
+                      <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                        sponsor.tier === 'Gold' ? 'bg-yellow-100 text-yellow-800' :
+                        sponsor.tier === 'Silver' ? 'bg-gray-100 text-gray-800' :
+                        sponsor.tier === 'Bronze' ? 'bg-orange-100 text-orange-800' :
+                        'bg-blue-100 text-blue-800'
+                      }`}>
+                        {sponsor.tier}
+                      </span>
+                    </div>
+                    
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden bg-white shadow-lg flex items-center justify-center border-2 border-gray-100">
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain p-2"
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
                       <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Award className="h-8 w-8 text-white" />
+                        <Award className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-sm font-semibold text-text-primary">{sponsor.name}</h3>
-                    <p className="text-xs text-text-secondary">{sponsor.tier}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed">{sponsor.description}</p>
                   </div>
                 </div>
               ))}
               {/* Second set for seamless loop */}
               {sponsors.map((sponsor, index) => (
-                <div key={`sponsor-second-${index}`} className="flex-shrink-0 w-64 mx-4">
-                  <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center h-32 flex flex-col justify-center">
-                    <div className="w-16 h-16 mx-auto mb-3 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div key={`sponsor-second-${index}`} className="flex-shrink-0 w-80 mx-6">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 text-center h-48 flex flex-col justify-center border border-gray-100 hover:border-accent/20 hover:scale-105 relative overflow-hidden">
+                    {/* Sponsor tier badge */}
+                    <div className="absolute top-4 right-4">
+                      <span className={`px-3 py-1 rounded-full text-xs font-bold ${
+                        sponsor.tier === 'Gold' ? 'bg-yellow-100 text-yellow-800' :
+                        sponsor.tier === 'Silver' ? 'bg-gray-100 text-gray-800' :
+                        sponsor.tier === 'Bronze' ? 'bg-orange-100 text-orange-800' :
+                        'bg-blue-100 text-blue-800'
+                      }`}>
+                        {sponsor.tier}
+                      </span>
+                    </div>
+                    
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden bg-white shadow-lg flex items-center justify-center border-2 border-gray-100">
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain p-2"
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
                       <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Award className="h-8 w-8 text-white" />
+                        <Award className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-sm font-semibold text-text-primary">{sponsor.name}</h3>
-                    <p className="text-xs text-text-secondary">{sponsor.tier}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed">{sponsor.description}</p>
                   </div>
                 </div>
               ))}
