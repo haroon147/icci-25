@@ -1,133 +1,289 @@
-import { Users, Award, Globe, BookOpen } from 'lucide-react';
+import { Users, Award, Globe, BookOpen, Crown, UserCheck, Shield } from 'lucide-react';
 
 export default function Committees() {
-  const committeeMembers = [
+  const patronInChief = [
     {
-      name: "Prof. Dr. Sarah Johnson",
-      title: "General Chair",
-      affiliation: "Stanford University, USA",
-      expertise: "Artificial Intelligence & Machine Learning"
-    },
-    {
-      name: "Dr. Ahmed Hassan",
-      title: "Program Chair",
-      affiliation: "MIT, USA",
-      expertise: "Computer Networks & Distributed Systems"
-    },
-    {
-      name: "Prof. Dr. Maria Garcia",
-      title: "Publication Chair",
-      affiliation: "University of Cambridge, UK",
-      expertise: "Software Engineering"
-    },
-    {
-      name: "Dr. Chen Wei",
-      title: "Finance Chair",
-      affiliation: "Tsinghua University, China",
-      expertise: "Data Science & Analytics"
+      name: "Prof. Dr. Sheheryar Malik",
+      title: "Patron-in-Chief",
+      affiliation: "Director RSCI / Professor",
+      expertise: "Riphah School of Computing & Innovation"
     }
   ];
 
-  const programCommittee = [
-    { name: "Prof. Dr. John Smith", affiliation: "Harvard University, USA" },
-    { name: "Dr. Lisa Wang", affiliation: "University of Toronto, Canada" },
-    { name: "Prof. Dr. Raj Patel", affiliation: "IIT Delhi, India" },
-    { name: "Dr. Emma Thompson", affiliation: "University of Melbourne, Australia" },
-    { name: "Prof. Dr. Carlos Rodriguez", affiliation: "Universidad de Madrid, Spain" },
-    { name: "Dr. Yuki Tanaka", affiliation: "University of Tokyo, Japan" },
-    { name: "Prof. Dr. Fatima Al-Zahra", affiliation: "King Saud University, Saudi Arabia" },
-    { name: "Dr. Michael Brown", affiliation: "ETH Zurich, Switzerland" }
+  const convenorChair = [
+    {
+      name: "Prof. Dr. Muhammad Asif",
+      title: "Convenor/Chair",
+      affiliation: "Professor, RSCI",
+      expertise: "Riphah School of Computing & Innovation"
+    }
+  ];
+
+  const coConvenorCoChair = [
+    {
+      name: "Dr. Farrukh Arslan",
+      title: "Co-Convenor/Co-Chair",
+      affiliation: "Associate Professor, RSCI",
+      expertise: "Riphah School of Computing & Innovation"
+    },
+    {
+      name: "Dr. Muhammad Adnan",
+      title: "Co-Convenor/Co-Chair",
+      affiliation: "Assistant Professor, RSCI",
+      expertise: "Riphah School of Computing & Innovation"
+    }
+  ];
+
+  const secretary = [
+    {
+      name: "Dr. Ayesha Kashif",
+      title: "Secretary",
+      affiliation: "Assistant Professor, RSCI",
+      expertise: "Riphah School of Computing & Innovation"
+    }
+  ];
+
+  const technicalCommittee = [
+    {
+      track: "Artificial Intelligence and Machine Learning",
+      members: [
+        { name: "Dr. Mian Muhammad Awais", affiliation: "Professor, LUMS, Lahore" },
+        { name: "Dr. Atif Alvi", affiliation: "Professor, UMT, Lahore" },
+        { name: "Dr. Azhar Imran Mudassir", affiliation: "Assistant Professor, FCAI, Beijing University, China" },
+        { name: "Dr Allah Dita", affiliation: "Associate Professor, University of Education, Lahore" },
+        { name: "Dr. Umme Hani", affiliation: "Associate Professor, NASTAP, Lahore" },
+        { name: "Dr. Jamal Uddin", affiliation: "Associate Professor, RSCI" },
+        { name: "Dr Adnan Ahmad Khan", affiliation: "Associate Professor, RSCI" }
+      ]
+    },
+    {
+      track: "Data Science and Big Data Analytics",
+      members: [
+        { name: "Dr. Ali Haider", affiliation: "School of Computing, Beijing Technology University, China" },
+        { name: "Dr. Asif Nauman", affiliation: "Assistant Professor, Riphah International University, Lahore" }
+      ]
+    },
+    {
+      track: "Cybersecurity and Privacy",
+      members: [
+        { name: "Dr Maaz Bin Ahmad", affiliation: "Professor, KIET, Karachi" },
+        { name: "Dr Zafar Iqbal", affiliation: "Associate Professor, FAST NUCES, Islamabad" },
+        { name: "Dr. Madeeha Fatima", affiliation: "Assistant Professor" },
+        { name: "Mr. Kukab Jamal Zubari", affiliation: "Professor by Practice, LGU" }
+      ]
+    },
+    {
+      track: "Internet of Things (IoT), Robotic and Smart Systems",
+      members: [
+        { name: "Dr. Waqar Azeem", affiliation: "Associate Professor, UMT" },
+        { name: "Dr. Yasir Niaz Khan", affiliation: "PSCA, Lahore" }
+      ]
+    },
+    {
+      track: "Software Engineering and DevOps",
+      members: [
+        { name: "Dr. Farooq Ahmad", affiliation: "Associate Professor, CUI, Lahore" },
+        { name: "Dr. Salman Ahmad", affiliation: "Associate Professor, UoL, Lahore" },
+        { name: "Prof. Dr. Waqar Mehmood", affiliation: "Professor, Riphah International University" },
+        { name: "Dr. Muhammad Yaseen", affiliation: "Associate Professor, RSCI" }
+      ]
+    },
+    {
+      track: "Computer Vision and Pattern Recognition",
+      members: [
+        { name: "Dr. Imtiaz Ahmad Taj", affiliation: "Professor, CUST Islamabad" },
+        { name: "Dr Usama Ijaz Bajwa", affiliation: "Associate Professor, COMSAT, Lahore" },
+        { name: "Dr Mehtab Afzal", affiliation: "Associate Professor, UoL, Lahore" }
+      ]
+    },
+    {
+      track: "Innovation, Entrepreneurship, and Tech Startups",
+      members: [
+        { name: "Mr Waqar Azeem", affiliation: "Industry Expert" }
+      ]
+    },
+    {
+      track: "Computing for Social Good and Human Computing Interaction",
+      members: [
+        { name: "Prof. Dr. Ibrar Hussain", affiliation: "Professor, UOL, Lahore" },
+        { name: "Dr. Hamid Tarub Mirza", affiliation: "CUI, Lahore" }
+      ]
+    },
+    {
+      track: "ICT Infrastructure",
+      members: [
+        { name: "Dr. Muhammad Bilal", affiliation: "Assistant Professor, Middle East Technical University, Turkey" },
+        { name: "Dr. Muhammad Azeem", affiliation: "Associate Professor, University of Sialkot, Sialkot" },
+        { name: "Dr. Kashif Shahzad", affiliation: "CEO, PITC, Pakistan" },
+        { name: "Dr. Jasim Saeed", affiliation: "HOD (CS), Assistant Professor, RSCI" }
+      ]
+    }
+  ];
+
+  const advisoryBoard = [
+    { name: "Dr. Tauseef", affiliation: "Campus Director, Riphah International University" },
+    { name: "Mr. Arshad", affiliation: "Executive director" },
+    { name: "Dr. Zubair", affiliation: "Dean of computing Islamabad" },
+    { name: "Mr. Umer", affiliation: "Industry Representative" }
+  ];
+
+  const organizingCommittee = [
+    { name: "Ms. Dua Mahmood", affiliation: "Senior Lecturer" },
+    { name: "Mr. Muhammad Naeem", affiliation: "Senior Lecturer" },
+    { name: "Ms. Abida Noaman", affiliation: "Senior Lecturer" },
+    { name: "Mr. Asim Mansha", affiliation: "Senior Lecturer" },
+    { name: "Mr. Adnan Ahmad", affiliation: "Senior Lecturer" },
+    { name: "Ms. Rida Ihtsham", affiliation: "Lecturer" },
+    { name: "Mr. Muhammad Haroon", affiliation: "Lecturer" },
+    { name: "Mr. Sameer Sohail", affiliation: "Lab Engineer" }
   ];
 
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
           }}
         >
-          {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
         
-        {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Organizing Committees</h1>
+            <h1 className="text-hero mb-6 font-bold">Conference Committees</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
-              Meet the distinguished researchers and professionals organizing ICCI-2025
+              Meet the distinguished committee members and advisory board of ICCI-2025
             </p>
           </div>
         </div>
       </section>
 
-      {/* Organizing Committee */}
+      {/* Patron-in-Chief */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Organizing Committee
+              Patron-in-Chief
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
-              Our organizing committee consists of leading experts in computer science 
-              who bring their expertise and experience to ensure a successful conference.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {committeeMembers.map((member, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-start">
-                  <div className="bg-primary p-3 rounded-full mr-6 flex-shrink-0">
-                    <Users className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="text-accent font-medium mb-2">{member.title}</p>
-                    <p className="text-body text-text-secondary mb-3">{member.affiliation}</p>
-                    <p className="text-small text-text-muted">
-                      <span className="font-medium">Expertise:</span> {member.expertise}
-                    </p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {patronInChief.map((member, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="bg-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Crown className="h-10 w-10 text-white" />
                 </div>
+                <h3 className="text-2xl font-bold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-accent font-semibold mb-2">{member.title}</p>
+                <p className="text-text-secondary">{member.affiliation}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Program Committee */}
+      {/* Convenor/Chair */}
       <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Program Committee
+              Convenor/Chair
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
-              Our international program committee ensures the highest quality of peer review 
-              and maintains the academic excellence of ICCI-2025.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {programCommittee.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="flex items-center mb-4">
-                  <div className="bg-accent p-2 rounded-full mr-4">
-                    <Award className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-text-primary">{member.name}</h4>
-                    <p className="text-small text-text-secondary">{member.affiliation}</p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {convenorChair.map((member, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="bg-accent w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Award className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-accent font-semibold mb-2">{member.title}</p>
+                <p className="text-text-secondary">{member.affiliation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Co-Convenor/Co-Chair */}
+      <section className="section-padding bg-background-light">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Co-Convenor/Co-Chair
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {coConvenorCoChair.map((member, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <UserCheck className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-accent font-semibold mb-2">{member.title}</p>
+                <p className="text-text-secondary">{member.affiliation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Secretary */}
+      <section className="section-padding bg-background-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Secretary
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            {secretary.map((member, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm text-center">
+                <div className="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <BookOpen className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-accent font-semibold mb-2">{member.title}</p>
+                <p className="text-text-secondary">{member.affiliation}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technical/Track Committee Members */}
+      <section className="section-padding bg-background-light">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Technical/Track Committee Members
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
+
+          <div className="space-y-12">
+            {technicalCommittee.map((track, trackIndex) => (
+              <div key={trackIndex} className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-xl font-bold text-text-primary mb-6 text-center">
+                  {track.track}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {track.members.map((member, memberIndex) => (
+                    <div key={memberIndex} className="border-l-4 border-accent pl-4">
+                      <h4 className="font-semibold text-text-primary mb-1">{member.name}</h4>
+                      <p className="text-text-secondary text-sm">{member.affiliation}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
@@ -136,7 +292,7 @@ export default function Committees() {
       </section>
 
       {/* Advisory Board */}
-      <section className="section-padding bg-background-light">
+      <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -145,39 +301,40 @@ export default function Committees() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Globe className="h-8 w-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {advisoryBoard.map((member, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="bg-primary w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-text-secondary text-sm">{member.affiliation}</p>
               </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">International Perspective</h3>
-              <p className="text-body text-text-secondary">
-                Our advisory board includes renowned researchers from leading institutions 
-                worldwide, ensuring global representation and international standards.
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <BookOpen className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Academic Excellence</h3>
-              <p className="text-body text-text-secondary">
-                Committee members are selected based on their outstanding contributions 
-                to computer science research and their commitment to academic excellence.
-              </p>
-            </div>
+      {/* Organizing Committee Members */}
+      <section className="section-padding bg-background-light">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Organizing Committee Members
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {organizingCommittee.map((member, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="bg-accent w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-text-primary mb-2">{member.name}</h3>
+                <p className="text-text-secondary text-sm">{member.affiliation}</p>
               </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Diverse Expertise</h3>
-              <p className="text-body text-text-secondary">
-                Our committee covers all major areas of computer science, ensuring 
-                comprehensive expertise in reviewing submissions across all tracks.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

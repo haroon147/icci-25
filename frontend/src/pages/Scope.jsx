@@ -1,36 +1,51 @@
-import { Brain, Shield, Database, Cpu, Network, Code } from 'lucide-react';
+import { Brain, Shield, Database, Cpu, Network, Code, Eye, Users, Lightbulb, Globe } from 'lucide-react';
 
 export default function Scope() {
   const topics = [
     {
       icon: Brain,
-      title: "Artificial Intelligence & Machine Learning",
-      description: "Deep learning, neural networks, computer vision, natural language processing, reinforcement learning, and AI applications."
+      title: "Artificial Intelligence and Machine Learning",
+      description: "Explainable AI (XAI), Generative AI, Agentic AI, Reinforcement Learning"
     },
     {
       icon: Database,
-      title: "Data Science & Big Data",
-      description: "Data mining, data analytics, big data processing, data visualization, and data-driven decision making."
+      title: "Data Science and Big Data Analytics",
+      description: "Predictive Analytics, Data-driven Decision Making"
     },
     {
       icon: Shield,
-      title: "Cybersecurity & Privacy",
-      description: "Information security, cryptography, privacy-preserving techniques, secure protocols, and threat analysis."
-    },
-    {
-      icon: Cpu,
-      title: "Software Engineering",
-      description: "Software design, development methodologies, testing, maintenance, and software quality assurance."
+      title: "Cybersecurity and Privacy",
+      description: "Secure Computing, Blockchain, Digital Forensics"
     },
     {
       icon: Network,
-      title: "Computer Networks & Distributed Systems",
-      description: "Network protocols, distributed computing, cloud computing, edge computing, and network security."
+      title: "Internet of Things (IoT), Robotics and Smart Systems",
+      description: "Smart Cities, Industry 4.0, Edge and Cloud Computing"
     },
     {
       icon: Code,
-      title: "Programming Languages & Compilers",
-      description: "Language design, compiler construction, runtime systems, and programming paradigms."
+      title: "Software Engineering and DevOps",
+      description: "Agile Transformation, Sustainable Software Practices"
+    },
+    {
+      icon: Eye,
+      title: "Computer Vision and Pattern Recognition",
+      description: "Autonomous Systems, AR/VR/MR Technologies"
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovation, Entrepreneurship, and Tech Startups",
+      description: "AI in Business, Technology Commercialization"
+    },
+    {
+      icon: Users,
+      title: "Computing for Social Good and HCI",
+      description: "Green Computing, Digital Inclusion, Assistive Technologies"
+    },
+    {
+      icon: Cpu,
+      title: "ICT Infrastructure",
+      description: "Backbone of information and communication tech with network design, hardware deployment, 5G/6G, scalable architectures for reliable data transmission and connectivity"
     }
   ];
 
@@ -100,48 +115,65 @@ export default function Scope() {
         </div>
       </section>
 
-      {/* Additional Areas */}
+      {/* Social and Academic Impact */}
       <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Additional Research Areas
+              Social and Academic Impact
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Theoretical Computer Science</h3>
-              <ul className="text-body text-text-secondary space-y-2">
-                <li>• Algorithms and Data Structures</li>
-                <li>• Computational Complexity</li>
-                <li>• Formal Methods</li>
-                <li>• Graph Theory</li>
-                <li>• Optimization</li>
-              </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-subheading font-medium text-text-primary mb-4">Knowledge Transfer</h3>
+              <p className="text-body text-text-secondary">
+                Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.
+              </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Applied Computer Science</h3>
-              <ul className="text-body text-text-secondary space-y-2">
-                <li>• Human-Computer Interaction</li>
-                <li>• Computer Graphics & Visualization</li>
-                <li>• Mobile Computing</li>
-                <li>• IoT and Embedded Systems</li>
-                <li>• Bioinformatics</li>
-              </ul>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Code className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-subheading font-medium text-text-primary mb-4">Skill Development</h3>
+              <p className="text-body text-text-secondary">
+                Hands-on workshops will equip participants with emerging technological competencies.
+              </p>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Emerging Technologies</h3>
-              <ul className="text-body text-text-secondary space-y-2">
-                <li>• Quantum Computing</li>
-                <li>• Blockchain Technology</li>
-                <li>• Augmented Reality</li>
-                <li>• Autonomous Systems</li>
-                <li>• Green Computing</li>
-              </ul>
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Network className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-subheading font-medium text-text-primary mb-4">Research Collaboration</h3>
+              <p className="text-body text-text-secondary">
+                Facilitate networking for joint research, funded projects, and innovation ecosystems.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-subheading font-medium text-text-primary mb-4">Community Empowerment</h3>
+              <p className="text-body text-text-secondary">
+                Inspire young researchers and students to pursue computing solutions for sustainable development.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Lightbulb className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-subheading font-medium text-text-primary mb-4">Economic Impact</h3>
+              <p className="text-body text-text-secondary">
+                Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.
+              </p>
             </div>
           </div>
         </div>

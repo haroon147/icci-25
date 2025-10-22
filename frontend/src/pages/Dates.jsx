@@ -4,38 +4,31 @@ export default function Dates() {
   const dates = [
     {
       icon: Calendar,
-      title: "Paper Submission Deadline",
-      date: "November 15, 2025",
+      title: "Call for Technical Paper / Workshop Proposal / PhD Symposia",
+      date: "October 30, 2025",
       status: "upcoming",
-      description: "Last date for submitting full papers, short papers, and poster abstracts"
+      description: "Last date for submitting technical papers, workshop proposals, and PhD symposium abstracts"
     },
     {
       icon: Clock,
-      title: "Acceptance Notification",
-      date: "November 25, 2025",
+      title: "Notification of Acceptance",
+      date: "November 15, 2025",
       status: "upcoming",
       description: "Authors will be notified about paper acceptance decisions"
     },
     {
       icon: CheckCircle,
-      title: "Camera-Ready Submission",
-      date: "December 1, 2025",
+      title: "Camera Ready Submission",
+      date: "November 30, 2025",
       status: "upcoming",
       description: "Final version of accepted papers must be submitted"
     },
     {
       icon: Calendar,
-      title: "Early Registration Deadline",
-      date: "December 5, 2025",
+      title: "Conference Date",
+      date: "December 9 – 10, 2025",
       status: "upcoming",
-      description: "Last date for early bird registration at discounted rates"
-    },
-    {
-      icon: Calendar,
-      title: "Conference Dates",
-      date: "December 10-12, 2025",
-      status: "upcoming",
-      description: "Three days of presentations, workshops, and networking"
+      description: "Two days of presentations, workshops, and networking at Riphah School of Computing & Innovation (RSCI)"
     }
   ];
 

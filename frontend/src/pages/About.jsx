@@ -235,6 +235,65 @@ practitioners to drive sustainable digital transformation.              </p>
           </div>
         </div>
       </section>
+
+      {/* Organizer & Collaborators */}
+      <section className="section-padding bg-background-white">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Organizer & Collaborators
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Organizer */}
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="text-center mb-8">
+                <div className="bg-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-text-primary mb-4">Organizer</h3>
+              </div>
+              <div className="text-center">
+                <h4 className="text-xl font-semibold text-text-primary mb-2">
+                  Riphah School of Computing & Innovation (RSCI)
+                </h4>
+                <p className="text-text-secondary mb-4">
+                  Riphah International University-Lahore Campus, Pakistan
+                </p>
+                <p className="text-body text-text-secondary">
+                  Leading institution in computing education and research, fostering innovation and technological advancement in Pakistan.
+                </p>
+              </div>
+            </div>
+
+            {/* Collaborators */}
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="text-center mb-8">
+                <div className="bg-accent w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Globe className="h-10 w-10 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-text-primary mb-4">Collaborators</h3>
+              </div>
+              <div className="space-y-6">
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-text-primary mb-2">IEEE</h4>
+                  <p className="text-text-secondary">Institute of Electrical and Electronics Engineers</p>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-text-primary mb-2">Software Industry</h4>
+                  <p className="text-text-secondary">Industry partners and technology companies</p>
+                </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-text-primary mb-2">AWS Cloud Computing Club</h4>
+                  <p className="text-text-secondary">Amazon Web Services community and resources</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
