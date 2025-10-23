@@ -95,17 +95,24 @@ export default function Home() {
             </h1>
             
             {/* Conference Date */}
-            <div className="mb-6 flex justify-center">
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
-                <div className="text-white/90 text-xl font-medium text-center">
-                  📅 8-9 December 2025
-                </div>
-                <div className="text-white/90 text-xl font-medium text-center">
-                  📍 Riphah International University, Lahore
+            <div className="mb-8 flex justify-center">
+              <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4  border border-white/30 shadow-xl inline-block max-w-full">
+                <div className="rotating-text-wrapper">
+                  <div className="rotating-text">
+                    <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+                      📅 8-9 December 2025
+                    </span>
+                    <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+                      📍 Riphah International University, Lahore
+                    </span>
+                    <span className="text-white text-lg font-semibold text-center whitespace-nowrap">
+                      🏛️ Riphah School of Computing & Innovation
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            <p className="text-body text-white/90 mb-8 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 mb-8 content-container-md text-content-center text-break">
             Join leading researchers, innovators, practitioners, and students in computer science and related
 disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
 emerging technologies, and transformative ideas.
@@ -134,14 +141,14 @@ emerging technologies, and transformative ideas.
               Conference Overview
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <div className="text-center max-w-4xl mx-auto">
-              <p className="text-body text-text-secondary leading-relaxed mb-6 text-justify">
+            <div className="content-container-md">
+              <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
                 The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
-              <p className="text-body text-text-secondary leading-relaxed mb-6 text-justify">
+              <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
                 It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
               </p>
-              <p className="text-body text-text-secondary leading-relaxed mb-8 text-justify">
+              <p className="text-body text-text-secondary mb-8 text-content-justify text-break">
                 Together, let's pave the way for a smarter, more connected future. The ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
               </p>
             </div>
@@ -190,7 +197,7 @@ emerging technologies, and transformative ideas.
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
                     	Knowledge Transfer 
                     </h3>
-                    <p className="text-body text-text-secondary">
+                    <p className="text-body text-text-secondary text-break">
                     Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.
                     </p>
                   </div>
@@ -202,7 +209,7 @@ emerging technologies, and transformative ideas.
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
                   	Skill Development
                     </h3>
-                    <p className="text-body text-text-secondary">
+                    <p className="text-body text-text-secondary text-break">
                      Hands-on workshops will equip participants with emerging technological competencies.
                     </p>
                   </div>
@@ -214,7 +221,7 @@ emerging technologies, and transformative ideas.
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
                     Research Collaboration
                     </h3>
-                    <p className="text-body text-text-secondary">
+                    <p className="text-body text-text-secondary text-break">
                     Facilitate networking for joint research, funded projects, and innovation ecosystems.
                     </p>
                   </div>
@@ -225,7 +232,7 @@ emerging technologies, and transformative ideas.
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
                   Community Empowerment
                     </h3>
-                    <p className="text-body text-text-secondary">
+                    <p className="text-body text-text-secondary text-break">
                     Inspire young researchers and students to pursue computing solutions for sustainable development.
                     </p>
                   </div>
@@ -236,7 +243,7 @@ emerging technologies, and transformative ideas.
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
                       Economic Impact
                     </h3>
-                    <p className="text-body text-text-secondary">
+                    <p className="text-body text-text-secondary text-break">
                     Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.                    </p>
                   </div>
                 </div>
@@ -280,7 +287,7 @@ emerging technologies, and transformative ideas.
               Our Collaborators
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto mb-12">
+            <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
               We are proud to collaborate with leading organizations and institutions that share our vision for advancing computing and innovation.
             </p>
           </div>
@@ -306,8 +313,8 @@ emerging technologies, and transformative ideas.
                         <Globe className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold text-text-primary mb-2">{collaborator.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed">{collaborator.description}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2 text-break">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
                   </div>
                 </div>
               ))}
@@ -329,8 +336,8 @@ emerging technologies, and transformative ideas.
                         <Globe className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold text-text-primary mb-2">{collaborator.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed">{collaborator.description}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2 text-break">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
                   </div>
                 </div>
               ))}
@@ -343,7 +350,7 @@ emerging technologies, and transformative ideas.
               Our Sponsors
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto mb-12">
+            <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
               Thank you to our valued sponsors who make ICCI-2025 possible through their generous support.
             </p>
           </div>
@@ -381,8 +388,8 @@ emerging technologies, and transformative ideas.
                         <Award className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold text-text-primary mb-2">{sponsor.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed">{sponsor.description}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2 text-break">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{sponsor.description}</p>
                   </div>
                 </div>
               ))}
@@ -416,8 +423,8 @@ emerging technologies, and transformative ideas.
                         <Award className="h-12 w-12 text-white" />
                       </div>
                     </div>
-                    <h3 className="text-lg font-bold text-text-primary mb-2">{sponsor.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed">{sponsor.description}</p>
+                    <h3 className="text-lg font-bold text-text-primary mb-2 text-break">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{sponsor.description}</p>
                   </div>
                 </div>
               ))}
@@ -432,7 +439,7 @@ emerging technologies, and transformative ideas.
           <h2 className="text-section mb-4 font-semibold text-text-primary">
             Ready to Join Us?
           </h2>
-          <p className="text-body text-text-secondary mb-8 max-w-2xl mx-auto">
+          <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-8">
             Don't miss this opportunity to present your research, learn from experts, 
             and network with peers in the computer science community.
           </p>

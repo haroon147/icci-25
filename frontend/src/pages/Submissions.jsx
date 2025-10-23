@@ -76,7 +76,7 @@ export default function Submissions() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Submissions</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Submit your research contributions to ICCI-2025 and be part of our premier academic conference
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function Submissions() {
               Submission Types
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
+            <p className="text-body text-text-secondary content-container-md text-content-center text-break">
               We welcome different types of submissions to accommodate various stages of research 
               and different presentation formats.
             </p>
@@ -106,8 +106,8 @@ export default function Submissions() {
                     <div className="bg-primary p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
                       <Icon className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-4">{type.title}</h3>
-                    <p className="text-body text-text-secondary mb-6">{type.description}</p>
+                    <h3 className="text-subheading font-medium text-text-primary mb-4 text-break">{type.title}</h3>
+                    <p className="text-body text-text-secondary mb-6 text-break">{type.description}</p>
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <span className="text-small text-text-muted">Pages:</span>
@@ -139,12 +139,12 @@ export default function Submissions() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {submissionGuidelines.map((section, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-subheading font-medium text-text-primary mb-6">{section.title}</h3>
-                <ul className="space-y-4">
+                <h3 className="text-subheading font-medium text-text-primary mb-6 text-break">{section.title}</h3>
+                <ul className="content-spacing-sm">
                   {section.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-body text-text-secondary">{item}</span>
+                      <span className="text-body text-text-secondary text-break">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -214,7 +214,7 @@ export default function Submissions() {
               Submissions
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-2xl mx-auto mb-8">
+            <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-8">
               Ready to submit your Research/Proposal/Symposium? Use our online submission system to upload your work 
               and track the review process.
             </p>
@@ -223,8 +223,8 @@ export default function Submissions() {
           <div className="bg-gradient-to-r from-primary to-primary-dark p-8 rounded-lg text-white text-center">
             <div className="max-w-2xl mx-auto">
               <Upload className="h-16 w-16 mx-auto mb-6 text-accent" />
-              <h3 className="text-subheading font-medium mb-4">Online Submission Portal</h3>
-              <p className="text-body text-white/90 mb-8">
+              <h3 className="text-subheading font-medium mb-4 text-break">Online Submission Portal</h3>
+              <p className="text-body text-white/90 content-container-sm text-content-center text-break mb-8">
                 Submit your paper through our secure online system. You'll receive confirmation 
                 and can track your submission status throughout the review process.
               </p>

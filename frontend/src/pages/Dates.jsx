@@ -64,7 +64,7 @@ export default function Dates() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Key Dates</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Important deadlines and milestones for ICCI-2025
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function Dates() {
               Important Dates Timeline
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
+            <p className="text-body text-text-secondary content-container-md text-content-center text-break">
               Mark your calendar with these crucial dates to ensure you don't miss any important deadlines.
             </p>
           </div>
@@ -100,10 +100,10 @@ export default function Dates() {
                       <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                           <div>
-                            <h3 className="text-subheading font-medium text-text-primary mb-2">
+                            <h3 className="text-subheading font-medium text-text-primary mb-2 text-break">
                               {item.title}
                             </h3>
-                            <p className="text-body text-text-secondary">
+                            <p className="text-body text-text-secondary text-break">
                               {item.description}
                             </p>
                           </div>
@@ -149,7 +149,7 @@ export default function Dates() {
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Early Registration</h3>
-              <p className="text-body text-text-secondary mb-4">
+              <p className="text-body text-text-secondary mb-4 text-break">
                 Register before November 30, 2025 to receive discounted rates and secure your spot.
               </p>
               <div className="text-2xl font-bold text-primary">Until Nov 30, 2025</div>
@@ -160,7 +160,7 @@ export default function Dates() {
                 <AlertCircle className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Regular Registration</h3>
-              <p className="text-body text-text-secondary mb-4">
+              <p className="text-body text-text-secondary mb-4 text-break">
                 Standard registration rates apply after the early bird deadline.
               </p>
               <div className="text-2xl font-bold text-primary">Dec 1-5, 2025</div>
@@ -171,7 +171,7 @@ export default function Dates() {
                 <Calendar className="h-8 w-8 text-red-600" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">On-Site Registration</h3>
-              <p className="text-body text-text-secondary mb-4">
+              <p className="text-body text-text-secondary mb-4 text-break">
                 Limited on-site registration available during the conference days.
               </p>
               <div className="text-2xl font-bold text-primary">Dec 8-9, 2025</div>
@@ -192,12 +192,12 @@ export default function Dates() {
                 <h3 className="text-subheading font-medium text-text-primary mb-4">
                   Submission Guidelines
                 </h3>
-                <ul className="space-y-3 text-body text-text-secondary">
-                  <li>• All submissions must be in English</li>
-                  <li>• Papers must follow IEEE conference format</li>
-                  <li>• Maximum 8 pages for full papers</li>
-                  <li>• Maximum 4 pages for short papers</li>
-                  <li>• PDF format only</li>
+                <ul className="content-spacing-sm text-body text-text-secondary">
+                  <li className="text-break">• All submissions must be in English</li>
+                  <li className="text-break">• Papers must follow IEEE conference format</li>
+                  <li className="text-break">• Maximum 8 pages for full papers</li>
+                  <li className="text-break">• Maximum 4 pages for short papers</li>
+                  <li className="text-break">• PDF format only</li>
                 </ul>
               </div>
               
@@ -205,12 +205,12 @@ export default function Dates() {
                 <h3 className="text-subheading font-medium text-text-primary mb-4">
                   Registration Benefits
                 </h3>
-                <ul className="space-y-3 text-body text-text-secondary">
-                  <li>• Access to all conference sessions</li>
-                  <li>• Conference proceedings (digital)</li>
-                  <li>• Networking events and Tea/Coffee breaks</li>
-                  <li>• Conference materials and certificate</li>
-                  <li>• Welcome reception and Lunch</li>
+                <ul className="content-spacing-sm text-body text-text-secondary">
+                  <li className="text-break">• Access to all conference sessions</li>
+                  <li className="text-break">• Conference proceedings (digital)</li>
+                  <li className="text-break">• Networking events and Tea/Coffee breaks</li>
+                  <li className="text-break">• Conference materials and certificate</li>
+                  <li className="text-break">• Welcome reception and Lunch</li>
                 </ul>
               </div>
             </div>

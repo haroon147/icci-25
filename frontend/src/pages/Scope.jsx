@@ -68,7 +68,7 @@ export default function Scope() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Scope & Topics</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Explore the comprehensive range of computing and innovation topics covered at ICCI-2025
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function Scope() {
               Research Topics
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
+            <p className="text-body text-text-secondary content-container-md text-content-center text-break">
             The ICCI-2025 will cover (but not be limited to) the following research and innovation areas:
             </p>
           </div>
@@ -98,10 +98,10 @@ export default function Scope() {
                       <Icon className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-subheading font-medium text-text-primary mb-3">
+                      <h3 className="text-subheading font-medium text-text-primary mb-3 text-break">
                         {topic.title}
                       </h3>
-                      <p className="text-body text-text-secondary">
+                      <p className="text-body text-text-secondary text-break">
                         {topic.description}
                       </p>
                     </div>
@@ -195,25 +195,25 @@ export default function Scope() {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Papers must be original and not previously published or under review elsewhere
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Maximum length: 8 pages for full papers, 4 pages for short papers
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Format: IEEE conference template (double-column)
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Language: English only
                   </p>
                 </div>
@@ -227,25 +227,25 @@ export default function Scope() {
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Double-blind peer review by at least three reviewers
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Evaluation based on originality, significance, and technical quality
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Accepted papers will be published in conference proceedings
                   </p>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary">
+                  <p className="text-body text-text-secondary text-break">
                     Best paper awards will be given in each track
                   </p>
                 </div>

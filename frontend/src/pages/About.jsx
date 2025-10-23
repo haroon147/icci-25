@@ -21,7 +21,7 @@ export default function About() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">About ICCI-2025</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
                International Conference on Computing & Innovation
             </p>
           </div>
@@ -37,10 +37,10 @@ export default function About() {
                 About the Conference
               </h2>
               <div className="w-24 h-1 bg-accent mb-8"></div>
-              <p className="text-body text-text-secondary mb-6 text-justify">
+              <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
               The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
-              <p className="text-body text-text-secondary mb-6 text-justify">
+              <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
               It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function About() {
                   <Award className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">Keynote Presentations</h4>
-                    <p className="text-body text-text-secondary">Renowned international experts will share visionary insights on emerging trends and future directions in computing and innovation.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">Renowned international experts will share visionary insights on emerging trends and future directions in computing and innovation.</p>
                   </div>
                 </div>
                 
@@ -62,7 +62,7 @@ export default function About() {
                   <Users className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">Global Participation</h4>
-                    <p className="text-body text-text-secondary">Engage with 500+ researchers, practitioners, and industry leaders from around the world for collaboration and knowledge exchange.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">Engage with 500+ researchers, practitioners, and industry leaders from around the world for collaboration and knowledge exchange.</p>
                   </div>
                 </div>
                 
@@ -70,7 +70,7 @@ export default function About() {
                   <Target className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">Multiple Thematic Tracks</h4>
-                    <p className="text-body text-text-secondary">Comprehensive coverage of diverse computing domains, including AI, Data Science, Cybersecurity, IoT, Software Engineering, and more.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">Comprehensive coverage of diverse computing domains, including AI, Data Science, Cybersecurity, IoT, Software Engineering, and more.</p>
                   </div>
                 </div>
                 
@@ -78,7 +78,7 @@ export default function About() {
                   <Eye className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">Hands-on Workshops</h4>
-                    <p className="text-body text-text-secondary">Interactive sessions offering practical exposure to cutting-edge tools, frameworks, and technologies.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">Interactive sessions offering practical exposure to cutting-edge tools, frameworks, and technologies.</p>
                   </div>
                 </div>
 
@@ -86,7 +86,7 @@ export default function About() {
                   <Users className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">Panel Discussions &amp; Expert Dialogues</h4>
-                    <p className="text-body text-text-secondary">Thought-provoking discussions featuring academic and industry leaders addressing current and future challenges in computing.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">Thought-provoking discussions featuring academic and industry leaders addressing current and future challenges in computing.</p>
                   </div>
                 </div>
 
@@ -94,7 +94,7 @@ export default function About() {
                   <Award className="h-6 w-6 text-accent mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-text-primary mb-1">PhD Symposium &amp; Student Presentations</h4>
-                    <p className="text-body text-text-secondary">A dedicated forum for doctoral and early-career researchers to present their work, receive feedback, and network with experts.</p>
+                    <p className="text-body text-text-secondary text-content-justify text-break">A dedicated forum for doctoral and early-career researchers to present their work, receive feedback, and network with experts.</p>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function About() {
                 <Target className="h-8 w-8 text-accent mr-3" />
                 <h3 className="text-subheading font-medium text-text-primary">Our Mission</h3>
               </div>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
               To become a global platform that fosters innovation, collaboration, and knowledge exchange in
 computing and emerging technologies, empowering communities to build a smarter, inclusive, and
 sustainable digital future.              </p>
@@ -130,7 +130,7 @@ sustainable digital future.              </p>
                 <Globe className="h-8 w-8 text-accent mr-3" />
                 <h3 className="text-subheading font-medium text-text-primary">Our Vision</h3>
               </div>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
               To bridge academia and industry through interdisciplinary collaboration, fostering innovation,
 entrepreneurship, and responsible technological advancement that empowers researchers and
 practitioners to drive sustainable digital transformation.              </p>
@@ -155,7 +155,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <BookOpen className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Interdisciplinary Research</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Promote research across computing domains such as AI, Data Science, IoT, Cybersecurity, and Software Engineering.
               </p>
             </div>
@@ -165,7 +165,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Academia-Industry Bridge</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Bridge the gap between academia and industry by facilitating meaningful exchange of ideas and innovative practices.
               </p>
             </div>
@@ -175,7 +175,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <Target className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Knowledge Dissemination</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Disseminate cutting-edge knowledge through keynote sessions, technical papers, and demonstrations of emerging technologies.
               </p>
             </div>
@@ -185,7 +185,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <Award className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Innovation & Entrepreneurship</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Encourage innovation and entrepreneurship by inspiring participants to translate research outcomes into viable products and startups.
               </p>
             </div>
@@ -195,7 +195,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <Eye className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Competency Development</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Develop technical and research competencies through workshops, tutorials, and hands-on training on emerging technologies.
               </p>
             </div>
@@ -205,7 +205,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <Globe className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Global Collaboration</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Foster global collaboration and networking among researchers, professionals, and institutions across diverse disciplines and regions.
               </p>
             </div>
@@ -215,7 +215,7 @@ practitioners to drive sustainable digital transformation.              </p>
                 <BookOpen className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Sustainable Growth</h3>
-              <p className="text-body text-text-secondary">
+              <p className="text-body text-text-secondary text-content-justify text-break">
                 Support sustainable and inclusive technological growth by promoting ethical, green, and socially responsible computing practices.
               </p>
             </div>

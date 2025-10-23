@@ -87,7 +87,7 @@ export default function Registration() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Registration</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Register for ICCI-2025 and join the premier computing and innovation conference. 
               Early bird discounts available until November 30, 2025.
             </p>
@@ -251,24 +251,24 @@ export default function Registration() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Registration Includes</h3>
-                <ul className="space-y-3 text-body text-text-secondary">
-                  <li>• Access to all technical sessions and keynote presentations</li>
-                  <li>• Digital conference proceedings</li>
-                  <li>• Coffee breaks and networking sessions</li>
-                  <li>• Welcome reception and social events</li>
-                  <li>• Conference materials and certificate</li>
-                  <li>• Wi-Fi access throughout the venue</li>
+                <ul className="content-spacing-sm text-body text-text-secondary">
+                  <li className="text-break">• Access to all technical sessions and keynote presentations</li>
+                  <li className="text-break">• Digital conference proceedings</li>
+                  <li className="text-break">• Coffee breaks and networking sessions</li>
+                  <li className="text-break">• Welcome reception and social events</li>
+                  <li className="text-break">• Conference materials and certificate</li>
+                  <li className="text-break">• Wi-Fi access throughout the venue</li>
                 </ul>
               </div>
 
               <div>
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Cancellation Policy</h3>
-                <ul className="space-y-3 text-body text-text-secondary">
-                  <li>• Cancellation before Nov 30, 2025: 80% refund</li>
-                  <li>• Cancellation after Nov 30, 2025: No refund</li>
-                  <li>• All cancellations subject to processing fees</li>
-                  <li>• Refunds processed within 14 business days</li>
-                  <li>• Contact icci@riphah.edu.pk for assistance</li>
+                <ul className="content-spacing-sm text-body text-text-secondary">
+                  <li className="text-break">• Cancellation before Nov 30, 2025: 80% refund</li>
+                  <li className="text-break">• Cancellation after Nov 30, 2025: No refund</li>
+                  <li className="text-break">• All cancellations subject to processing fees</li>
+                  <li className="text-break">• Refunds processed within 14 business days</li>
+                  <li className="text-break">• Contact icci@riphah.edu.pk for assistance</li>
                 </ul>
               </div>
             </div>
@@ -283,7 +283,7 @@ export default function Registration() {
             <div className="max-w-4xl mx-auto">
               <Calendar className="h-16 w-16 mx-auto mb-6 text-accent" />
               <h2 className="text-section font-semibold mb-4">Ready to Register?</h2>
-              <p className="text-body text-white/90 mb-8">
+              <p className="text-body text-white/90 content-container-sm text-content-center text-break mb-8">
               Don't miss this opportunity to be part of ICCI-2025. Early bird registration 
               is open now with significant discounts available.
               </p>

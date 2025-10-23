@@ -29,7 +29,7 @@ export default function Committees() {
       title: "Co-Convenor/Co-Chair",
       affiliation: "Associate Professor, RSCI",
       expertise: "Riphah School of Computing & Innovation",
-      image: "/committee-members/dr-farrukh-arslan.jpg",
+      image: "https://drive.google.com/file/d/1tISjP_da3NQYD8kBE0_NJpE4cc8xz_Xa/view?usp=drive_link",
       email: "farrukh.arslan@riphah.edu.pk"
     },
     {
@@ -62,8 +62,8 @@ export default function Committees() {
         { name: "Dr. Azhar Imran Mudassir", affiliation: "Assistant Professor, FCAI, Beijing University, China", image: "/committee-members/dr-azhar-imran-mudassir.jpg" },
         { name: "Dr Allah Dita", affiliation: "Associate Professor, University of Education, Lahore", image: "/committee-members/dr-allah-dita.jpg" },
         { name: "Dr. Umme Hani", affiliation: "Associate Professor, NASTAP, Lahore", image: "/committee-members/dr-umme-hani.jpg" },
-        { name: "Dr. Jamal Uddin", affiliation: "Associate Professor, RSCI", image: "/committee-members/dr-jamal-uddin.jpg" },
-        { name: "Dr Adnan Ahmad Khan", affiliation: "Associate Professor, RSCI", image: "/committee-members/dr-adnan-ahmad-khan.jpg" }
+        { name: "Dr. Jamal Uddin", affiliation: "Associate Professor, RSCI", image: "https://drive.google.com/file/d/1tISjP_da3NQYD8kBE0_NJpE4cc8xz_Xa/view" },
+        { name: "Dr Adnan Ahmad Khan", affiliation: "Associate Professor, RSCI", image: "" }
       ]
     },
     {
@@ -103,7 +103,7 @@ export default function Committees() {
       members: [
         { name: "Dr. Imtiaz Ahmad Taj", affiliation: "Professor, CUST Islamabad", image: "/committee-members/dr-imtiaz-ahmad-taj.jpg" },
         { name: "Dr Usama Ijaz Bajwa", affiliation: "Associate Professor, COMSAT, Lahore", image: "/committee-members/dr-usama-ijaz-bajwa.jpg" },
-        { name: "Dr Mehtab Afzal", affiliation: "Associate Professor, UoL, Lahore", image: "/committee-members/dr-mehtab-afzal.jpg" }
+        { name: "Dr Mehtab Afzal", affiliation: "Associate Professor, UoL, Lahore", image: "https://media.licdn.com/dms/image/v2/D4D03AQFiXMjCcVq_Fg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710924722365?e=1762992000&v=beta&t=pZMdqddtldCYmDfykcfbDh569eKFS07hJG_r-yy_yHE" }
       ]
     },
     {
@@ -115,7 +115,7 @@ export default function Committees() {
     {
       track: "Computing for Social Good and Human Computing Interaction",
       members: [
-        { name: "Prof. Dr. Ibrar Hussain", affiliation: "Professor, UOL, Lahore", image: "/committee-members/prof-dr-ibrar-hussain.jpg" },
+        { name: "Prof. Dr. Ibrar Hussain", affiliation: "Professor, UOL, Lahore", image: "https://media.licdn.com/dms/image/v2/D4D03AQGwSoPKaTG8yg/profile-displayphoto-scale_200_200/B4DZlBGR.6IEAg-/0/1757733790688?e=1762992000&v=beta&t=ZNTBmnqglDmIDqbckcC7oEcungDC--Gffq0OlA-Usvw" },
         { name: "Dr. Hamid Tarub Mirza", affiliation: "CUI, Lahore", image: "/committee-members/dr-hamid-tarub-mirza.jpg" }
       ]
     },
@@ -164,7 +164,7 @@ export default function Committees() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Conference Committees</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
+            <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Meet the distinguished committee members and advisory board of ICCI-2025
             </p>
           </div>
@@ -217,9 +217,9 @@ export default function Committees() {
                 </div>
                 
                 <div className="relative z-10">
-                  <h3 className="text-5xl font-bold text-text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{member.name}</h3>
-                  <p className="text-2xl text-text-secondary mb-6 font-semibold">{member.affiliation}</p>
-                  <p className="text-xl text-text-muted mb-8 leading-relaxed max-w-4xl mx-auto">{member.expertise}</p>
+                  <h3 className="text-responsive-xl font-bold text-text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-break">{member.name}</h3>
+                  <p className="text-responsive-lg text-text-secondary mb-6 font-semibold text-break">{member.affiliation}</p>
+                  <p className="text-responsive text-text-muted mb-8 leading-relaxed content-container-lg text-break">{member.expertise}</p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a 
@@ -275,9 +275,9 @@ export default function Committees() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-4xl font-bold text-text-primary mb-4">{member.name}</h3>
-                <p className="text-xl text-text-secondary mb-4">{member.affiliation}</p>
-                <p className="text-lg text-text-muted mb-6">{member.expertise}</p>
+                <h3 className="text-responsive-xl font-bold text-text-primary mb-4 text-break">{member.name}</h3>
+                <p className="text-responsive-lg text-text-secondary mb-4 text-break">{member.affiliation}</p>
+                <p className="text-responsive text-text-muted mb-6 text-break">{member.expertise}</p>
                 <a 
                   href={`mailto:${member.email}`}
                   className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
@@ -325,9 +325,9 @@ export default function Committees() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-3xl font-bold text-text-primary mb-3">{member.name}</h3>
-                <p className="text-lg text-text-secondary mb-3">{member.affiliation}</p>
-                <p className="text-base text-text-muted mb-5">{member.expertise}</p>
+                <h3 className="text-responsive-lg font-bold text-text-primary mb-3 text-break">{member.name}</h3>
+                <p className="text-responsive text-text-secondary mb-3 text-break">{member.affiliation}</p>
+                <p className="text-responsive-sm text-text-muted mb-5 text-break">{member.expertise}</p>
                 <a 
                   href={`mailto:${member.email}`}
                   className="inline-flex items-center px-5 py-2 bg-accent text-white rounded-xl hover:bg-accent-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
@@ -375,9 +375,9 @@ export default function Committees() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-4xl font-bold text-text-primary mb-4">{member.name}</h3>
-                <p className="text-xl text-text-secondary mb-4">{member.affiliation}</p>
-                <p className="text-lg text-text-muted mb-6">{member.expertise}</p>
+                <h3 className="text-responsive-xl font-bold text-text-primary mb-4 text-break">{member.name}</h3>
+                <p className="text-responsive-lg text-text-secondary mb-4 text-break">{member.affiliation}</p>
+                <p className="text-responsive text-text-muted mb-6 text-break">{member.expertise}</p>
                 <a 
                   href={`mailto:${member.email}`}
                   className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-xl hover:bg-accent-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
@@ -405,7 +405,7 @@ export default function Committees() {
             {technicalCommittee.map((track, trackIndex) => (
               <div key={trackIndex} className="bg-gradient-to-br from-white via-gray-50 to-white p-10 rounded-3xl shadow-2xl border border-gray-100">
                 <div className="text-center mb-12">
-                  <h3 className="text-3xl font-bold text-text-primary mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <h3 className="text-responsive-lg font-bold text-text-primary mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-break">
                     {track.track}
                   </h3>
                   <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
@@ -433,8 +433,8 @@ export default function Committees() {
                           {/* Decorative ring */}
                           <div className="absolute inset-0 rounded-full border-2 border-accent/30 animate-pulse"></div>
                         </div>
-                        <h4 className="font-bold text-text-primary mb-3 text-base">{member.name}</h4>
-                        <p className="text-text-secondary text-sm leading-relaxed">{member.affiliation}</p>
+                        <h4 className="font-bold text-text-primary mb-3 text-responsive-sm text-break">{member.name}</h4>
+                        <p className="text-text-secondary text-responsive-sm leading-relaxed text-break">{member.affiliation}</p>
                       </div>
                     </div>
                   ))}
@@ -478,8 +478,8 @@ export default function Committees() {
                     {/* Decorative ring */}
                     <div className="absolute inset-0 rounded-full border-2 border-accent/30 animate-pulse"></div>
                   </div>
-                  <h3 className="font-bold text-text-primary mb-3 text-lg">{member.name}</h3>
-                  <p className="text-text-secondary text-sm leading-relaxed">{member.affiliation}</p>
+                  <h3 className="font-bold text-text-primary mb-3 text-responsive-sm text-break">{member.name}</h3>
+                  <p className="text-text-secondary text-responsive-sm leading-relaxed text-break">{member.affiliation}</p>
                 </div>
               </div>
             ))}
