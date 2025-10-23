@@ -150,9 +150,9 @@ export default function Dates() {
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Early Registration</h3>
               <p className="text-body text-text-secondary mb-4">
-                Register before December 5, 2025 to receive discounted rates and secure your spot.
+                Register before November 30, 2025 to receive discounted rates and secure your spot.
               </p>
-              <div className="text-2xl font-bold text-primary">Until Dec 5, 2025</div>
+              <div className="text-2xl font-bold text-primary">Until Nov 30, 2025</div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
@@ -163,7 +163,7 @@ export default function Dates() {
               <p className="text-body text-text-secondary mb-4">
                 Standard registration rates apply after the early bird deadline.
               </p>
-              <div className="text-2xl font-bold text-primary">Dec 5-10, 2025</div>
+              <div className="text-2xl font-bold text-primary">Dec 1-5, 2025</div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">

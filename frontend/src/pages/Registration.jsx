@@ -14,7 +14,7 @@ export default function Registration() {
         "Welcome reception",
         "Certificate of participation"
       ],
-      deadline: "Early Bird: Until Dec 5, 2025"
+      deadline: "Early Bird: Until Nov 30, 2025"
     },
     {
       type: "Academic",
@@ -29,7 +29,7 @@ export default function Registration() {
         "Certificate of participation",
         "Author presentation slots (if paper accepted)"
       ],
-      deadline: "Early Bird: Until Dec 5, 2025",
+      deadline: "Early Bird: Until Nov 30, 2025",
       popular: true
     },
     {
@@ -46,7 +46,7 @@ export default function Registration() {
         "Industry networking sessions",
         "Exhibition area access"
       ],
-      deadline: "Early Bird: Until Dec 5, 2025"
+      deadline: "Early Bird: Until Nov 30, 2025"
     }
   ];
 
@@ -89,7 +89,7 @@ export default function Registration() {
             <h1 className="text-hero mb-6 font-bold">Registration</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
               Register for ICCI-2025 and join the premier computing and innovation conference. 
-              Early bird discounts available until December 5, 2025.
+              Early bird discounts available until November 30, 2025.
             </p>
           </div>
         </div>
@@ -265,8 +265,7 @@ export default function Registration() {
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Cancellation Policy</h3>
                 <ul className="space-y-3 text-body text-text-secondary">
                   <li>• Cancellation before Nov 30, 2025: 80% refund</li>
-                  <li>• Cancellation before Dec 5, 2025: 50% refund</li>
-                  <li>• Cancellation after Dec 5, 2025: No refund</li>
+                  <li>• Cancellation after Nov 30, 2025: No refund</li>
                   <li>• All cancellations subject to processing fees</li>
                   <li>• Refunds processed within 14 business days</li>
                   <li>• Contact registration@icacs2025.org for assistance</li>
