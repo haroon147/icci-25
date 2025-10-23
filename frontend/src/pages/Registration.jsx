@@ -268,7 +268,7 @@ export default function Registration() {
                   <li>• Cancellation after Nov 30, 2025: No refund</li>
                   <li>• All cancellations subject to processing fees</li>
                   <li>• Refunds processed within 14 business days</li>
-                  <li>• Contact icc@riphah.edu.pk for assistance</li>
+                  <li>• Contact icci@riphah.edu.pk for assistance</li>
                 </ul>
               </div>
             </div>

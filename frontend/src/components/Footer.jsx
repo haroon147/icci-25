@@ -100,8 +100,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
-                <a href="mailto:icc@riphah.edu.pk" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  icc@riphah.edu.pk
+                <a href="mailto:icci@riphah.edu.pk" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  icci@riphah.edu.pk
                 </a>
               </div>
               <div className="flex items-center">

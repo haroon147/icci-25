@@ -22,7 +22,7 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       details: [
-        "icc@riphah.edu.pk"
+        "icci@riphah.edu.pk"
       ]
     },
     {
