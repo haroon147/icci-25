@@ -259,7 +259,7 @@ emerging technologies, and transformative ideas.
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Camera-Ready Submission</span>
-                  <span className="text-body font-medium">December 1, 2025</span>
+                  <span className="text-body font-medium">November 30, 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>

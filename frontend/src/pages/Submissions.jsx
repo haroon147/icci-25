@@ -52,7 +52,7 @@ export default function Submissions() {
         "Double-blind peer review by at least 3 reviewers",
         "Evaluation based on originality, significance, and technical quality",
         "Review decisions: Accept, Minor Revision, Major Revision, Reject",
-        "Camera-ready submission deadline: December 1, 2025"
+        "Camera-ready submission deadline: November 30, 2025"
       ]
     }
   ];
@@ -190,7 +190,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Camera-Ready</h3>
                 <p className="text-body text-text-secondary mb-2">Submission</p>
-                <p className="text-2xl font-bold text-primary">Dec 1, 2025</p>
+                <p className="text-2xl font-bold text-primary">Nov 30, 2025</p>
               </div>
 
               <div className="text-center">

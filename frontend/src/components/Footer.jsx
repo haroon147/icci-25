@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Camera-Ready:</span><br />
-                December 1, 2025
+                November 30, 2025
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Conference:</span><br />
