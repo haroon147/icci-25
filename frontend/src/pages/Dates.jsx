@@ -12,7 +12,7 @@ export default function Dates() {
     {
       icon: Clock,
       title: "Notification of Acceptance",
-      date: "November 15, 2025",
+      date: "November 25, 2025",
       status: "upcoming",
       description: "Authors will be notified about paper acceptance decisions"
     },
