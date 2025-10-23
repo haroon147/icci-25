@@ -22,7 +22,7 @@ export default function About() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">About ICCI-2025</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
-              1st International Conference on Computing & Innovation
+               International Conference on Computing & Innovation
             </p>
           </div>
         </div>

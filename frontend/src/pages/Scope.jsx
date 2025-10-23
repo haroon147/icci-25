@@ -84,9 +84,7 @@ export default function Scope() {
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary max-w-3xl mx-auto">
-              ICCI-2025 welcomes submissions in all areas of computing and innovation and related fields. 
-              We encourage original research that advances the state of the art in both theoretical 
-              and applied computing and innovation.
+            The ICCI-2025 will cover (but not be limited to) the following research and innovation areas:
             </p>
           </div>
 
@@ -116,7 +114,7 @@ export default function Scope() {
       </section>
 
       {/* Social and Academic Impact */}
-      <section className="section-padding bg-background-white">
+      {/* <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -177,7 +175,7 @@ export default function Scope() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Submission Guidelines */}
       <section className="section-padding bg-background-light">
