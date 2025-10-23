@@ -96,7 +96,7 @@ export default function Registration() {
       </section>
 
       {/* Registration Types */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -159,10 +159,10 @@ export default function Registration() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Registration Process */}
-      <section className="section-padding bg-background-white">
+      {/* <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -213,10 +213,10 @@ export default function Registration() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Payment Methods */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -235,7 +235,7 @@ export default function Registration() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Important Information */}
       <section className="section-padding bg-background-white">

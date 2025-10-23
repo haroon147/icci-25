@@ -4,24 +4,24 @@ export default function Submissions() {
   const submissionTypes = [
     {
       icon: FileText,
-      title: "Full Papers",
+      title: "TechnicalPapers",
       description: "Original research contributions with complete results and analysis",
       pages: "6-8 pages",
       deadline: "November 15, 2025"
     },
     {
       icon: FileText,
-      title: "Short Papers",
-      description: "Work-in-progress or preliminary results with promising contributions",
+      title: "Workshop Proposals ",
+      description: "outlining key content coverage, practical activities, and the required tools and technologies for interactive learning experiences.",
       pages: "4-5 pages",
       deadline: "November 15, 2025"
     },
     {
       icon: FileText,
-      title: "Poster Abstracts",
-      description: "Extended abstracts for poster presentations",
+      title: "PhD Symposia",
+      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
       pages: "2-3 pages",
-      deadline: "November 20, 2025"
+      deadline: "November 15, 2025"
     }
   ];
 
@@ -75,7 +75,7 @@ export default function Submissions() {
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Paper Submissions</h1>
+            <h1 className="text-hero mb-6 font-bold">Submissions</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
               Submit your research contributions to ICCI-2025 and be part of our premier academic conference
             </p>
@@ -211,11 +211,11 @@ export default function Submissions() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Submit Your Paper
+              Submissions
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary max-w-2xl mx-auto mb-8">
-              Ready to submit your research? Use our online submission system to upload your paper 
+              Ready to submit your Research/Proposal/Symposium? Use our online submission system to upload your work 
               and track the review process.
             </p>
           </div>

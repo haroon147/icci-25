@@ -21,14 +21,14 @@ export default function Dates() {
       title: "Camera Ready Submission",
       date: "November 30, 2025",
       status: "upcoming",
-      description: "Final version of accepted papers must be submitted"
+      description: "Final version must be submitted"
     },
     {
       icon: Calendar,
       title: "Conference Date",
       date: "December 8 – 9, 2025",
       status: "upcoming",
-      description: "Two days of presentations, workshops, and networking at Riphah School of Computing & Innovation (RSCI)"
+      description: "Two days of Presentations, Workshops, Panel Dicussion amd Dialogue and Networking at Riphah School of Computing & Innovation (RSCI)"
     }
   ];
 
@@ -208,9 +208,9 @@ export default function Dates() {
                 <ul className="space-y-3 text-body text-text-secondary">
                   <li>• Access to all conference sessions</li>
                   <li>• Conference proceedings (digital)</li>
-                  <li>• Networking events and coffee breaks</li>
+                  <li>• Networking events and Tea/Coffee breaks</li>
                   <li>• Conference materials and certificate</li>
-                  <li>• Welcome reception and gala dinner</li>
+                  <li>• Welcome reception and Lunch</li>
                 </ul>
               </div>
             </div>
