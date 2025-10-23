@@ -15,17 +15,14 @@ export default function Contact() {
       icon: Phone,
       title: "Phone",
       details: [
-        "+92 42 111 747 842",
-        "+92 42 352 128 01-10"
+        "+92335546844"
       ]
     },
     {
       icon: Mail,
       title: "Email",
       details: [
-        "info@icci2025.org",
-        "registration@icci2025.org",
-        "submissions@icci2025.org"
+        "icc@riphah.edu.pk"
       ]
     },
     {

@@ -29,7 +29,7 @@ export default function Footer() {
                 <IconConferenceLogo className="text-white" />
               </div>
               <p className="text-small text-white/80 leading-relaxed">
-                1st International Conference on Computing & Innovation - Bringing together 
+                 International Conference on Computing & Innovation - Bringing together 
                 researchers, practitioners, and students in computing and innovation from around the world.
               </p>
             </div>
@@ -100,13 +100,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
-                <a href="mailto:info@icci2025.org" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  info@icci2025.org
+                <a href="mailto:icc@riphah.edu.pk" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  icc@riphah.edu.pk
                 </a>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
-                <span className="text-small text-white/80">+92 42 111 747 842</span>
+                <span className="text-small text-white/80">+92335546844</span>
               </div>
             </div>
           </div>
