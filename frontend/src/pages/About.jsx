@@ -37,14 +37,11 @@ export default function About() {
                 About the Conference
               </h2>
               <div className="w-24 h-1 bg-accent mb-8"></div>
-              <p className="text-body text-text-secondary mb-6">
-              The 1st International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+              <p className="text-body text-text-secondary mb-6 text-justify">
+              The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
-              <p className="text-body text-text-secondary mb-6">
+              <p className="text-body text-text-secondary mb-6 text-justify">
               It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
-              </p>
-              <p className="text-body text-text-secondary">
-              Together, let's pave the way for a smarter, more connected future. The 1st ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 9th - 10th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
               </p>
             </div>
             

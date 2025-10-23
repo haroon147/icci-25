@@ -199,7 +199,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Conference</h3>
                 <p className="text-body text-text-secondary mb-2">Dates</p>
-                <p className="text-2xl font-bold text-primary">Dec 10-12</p>
+                <p className="text-2xl font-bold text-primary">Dec 8-9</p>
               </div>
             </div>
           </div>

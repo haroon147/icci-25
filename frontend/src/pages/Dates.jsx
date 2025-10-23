@@ -26,7 +26,7 @@ export default function Dates() {
     {
       icon: Calendar,
       title: "Conference Date",
-      date: "December 9 – 10, 2025",
+      date: "December 8 – 9, 2025",
       status: "upcoming",
       description: "Two days of presentations, workshops, and networking at Riphah School of Computing & Innovation (RSCI)"
     }
@@ -174,7 +174,7 @@ export default function Dates() {
               <p className="text-body text-text-secondary mb-4">
                 Limited on-site registration available during the conference days.
               </p>
-              <div className="text-2xl font-bold text-primary">Dec 10-12, 2025</div>
+              <div className="text-2xl font-bold text-primary">Dec 8-9, 2025</div>
             </div>
           </div>
         </div>

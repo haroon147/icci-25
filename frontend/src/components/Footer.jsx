@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Conference:</span><br />
-                December 10-12, 2025
+                December 8-9, 2025
               </li>
             </ul>
           </div>

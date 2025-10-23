@@ -98,7 +98,7 @@ export default function Home() {
             <div className="mb-6 flex justify-center">
               <div className="bg-white/5 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
                 <div className="text-white/90 text-xl font-medium text-center">
-                  📅 10-12 December 2025
+                  📅 8-9 December 2025
                 </div>
                 <div className="text-white/90 text-xl font-medium text-center">
                   📍 Riphah International University, Lahore
@@ -135,14 +135,14 @@ emerging technologies, and transformative ideas.
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <div className="text-center max-w-4xl mx-auto">
-              <p className="text-body text-text-secondary leading-relaxed mb-6">
-                The 1st International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+              <p className="text-body text-text-secondary leading-relaxed mb-6 text-justify">
+                The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
-              <p className="text-body text-text-secondary leading-relaxed mb-6">
+              <p className="text-body text-text-secondary leading-relaxed mb-6 text-justify">
                 It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
               </p>
-              <p className="text-body text-text-secondary leading-relaxed mb-8">
-                Together, let's pave the way for a smarter, more connected future. The 1st ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 9th - 10th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
+              <p className="text-body text-text-secondary leading-relaxed mb-8 text-justify">
+                Together, let's pave the way for a smarter, more connected future. The ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
               </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ emerging technologies, and transformative ideas.
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
               <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-subheading font-medium text-text-primary mb-2">Conference Date</h3>
-              <p className="text-body text-text-secondary">December 10-12, 2025</p>
+              <p className="text-body text-text-secondary">December 8-9, 2025</p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
@@ -223,11 +223,21 @@ emerging technologies, and transformative ideas.
                   <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
                   <div>
                     <h3 className="text-subheading font-medium text-text-primary mb-2">
-                    Research Collaboration
+                  Community Empowerment
                     </h3>
                     <p className="text-body text-text-secondary">
-                    Facilitate networking for joint research, funded projects, and innovation ecosystems.
+                    Inspire young researchers and students to pursue computing solutions for sustainable development.
                     </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <div>
+                    <h3 className="text-subheading font-medium text-text-primary mb-2">
+                      Economic Impact
+                    </h3>
+                    <p className="text-body text-text-secondary">
+                    Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.                    </p>
                   </div>
                 </div>
               </div>
@@ -253,7 +263,7 @@ emerging technologies, and transformative ideas.
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>
-                  <span className="text-body font-medium">December 10-12, 2025</span>
+                  <span className="text-body font-medium">December 8-9, 2025</span>
                 </div>
               </div>
             </div>
