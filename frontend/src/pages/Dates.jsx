@@ -14,7 +14,7 @@ export default function Dates() {
       title: "Notification of Acceptance",
       date: "November 25, 2025",
       status: "upcoming",
-      description: "Authors will be notified about paper acceptance decisions"
+      description: "Authors will be notified about decisions"
     },
     {
       icon: CheckCircle,
