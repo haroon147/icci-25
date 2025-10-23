@@ -112,7 +112,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <p className="text-body text-white/90 mb-8 content-container-md text-content-center text-break">
+            <p className="text-body text-white/90 mb-8 content-container-md text-beautiful">
             Join leading researchers, innovators, practitioners, and students in computer science and related
 disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
 emerging technologies, and transformative ideas.

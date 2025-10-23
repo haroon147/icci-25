@@ -4,7 +4,7 @@ export default function Submissions() {
   const submissionTypes = [
     {
       icon: FileText,
-      title: "TechnicalPapers",
+      title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "6-8 pages",
       deadline: "November 15, 2025"

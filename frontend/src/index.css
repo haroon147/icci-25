@@ -96,7 +96,11 @@
   
   /* Text Overflow Prevention */
   .text-break {
-    @apply break-words break-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: none;
+    line-height: 1.6;
   }
   
   .text-ellipsis {
@@ -108,6 +112,37 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+  }
+
+  /* Better Text Wrapping */
+  .text-wrap-proper {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: none;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .text-justify-proper {
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 0.05em;
+    line-height: 1.6;
+    word-break: keep-all;
+    hyphens: none;
+  }
+
+  /* Beautiful Text Alignment */
+  .text-beautiful {
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 0.05em;
+    line-height: 1.7;
+    word-break: keep-all;
+    hyphens: none;
+    overflow-wrap: break-word;
   }
   
   /* Responsive Text Alignment */
