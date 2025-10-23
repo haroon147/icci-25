@@ -5,7 +5,7 @@ export default function Dates() {
     {
       icon: Calendar,
       title: "Call for Technical Paper / Workshop Proposal / PhD Symposia",
-      date: "October 30, 2025",
+      date: "November 15, 2025",
       status: "upcoming",
       description: "Last date for submitting technical papers, workshop proposals, and PhD symposium abstracts"
     },
