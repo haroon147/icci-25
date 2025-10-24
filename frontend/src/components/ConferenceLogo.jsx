@@ -5,17 +5,18 @@ export default function ConferenceLogo({ className = "", size = "default" }) {
     small: "h-12 w-12",
     default: "h-16 w-16", 
     large: "h-20 w-20",
-    xlarge: "h-24 w-24"
+    xlarge: "h-24 w-24",
+    custom: "h-16 w-18" // Smaller, more appropriate for navbar
   };
 
   return (
     <div className={`flex items-center ${className}`}>
       {/* Conference Logo Image Only */}
-      <div className={`${sizeClasses[size]} rounded-xl flex items-center justify-center shadow-2xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10`}>
+      <div className={`${sizeClasses[size]} flex items-center justify-center overflow-hidden bg-transparent`}>
         <img 
-          src="/Conference Logo.jpg" 
+          src="/Conference Logo.png" 
           alt="ICCI-2025 Conference Logo"
-          className="w-full h-full object-contain rounded-xl"
+          className="w-full h-full object-contain"
         />
       </div>
     </div>
@@ -26,11 +27,11 @@ export default function ConferenceLogo({ className = "", size = "default" }) {
 export function MinimalConferenceLogo({ className = "" }) {
   return (
     <div className={`flex items-center ${className}`}>
-      <div className="h-14 w-14 rounded-xl flex items-center justify-center shadow-xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
+      <div className="h-16 w-18 flex items-center justify-center overflow-hidden bg-transparent">
         <img 
-          src="/Conference Logo.jpg" 
+          src="/Conference Logo.png" 
           alt="ICCI-2025"
-          className="w-full h-full object-contain rounded-xl"
+          className="w-full h-full object-contain"
         />
       </div>
     </div>
@@ -43,15 +44,16 @@ export function IconConferenceLogo({ className = "", size = "default" }) {
     small: "h-12 w-12",
     default: "h-16 w-16", 
     large: "h-20 w-20",
-    xlarge: "h-24 w-24"
+    xlarge: "h-24 w-24",
+    custom: "h-16 w-18"
   };
 
   return (
-    <div className={`${sizeClasses[size]} rounded-xl shadow-2xl ${className} overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10`}>
+    <div className={`${sizeClasses[size]} ${className} overflow-hidden bg-transparent`}>
       <img 
-        src="/Conference Logo.jpg" 
+        src="/Conference Logo.png" 
         alt="ICCI-2025"
-        className="w-full h-full object-contain rounded-xl"
+        className="w-full h-full object-contain"
       />
     </div>
   );

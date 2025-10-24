@@ -16,7 +16,7 @@ export default function Header() {
     { name: 'Speakers', href: '/speakers' },
     { name: 'Committees', href: '/committees' },
     { name: 'Submissions', href: '/submissions' },
-    { name: 'Proceedings', href: '/proceedings' },
+    { name: 'Schedule', href: '/proceedings' },
     { name: 'Registration', href: '/registration' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -37,9 +37,9 @@ export default function Header() {
         : 'bg-white/95 backdrop-blur-sm'
     }`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center">
-            <ConferenceLogo size="default" />
+        <div className="flex justify-between items-center py-2">
+          <Link to="/" className="flex items-center -ml-2">
+            <ConferenceLogo size="xlarge" />
           </Link>
 
           {/* Desktop Navigation */}

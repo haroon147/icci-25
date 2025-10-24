@@ -7,7 +7,7 @@ import Dates from './pages/Dates';
 import Speakers from './pages/Speakers';
 import Committees from './pages/Committees';
 import Submissions from './pages/Submissions';
-import Proceedings from './pages/Proceedings';
+import Schedule from './pages/Schedule';
 import Registration from './pages/Registration';
 import Contact from './pages/Contact';
 import Login from './pages/admin/Login';
@@ -31,7 +31,7 @@ function App() {
                 <Route path="/speakers" element={<Speakers />} />
                 <Route path="/committees" element={<Committees />} />
                 <Route path="/submissions" element={<Submissions />} />
-                <Route path="/proceedings" element={<Proceedings />} />
+                <Route path="/proceedings" element={<Schedule />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
