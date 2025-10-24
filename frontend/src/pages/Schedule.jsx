@@ -1,6 +1,6 @@
 import { BookOpen, Download, Award, Globe, FileText } from 'lucide-react';
 
-export default function Proceedings() {
+export default function Schedule() {
   const proceedingsInfo = [
     {
       icon: BookOpen,
@@ -64,9 +64,9 @@ export default function Proceedings() {
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Conference Proceedings</h1>
+            <h1 className="text-hero mb-6 font-bold">Conference Schedule</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
-              Explore our high-quality conference proceedings and published research contributions
+        
             </p>
           </div>
         </div>
@@ -77,16 +77,16 @@ export default function Proceedings() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              ICCI-2025 Proceedings
+              Conference Scheduled will be shared Soon.
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary max-w-3xl mx-auto">
+            {/* <p className="text-body text-text-secondary max-w-3xl mx-auto">
               All accepted and presented papers will be published in the ICCI-2025 conference proceedings, 
               ensuring your research reaches the global academic community.
-            </p>
+            </p> */}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {proceedingsInfo.map((info, index) => {
               const Icon = info.icon;
               return (
@@ -102,12 +102,12 @@ export default function Proceedings() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Publication Details */}
-      <section className="section-padding bg-background-white">
+      {/* <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -196,10 +196,10 @@ export default function Proceedings() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Previous Proceedings */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -245,10 +245,10 @@ export default function Proceedings() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Download & Access */}
-      <section className="section-padding bg-background-white">
+      {/* <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -276,7 +276,7 @@ export default function Proceedings() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

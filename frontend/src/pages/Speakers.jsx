@@ -89,9 +89,12 @@ export default function Speakers() {
               Our keynote speakers are internationally recognized experts who will provide 
               insights into the latest developments and future directions in computer science.
             </p>
+            <br />
+            <br /><br /><br /><br />
+            <p><b>Details will be Annouced Shortly</b></p>
           </div>
 
-          <div className="space-y-12">
+          {/* <div className="space-y-12">
             {keynoteSpeakers.map((speaker, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
@@ -123,7 +126,7 @@ export default function Speakers() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -137,11 +140,16 @@ export default function Speakers() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary max-w-3xl mx-auto">
               Join us for presentations by leading researchers and practitioners from around the world, 
-              covering diverse topics in computer science.
+              covering diverse topics in computing domain.
             </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p><b> Will be Annouced Lator</b> </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {invitedSpeakers.map((speaker, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="flex items-start">
@@ -158,7 +166,7 @@ export default function Speakers() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
