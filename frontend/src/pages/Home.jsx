@@ -303,7 +303,7 @@ emerging technologies, and transformative ideas.
             <div className="flex animate-scroll">
               {/* First set */}
               {collaborators.map((collaborator, index) => (
-                <div key={`first-${index}`} className="flex-shrink-0 w-96 mx-8">
+                <div key={`first-${index}`} className="flex-shrink-0 w-96 mx-4">
                   <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
                     <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
                       <img
@@ -326,7 +326,53 @@ emerging technologies, and transformative ideas.
               ))}
               {/* Second set for seamless loop */}
               {collaborators.map((collaborator, index) => (
-                <div key={`second-${index}`} className="flex-shrink-0 w-96 mx-8">
+                <div key={`second-${index}`} className="flex-shrink-0 w-96 mx-4">
+                  <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
+                      <img
+                        src={collaborator.logo}
+                        alt={collaborator.name}
+                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                        <Globe className="h-20 w-20 text-white" />
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Third set for extra smoothness */}
+              {collaborators.map((collaborator, index) => (
+                <div key={`third-${index}`} className="flex-shrink-0 w-96 mx-4">
+                  <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
+                      <img
+                        src={collaborator.logo}
+                        alt={collaborator.name}
+                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                        <Globe className="h-20 w-20 text-white" />
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Fourth set for perfect seamless loop */}
+              {collaborators.map((collaborator, index) => (
+                <div key={`fourth-${index}`} className="flex-shrink-0 w-96 mx-4">
                   <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
                     <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
                       <img
@@ -366,7 +412,7 @@ emerging technologies, and transformative ideas.
             <div className="flex animate-scroll-reverse">
               {/* First set */}
               {sponsors.map((sponsor, index) => (
-                <div key={`sponsor-first-${index}`} className="flex-shrink-0 w-96 mx-8">
+                <div key={`sponsor-first-${index}`} className="flex-shrink-0 w-96 mx-4">
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
@@ -401,7 +447,7 @@ emerging technologies, and transformative ideas.
               ))}
               {/* Second set for seamless loop */}
               {sponsors.map((sponsor, index) => (
-                <div key={`sponsor-second-${index}`} className="flex-shrink-0 w-96 mx-8">
+                <div key={`sponsor-second-${index}`} className="flex-shrink-0 w-96 mx-4">
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
@@ -416,6 +462,74 @@ emerging technologies, and transformative ideas.
                     </div>
                     
                     <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                      <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                        <Award className="h-20 w-20 text-white" />
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{sponsor.description}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Third set for extra smoothness */}
+              {sponsors.map((sponsor, index) => (
+                <div key={`sponsor-third-${index}`} className="flex-shrink-0 w-96 mx-4">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
+                    {/* Sponsor tier badge */}
+                    <div className="absolute top-6 right-6">
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
+                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                        sponsor.tier === 'Silver' ? 'tier-badge-silver' :
+                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                        'tier-badge-media'
+                      }`}>
+                        {sponsor.tier}
+                      </span>
+                    </div>
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
+                      <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                        <Award className="h-20 w-20 text-white" />
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{sponsor.name}</h3>
+                    <p className="text-sm text-text-secondary leading-relaxed text-break">{sponsor.description}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Fourth set for perfect seamless loop */}
+              {sponsors.map((sponsor, index) => (
+                <div key={`sponsor-fourth-${index}`} className="flex-shrink-0 w-96 mx-4">
+                  <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
+                    {/* Sponsor tier badge */}
+                    <div className="absolute top-6 right-6">
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
+                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                        sponsor.tier === 'Silver' ? 'tier-badge-silver' :
+                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                        'tier-badge-media'
+                      }`}>
+                        {sponsor.tier}
+                      </span>
+                    </div>
+                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}

@@ -187,11 +187,11 @@
   }
 
   .animate-scroll {
-    animation: scroll 3s linear infinite;
+    animation: scroll 6s linear infinite;
   }
 
   .animate-scroll-reverse {
-    animation: scroll-reverse 3s linear infinite;
+    animation: scroll-reverse 6s linear infinite;
   }
 
   .animate-scroll:hover,
@@ -239,7 +239,7 @@
     transform: translate(-50%, -50%);
     width: auto;
     opacity: 0;
-    animation: fadeInOut 12s infinite ease-in-out;
+    animation: fadeInOut 3s infinite ease-in-out;
     white-space: nowrap;
     text-align: center;
     padding: 0 1rem;
@@ -250,11 +250,11 @@
   }
   
   .rotating-text span:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 1s;
   }
   
   .rotating-text span:nth-child(3) {
-    animation-delay: 8s;
+    animation-delay: 2s;
   }
   
   @keyframes fadeInOut {
