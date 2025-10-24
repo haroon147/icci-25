@@ -163,7 +163,7 @@ export default function Dates() {
               <p className="text-body text-text-secondary mb-4 text-break">
                 Standard registration rates apply after the early bird deadline.
               </p>
-              <div className="text-2xl font-bold text-primary">Dec 1-5, 2025</div>
+              <div className="text-2xl font-bold text-primary">Dec 1-7, 2025</div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">

@@ -114,7 +114,7 @@ export default function Footer() {
 
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-small text-white/60 mb-4 md:mb-0">
-            &copy; 2025 1st International Conference on Computing & Innovation. All rights reserved.
+            &copy; 2025 International Conference on Computing & Innovation. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-small text-white/60 hover:text-accent transition-colors duration-300">
@@ -122,6 +122,9 @@ export default function Footer() {
             </Link>
             <Link to="/terms" className="text-small text-white/60 hover:text-accent transition-colors duration-300">
               Terms of Service
+            </Link>
+            <Link>
+            MHA Solutions
             </Link>
           </div>
         </div>

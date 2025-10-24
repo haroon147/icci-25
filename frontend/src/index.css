@@ -187,11 +187,11 @@
   }
 
   .animate-scroll {
-    animation: scroll 40s linear infinite;
+    animation: scroll 20s linear infinite;
   }
 
   .animate-scroll-reverse {
-    animation: scroll-reverse 40s linear infinite;
+    animation: scroll-reverse 20s linear infinite;
   }
 
   .animate-scroll:hover,
@@ -274,5 +274,61 @@
       opacity: 0;
       transform: translate(-50%, -50%) translateY(10px) scale(0.95);
     }
+  }
+
+  /* Enhanced Sponsor and Collaborator Card Styles */
+  .sponsor-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      0 4px 16px rgba(0, 0, 0, 0.05),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .sponsor-card:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.15),
+      0 8px 24px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px) scale(1.02);
+  }
+
+  .sponsor-image-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.1),
+      0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .sponsor-image-container:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 
+      0 12px 32px rgba(0, 0, 0, 0.15),
+      0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Glow effect for sponsor tier badges */
+  .tier-badge-gold {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    box-shadow: 0 4px 14px rgba(251, 191, 36, 0.3);
+  }
+
+  .tier-badge-silver {
+    background: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    box-shadow: 0 4px 14px rgba(156, 163, 175, 0.3);
+  }
+
+  .tier-badge-bronze {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
+  }
+
+  .tier-badge-media {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
   }
 }
