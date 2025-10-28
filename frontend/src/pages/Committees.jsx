@@ -181,64 +181,72 @@ export default function Committees() {
       <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
+            <h2 className="text-section mb-2 font-semibold text-text-primary">
               Patron-in-Chief
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             {patronInChief.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-white via-gray-50 to-white p-16 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center border border-gray-100 hover:border-primary/30 hover:scale-105 relative overflow-hidden">
+              <div key={index} className="bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-100 hover:border-primary/30 hover:scale-[1.01] relative overflow-hidden group">
                 {/* Background decoration */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl"></div>
                 
-                <div className="relative mb-12">
-                  <div className="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-primary shadow-2xl bg-white relative">
-                    {/* Image container with enhanced styling */}
-                    <div className="absolute inset-2 rounded-full overflow-hidden">
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
-                        }}
-                      />
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Crown className="h-20 w-20 text-white" />
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 p-12 md:p-16">
+                  {/* Image Section - Left */}
+                  <div className="flex items-center justify-center">
+                    <div className="relative">
+                      <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
+                        {/* Image container with enhanced styling */}
+                        <div className="absolute inset-2 rounded-full overflow-hidden">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              e.target.nextSibling.style.display = 'flex';
+                            }}
+                          />
+                          <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                            <Crown className="h-20 w-20 text-white" />
+                          </div>
+                        </div>
+                        {/* Decorative ring */}
+                        <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
+                      </div>
+                      
+                      {/* Title badge (in-flow, centered) */}
+                      <div className="flex justify-center mt-4">
+                        <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
+                          {member.title}
+                        </div>
                       </div>
                     </div>
-                    {/* Decorative ring */}
-                    <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
                   </div>
                   
-                  {/* Enhanced title badge */}
-                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-accent via-accent to-primary text-white px-8 py-3 rounded-full text-xl font-bold shadow-xl border-2 border-white">
-                      {member.title}
+                  {/* Content Section - Right */}
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-text-primary mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{member.name}</h3>
+                      <p className="text-xl md:text-2xl text-text-secondary mb-4 font-semibold">{member.affiliation}</p>
+                      <p className="text-lg text-text-muted leading-relaxed">{member.expertise}</p>
                     </div>
-                  </div>
-                </div>
-                
-                <div className="relative z-10">
-                  <h3 className="text-responsive-xl font-bold text-text-primary mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent text-break">{member.name}</h3>
-                  <p className="text-responsive-lg text-text-secondary mb-6 font-semibold text-break">{member.affiliation}</p>
-                  <p className="text-responsive text-text-muted mb-8 leading-relaxed content-container-lg text-break">{member.expertise}</p>
-                  
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a 
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary-dark text-white rounded-xl hover:from-primary-dark hover:to-primary transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-                    >
-                      <User className="h-6 w-6 mr-3" />
-                      Contact
-                    </a>
-                    <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-accent to-accent-dark text-white rounded-xl hover:from-accent-dark hover:to-accent transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105">
-                      <Globe className="h-6 w-6 mr-3" />
-                      View Profile
-                    </button>
+                    
+                    <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                      <a 
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-primary-dark text-white rounded-xl hover:from-primary-dark hover:to-primary transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
+                      >
+                        <User className="h-6 w-6 mr-3" />
+                        Contact
+                      </a>
+                      <button className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent to-accent-dark text-white rounded-xl hover:from-accent-dark hover:to-accent transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105">
+                        <Globe className="h-6 w-6 mr-3" />
+                        View Profile
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -257,40 +265,60 @@ export default function Committees() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             {convenorChair.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-white to-gray-50 p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center border border-gray-100 hover:border-primary/20 hover:scale-105">
-                <div className="relative mb-8">
-                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-6 border-primary shadow-2xl bg-white">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
-                    <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                      <Award className="h-16 w-16 text-white" />
+              <div key={index} className="bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-100 hover:border-primary/30 hover:scale-[1.01] relative overflow-hidden group">
+                {/* Background decoration */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl"></div>
+                
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 p-12 md:p-16">
+                  {/* Image Section - Left */}
+                  <div className="flex items-center justify-center">
+                    <div className="relative">
+                      <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                          <Award className="h-16 w-16 text-white" />
+                        </div>
+                        <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
+                      </div>
+                      
+                      {/* Title badge (in-flow, centered) */}
+                      <div className="flex justify-center mt-4">
+                        <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
+                          {member.title}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-accent to-accent-dark text-white px-6 py-2 rounded-full text-lg font-bold shadow-lg">
-                      {member.title}
+                  
+                  {/* Content Section - Right */}
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-text-primary mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{member.name}</h3>
+                      <p className="text-xl md:text-2xl text-text-secondary mb-4 font-semibold">{member.affiliation}</p>
+                      <p className="text-lg text-text-muted leading-relaxed">{member.expertise}</p>
+                    </div>
+                    
+                    <div className="mt-6">
+                      <a 
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-xl hover:bg-primary-dark transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
+                      >
+                        <User className="h-6 w-6 mr-3" />
+                        Contact
+                      </a>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-responsive-xl font-bold text-text-primary mb-4 text-break">{member.name}</h3>
-                <p className="text-responsive-lg text-text-secondary mb-4 text-break">{member.affiliation}</p>
-                <p className="text-responsive text-text-muted mb-6 text-break">{member.expertise}</p>
-                <a 
-                  href={`mailto:${member.email}`}
-                  className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
-                >
-                  <User className="h-5 w-5 mr-2" />
-                  Contact
-                </a>
               </div>
             ))}
           </div>
@@ -307,40 +335,60 @@ export default function Committees() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
             {coConvenorCoChair.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center border border-gray-100 hover:border-accent/20 hover:scale-105">
-                <div className="relative mb-6">
-                  <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-5 border-accent shadow-2xl bg-white">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
-                    <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                      <UserCheck className="h-14 w-14 text-white" />
+              <div key={index} className="bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-100 hover:border-primary/30 hover:scale-[1.01] relative overflow-hidden group">
+                {/* Background decoration */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl"></div>
+                
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 p-10 md:p-12">
+                  {/* Image Section - Left */}
+                  <div className="flex items-center justify-center">
+                    <div className="relative">
+                      <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-6 border-accent shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                          <UserCheck className="h-14 w-14 text-white" />
+                        </div>
+                        <div className="absolute inset-0 rounded-full border-4 border-primary/20 animate-pulse"></div>
+                      </div>
+                      
+                      {/* Title badge (in-flow, centered) */}
+                      <div className="flex justify-center mt-4">
+                        <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
+                          {member.title}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-primary to-primary-dark text-white px-5 py-2 rounded-full text-base font-bold shadow-lg">
-                      {member.title}
+                  
+                  {/* Content Section - Right */}
+                  <div className="flex flex-col justify-center space-y-4">
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-3 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{member.name}</h3>
+                      <p className="text-lg md:text-xl text-text-secondary mb-3 font-semibold">{member.affiliation}</p>
+                      <p className="text-base text-text-muted leading-relaxed">{member.expertise}</p>
+                    </div>
+                    
+                    <div className="mt-4">
+                      <a 
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-xl hover:bg-accent-dark transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
+                      >
+                        <User className="h-5 w-5 mr-2" />
+                        Contact
+                      </a>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-responsive-lg font-bold text-text-primary mb-3 text-break">{member.name}</h3>
-                <p className="text-responsive text-text-secondary mb-3 text-break">{member.affiliation}</p>
-                <p className="text-responsive-sm text-text-muted mb-5 text-break">{member.expertise}</p>
-                <a 
-                  href={`mailto:${member.email}`}
-                  className="inline-flex items-center px-5 py-2 bg-accent text-white rounded-xl hover:bg-accent-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
-                >
-                  <User className="h-4 w-4 mr-2" />
-                  Contact
-                </a>
               </div>
             ))}
           </div>
@@ -357,40 +405,60 @@ export default function Committees() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             {secretary.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-white to-gray-50 p-12 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center border border-gray-100 hover:border-accent/20 hover:scale-105">
-                <div className="relative mb-8">
-                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-6 border-accent shadow-2xl bg-white">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
-                    <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                      <BookOpen className="h-16 w-16 text-white" />
+              <div key={index} className="bg-gradient-to-br from-white via-gray-50 to-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 border border-gray-100 hover:border-primary/30 hover:scale-[1.01] relative overflow-hidden group">
+                {/* Background decoration */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl"></div>
+                
+                <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 p-12 md:p-16">
+                  {/* Image Section - Left */}
+                  <div className="flex items-center justify-center">
+                    <div className="relative">
+                      <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-accent shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                          <BookOpen className="h-16 w-16 text-white" />
+                        </div>
+                        <div className="absolute inset-0 rounded-full border-4 border-primary/20 animate-pulse"></div>
+                      </div>
+                      
+                      {/* Title badge (in-flow, centered) */}
+                      <div className="flex justify-center mt-4">
+                        <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
+                          {member.title}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-accent to-accent-dark text-white px-6 py-2 rounded-full text-lg font-bold shadow-lg">
-                      {member.title}
+                  
+                  {/* Content Section - Right */}
+                  <div className="flex flex-col justify-center space-y-6">
+                    <div>
+                      <h3 className="text-3xl md:text-4xl font-bold text-text-primary mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{member.name}</h3>
+                      <p className="text-xl md:text-2xl text-text-secondary mb-4 font-semibold">{member.affiliation}</p>
+                      <p className="text-lg text-text-muted leading-relaxed">{member.expertise}</p>
+                    </div>
+                    
+                    <div className="mt-6">
+                      <a 
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center px-8 py-4 bg-accent text-white rounded-xl hover:bg-accent-dark transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
+                      >
+                        <User className="h-6 w-6 mr-3" />
+                        Contact
+                      </a>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-responsive-xl font-bold text-text-primary mb-4 text-break">{member.name}</h3>
-                <p className="text-responsive-lg text-text-secondary mb-4 text-break">{member.affiliation}</p>
-                <p className="text-responsive text-text-muted mb-6 text-break">{member.expertise}</p>
-                <a 
-                  href={`mailto:${member.email}`}
-                  className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-xl hover:bg-accent-dark transition-colors duration-300 font-semibold shadow-lg hover:shadow-xl"
-                >
-                  <User className="h-5 w-5 mr-2" />
-                  Contact
-                </a>
               </div>
             ))}
           </div>
@@ -423,7 +491,7 @@ export default function Committees() {
                       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl"></div>
                       
                       <div className="relative z-10">
-                        <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl mb-6 relative">
+                        <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl mb-6 relative">
                           <img
                             src={member.image}
                             alt={member.name}
@@ -468,7 +536,7 @@ export default function Committees() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl"></div>
                 
                 <div className="relative z-10">
-                  <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl mb-6 relative">
+                  <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-primary shadow-xl mb-6 relative">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -510,7 +578,7 @@ export default function Committees() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl"></div>
                 
                 <div className="relative z-10">
-                  <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-accent shadow-xl mb-6 relative">
+                  <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-accent shadow-xl mb-6 relative">
                     <img
                       src={member.image}
                       alt={member.name}
