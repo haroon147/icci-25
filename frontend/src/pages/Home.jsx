@@ -300,7 +300,7 @@ emerging technologies, and transformative ideas.
 
           {/* Collaborators Carousel */}
           <div className="relative overflow-hidden mb-16">
-            <div className="flex animate-scroll">
+            <div className="flex animate-none md:animate-scroll">
               {/* First set */}
               {collaborators.map((collaborator, index) => (
                 <div key={`first-${index}`} className="flex-shrink-0 w-96 mx-4">
@@ -409,7 +409,7 @@ emerging technologies, and transformative ideas.
 
           {/* Sponsors Carousel */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-reverse">
+            <div className="flex animate-none md:animate-scroll-reverse">
               {/* First set */}
               {sponsors.map((sponsor, index) => (
                 <div key={`sponsor-first-${index}`} className="flex-shrink-0 w-96 mx-4">

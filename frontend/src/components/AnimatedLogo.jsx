@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function AnimatedLogo({ className = "", size = "default" }) {
+  const [reduceMotion, setReduceMotion] = useState(false);
+  const [isSmall, setIsSmall] = useState(false);
+
+  useEffect(() => {
+    const mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const mqSmall = window.matchMedia('(max-width: 640px)');
+    const update = () => {
+      setReduceMotion(mqReduce.matches);
+      setIsSmall(mqSmall.matches);
+    };
+    update();
+    mqReduce.addEventListener?.('change', update);
+    mqSmall.addEventListener?.('change', update);
+    return () => {
+      mqReduce.removeEventListener?.('change', update);
+      mqSmall.removeEventListener?.('change', update);
+    };
+  }, []);
   const sizeClasses = {
     small: "h-8 w-8",
     default: "h-12 w-12", 
@@ -11,8 +29,10 @@ export default function AnimatedLogo({ className = "", size = "default" }) {
     <div className={`flex items-center ${className}`}>
       {/* Animated Logo Icon */}
       <div className={`${sizeClasses[size]} bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mr-3 shadow-lg border-2 border-accent/20 relative overflow-hidden`}>
-        {/* Animated background pulse */}
-        <div className="absolute inset-0 bg-accent/10 animate-pulse rounded-xl"></div>
+        {/* Animated background pulse (disabled on small/reduced motion) */}
+        {!(reduceMotion || isSmall) && (
+          <div className="absolute inset-0 bg-accent/10 animate-pulse rounded-xl"></div>
+        )}
         
         <svg 
           viewBox="0 0 48 48" 
@@ -24,19 +44,30 @@ export default function AnimatedLogo({ className = "", size = "default" }) {
           <rect x="14" y="18" width="20" height="8" fill="#0b2e4d" opacity="0.8"/>
           <rect x="18" y="20" width="12" height="4" fill="#FDB813"/>
           
-          {/* Animated innovation sparks */}
-          <path d="M24 6l1.5 6 6 1.5-6 1.5-1.5 6-1.5-6-6-1.5 6-1.5z" fill="#FDB813" opacity="0.9">
-            <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
-          </path>
-          <path d="M34 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.7">
-            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
-          </path>
-          <path d="M14 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.7">
-            <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.2s" repeatCount="indefinite"/>
-          </path>
-          <path d="M24 36l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.6">
-            <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
-          </path>
+          {/* Animated innovation sparks (disabled on small/reduced motion) */}
+          {reduceMotion || isSmall ? (
+            <>
+              <path d="M24 6l1.5 6 6 1.5-6 1.5-1.5 6-1.5-6-6-1.5 6-1.5z" fill="#FDB813" opacity="0.7"/>
+              <path d="M34 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.5"/>
+              <path d="M14 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.5"/>
+              <path d="M24 36l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.4"/>
+            </>
+          ) : (
+            <>
+              <path d="M24 6l1.5 6 6 1.5-6 1.5-1.5 6-1.5-6-6-1.5 6-1.5z" fill="#FDB813" opacity="0.9">
+                <animate attributeName="opacity" values="0.9;0.5;0.9" dur="2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M34 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.7">
+                <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.5s" repeatCount="indefinite"/>
+              </path>
+              <path d="M14 14l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.7">
+                <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M24 36l1 4 4 1-4 1-1 4-1-4-4-1 4-1z" fill="#FDB813" opacity="0.6">
+                <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+              </path>
+            </>
+          )}
         </svg>
       </div>
       

@@ -187,11 +187,11 @@
   }
 
   .animate-scroll {
-    animation: scroll 6s linear infinite;
+    animation: scroll 12s linear infinite;
   }
 
   .animate-scroll-reverse {
-    animation: scroll-reverse 6s linear infinite;
+    animation: scroll-reverse 12s linear infinite;
   }
 
   .animate-scroll:hover,
@@ -332,4 +332,22 @@
     box-shadow: 0 4px 14px rgba(59, 130, 246, 0.3);
   }
 
+}
+
+/* Reduce or disable animations on users preferring reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll,
+  .animate-scroll-reverse,
+  .blink,
+  .rotating-text span {
+    animation: none !important;
+  }
+}
+
+/* Mobile: turn off marquee/auto scroll animations to avoid jank */
+@media (max-width: 640px) {
+  .animate-scroll,
+  .animate-scroll-reverse {
+    animation: none !important;
+  }
 }
