@@ -350,4 +350,25 @@
   .animate-scroll-reverse {
     animation: none !important;
   }
+
+  /* Make rotating text block fully responsive on small screens */
+  .rotating-text-wrapper {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .rotating-text {
+    position: static;
+    display: block;
+  }
+  .rotating-text span {
+    position: static;
+    transform: none;
+    opacity: 1;
+    animation: none !important;
+    display: block;
+    white-space: normal;
+    padding: 0.25rem 0.5rem;
+  }
 }

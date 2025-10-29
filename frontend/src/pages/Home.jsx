@@ -91,47 +91,64 @@ export default function Home() {
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">
-              
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on
-              <br />
+              <br className="hidden sm:block" />
+              <span className="block sm:inline"> </span>
               <span className="text-accent">Computing & Innovation</span>
-              <br />
+              <br className="hidden sm:block" />
+              <span className="block sm:inline"> </span>
               <span className="text-accent">(ICCI-2025)</span>
             </h1>
             
-            {/* Conference Date */}
-            <div className="mb-8 flex justify-center">
-              <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4  border border-white/30 shadow-xl inline-block max-w-full">
-                <div className="rotating-text-wrapper">
-                  <div className="rotating-text">
-                    <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+            {/* Conference Date - Mobile Stacked, Desktop Rotating */}
+            <div className="mb-8 flex justify-center px-4">
+              {/* Mobile: Stack all items */}
+              <div className="md:hidden w-full">
+                <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/30 shadow-xl">
+                  <div className="space-y-2">
+                    <div className="text-white text-sm font-semibold text-center">
                       📅 8-9 December 2025
-                    </span>
-                    <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+                    </div>
+                    <div className="text-white text-sm font-semibold text-center">
                       📍 Riphah International University, Lahore
-                    </span>
-                    <span className="text-white text-lg font-semibold text-center whitespace-nowrap">
+                    </div>
+                    <div className="text-white text-xs font-semibold text-center">
                       🏛️ Riphah School of Computing & Innovation
-                    </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Desktop: Rotating animation */}
+              <div className="hidden md:block">
+                <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4 border border-white/30 shadow-xl inline-block max-w-full overflow-hidden">
+                  <div className="rotating-text-wrapper">
+                    <div className="rotating-text">
+                      <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+                        📅 8-9 December 2025
+                      </span>
+                      <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
+                        📍 Riphah International University, Lahore
+                      </span>
+                      <span className="text-white text-lg font-semibold text-center whitespace-nowrap">
+                        🏛️ Riphah School of Computing & Innovation
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-body text-white/90 mb-8 content-container-md text-beautiful">
-            Join leading researchers, innovators, practitioners, and students in computer science and related
-disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
-emerging technologies, and transformative ideas.
+            <p className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful">
+              Join leading researchers, innovators, practitioners, and students in computer science and related
+              disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
+              emerging technologies, and transformative ideas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center relative">
-              <div className="relative flex items-center justify-center">
-               
-                <button className="btn-primary bg-accent hover:bg-accent-dark text-primary flex items-center justify-center relative z-10">
-                  Submission
-            
-                </button>
-              </div>
-              <button className="btn-secondary border-white text-white hover:bg-white hover:text-primary">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+              <button className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold">
+                Submission
+              </button>
+              <button className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold">
                 Register Now
               </button>
             </div>
