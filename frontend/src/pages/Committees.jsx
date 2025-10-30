@@ -70,7 +70,7 @@ export default function Committees() {
       track: "Data Science and Big Data Analytics",
       members: [
         { name: "Dr. Ali Haider", affiliation: "School of Computing, Beijing Technology University, China", image: "/committee-members/dr-ali-haider.jpg" },
-        { name: "Dr. Asif Nauman", affiliation: "Assistant Professor, Riphah International University, Lahore", image: "/committee-members/dr-asif-nauman.jpg" },
+        { name: "Dr. Asif Nauman", affiliation: "Assistant Professor, Riphah International University, Lahore", image: "data:image/jpeg;base64,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" },
         { name: "Dr. Tauqeer Mehmood", affiliation: "Assistant Professor, National Textile University, Faisalabad", image: "data:image/jpeg;base64,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" }
 
       ]
@@ -198,34 +198,34 @@ export default function Committees() {
                   <div className="flex items-center justify-center">
                     <div className="relative">
                       <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
-                        {/* Image container with enhanced styling */}
-                        <div className="absolute inset-2 rounded-full overflow-hidden">
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-full h-full object-cover"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                              e.target.nextSibling.style.display = 'flex';
-                            }}
-                          />
-                          <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                            <Crown className="h-20 w-20 text-white" />
-                          </div>
-                        </div>
-                        {/* Decorative ring */}
-                        <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
+                    {/* Image container with enhanced styling */}
+                    <div className="absolute inset-2 rounded-full overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.nextSibling.style.display = 'flex';
+                        }}
+                      />
+                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                        <Crown className="h-20 w-20 text-white" />
                       </div>
-                      
+                    </div>
+                    {/* Decorative ring */}
+                    <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
+                  </div>
+                  
                       {/* Title badge (in-flow, centered) */}
                       <div className="flex justify-center mt-4">
                         <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
-                          {member.title}
+                      {member.title}
                         </div>
-                      </div>
                     </div>
                   </div>
-                  
+                </div>
+                
                   {/* Content Section - Right */}
                   <div className="flex flex-col justify-center space-y-6">
                     <div>
@@ -235,17 +235,17 @@ export default function Committees() {
                     </div>
                     
                     <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                      <a 
-                        href={`mailto:${member.email}`}
+                    <a 
+                      href={`mailto:${member.email}`}
                         className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-primary-dark text-white rounded-xl hover:from-primary-dark hover:to-primary transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-                      >
-                        <User className="h-6 w-6 mr-3" />
-                        Contact
-                      </a>
+                    >
+                      <User className="h-6 w-6 mr-3" />
+                      Contact
+                    </a>
                       <button className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent to-accent-dark text-white rounded-xl hover:from-accent-dark hover:to-accent transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105">
-                        <Globe className="h-6 w-6 mr-3" />
-                        View Profile
-                      </button>
+                      <Globe className="h-6 w-6 mr-3" />
+                      View Profile
+                    </button>
                     </div>
                   </div>
                 </div>
@@ -276,28 +276,28 @@ export default function Committees() {
                   <div className="flex items-center justify-center">
                     <div className="relative">
                       <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-primary shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                          }}
-                        />
-                        <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                          <Award className="h-16 w-16 text-white" />
-                        </div>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <Award className="h-16 w-16 text-white" />
+                    </div>
                         <div className="absolute inset-0 rounded-full border-4 border-accent/20 animate-pulse"></div>
-                      </div>
+                  </div>
                       
                       {/* Title badge (in-flow, centered) */}
                       <div className="flex justify-center mt-4">
                         <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
-                          {member.title}
-                        </div>
-                      </div>
+                      {member.title}
                     </div>
+                  </div>
+                </div>
                   </div>
                   
                   {/* Content Section - Right */}
@@ -309,13 +309,13 @@ export default function Committees() {
                     </div>
                     
                     <div className="mt-6">
-                      <a 
-                        href={`mailto:${member.email}`}
+                <a 
+                  href={`mailto:${member.email}`}
                         className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-xl hover:bg-primary-dark transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-                      >
+                >
                         <User className="h-6 w-6 mr-3" />
-                        Contact
-                      </a>
+                  Contact
+                </a>
                     </div>
                   </div>
                 </div>
@@ -346,28 +346,28 @@ export default function Committees() {
                   <div className="flex items-center justify-center">
                     <div className="relative">
                       <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-6 border-accent shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                          }}
-                        />
-                        <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                          <UserCheck className="h-14 w-14 text-white" />
-                        </div>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <UserCheck className="h-14 w-14 text-white" />
+                    </div>
                         <div className="absolute inset-0 rounded-full border-4 border-primary/20 animate-pulse"></div>
-                      </div>
+                  </div>
                       
                       {/* Title badge (in-flow, centered) */}
                       <div className="flex justify-center mt-4">
                         <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
-                          {member.title}
-                        </div>
-                      </div>
+                      {member.title}
                     </div>
+                  </div>
+                </div>
                   </div>
                   
                   {/* Content Section - Right */}
@@ -379,13 +379,13 @@ export default function Committees() {
                     </div>
                     
                     <div className="mt-4">
-                      <a 
-                        href={`mailto:${member.email}`}
+                <a 
+                  href={`mailto:${member.email}`}
                         className="inline-flex items-center px-6 py-3 bg-accent text-white rounded-xl hover:bg-accent-dark transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
-                      >
+                >
                         <User className="h-5 w-5 mr-2" />
-                        Contact
-                      </a>
+                  Contact
+                </a>
                     </div>
                   </div>
                 </div>
@@ -416,28 +416,28 @@ export default function Committees() {
                   <div className="flex items-center justify-center">
                     <div className="relative">
                       <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-8 border-accent shadow-2xl bg-white relative group-hover:scale-105 transition-transform duration-500">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                          }}
-                        />
-                        <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
-                          <BookOpen className="h-16 w-16 text-white" />
-                        </div>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <BookOpen className="h-16 w-16 text-white" />
+                    </div>
                         <div className="absolute inset-0 rounded-full border-4 border-primary/20 animate-pulse"></div>
-                      </div>
+                  </div>
                       
                       {/* Title badge (in-flow, centered) */}
                       <div className="flex justify-center mt-4">
                         <div className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark text-white px-8 py-2 rounded-full text-lg font-bold shadow-xl ring-2 ring-white">
-                          {member.title}
-                        </div>
-                      </div>
+                      {member.title}
                     </div>
+                  </div>
+                </div>
                   </div>
                   
                   {/* Content Section - Right */}
@@ -449,13 +449,13 @@ export default function Committees() {
                     </div>
                     
                     <div className="mt-6">
-                      <a 
-                        href={`mailto:${member.email}`}
+                <a 
+                  href={`mailto:${member.email}`}
                         className="inline-flex items-center px-8 py-4 bg-accent text-white rounded-xl hover:bg-accent-dark transition-all duration-300 font-bold shadow-xl hover:shadow-2xl transform hover:scale-105"
-                      >
+                >
                         <User className="h-6 w-6 mr-3" />
-                        Contact
-                      </a>
+                  Contact
+                </a>
                     </div>
                   </div>
                 </div>

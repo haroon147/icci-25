@@ -4,6 +4,13 @@ export default function Submissions() {
   const submissionTypes = [
     {
       icon: FileText,
+      title: "PhD Symposia",
+      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
+      pages: "2-3 pages",
+      deadline: "November 15, 2025"
+    },
+    {
+      icon: FileText,
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "6-8 pages",
@@ -16,13 +23,7 @@ export default function Submissions() {
       pages: "4-5 pages",
       deadline: "November 15, 2025"
     },
-    {
-      icon: FileText,
-      title: "PhD Symposia",
-      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
-      pages: "2-3 pages",
-      deadline: "November 15, 2025"
-    }
+   
   ];
 
   const submissionGuidelines = [
