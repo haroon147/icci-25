@@ -123,9 +123,6 @@ export default function Footer() {
             <Link to="/terms" className="text-small text-white/60 hover:text-accent transition-colors duration-300">
               Terms of Service
             </Link>
-            <Link>
-            MHA Solutions
-            </Link>
           </div>
         </div>
       </div>
