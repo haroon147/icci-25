@@ -5,47 +5,56 @@ export default function Scope() {
     {
       icon: Brain,
       title: "Artificial Intelligence and Machine Learning",
-      description: "Explainable AI (XAI), Generative AI, Agentic AI, Reinforcement Learning"
+      description:
+        "Explainable AI (XAI), Generative AI, Agentic AI, Reinforcement Learning, Responsible AI Practices, Prompt Engineering for Generative Models, and Building Trustworthy and Transparent AI Systems."
     },
     {
       icon: Database,
       title: "Data Science and Big Data Analytics",
-      description: "Predictive Analytics, Data-driven Decision Making"
+      description:
+        "Predictive Analytics, Data-driven Decision Making, Big Data Pipelines (Hadoop, Spark), Data Engineering Frameworks, Real-world Dataset Modeling, and Scalable Data Processing."
     },
     {
       icon: Shield,
       title: "Cybersecurity and Privacy",
-      description: "Secure Computing, Blockchain, Digital Forensics"
+      description:
+        "Secure Computing, Blockchain Technology, Digital Forensics, Cyber Attack Simulations, Smart Contracts and Digital Identity, and Threat Mitigation Strategies."
     },
     {
       icon: Network,
       title: "Internet of Things (IoT), Robotics and Smart Systems",
-      description: "Smart Cities, Industry 4.0, Edge and Cloud Computing"
+      description:
+        "Smart Cities, Industry 4.0, Edge Computing, IoT Security and Privacy by Design, AI-Driven Predictive Maintenance in Industrial IoT, and Energy Harvesting for Low-Power IoT Devices."
     },
     {
       icon: Code,
       title: "Software Engineering and DevOps",
-      description: "Agile Transformation, Sustainable Software Practices"
+      description:
+        "Agile Transformation, Sustainable Software Practices, CI/CD Automation (Git, Docker, Kubernetes), Multi-cloud Deployment, Application Monitoring and Scaling, and Lean Adaptive Development Processes."
     },
     {
       icon: Eye,
       title: "Computer Vision and Pattern Recognition",
-      description: "Autonomous Systems, AR/VR/MR Technologies"
+      description:
+        "Autonomous Systems, AR/VR/MR Technologies, Object Detection (YOLO, ResNet), SLAM and Visual Navigation, Real-time Image Recognition, and Immersive Application Development."
     },
     {
       icon: Lightbulb,
       title: "Innovation, Entrepreneurship, and Tech Startups",
-      description: "AI in Business, Technology Commercialization"
+      description:
+        "AI in Business, Technology Commercialization, MVP Development, Lean Startup Methodologies, Investment Readiness for AI Startups, and Rapid Prototyping Techniques."
     },
     {
       icon: Users,
       title: "Computing for Social Good and HCI",
-      description: "Green Computing, Digital Inclusion, Assistive Technologies"
+      description:
+        "Green Computing, Digital Inclusion, Assistive Technologies, Human-Centered AI for Social Impact, and AI for Disaster Response and Humanitarian Aid."
     },
     {
       icon: Cpu,
-      title: "ICT Infrastructure",
-      description: "Backbone of information and communication tech with network design, hardware deployment, 5G/6G, scalable architectures for reliable data transmission and connectivity"
+      title: "ICT Infrastructure and Cloud Computing",
+      description:
+        "Scalable and reliable architectures for data transmission and connectivity, Software-Defined Networking (SDN) and Network Function Virtualization (NFV), Hybrid Multi-Cloud Management and Orchestration, Cloud-based Solutions for Smart Infrastructure and IoT Integration, and Energy-efficient Data Centers with Sustainable Cloud Technologies."
     }
   ];
 
