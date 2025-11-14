@@ -18,7 +18,7 @@ export default function Committees() {
       title: "Convenor/Chair",
       affiliation: "Professor, RSCI",
       expertise: "Riphah School of Computing & Innovation",
-      image: "https://media.licdn.com/dms/image/v2/C4D03AQERNrmB97zcCA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1652189385981?e=1762992000&v=beta&t=iXzVGANgTbbAtECt6XI7AfKhSaW2DMDcmmQV7lvK8e8",
+      image: "/committee-members/dr-asif.jpg",
       email: "muhammad.asif@riphah.edu.pk"
     }
   ];
