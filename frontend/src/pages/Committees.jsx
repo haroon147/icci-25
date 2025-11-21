@@ -37,7 +37,7 @@ export default function Committees() {
       title: "Co-Convenor/Co-Chair",
       affiliation: "Assistant Professor",
       expertise: "Riphah School of Computing & Innovation",
-      image: "/committee-members/dr-muhammad-adnan.jpg",
+      image: "/committee-members/dr-adnan.jpg",
       email: "muhammad.adnan@riphah.edu.pk"
     }
   ];
