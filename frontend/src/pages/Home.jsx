@@ -169,7 +169,7 @@ export default function Home() {
                 The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
-                It will include keynote addresses, technical sessions, panel discussions, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
+                It will include keynote addresses, technical sessions, panel discussions, Three-Minutes Thesis (3MT) Competition, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
               </p>
               <p className="text-body text-text-secondary mb-8 text-content-justify text-break">
                 Together, let's pave the way for a smarter, more connected future. The ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
@@ -281,15 +281,15 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-body">Submissions Deadline</span>
-                  <span className="text-body font-medium">November 15, 2025</span>
+                  <span className="text-body font-medium">November 30, 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Acceptance Notification</span>
-                  <span className="text-body font-medium">November 25, 2025</span>
+                  <span className="text-body font-medium">December 03, 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Camera-Ready Submission</span>
-                  <span className="text-body font-medium">November 30, 2025</span>
+                  <span className="text-body font-medium">December 06, 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>

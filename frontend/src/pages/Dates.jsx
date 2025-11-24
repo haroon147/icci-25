@@ -4,22 +4,22 @@ export default function Dates() {
   const dates = [
     {
       icon: Calendar,
-      title: "Call for Technical Paper / Workshop Proposal / PhD Symposia",
-      date: "November 15, 2025",
+      title: "Call for Technical Paper / Proposal / PhD Symposia",
+      date: "November 30, 2025",
       status: "upcoming",
-      description: "Last date for submitting technical papers, workshop proposals, and PhD symposium abstracts"
+      description: "Last date for submitting technical papers, proposals, and PhD symposium abstracts"
     },
     {
       icon: Clock,
       title: "Notification of Acceptance",
-      date: "November 25, 2025",
+      date: "December 03, 2025",
       status: "upcoming",
       description: "Authors will be notified about decisions"
     },
     {
       icon: CheckCircle,
       title: "Camera Ready Submission",
-      date: "November 30, 2025",
+      date: "December 06, 2025",
       status: "upcoming",
       description: "Final version must be submitted"
     },

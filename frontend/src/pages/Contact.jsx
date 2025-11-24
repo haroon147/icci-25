@@ -371,7 +371,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium text-text-primary mb-1">When will I know if accepted?</h4>
                   <p className="text-small text-text-secondary">
-                    Acceptance notifications will be sent by November 25, 2025.
+                    Acceptance notifications will be sent by December 03, 2025.
                   </p>
                 </div>
               </div>

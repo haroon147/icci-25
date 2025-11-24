@@ -16,6 +16,7 @@ export default function Header() {
     { name: 'Speakers', href: '/speakers' },
     { name: 'Committees', href: '/committees' },
     { name: 'Submissions', href: '/submissions' },
+    { name: '3MT', href: '/3mt' },
     { name: 'Schedule', href: '/proceedings' },
     { name: 'Registration', href: '/registration' },
     { name: 'Contact', href: '/contact' },

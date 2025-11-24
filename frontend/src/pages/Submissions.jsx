@@ -4,24 +4,32 @@ export default function Submissions() {
   const submissionTypes = [
     {
       icon: FileText,
-      title: "PhD Symposia",
-      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
-      pages: "2-3 pages",
-      deadline: "November 15, 2025"
-    },
-    {
-      icon: FileText,
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "6-8 pages",
-      deadline: "November 15, 2025"
+      deadline: "November 30, 2025"
     },
     {
       icon: FileText,
-      title: "Workshop Proposals ",
+      title: "PhD Symposia",
+      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
+      pages: "2-3 pages",
+      deadline: "November 30, 2025"
+    },
+   
+    {
+      icon: FileText,
+      title: " WorkShop Proposals ",
       description: "outlining key content coverage, practical activities, and the required tools and technologies for interactive learning experiences.",
       pages: "4-5 pages",
-      deadline: "November 15, 2025"
+      deadline: "November 30, 2025"
+    },
+    {
+      icon: FileText,
+      title: " Thesis Proposals ",
+      description: " Proposals for PhD/MS students to present their research work in Three-Minutes Thesis (3MT) Competition",
+      pages: "Static One Page PowerPoint Slide",
+      deadline: "November 30, 2025"
     },
    
   ];
@@ -53,7 +61,7 @@ export default function Submissions() {
         "Double-blind peer review by at least 3 reviewers",
         "Evaluation based on originality, significance, and technical quality",
         "Review decisions: Accept, Minor Revision, Major Revision, Reject",
-        "Camera-ready submission deadline: November 30, 2025"
+        "Camera-ready submission deadline: December 06, 2025"
       ]
     }
   ];
@@ -98,7 +106,7 @@ export default function Submissions() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {submissionTypes.map((type, index) => {
               const Icon = type.icon;
               return (
@@ -173,7 +181,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Paper Submission</h3>
                 <p className="text-body text-text-secondary mb-2">Deadline</p>
-                <p className="text-2xl font-bold text-primary">Nov 15, 2025</p>
+                <p className="text-2xl font-bold text-primary">Nov 30, 2025</p>
               </div>
 
               <div className="text-center">
@@ -182,7 +190,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Acceptance</h3>
                 <p className="text-body text-text-secondary mb-2">Notification</p>
-                <p className="text-2xl font-bold text-primary">Nov 25, 2025</p>
+                <p className="text-2xl font-bold text-primary">Dec 03, 2025</p>
               </div>
 
               <div className="text-center">
@@ -191,7 +199,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Camera-Ready</h3>
                 <p className="text-body text-text-secondary mb-2">Submission</p>
-                <p className="text-2xl font-bold text-primary">Nov 30, 2025</p>
+                <p className="text-2xl font-bold text-primary">Dec 06, 2025</p>
               </div>
 
               <div className="text-center">
