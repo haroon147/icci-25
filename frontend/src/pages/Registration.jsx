@@ -1,4 +1,4 @@
-import { Users, CreditCard, Calendar, CheckCircle } from 'lucide-react';
+import { Users, CreditCard, Calendar, CheckCircle, ExternalLink } from 'lucide-react';
 
 export default function Registration() {
   const registrationTypes = [
@@ -88,8 +88,8 @@ export default function Registration() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Registration</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Register for ICCI-2025 and join the premier computing and innovation conference. 
-              Early bird discounts available until November 30, 2025.
+              Register for ICCI-2025 and join the Computing and innovation conference. 
+              
             </p>
           </div>
         </div>
@@ -261,7 +261,7 @@ export default function Registration() {
                 </ul>
               </div>
 
-              <div>
+              {/* <div>
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Cancellation Policy</h3>
                 <ul className="content-spacing-sm text-body text-text-secondary">
                   <li className="text-break">• Cancellation before Nov 30, 2025: 80% refund</li>
@@ -270,7 +270,7 @@ export default function Registration() {
                   <li className="text-break">• Refunds processed within 14 business days</li>
                   <li className="text-break">• Contact icci@riphah.edu.pk for assistance</li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -284,17 +284,56 @@ export default function Registration() {
               <Calendar className="h-16 w-16 mx-auto mb-6 text-accent" />
               <h2 className="text-section font-semibold mb-4">Ready to Register?</h2>
               <p className="text-body text-white/90 content-container-sm text-content-center text-break mb-8">
-              Don't miss this opportunity to be part of ICCI-2025. Early bird registration 
-              is open now with significant discounts available.
+              Don't miss this opportunity to be part of ICCI-2025.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="btn-primary bg-accent hover:bg-accent-dark text-primary">
-                  Register Now
-                </button>
-                <button className="btn-secondary border-white text-white hover:bg-white hover:text-primary">
-                  Download Registration Form
-                </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
+                <a
+                  href="https://forms.gle/hVWWPhEAwxgetCVM9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  Participant Registration
+                </a>
+                <a
+                  href="https://forms.gle/hVWWPhEAwxgetCVM9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary border-white text-white hover:bg-white hover:text-primary inline-flex items-center justify-center"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  Workshop Registration
+                </a>
+                <a
+                  href="https://forms.gle/ZFEwn4Cw1xDy3AHz5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  3MT Registration
+                </a>
+                <a
+                  href="https://forms.gle/SoyN5JGZqBq5b1sY7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary border-white text-white hover:bg-white hover:text-primary inline-flex items-center justify-center"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  Call for Papers Registration
+                </a>
+                <a
+                  href="https://forms.gle/RmyJWqCMGZb3MQmp8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  PhD Symposium Registration
+                </a>
               </div>
+              
             </div>
           </div>
         </div>

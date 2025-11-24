@@ -11,7 +11,7 @@ export default function Submissions() {
     },
     {
       icon: FileText,
-      title: "PhD Symposia",
+      title: "PhD Symposia ",
       description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
       pages: "2-3 pages",
       deadline: "November 30, 2025"
@@ -26,7 +26,7 @@ export default function Submissions() {
     },
     {
       icon: FileText,
-      title: " Thesis Proposals ",
+      title: " Thesis Proposals (3MT) Competition ",
       description: " Proposals for PhD/MS students to present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
       deadline: "November 30, 2025"
@@ -216,7 +216,7 @@ export default function Submissions() {
       </section>
 
       {/* Submission Portal */}
-      <section className="section-padding bg-background-white">
+      {/* <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -248,7 +248,7 @@ export default function Submissions() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
