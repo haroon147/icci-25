@@ -11,14 +11,6 @@ export default function Speakers() {
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
     },
     {
-      name: "Dr. Ahmed Hassan",
-      title: "Professor of Computer Science",
-      affiliation: "MIT, USA",
-      expertise: "Computer Networks & Distributed Systems",
-      bio: "Pioneer in distributed systems research with groundbreaking contributions to blockchain technology and consensus algorithms.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
-    },
-    {
       name: "Prof. Dr. Fatima Al-Zahra",
       title: "Head of Cybersecurity Lab",
       affiliation: "University of Cambridge, UK",
@@ -34,16 +26,7 @@ export default function Speakers() {
       affiliation: "Tsinghua University, China",
       topic: "Quantum Computing Applications"
     },
-    {
-      name: "Prof. Dr. Zainab Malik",
-      affiliation: "IIT Delhi, India",
-      topic: "Data Science & Analytics"
-    },
-    {
-      name: "Dr. Yusuf Ibrahim",
-      affiliation: "University of Melbourne, Australia",
-      topic: "Human-Computer Interaction"
-    },
+    
     {
       name: "Prof. Dr. Khadija Al-Rashid",
       affiliation: "Universidad de Madrid, Spain",
