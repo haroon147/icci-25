@@ -13,6 +13,7 @@ import Registration from './pages/Registration';
 import Contact from './pages/Contact';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
+import Workshops from './pages/Workshops';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/committees" element={<Committees />} />
                 <Route path="/submissions" element={<Submissions />} />
                 <Route path="/3mt" element={<ThreeMinuteThesis />} />
+                <Route path="/workshops" element={<Workshops />} />
                 <Route path="/proceedings" element={<Schedule />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/contact" element={<Contact />} />

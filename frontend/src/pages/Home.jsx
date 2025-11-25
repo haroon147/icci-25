@@ -460,7 +460,7 @@ export default function Home() {
                       </span>
                     </div>
                     
-                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                    <div className="w-60 h-60 mx-auto mb-4 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}
@@ -495,7 +495,7 @@ export default function Home() {
                       </span>
                     </div>
                     
-                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                    <div className="w-60 h-60 mx-auto mb-4 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}
