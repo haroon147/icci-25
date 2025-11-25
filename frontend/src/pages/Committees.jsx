@@ -6,7 +6,6 @@ export default function Committees() {
       name: "Dr. Sheheryar Malik",
       title: "Patron-in-Chief",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-      expertise: "Riphah School of Computing & Innovation",
       image: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBAVEBAVDRENDRUVDQ8QEA4SIB0iIiAdHx8kKDQgJCYxJx8fJTIkMSsuMDAwIys1ODouNzQuMC4BCgoKDg0OFRAQFSsZFhktNzc3NystKzEwNys3Nzc3KystKzc3LSs3NzcrLSsrLSsrKy0rNzc3Ny0tKysrLSsrLf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAgEDBAUGBwj/xABAEAACAQIDBAcFBAkDBQAAAAAAAQIDEQQSIQUxQVEGE2FxgaGxByIykcEUYtHhI0JScnOCkqLwJLLxFTNDY3T/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIFAwT/xAAhEQEBAAIBBAMBAQAAAAAAAAAAAQIRAwQSIUETIjFRMv/aAAwDAQACEQMRAD8A8NAAAAAAAAAAAAAATjB93eTUVw179ALIMh0Xy9S249hGxbBLKRJAAAAAAAAAAAAAAAAAAAAAAAAAuRj4v0CVu/0MqjTsiLdCNOi3qzIp0lyXcXKNJvcX6eFlx0OVydJgtUqbeiXZYnPCxW/xMpUWtbWfAp/0+rUd1GT7bXK90ntaYW+mmxVBLVfUxmrrt4m/xGyKsVdrTmaueEd3ZXL4ckvtTLCz9YALsqXz5PeWjqoAAAAAAAAAAAAAAAAAAAXKS4/LvLZk0oXyrn+JFEqFPmdP0d6POu1KWkfNl/o10YVZKdSXup7uZ6ZsnZ8KcUopJHg5+p14j28HB7yafZ/Q+ikvcv2vebSh0SoppqnqtdWzo8KkjKTR4vkt9vTqT8aaGwae5wj/AEouLYNJL4UjbqVhOpoR3nlyW1NhU3FrKvI812vs37PJ8VfmeyYrU4fpbsd1E3Fa70X4eTty8nJh3YvK8dBNtowZfkzcbSwcqU3GSt2XTNPLia/Hdxl5TV0gADoqAAAAAAAAAAAAAAAAGdhd8H2fVmCZ2Bjfwdn3f5crl+Jn69T6JJuEdNMt2dXSrqNrtJHmmzsbXVSVJVJQpQjdqEYXl2XsbVUk1mq1ZLlerUb9TIz4t5ea0uPl3j4j0KO18Omk6kb8ro2dGtFpWe/U8noYGlVqJUKkpVGrpRqQk3827m7wm2ZUKU5ynmVOnns2oTmrpWXN638GWnB/EfJ/XoFWtFGJicfTi7Sml3tI4+XSvr7xoJKSgpe9J8d+7XS/YYNLC9fWiqtWU5SnbKk4Qu+7UfD/AEuept2dfE03unH+pGDiZXTOVdHDxk4U67um18baMXH7QxOHg3GanFNXzQb0vbh4FPg8+Kmcv13XP9I3erPxRx1Vay/zidZt/NJxqNWzxvK17KVtTla0bX79DS4P8vByZTK7iwAD0OYAAAAAAAAAAAAAAACpuuj2CdSOImpKPV04zs/1nfT6/M0p1HQaHWPF0VbNPCNwT3OSkn+JTlusbV8JLlJXZYHZig6LirqWFtKXamnr/UUhs9dYpv8ASW3Rkm4fI3uFwMZ04U53tFLK03GUWuKaMjD7HnF2hWbX34Ql5qzMj5GpjjqNXs7ZPV3cI2bi462ahF8Fcu7PwUKmMhTks0aa6yd0srm/h7NNX8jefYJRTedXtwgvq2WejmByym1dttzk223Jsm8t0TCfrE6VYKEK1CuoqOvUVZJJWjLc33St8xU2dO0kkrSVpK0de5m+25h1OOSSzxksslzVi1gabcMtotRWVXz5uy7uMc7+IuLj6uyEouDjq5ZlN3zx7mUq4FKNKk3mc8RTVvup5n6HVV8DXa0dFduWpP6osUtmqLU5yU6kU1FqKio3tey8BeQ7JrxHFdKNjSlVoRptRdSrkad8qluT8zmumPRuWEhSm6inebhK0XGztfTnuZ6TtLCSqVsPKLXuYiMpJ8Y8bGh9selHD20Try046R0+p36bktuMefl48ZMstPKAAaTwgAAAAAAAAAAAAAAAKnR9AK+TGx+9RqwXflb+hzhuOiOT7bQ6ySjHNLVuyzZXbzsU5JvCxbD/AFHsuzpadtzcYdo0WDl5m0p17IwvbYx/GwxVRZGlZNxsaTB7VnTnLPGyvo7NpjFYtZlG+u8tU8TQzWlWinu1ktDrJ58q+deGdjNrSk7xg5W+7a7M7ZtZuN5pRk9WlwNXLH4emrSrRbvplkpWIS2jStmjUUo8feWhayekfbXmOgrzTW4wK5SjiLq6d1YtYitc5ZfqZ+MKjJdbHln7jz72vbR6zE0aK+GnQzNfek/wSO2xO0aOGy1a0stNTSk7N79DyLpXtFYnGYitGWaEqjVN2avBaLyR7Ojwvdv08nUZ/XTTgA0niAAAAAAAAAAAAAAAACpQAezdHMf1uGpVN7cFf95aPzRucNXV7Hm3QHaNo1KL4PrIdz0fnb5na062t7mNzcfZnY1ODPeEbbF4GnU1ccztxMWGEp0k1GjFrtii9hMXHRO3LgZiSqO1lbtKS3btLqMLDV4XtGjCL7IGU8FCXvOnFPjeKuZX2GCV1FJ9iSI/aLJqXBE5VWZbWpSUFZbjEnWWvMtYvGrUwZ4iy7eRGtq92nNe0nE/oKcL6yrX8En+KPOjp+nuKcq8IPdCnm8Zfkkcwa3TY9vHGby3eVUAB2cwAAAAAAAAAAAAAAAAGVSwc3wyrm9PLeZmH2fFWbebstZfmRsbvoHsqUnWrPSKoqKXGWaSs/JnTRqOLyyI9AsO6lLHRj8WWg496zmfWw+eN7WfHmjP6mfbde3pvOLHjOS1jqZlDaso7014MwFCUXzRlUsRzXkcHq0y1tuWuuniWKm05T+FN9ttCrnHl5GNOcm7JWRO9q9qjna7k7vkSw1OVR3e70K0MI5avcb/AGNs/PJO1qalr9+XInHG5XUVzsxm68y9oez2sTp8SoU5SXGzRxp6N7Spr7e7cKNOL+nlY46th4S1as+Nm0aWHiSMy5bu2pBmVMBL9V5l8mYsotOzVnxOgiAAAAAAAACdOm5O0U2+STZmUtnv9Z27FqxvQwSdKjKXwxb8NEbWnhacf1bvm9fyL934Fe5DX0tn/tyt2LXzMmnSjH4Ypdu9/MvWItEbTpSKuy8UiiM5Aeh+ySN54v8Ah0fWT+h1W3tmKnUVSK/R1EpO36s+Pmcx7IVb7RJ/tUU+73rne47alCUXRtKpKMpRbUfcXPV77PlcrnxfJLi6cfL8eW3MVMBdXVm+z6oswwWu43Cp5eN4v4WXlHxMnKXG6rUllm41SwS5WLbwN90fnuN4u5fJCpazbdkleTYx3ldRW3U3WtwmzHOSiveb5bkdPiMPGlFU46KMVTW7WT3v1fgaSnjqlOWenaEYy0doz6124f5w+exp4p1oXayyXuzXKb+lvU1eLp+zHd/Wbzc/yXXp4p00xPW47ETW5VMi/lSX0NEzYYuanUqT4SqTn83cwakLdx0c0U7FxxUlaSUu/gW2i5TYGLV2an8D8H+Jg1qEofFFrvWjN4TT/MbHNg3tXA05cMr+7p5bjBr7NlHWPvrsXvfInZtgAq0CRu4qyslZckSSKpE4o5p0oolbE7FGErci2m09NVyLrVyrjYkRlIgyViNgh6R7MGo0a+tpTqRhDwjd+p10cKlla0WR5bX92aOc9k+DU6VVtX9+S/sR32HwqgqdtVne/Xkd8bJHHKW1pFQUZKUmowlHNOytme6/hbzZDCRk0ne6Wl9HcztubF66hOjmyRb6u6Xwa3v3aHL4PE4jBTVLFpOln6uNWLWV8rnj6zh7/ti9vTcvb9a6LM3u9EXtn0+slOm2m7xbTtuv/wAGLXxLbhTprNWqzy04pq0e19iXobhUoYeHVQ/S1pvLUmre6+S/D5nk6XjvfK79RnJhY1+JpxjUTe5a9kVyXnqa7aVedChVrNWlOFZ5XdKEFFv56nUUsFHNKcldxhlguEdyOb9oVW2BrvlBUo/zSSfk/I2O7xpldvnbxWxS2lickUscK7sapTtotfoVjBreX7EWgKWJxRGJNIgCcVcgSpsDHxOGjP4lrwa3/mUL8mAhZZOJbnvJxZCy4QkSuQkApPf3lJMQ3sSAWI2JBEj2H2O0/wDTVH/75r+yJ3dKF1TX3n6nF+x9f6Sf/wBFX/ZE7fD74Ltv5l1FHSv1nevU1W19iQrRlCXwSgnJcE7b1yNz+rJ85L6lvFQzWjzjGLJnnwmXtu3OdHdnKjCoo1HVqQjKlKpZpxWlorsWmpuMDgsvV33t3fZr+Rd2dg5U1VzZb6QSje1k9HuWpmwWtPw9SdTGait3ld1YqaKo+1Jd7ZwntWnkwcYcZYmEX2pJv6I7ve4LnVzPuX/J5n7Ya+uFp9tWo/JL1ZH9HmrRFomyjRRdbbFyrRRhKNNepdZGOiFwhFkUyUkW1vAuyegITlp36gIQq8H4E4ka27xKpkJidyLBWxCVFv8AAoVlwKpEgyK3lxohHeB7R7JXbBy/jVv9sTtqO+PZTb9ThfZXL/RT/i1PSKO7grOXZSt5IvVFW/cXbJ+hV/8Ad/miijWkF2v1K0dar/iFoipt6VO9epGbfu2/Yv6lU/ck+cl9Skn8XZSS9BkRaw2s0+CT/wA8jyD2rV82MhH9nDr5uT/I9gw6t/Rm/tPC+n9fPtDEcouFNeEVfzuRUxzlypEFFgpJFS22BWTKIjcXArJllvW3gXJMtUneXmEL0mCE2AFXcIgBKVySAIST3FYlQBRlIgAeveyrXCT7MRJeSPQW/eq/u/VAF1FY/wDj/wA4jD/G3++/IAtPaFX8Fuc7eRbm/dqPu9QCMkqrTN2U2vKx87bdr9ZicRPhLEVZLuzOwBFI1zABVZSTIsACDKMAlCM2W8Jvk/AAgXZgAD//2Q==",
       email: "sheheryar.malik@riphah.edu.pk"
     }
@@ -17,7 +16,6 @@ export default function Committees() {
       name: "Dr. Muhammad Asif",
       title: "Convenor/Chair",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-      expertise: "Riphah School of Computing & Innovation",
       image: "/committee-members/dr-asif.jpg",
       email: "muhammad.asif@riphah.edu.pk"
     }
@@ -28,7 +26,7 @@ export default function Committees() {
       name: "Dr. Muhammad Adnan Khan",
       title: "Co-Convenor/Co-Chair",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-      expertise: "Riphah School of Computing & Innovation",
+    
       image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Pw_eGvsAAAAJ&citpid=1",
       email: "farrukh.arslan@riphah.edu.pk"
     },
@@ -36,7 +34,6 @@ export default function Committees() {
       name: "Dr. Muhammad Adnan",
       title: "Co-Convenor/Co-Chair",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-      expertise: "Riphah School of Computing & Innovation",
       image: "/committee-members/dr-adnan.jpg",
       email: "muhammad.adnan@riphah.edu.pk"
     }
@@ -47,7 +44,6 @@ export default function Committees() {
       name: "Dr. Ayesha Kashif",
       title: "Secretary",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-      expertise: "Riphah School of Computing & Innovation",
       image: "/committee-members/dr-ayesha.jpg",
       email: "ayesha.kashif@riphah.edu.pk"
     }

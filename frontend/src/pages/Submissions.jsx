@@ -8,30 +8,13 @@ export default function Submissions() {
       icon: FileText,
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
-      pages: "6-8 pages",
+      pages: "2-4 pages",
       deadline: "November 30, 2025",
       formUrl: "https://forms.gle/SoyN5JGZqBq5b1sY7"
     },
     {
       icon: FileText,
-      title: "PhD Symposia ",
-      description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
-      pages: "2-3 pages",
-      deadline: "November 30, 2025",
-      formUrl: "https://forms.gle/RmyJWqCMGZb3MQmp8"
-    },
-   
-    {
-      icon: FileText,
-      title: " WorkShop Proposals ",
-      description: "outlining key content coverage, practical activities, and the required tools and technologies for interactive learning experiences.",
-      pages: "4-5 pages",
-      deadline: "November 30, 2025",
-      formUrl: "https://forms.gle/hVWWPhEAwxgetCVM9"
-    },
-    {
-      icon: FileText,
-      title: " Thesis Proposals (3MT) Competition ",
+      title: " Proposal for Three-Minutes (3MT) Competition ",
       description: " Proposals for PhD/MS students to present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
       deadline: "November 30, 2025",
