@@ -152,14 +152,12 @@ export default function Home() {
               >
                 Submission
               </Link>
-            <a
-              href="https://forms.gle/hVWWPhEAwxgetCVM9"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/registration#ready-to-register"
               className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
             >
               Register Now
-            </a>
+            </Link>
               <br />
               <br />
             </div>
@@ -597,19 +595,23 @@ export default function Home() {
           </h2>
           <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-6">
             Don't miss this opportunity to present your research, learn from experts, 
-            and network with peers in the computer science community.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary flex items-center justify-center">
-              Submission
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
-            <button className="btn-secondary">
+            and network with peers in the computer science community.</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
+              <Link
+                to="/submissions"
+                className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
+              >
+                Submission
+              </Link>
+            <Link
+              to="/registration#ready-to-register"
+              className="btn-secondary border-white text-black hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
+            >
               Register Now
-            </button>
-          </div>
-
+            </Link>
+              <br />
+              <br />
+            </div>
           <div className="flex justify-center mt-10 mb-4">
             <div className="relative inline-flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-2xl rounded-full animate-pulseGlow pointer-events-none scale-125"></div>

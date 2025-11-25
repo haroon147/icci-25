@@ -1,6 +1,20 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Users, CreditCard, Calendar, CheckCircle, ExternalLink } from 'lucide-react';
 
 export default function Registration() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [hash]);
   const registrationTypes = [
     {
       type: "Student",
@@ -277,7 +291,7 @@ export default function Registration() {
       </section>
 
       {/* Registration CTA */}
-      <section className="section-padding bg-background-light">
+      <section id="ready-to-register" className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="bg-gradient-to-r from-primary to-primary-dark p-8 rounded-lg text-white text-center">
             <div className="max-w-4xl mx-auto">
@@ -288,7 +302,7 @@ export default function Registration() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
                 <a
-                  href="https://forms.gle/hVWWPhEAwxgetCVM9"
+                  href="https://forms.gle/U7ejNthhXqh4h11J8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
@@ -313,24 +327,6 @@ export default function Registration() {
                 >
                   <ExternalLink className="h-5 w-5 mr-2" />
                   3MT Registration
-                </a>
-                <a
-                  href="https://forms.gle/SoyN5JGZqBq5b1sY7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-primary inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  Call for Papers Registration
-                </a>
-                <a
-                  href="https://forms.gle/RmyJWqCMGZb3MQmp8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  PhD Symposium Registration
                 </a>
               </div>
               

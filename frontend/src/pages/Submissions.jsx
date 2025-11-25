@@ -1,20 +1,24 @@
-import { Upload, FileText, CheckCircle, AlertCircle, Calendar } from 'lucide-react';
+import { Upload, FileText, CheckCircle, AlertCircle, Calendar, ExternalLink } from 'lucide-react';
 
 export default function Submissions() {
+  const defaultSubmissionFormUrl = "https://forms.gle/SoyN5JGZqBq5b1sY7";
+
   const submissionTypes = [
     {
       icon: FileText,
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "6-8 pages",
-      deadline: "November 30, 2025"
+      deadline: "November 30, 2025",
+      formUrl: "https://forms.gle/SoyN5JGZqBq5b1sY7"
     },
     {
       icon: FileText,
       title: "PhD Symposia ",
       description: "Scholarly discussions on cutting-edge research topics and emerging trends in computing and innovation",
       pages: "2-3 pages",
-      deadline: "November 30, 2025"
+      deadline: "November 30, 2025",
+      formUrl: "https://forms.gle/RmyJWqCMGZb3MQmp8"
     },
    
     {
@@ -22,14 +26,16 @@ export default function Submissions() {
       title: " WorkShop Proposals ",
       description: "outlining key content coverage, practical activities, and the required tools and technologies for interactive learning experiences.",
       pages: "4-5 pages",
-      deadline: "November 30, 2025"
+      deadline: "November 30, 2025",
+      formUrl: "https://forms.gle/hVWWPhEAwxgetCVM9"
     },
     {
       icon: FileText,
       title: " Thesis Proposals (3MT) Competition ",
       description: " Proposals for PhD/MS students to present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
-      deadline: "November 30, 2025"
+      deadline: "November 30, 2025",
+      formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
     },
    
   ];
@@ -122,11 +128,21 @@ export default function Submissions() {
                         <span className="text-small text-text-muted">Pages:</span>
                         <span className="text-small font-medium text-primary">{type.pages}</span>
                       </div>
+                      
                       <div className="flex items-center justify-between">
                         <span className="text-small text-text-muted">Deadline:</span>
                         <span className="text-small font-medium text-accent">{type.deadline}</span>
                       </div>
                     </div>
+                    <a
+                      href={type.formUrl || defaultSubmissionFormUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full mt-6 inline-flex items-center justify-center gap-2"
+                    >
+                      Submit Now
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
                   </div>
                 </div>
               );
