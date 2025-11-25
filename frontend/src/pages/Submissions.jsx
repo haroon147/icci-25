@@ -15,7 +15,7 @@ export default function Submissions() {
     {
       icon: FileText,
       title: " Proposal for Three-Minutes (3MT) Competition ",
-      description: " Proposals for PhD/MS students to present their research work in Three-Minutes Thesis (3MT) Competition",
+      description: "PhD/MS students present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
       deadline: "November 30, 2025",
       formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"

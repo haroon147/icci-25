@@ -187,7 +187,7 @@ export default function Scope() {
       </section> */}
 
       {/* Submission Guidelines */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
@@ -262,7 +262,7 @@ export default function Scope() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
