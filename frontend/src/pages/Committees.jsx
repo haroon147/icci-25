@@ -48,7 +48,7 @@ export default function Committees() {
       title: "Secretary",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
       expertise: "Riphah School of Computing & Innovation",
-      image: "/committee-members/dr-ayesha-kashif.jpg",
+      image: "/committee-members/dr-ayesha.jpg",
       email: "ayesha.kashif@riphah.edu.pk"
     }
   ];
@@ -159,13 +159,13 @@ export default function Committees() {
   ];
 
   const organizingCommittee = [
-    { name: "Ms. Dua Mahmood", affiliation: "RSCI, Lahore", image: "https://media.licdn.com/dms/image/v2/C4D03AQFhwGOkBtA9YQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1636294065646?e=1762992000&v=beta&t=1g7fbxTk89Z6km4Zp2HFIRAhda7mcWiGlUeqlDbkm88" },
+    { name: "Ms. Dua Mahmood", affiliation: "RSCI, Lahore", image: "/committee-members/ms-dua-mahmood.svg" },
     { name: "Mr. Asim Mansha", affiliation: "RSCI, Lahore", image: "/committee-members/sir-asim.jpg" },
     { name: "Mr. Muhammad Naeem", affiliation: "RSCI, Lahore", image: "/committee-members/mr-muhammad-naeem.jpg" },
     { name: "Ms. Abida Noaman", affiliation: "RSCI, Lahore", image: "/committee-members/ms-abida-noaman.jpg" },
-    { name: "Mr. Adnan Ahmad", affiliation: "RSCI, Lahore", image: "https://media.licdn.com/dms/image/v2/D4D03AQH1_3f0uGKDYg/profile-displayphoto-scale_200_200/B4DZlZSaCAIYAY-/0/1758139623347?e=1762992000&v=beta&t=NrQUBkyj3qIER4i6JoHCCjWIoYBQsYpWY6pc8_KXjPk" },
+    { name: "Mr. Adnan Ahmad", affiliation: "RSCI, Lahore", image: "/committee-members/mr-adnan-ahmad.svg" },
     { name: "Ms. Rida Ihtsham", affiliation: "RSCI, Lahore", image: "" },
-    { name: "Mr. Sameer Sohail", affiliation: "RSCI, Lahore", image: "https://media.licdn.com/dms/image/v2/D4D03AQGqZRuFjpwz-A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693429496593?e=1762992000&v=beta&t=jIhCn2KBtaDql6b-1yzPmbUD1T562Cgr0CtPmZUIvAc" }
+    { name: "Mr. Sameer Sohail", affiliation: "RSCI, Lahore", image: "/committee-members/mr-sameer-sohail.svg" }
   ];
 
   return (

@@ -1,4 +1,5 @@
 import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const collaborators = [
@@ -144,14 +145,32 @@ export default function Home() {
               disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
               emerging technologies, and transformative ideas.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-              <button className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
+              <Link
+                to="/submissions"
+                className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
+              >
                 Submission
-              </button>
-              <button className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold">
-                Register Now
-              </button>
+              </Link>
+            <a
+              href="https://forms.gle/hVWWPhEAwxgetCVM9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
+            >
+              Register Now
+            </a>
+              <br />
+              <br />
             </div>
+            <div className="flex justify-center mb-6">
+            <div className="relative inline-flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
+              <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
+                Free Registration
+              </span>
+            </div>
+          </div>
           </div>
         </div>
       </section>
@@ -576,10 +595,11 @@ export default function Home() {
           <h2 className="text-section mb-4 font-semibold text-text-primary">
             Ready to Join Us?
           </h2>
-          <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-8">
+          <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-6">
             Don't miss this opportunity to present your research, learn from experts, 
             and network with peers in the computer science community.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary flex items-center justify-center">
               Submission
@@ -589,8 +609,35 @@ export default function Home() {
               Register Now
             </button>
           </div>
+
+          <div className="flex justify-center mt-10 mb-4">
+            <div className="relative inline-flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-2xl rounded-full animate-pulseGlow pointer-events-none scale-125"></div>
+              <span className="relative z-10 text-lg md:text-xl font-semibold text-white bg-accent px-10 py-3 rounded-full shadow-2xl animate-floatBadge">
+                Free Registration
+              </span>
+            </div>
+          </div>
         </div>
       </section>
+      <style>{`
+        @keyframes pulseGlow {
+          0% { opacity: 0.3; transform: scale(0.95); }
+          50% { opacity: 0.9; transform: scale(1.05); }
+          100% { opacity: 0.3; transform: scale(0.95); }
+        }
+        @keyframes floatBadge {
+          0% { transform: translateY(0); opacity: 0.8; }
+          50% { transform: translateY(-6px); opacity: 1; }
+          100% { transform: translateY(0); opacity: 0.8; }
+        }
+        .animate-pulseGlow {
+          animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+        .animate-floatBadge {
+          animation: floatBadge 3s ease-in-out infinite;
+        }
+      `}</style>
     </div>
   );
 }

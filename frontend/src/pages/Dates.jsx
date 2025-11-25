@@ -76,7 +76,7 @@ export default function Dates() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Important Dates Timeline
+              Timeline
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
@@ -181,7 +181,7 @@ export default function Dates() {
       </section>
 
       {/* Important Notes */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <h2 className="text-section mb-6 font-semibold text-text-primary">
@@ -216,7 +216,7 @@ export default function Dates() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
