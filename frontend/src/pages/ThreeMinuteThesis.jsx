@@ -59,8 +59,8 @@ export default function ThreeMinuteThesis() {
   ];
 
   const importantDates = [
-    { event: "Submission Deadline (video + summary)", date: "November 30, 2025" },
-    { event: "Finalists Announced", date: "December 03, 2025" },
+    { event: "Submission Deadline (video + summary)", date: "15 September 2025" },
+    { event: "Finalists Announced", date: "30 September 2025" },
     { event: "Final Competition at ICCI-2025", date: "December 8-9, 2025" },
     { event: "Award Ceremony", date: "December 9, 2025" }
   ];

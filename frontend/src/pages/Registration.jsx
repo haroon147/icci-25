@@ -28,7 +28,7 @@ export default function Registration() {
         "Welcome reception",
         "Certificate of participation"
       ],
-      deadline: "Early Bird: Until Nov 30, 2025"
+      deadline: "Early Bird: Until 15 September 2025"
     },
     {
       type: "Academic",
@@ -43,7 +43,7 @@ export default function Registration() {
         "Certificate of participation",
         "Author presentation slots (if paper accepted)"
       ],
-      deadline: "Early Bird: Until Nov 30, 2025",
+      deadline: "Early Bird: Until 15 September 2025",
       popular: true
     },
     {
@@ -60,7 +60,7 @@ export default function Registration() {
         "Industry networking sessions",
         "Exhibition area access"
       ],
-      deadline: "Early Bird: Until Nov 30, 2025"
+      deadline: "Early Bird: Until 15 September 2025"
     }
   ];
 
@@ -278,8 +278,8 @@ export default function Registration() {
               {/* <div>
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Cancellation Policy</h3>
                 <ul className="content-spacing-sm text-body text-text-secondary">
-                  <li className="text-break">• Cancellation before Nov 30, 2025: 80% refund</li>
-                  <li className="text-break">• Cancellation after Nov 30, 2025: No refund</li>
+                  <li className="text-break">• Cancellation before 15 September 2025: 80% refund</li>
+                  <li className="text-break">• Cancellation after 15 September 2025: No refund</li>
                   <li className="text-break">• All cancellations subject to processing fees</li>
                   <li className="text-break">• Refunds processed within 14 business days</li>
                   <li className="text-break">• Contact icci@riphah.edu.pk for assistance</li>

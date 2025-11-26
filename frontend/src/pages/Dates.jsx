@@ -5,21 +5,21 @@ export default function Dates() {
     {
       icon: Calendar,
       title: "Call for Technical Paper / Proposal / PhD Symposia",
-      date: "November 30, 2025",
+      date: "15 September 2025",
       status: "upcoming",
       description: "Last date for submitting technical papers, proposals, and PhD symposium abstracts"
     },
     {
       icon: Clock,
       title: "Notification of Acceptance",
-      date: "December 03, 2025",
+      date: "30 September 2025",
       status: "upcoming",
       description: "Authors will be notified about decisions"
     },
     {
       icon: CheckCircle,
       title: "Camera Ready Submission",
-      date: "December 06, 2025",
+      date: "15 October 2025",
       status: "upcoming",
       description: "Final version must be submitted"
     },
@@ -150,9 +150,9 @@ export default function Dates() {
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Early Registration</h3>
               <p className="text-body text-text-secondary mb-4 text-break">
-                Register before November 30, 2025 to receive discounted rates and secure your spot.
+                Register before 15 September 2025 to receive discounted rates and secure your spot.
               </p>
-              <div className="text-2xl font-bold text-primary">Until Nov 30, 2025</div>
+              <div className="text-2xl font-bold text-primary">Until 15 September 2025</div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">

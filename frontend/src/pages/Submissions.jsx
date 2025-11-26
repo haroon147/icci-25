@@ -9,7 +9,7 @@ export default function Submissions() {
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "2-4 pages",
-      deadline: "November 30, 2025",
+      deadline: "15 September 2025",
       formUrl: "https://forms.gle/SoyN5JGZqBq5b1sY7"
     },
     {
@@ -17,7 +17,7 @@ export default function Submissions() {
       title: " Proposal for Three-Minutes (3MT) Competition ",
       description: "PhD/MS students present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
-      deadline: "November 30, 2025",
+      deadline: "15 September 2025",
       formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
     },
    
@@ -50,7 +50,7 @@ export default function Submissions() {
         "Double-blind peer review by at least 3 reviewers",
         "Evaluation based on originality, significance, and technical quality",
         "Review decisions: Accept, Minor Revision, Major Revision, Reject",
-        "Camera-ready submission deadline: December 06, 2025"
+        "Camera-ready submission deadline: 15 October 2025"
       ]
     }
   ];
@@ -180,7 +180,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Paper Submission</h3>
                 <p className="text-body text-text-secondary mb-2">Deadline</p>
-                <p className="text-2xl font-bold text-primary">Nov 30, 2025</p>
+                <p className="text-2xl font-bold text-primary">15 September 2025</p>
               </div>
 
               <div className="text-center">
@@ -189,7 +189,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Acceptance</h3>
                 <p className="text-body text-text-secondary mb-2">Notification</p>
-                <p className="text-2xl font-bold text-primary">Dec 03, 2025</p>
+                <p className="text-2xl font-bold text-primary">Sep 30, 2025</p>
               </div>
 
               <div className="text-center">
@@ -198,7 +198,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Camera-Ready</h3>
                 <p className="text-body text-text-secondary mb-2">Submission</p>
-                <p className="text-2xl font-bold text-primary">Dec 06, 2025</p>
+                <p className="text-2xl font-bold text-primary">15 October 2025</p>
               </div>
 
               <div className="text-center">

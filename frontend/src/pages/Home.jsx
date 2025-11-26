@@ -311,15 +311,15 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-body">Submissions Deadline</span>
-                  <span className="text-body font-medium">November 30, 2025</span>
+                  <span className="text-body font-medium">15 September 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Acceptance Notification</span>
-                  <span className="text-body font-medium">December 03, 2025</span>
+                  <span className="text-body font-medium">30 September 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Camera-Ready Submission</span>
-                  <span className="text-body font-medium">December 06, 2025</span>
+                  <span className="text-body font-medium">15 October 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>
