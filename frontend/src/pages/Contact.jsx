@@ -348,12 +348,7 @@ export default function Contact() {
                     Registration includes access to all sessions, proceedings, networking events, and meals.
                   </p>
                 </div>
-                <div>
-                  <h4 className="font-medium text-text-primary mb-1">Can I get a refund?</h4>
-                  <p className="text-small text-text-secondary">
-                    Yes, refunds are available based on our cancellation policy. Contact us for details.
-                  </p>
-                </div>
+               
               </div>
             </div>
 

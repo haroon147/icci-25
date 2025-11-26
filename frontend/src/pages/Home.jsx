@@ -6,7 +6,7 @@ export default function Home() {
     {
       name: "MetaMelon",
       logo: "https://metamelon.org/wp-content/uploads/2024/09/metamelon-logo.webp",
-      description: "Amazon Web Services CommunitMeta Melon are committed to providing cutting-edge, scalable technological solutions",
+      description: "Meta Melon are committed to providing cutting-edge, scalable technological solutions",
       website: "https://metamelon.org/"
     },
    
