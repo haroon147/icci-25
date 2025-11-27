@@ -105,7 +105,7 @@ export default function Contact() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
+            {/* <div>
               <h2 className="text-section mb-6 font-semibold text-text-primary">
                 Send Us a Message
               </h2>
@@ -198,7 +198,7 @@ export default function Contact() {
                   <Send className="ml-2 h-4 w-4" />
                 </button>
               </form>
-            </div>
+            </div> */}
 
             {/* Map and Additional Info */}
             <div>
@@ -291,7 +291,7 @@ export default function Contact() {
                 <h3 className="text-subheading font-medium text-text-primary mb-4">
                   Venue Information
                 </h3>
-                <div className="space-y-4">
+                <div className=" space-y-4">
                   <div>
                     <h4 className="font-medium text-text-primary mb-2">Address</h4>
                   <p className="text-body text-text-secondary">
@@ -301,7 +301,7 @@ export default function Contact() {
                   </p>
                   </div>
                   
-                  <div>
+                  <div className=''>
                     <h4 className="font-medium text-text-primary mb-2">Transportation</h4>
                     <p className="text-body text-text-secondary">
                       • 30 minutes from Lahore Airport<br />
@@ -345,7 +345,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium text-text-primary mb-1">What's included in registration?</h4>
                   <p className="text-small text-text-secondary">
-                    Registration includes access to all sessions, proceedings, networking events, and meals.
+                    Registration includes access to  sessions, proceedings and networking events.
                   </p>
                 </div>
                

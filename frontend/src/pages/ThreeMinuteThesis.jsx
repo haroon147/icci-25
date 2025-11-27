@@ -356,7 +356,7 @@ export default function ThreeMinuteThesis() {
                     <Award className="h-10 w-10 text-white" />
                   </div>
                   <h4 className="text-subheading font-semibold text-text-primary mb-3">Second Place</h4>
-                  <p className="text-body text-accent font-medium">Certificate of Appreciation</p>
+                  <p className="text-body text-accent font-medium">Sheild  &<br/> Certificate of Appreciation</p>
                 </div>
                 
                 <div className="bg-white p-6 rounded-lg shadow-md text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -364,7 +364,7 @@ export default function ThreeMinuteThesis() {
                     <Award className="h-10 w-10 text-white" />
                   </div>
                   <h4 className="text-subheading font-semibold text-text-primary mb-3">Third Place</h4>
-                  <p className="text-body text-accent font-medium">Certificate of Recognition</p>
+                  <p className="text-body text-accent font-medium">Sheild  &<br/> Certificate of Appreciation</p>
                 </div>
               </div>
             </div>

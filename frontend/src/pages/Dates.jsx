@@ -63,7 +63,7 @@ export default function Dates() {
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Key Dates</h1>
+            <h1 className="text-hero mb-6 font-bold">Dates</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
               Important deadlines and milestones for ICCI-2025
             </p>
@@ -143,8 +143,8 @@ export default function Dates() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* <div className="bg-white p-8 rounded-lg shadow-sm text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
@@ -153,7 +153,7 @@ export default function Dates() {
                 Register before 15 September 2025 to receive discounted rates and secure your spot.
               </p>
               <div className="text-2xl font-bold text-primary">Until 15 September 2025</div>
-            </div>
+            </div> */}
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -163,7 +163,7 @@ export default function Dates() {
               <p className="text-body text-text-secondary mb-4 text-break">
                 Standard registration rates apply after the early bird deadline.
               </p>
-              <div className="text-2xl font-bold text-primary">Dec 1-7, 2025</div>
+              <div className="text-2xl font-bold text-primary">Till 7 December, 2025</div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center">

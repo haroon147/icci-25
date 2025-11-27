@@ -60,7 +60,7 @@ export default function Registration() {
         "Industry networking sessions",
         "Exhibition area access"
       ],
-      deadline: "Early Bird: Until 15 September 2025"
+      deadline: "Early Bird: Until 30 November 2025"
     }
   ];
 

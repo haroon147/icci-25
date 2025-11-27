@@ -1,15 +1,15 @@
-import { Users, CheckCircle, ClipboardList, ExternalLink, AlertCircle } from 'lucide-react';
+import { Users, CheckCircle, ClipboardList, ExternalLink, AlertCircle, Calendar, Clock } from 'lucide-react';
 
 export default function Workshops() {
   const workshops = [
-    { title: "Database Design and Management using Microsoft SQL Server", summary: "Structured approach to modeling data, normalizing schemas, and administrating SQL Server instances with real lab exercises." },
-    { title: "Digital Forensics Lab: Tracing Evidence in Cybercrime", summary: "Acquire evidence collection, chain-of-custody, and investigative tooling skills to track digital footprints securely." },
-    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards." },
-    { title: "Practical DevOps: Automating Deployments with CI/CD", summary: "Implement automated build, test, and deployment pipelines using industry-standard DevOps toolchains." },
-    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning." },
-    { title: "Computer Vision and Pattern Recognition using Python & OpenCV", summary: "Build CV pipelines for detection, classification, and tracking with OpenCV libraries and annotated datasets." },
-    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity." },
-    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization." }
+    { title: "Database Modeling, Design, Optimization & Administration: A Hands-On Masterclass", summary: "Structured approach to modeling data, normalizing schemas, and administrating SQL Server instances with real lab exercises.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
+    { title: "Digital Forensics Lab: Tracing Evidence in Cybercrime", summary: "Acquire evidence collection, chain-of-custody, and investigative tooling skills to track digital footprints securely.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
+    { title: "Practical DevOps: Automating Deployments with CI/CD", summary: "Implement automated build, test, and deployment pipelines using industry-standard DevOps toolchains.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
+    { title: "Intelligent Vision Systems: Practical Training in Computer Vision & Pattern Recognition", summary: "Build CV pipelines for detection, classification, and tracking with OpenCV libraries and annotated datasets.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
+    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2" },
+    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2" },
+    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2" },
+    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2" }
   ];
 
   const objectives = [
@@ -90,22 +90,70 @@ export default function Workshops() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {workshops.map((workshop, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-primary-dark p-3 rounded-full shadow-md">
-                    <Users className="h-6 w-6 text-white" />
-                  </div>
-                  <span className="text-sm font-semibold text-accent uppercase tracking-wide">Workshop {index + 1}</span>
-                </div>
-                <h3 className="text-subheading font-semibold text-text-primary mb-3 text-break">{workshop.title}</h3>
-                <p className="text-body text-text-secondary mb-4 text-break">{workshop.summary}</p>
-                <div className="mt-auto">
-                  <p className="text-sm text-text-muted">Format: Hands-on labs · Real-world projects · Digital certificate</p>
+          <div className="space-y-12">
+            {/* Day 1 Workshops */}
+            <div>
+              <div className="flex items-center gap-3 mb-8 pb-4 border-b-2 border-primary">
+                <Calendar className="h-6 w-6 text-primary" />
+                <h3 className="text-2xl font-bold text-primary">Day 1 Workshops</h3>
+                <div className="ml-auto flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                  <Clock className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-semibold text-primary">10:00 AM - 4:00 PM</span>
                 </div>
               </div>
-            ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {workshops.filter(w => w.day === "Day 1").map((workshop, index) => (
+                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm border-2 border-primary/20 hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg text-xs font-bold">
+                      {workshop.day}
+                    </div>
+                    <div className="flex items-center gap-4 mb-4 mt-2">
+                      <div className="bg-gradient-to-br from-primary to-primary-dark p-3 rounded-full shadow-md">
+                        <Users className="h-6 w-6 text-white" />
+                      </div>
+                      <span className="text-sm font-semibold text-accent uppercase tracking-wide">Workshop {workshops.indexOf(workshop) + 1}</span>
+                    </div>
+                    <h3 className="text-subheading font-semibold text-text-primary mb-3 text-break">{workshop.title}</h3>
+                    <p className="text-body text-text-secondary mb-4 text-break">{workshop.summary}</p>
+                    <div className="mt-auto space-y-2">
+                      <div className="flex items-center gap-2 text-sm text-primary font-medium">
+                        <Clock className="h-4 w-4" />
+                        <span>{workshop.time}</span>
+                      </div>
+                      <p className="text-sm text-text-muted">Format: Hands-on labs · Real-world projects · Digital certificate</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Day 2 Workshops */}
+            <div>
+              <div className="flex items-center gap-3 mb-8 pb-4 border-b-2 border-accent">
+                <Calendar className="h-6 w-6 text-accent" />
+                <h3 className="text-2xl font-bold text-accent">Day 2 Workshops</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {workshops.filter(w => w.day === "Day 2").map((workshop, index) => (
+                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm border-2 border-accent/20 hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-accent text-white px-4 py-1 rounded-bl-lg text-xs font-bold">
+                      {workshop.day}
+                    </div>
+                    <div className="flex items-center gap-4 mb-4 mt-2">
+                      <div className="bg-gradient-to-br from-accent to-accent/80 p-3 rounded-full shadow-md">
+                        <Users className="h-6 w-6 text-white" />
+                      </div>
+                      <span className="text-sm font-semibold text-accent uppercase tracking-wide">Workshop {workshops.indexOf(workshop) + 1}</span>
+                    </div>
+                    <h3 className="text-subheading font-semibold text-text-primary mb-3 text-break">{workshop.title}</h3>
+                    <p className="text-body text-text-secondary mb-4 text-break">{workshop.summary}</p>
+                    <div className="mt-auto">
+                      <p className="text-sm text-text-muted">Format: Hands-on labs · Real-world projects · Digital certificate</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
