@@ -6,10 +6,10 @@ export default function Workshops() {
     { title: "Digital Forensics Lab: Tracing Evidence in Cybercrime", summary: "Acquire evidence collection, chain-of-custody, and investigative tooling skills to track digital footprints securely.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Practical DevOps: Automating Deployments with CI/CD", summary: "Implement automated build, test, and deployment pipelines using industry-standard DevOps toolchains.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Intelligent Vision Systems: Practical Training in Computer Vision & Pattern Recognition", summary: "Build CV pipelines for detection, classification, and tracking with OpenCV libraries and annotated datasets.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
-    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2" },
-    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2" },
-    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2" },
-    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2" }
+    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
+    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
+    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
+    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2",time: "10:00 AM - 4:00 PM" }
   ];
 
   const objectives = [
@@ -147,6 +147,10 @@ export default function Workshops() {
                     </div>
                     <h3 className="text-subheading font-semibold text-text-primary mb-3 text-break">{workshop.title}</h3>
                     <p className="text-body text-text-secondary mb-4 text-break">{workshop.summary}</p>
+                    <div className="flex items-center gap-2 text-sm text-primary font-medium">
+                        <Clock className="h-4 w-4" />
+                        <span>{workshop.time}</span>
+                      </div>
                     <div className="mt-auto">
                       <p className="text-sm text-text-muted">Format: Hands-on labs · Real-world projects · Digital certificate</p>
                     </div>
