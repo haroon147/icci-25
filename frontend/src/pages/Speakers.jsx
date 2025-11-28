@@ -312,13 +312,13 @@ export default function Speakers() {
 
       {/* Content Section */}
       <div className="text-center mt-3">
-        <h3 className="text-base font-semibold text-gray-800">
+        <h3 className="text-xl font-semibold text-gray-800">
           {speaker.name}
         </h3>
-        <p className="text-xs text-accent font-medium text-indigo-600 mt-1">
+        <p className="text-s text-accent font-medium text-indigo-600 mt-2">
           {speaker.title}
         </p>
-        <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+        <p className="text-s text-gray-500 mt-1 line-clamp-2">
           {speaker.affiliation}
         </p>
       </div>
