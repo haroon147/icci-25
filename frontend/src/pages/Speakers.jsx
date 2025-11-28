@@ -32,7 +32,7 @@ export default function Speakers() {
     {
       name: "Prof. Dr. Ammar Ali Almomani",
       title: "Professor",
-      affiliation: "School of IT, Al-Balqa Applied University, Jordan / Higher Colleges of Technology (HCT), Sharjah, UAE",
+      affiliation: "School of IT, Al-Balqa Applied University, Sharjah, UAE",
       image: "/invitedSpeaker/dr-ammar.png"
     },
     {
