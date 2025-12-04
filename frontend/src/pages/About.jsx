@@ -291,6 +291,82 @@ practitioners to drive sustainable digital transformation.              </p>
           </div>
         </div>
       </section>
+      <div className="container-custom">
+    <h2 className="text-section text-center mb-6 font-semibold text-text-primary">
+      Connect With Us
+    </h2>
+    <div className="w-20 h-1 bg-accent mx-auto mb-8"></div>
+
+    <div className="flex items-center justify-center space-x-8">
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/riphahsci/"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-pink-500 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 
+           2.243 5 5 5h10c2.757 0 5-2.243 
+           5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 
+           0 3 1.346 3 3v10c0 1.654-1.346 
+           3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 
+           1.346-3 3-3h10zm-5 3a5 5 0 100 
+           10 5 5 0 000-10zm0 2a3 3 0 110 
+           6 3 3 0 010-6zm4.5-.25a1.25 1.25 0 
+           11-2.5 0 1.25 1.25 0 012.5 0z" />
+        </svg>
+      </a>
+
+      {/* Facebook */}
+      <a
+        href="https://web.facebook.com/riphahsci?_rdc=1&_rdr#"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-blue-600 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M22 12a10 10 0 10-11.5 9.87v-6.99h-2.3V12h2.3V9.8c0-2.27 
+           1.35-3.53 3.42-3.53.99 0 
+           2.03.18 2.03.18v2.23h-1.14c-1.12 
+           0-1.47.7-1.47 1.42V12h2.5l-.4 
+           2.88h-2.1v6.99A10 10 0 0022 12z"/>
+        </svg>
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/company/riphahsci/"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-blue-500 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M4.98 3.5a2.5 2.5 0 11.02 
+            5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zm7 
+            0h3.8v1.71h.05c.53-1 1.82-2.06 
+            3.75-2.06C21.42 8.65 22 11.26 
+            22 14.77V21h-4v-5.22c0-1.25-.02-2.86-1.74-2.86-1.74 
+            0-2 1.36-2 2.77V21h-4z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+  <br></br>
     </div>
   );
 }

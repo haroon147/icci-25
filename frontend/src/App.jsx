@@ -11,6 +11,7 @@ import ThreeMinuteThesis from './pages/ThreeMinuteThesis';
 import Schedule from './pages/Schedule';
 import Registration from './pages/Registration';
 import Contact from './pages/Contact';
+import VirtualProceedings from './pages/VirtualProceedings';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import Workshops from './pages/Workshops';
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/3mt" element={<ThreeMinuteThesis />} />
                 <Route path="/workshops" element={<Workshops />} />
                 <Route path="/proceedings" element={<Schedule />} />
+                <Route path="/virtual-proceedings" element={<VirtualProceedings />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>

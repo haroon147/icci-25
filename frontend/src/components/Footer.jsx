@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Mail, MapPin, Phone, ArrowUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { IconConferenceLogo } from './ConferenceLogo';
+import SocialIcons from './SocialIcons';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -107,6 +108,15 @@ export default function Footer() {
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
                 <span className="text-small text-white/80">+92335546844</span>
+              </div>
+              {/* Social Media Icons */}
+              <div className="pt-2">
+                <p className="text-small text-white/80 mb-3 font-medium">Follow Us</p>
+                <SocialIcons 
+                  className="" 
+                  iconSize="h-6 w-6"
+                  textColor="text-white/80"
+                />
               </div>
             </div>
           </div>

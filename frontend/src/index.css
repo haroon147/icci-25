@@ -69,6 +69,8 @@
     @apply text-xs sm:text-sm lg:text-base;
   }
   
+
+  
   .text-responsive-lg {
     @apply text-base sm:text-lg lg:text-xl;
   }
@@ -166,39 +168,40 @@
   .content-spacing-lg {
     @apply space-y-6 sm:space-y-8 lg:space-y-12;
   }
-
-  /* Carousel Animations */
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-50% - 0px));
-    }
+/* Carousel Animations */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100);
   }
-
-  @keyframes scroll-reverse {
-    0% {
-      transform: translateX(calc(-50% - 0px));
-    }
-    100% {
-      transform: translateX(0);
-    }
+  100% {
+    transform: translateX(-100%);
   }
+}
 
-  .animate-scroll {
-    animation: scroll 4s linear infinite;
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(100);
+  }
+}
 
-  .animate-scroll-reverse {
-    animation: scroll-reverse 4s linear infinite;
-  }
+/* Adjust duration for speed */
+.animate-scroll {
+  animation: scroll-left 5s linear infinite; /* faster: 20s */
+}
 
-  .animate-scroll:hover,
-  .animate-scroll-reverse:hover {
-    animation-play-state: paused;
-  }
-  
+.animate-scroll-reverse {
+  animation: scroll-right 3s linear infinite; /* same speed reverse */
+}
+
+/* Pause on hover */
+.animate-scroll:hover,
+.animate-scroll-reverse:hover {
+  animation-play-state: paused;
+}
+
   .blink {
     animation: blink 1.5s ease-in-out infinite alternate;
   }

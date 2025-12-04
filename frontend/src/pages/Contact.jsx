@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import SocialIcons from '../components/SocialIcons';
 
 export default function Contact() {
   const contactInfo = [
@@ -63,6 +64,9 @@ export default function Contact() {
         </div>
       </section>
 
+
+      
+
       {/* Contact Information */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
@@ -99,232 +103,184 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <section className="bg-background-white py-12 border-t">
+  <div className="container-custom">
+    <h2 className="text-section text-center mb-6 font-semibold text-text-primary">
+      Connect With Us
+    </h2>
+    <div className="w-20 h-1 bg-accent mx-auto mb-8"></div>
+
+    <div className="flex items-center justify-center space-x-8">
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/riphahsci/"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-pink-500 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 
+           2.243 5 5 5h10c2.757 0 5-2.243 
+           5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 
+           0 3 1.346 3 3v10c0 1.654-1.346 
+           3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 
+           1.346-3 3-3h10zm-5 3a5 5 0 100 
+           10 5 5 0 000-10zm0 2a3 3 0 110 
+           6 3 3 0 010-6zm4.5-.25a1.25 1.25 0 
+           11-2.5 0 1.25 1.25 0 012.5 0z" />
+        </svg>
+      </a>
+
+      {/* Facebook */}
+      <a
+        href="https://web.facebook.com/riphahsci?_rdc=1&_rdr#"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-blue-600 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M22 12a10 10 0 10-11.5 9.87v-6.99h-2.3V12h2.3V9.8c0-2.27 
+           1.35-3.53 3.42-3.53.99 0 
+           2.03.18 2.03.18v2.23h-1.14c-1.12 
+           0-1.47.7-1.47 1.42V12h2.5l-.4 
+           2.88h-2.1v6.99A10 10 0 0022 12z"/>
+        </svg>
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/company/riphahsci/"
+        target="_blank"
+        className="w-14 h-14 rounded-full bg-white shadow-md flex items-center justify-center 
+                   hover:scale-110 transition-all duration-300 hover:shadow-xl hover:bg-blue-500 group"
+      >
+        <svg
+          className="h-7 w-7 text-gray-600 group-hover:text-white transition-colors duration-300"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M4.98 3.5a2.5 2.5 0 11.02 
+            5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zm7 
+            0h3.8v1.71h.05c.53-1 1.82-2.06 
+            3.75-2.06C21.42 8.65 22 11.26 
+            22 14.77V21h-4v-5.22c0-1.25-.02-2.86-1.74-2.86-1.74 
+            0-2 1.36-2 2.77V21h-4z"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</section>
 
       {/* Contact Form & Map */}
       <section className="section-padding bg-background-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            {/* <div>
-              <h2 className="text-section mb-6 font-semibold text-text-primary">
-                Send Us a Message
-              </h2>
-              <p className="text-body text-text-secondary mb-8">
-                Fill out the form below and we'll get back to you within 24 hours.
-              </p>
+  <div className="container-custom">
+    {/* Two Column Layout */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-small font-medium text-text-primary mb-2">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
-                      placeholder="Enter your first name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-small font-medium text-text-primary mb-2">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
-                      placeholder="Enter your last name"
-                    />
-                  </div>
-                </div>
+      {/* LEFT SIDE – MAP + BUTTONS */}
+      <div className="space-y-8">
+        <h2 className="text-section font-semibold text-text-primary">
+          Conference Venue
+        </h2>
 
-                <div>
-                  <label htmlFor="email" className="block text-small font-medium text-text-primary mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
-                    placeholder="Enter your email address"
-                  />
-                </div>
+        <p className="text-body text-text-secondary leading-relaxed">
+          ICCI-2025 will be held at Riphah International University, Raiwind Road, Lahore, Pakistan. 
+          The venue offers state-of-the-art facilities and is easily accessible.
+        </p>
 
-                <div>
-                  <label htmlFor="subject" className="block text-small font-medium text-text-primary mb-2">
-                    Subject *
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="registration">Registration Inquiry</option>
-                    <option value="submission">Paper Submission</option>
-                    <option value="technical">Technical Support</option>
-                    <option value="general">General Information</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-small font-medium text-text-primary mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300 resize-vertical"
-                    placeholder="Enter your message here..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-primary flex items-center justify-center"
-                >
-                  Send Message
-                  <Send className="ml-2 h-4 w-4" />
-                </button>
-              </form>
-            </div> */}
-
-            {/* Map and Additional Info */}
-            <div>
-              <h2 className="text-section mb-6 font-semibold text-text-primary">
-                Conference Venue
-              </h2>
-              <p className="text-body text-text-secondary mb-8">
-                ICCI-2025 will be held at Riphah International University, Raiwind Road Lahore, Pakistan. 
-                The venue offers state-of-the-art facilities and is easily accessible.
-              </p>
-
-              {/* Interactive Google Map */}
-              <div className="h-64 rounded-lg mb-8 overflow-hidden shadow-lg relative">
-                <iframe
-                  src="https://maps.google.com/maps?q=Riphah+International+University+Raiwind+Road+Lahore+Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Riphah International University Location"
-                  onError={() => {
-                    // Fallback to static map if iframe fails
-                    const mapContainer = document.getElementById('map-container');
-                    if (mapContainer) {
-                      mapContainer.innerHTML = `
-                        <div class="w-full h-full bg-gray-100 flex items-center justify-center">
-                          <div class="text-center">
-                            <div class="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                              <svg class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                              </svg>
-                            </div>
-                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Riphah International University</h3>
-                            <p class="text-gray-600 mb-4">Raiwind Road, Lahore, Pakistan</p>
-                            <p class="text-sm text-gray-500">Coordinates: 31.377381, 74.230755</p>
-                          </div>
-                        </div>
-                      `;
-                    }
-                  }}
-                ></iframe>
-                
-                {/* Fallback static map */}
-                <div id="map-fallback" className="absolute inset-0 bg-gray-100 flex items-center justify-center" style={{display: 'none'}}>
-                  <div className="text-center">
-                    <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">Riphah International University</h3>
-                    <p className="text-gray-600 mb-4">Raiwind Road, Lahore, Pakistan</p>
-                    <p className="text-sm text-gray-500 mb-4">Coordinates: 31.377381, 74.230755</p>
-                    <a 
-                      href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300"
-                    >
-                      <MapPin className="h-4 w-4 mr-2" />
-                      Open in Google Maps
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Alternative Map Links */}
-              <div className="text-center mb-4 space-y-3">
-                <a 
-                  href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors duration-300 mr-3"
-                >
-                  <MapPin className="h-4 w-4 mr-2" />
-                  Open in Google Maps
-                </a>
-                <a 
-                  href="https://maps.google.com/maps?q=31.377381,74.230755&z=15"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors duration-300"
-                >
-                  <MapPin className="h-4 w-4 mr-2" />
-                  View Coordinates
-                </a>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-subheading font-medium text-text-primary mb-4">
-                  Venue Information
-                </h3>
-                <div className=" space-y-4">
-                  <div>
-                    <h4 className="font-medium text-text-primary mb-2">Address</h4>
-                  <p className="text-body text-text-secondary">
-                    Riphah International University<br />
-                    Raiwind Road<br />
-                    Lahore, Pakistan
-                  </p>
-                  </div>
-                  
-                  <div className=''>
-                    <h4 className="font-medium text-text-primary mb-2">Transportation</h4>
-                    <p className="text-body text-text-secondary">
-                      • 30 minutes from Lahore Airport<br />
-                      • Accessible by public transport<br />
-                      • Parking available on campus
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-text-primary mb-2">Facilities</h4>
-                    <p className="text-body text-text-secondary">
-                      • Free Wi-Fi throughout campus<br />
-                      • Modern auditoriums and conference rooms<br />
-                      • Dining facilities and coffee shops<br />
-                      • Accommodation nearby
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Map Section */}
+        <div className="h-80 rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+          <iframe
+            src="https://maps.google.com/maps?q=Riphah+International+University+Raiwind+Road+Lahore+Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Riphah International University Location"
+          ></iframe>
         </div>
-      </section>
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center gap-4">
+          <a 
+            href="https://www.google.com/maps/search/Riphah+International+University+Raiwind+Road+Lahore+Pakistan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 bg-primary text-white rounded-xl flex items-center shadow-md hover:bg-primary-dark transition-all"
+          >
+            <MapPin className="h-5 w-5 mr-2" /> Open in Google Maps
+          </a>
+
+          <a 
+            href="https://maps.google.com/maps?q=31.377381,74.230755&z=15"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 bg-accent text-white rounded-xl flex items-center shadow-md hover:bg-accent-dark transition-all"
+          >
+            <MapPin className="h-5 w-5 mr-2" /> View Coordinates
+          </a>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE – VENUE HIGHLIGHTS */}
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 sticky top-24">
+        <h3 className="text-xl font-semibold text-text-primary mb-6">
+          Venue Highlights
+        </h3>
+
+        <div className="space-y-8">
+
+          {/* Address */}
+          <div>
+            <h4 className="font-medium text-text-primary mb-2 text-lg">Address</h4>
+            <p className="text-body text-text-secondary leading-relaxed">
+              Riphah International University <br />
+              Raiwind Road <br />
+              Lahore, Pakistan
+            </p>
+          </div>
+
+          {/* Transportation */}
+          <div>
+            <h4 className="font-medium text-text-primary mb-2 text-lg">Transportation</h4>
+            <ul className="text-body text-text-secondary space-y-1 leading-relaxed">
+              <li>• 30 minutes from Lahore Airport</li>
+              <li>• Accessible by public transport</li>
+              <li>• On-campus parking available</li>
+            </ul>
+          </div>
+
+          {/* Facilities */}
+          <div>
+            <h4 className="font-medium text-text-primary mb-2 text-lg">Facilities</h4>
+            <ul className="text-body text-text-secondary space-y-1 leading-relaxed">
+              <li>• Free Wi-Fi throughout campus</li>
+              <li>• Modern auditoriums & conference halls</li>
+              <li>• Dining areas & coffee shops</li>
+              <li>• Nearby accommodation available</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
       {/* FAQ Section */}
       <section className="section-padding bg-background-light">
@@ -374,6 +330,9 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      {/* Social Media Section */}
+
+
     </div>
   );
 }

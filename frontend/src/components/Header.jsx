@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import ConferenceLogo from './ConferenceLogo';
+import SocialIcons from './SocialIcons';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function Header() {
     { name: '3MT', href: '/3mt' },
     { name: 'Workshops', href: '/workshops' },
     { name: 'Schedule', href: '/proceedings' },
+    { name: 'Virtual Proceedings', href: '/virtual-proceedings' },
     { name: 'Registration', href: '/registration' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -45,19 +47,22 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium transition-colors duration-300 ${
-                  location.pathname === item.href
-                    ? 'text-accent'
-                    : 'text-text-primary hover:text-accent'
-                }`}
-              >
-                {item.name}
-              </Link>
+              <React.Fragment key={item.name}>
+                <Link
+                  to={item.href}
+                  className={`text-sm font-medium transition-colors duration-300 ${
+                    location.pathname === item.href
+                      ? 'text-accent'
+                      : 'text-text-primary hover:text-accent'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+               
+               
+              </React.Fragment>
             ))}
           </nav>
 
@@ -90,6 +95,10 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
+              {/* Social Icons in Mobile Menu */}
+              <div className="px-3 py-4 border-t border-gray-200 mt-2">
+                <SocialIcons className="justify-center" iconSize="h-6 w-6" />
+              </div>
             </div>
           </div>
         )}
