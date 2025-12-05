@@ -95,10 +95,10 @@ export default function Home() {
             {/* LIVE Badge */}
             <Link 
               to="/virtual-proceedings"
-              className="inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+              className="live-badge-blink inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
             >
               <Radio className="h-5 w-5 animate-pulse" />
-              <span>Virtual Proceedings are Live Now! Click Here</span>
+              <span className="live-badge-text">LIVE Conference Streaming! Click Here</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             
@@ -116,7 +116,7 @@ export default function Home() {
             <div className="mb-8 flex justify-center px-4">
               {/* Mobile: Stack all items */}
               <div className="md:hidden w-full">
-                <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/30 shadow-xl">
+                <div className="date-card-blink bg-white/15 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/30 shadow-xl">
                   <div className="space-y-2">
                     <div className="text-white text-sm font-semibold text-center">
                       📅 8-9 December 2025
@@ -133,7 +133,7 @@ export default function Home() {
               
               {/* Desktop: Rotating animation */}
               <div className="hidden md:block">
-                <div className="bg-white/15 backdrop-blur-md rounded-2xl px-4 border border-white/30 shadow-xl inline-block max-w-full overflow-hidden">
+                <div className="date-card-blink bg-white/15 backdrop-blur-md rounded-2xl px-4 border border-white/30 shadow-xl inline-block max-w-full overflow-hidden">
                   <div className="rotating-text-wrapper">
                     <div className="rotating-text">
                       <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
@@ -690,11 +690,110 @@ export default function Home() {
           50% { transform: translateY(-6px); opacity: 1; }
           100% { transform: translateY(0); opacity: 0.8; }
         }
+        @keyframes beautifulBlink {
+          0%, 40% { 
+            opacity: 1; 
+            transform: scale(1);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4), 0 0 20px rgba(239, 68, 68, 0.2);
+          }
+          42% { 
+            opacity: 0.4; 
+            transform: scale(0.97);
+            box-shadow: 0 5px 15px rgba(239, 68, 68, 0.1);
+          }
+          44% { 
+            opacity: 1; 
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(239, 68, 68, 0.7), 0 0 30px rgba(239, 68, 68, 0.4);
+          }
+          46% { 
+            opacity: 0.5; 
+            transform: scale(0.98);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.2);
+          }
+          48% { 
+            opacity: 1; 
+            transform: scale(1.01);
+            box-shadow: 0 15px 35px rgba(239, 68, 68, 0.6), 0 0 25px rgba(239, 68, 68, 0.3);
+          }
+          50%, 100% { 
+            opacity: 1; 
+            transform: scale(1);
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.4), 0 0 20px rgba(239, 68, 68, 0.2);
+          }
+        }
+        @keyframes beautifulBlinkGlass {
+          0%, 40% { 
+            opacity: 1; 
+            transform: scale(1);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 8px 32px rgba(0, 0, 0, 0.1);
+          }
+          42% { 
+            opacity: 0.4; 
+            transform: scale(0.97);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1), 0 4px 16px rgba(0, 0, 0, 0.05);
+          }
+          44% { 
+            opacity: 1; 
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 12px 48px rgba(0, 0, 0, 0.15);
+          }
+          46% { 
+            opacity: 0.5; 
+            transform: scale(0.98);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15), 0 4px 16px rgba(0, 0, 0, 0.08);
+          }
+          48% { 
+            opacity: 1; 
+            transform: scale(1.01);
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.25), 0 10px 40px rgba(0, 0, 0, 0.12);
+          }
+          50%, 100% { 
+            opacity: 1; 
+            transform: scale(1);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 8px 32px rgba(0, 0, 0, 0.1);
+          }
+        }
         .animate-pulseGlow {
           animation: pulseGlow 2.5s ease-in-out infinite;
         }
         .animate-floatBadge {
           animation: floatBadge 3s ease-in-out infinite;
+        }
+        .live-badge-blink {
+          animation: beautifulBlink 5s ease-in-out infinite;
+          animation-delay: 2.5s;
+        }
+        .date-card-blink {
+          animation: beautifulBlinkGlass 5s ease-in-out infinite;
+          animation-delay: 2.5s;
+        }
+        @keyframes textFadeInOut {
+          0%, 70% { 
+            opacity: 1; 
+            visibility: visible;
+          }
+          72% { 
+            opacity: 0; 
+            visibility: hidden;
+          }
+          92% { 
+            opacity: 0; 
+            visibility: hidden;
+          }
+          94% { 
+            opacity: 1; 
+            visibility: visible;
+          }
+          100% { 
+            opacity: 1; 
+            visibility: visible;
+          }
+        }
+        .live-badge-text {
+          animation: textFadeInOut 0.5s linear infinite;
+          animation-delay: 0.1s;
+          display: inline-block;
         }
       `}</style>
     </div>
