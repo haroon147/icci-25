@@ -3,33 +3,57 @@ import { Calendar, Clock, MapPin, Users, Download } from 'lucide-react';
 export default function Schedule() {
   // Function to download schedule as PDF file
   const downloadSchedule = async () => {
+    const pdfPath = '/ICCI 2025 Schedule 0.3.pdf';
+    console.log('Download button clicked, attempting to download:', pdfPath);
+    
     try {
-      // Fetch the PDF file from the public folder (encode spaces in filename)
-      const pdfPath = encodeURI('/ICCI 2025 Schedule 0.3.pdf');
+      // Method 1: Try fetch with blob (works for forcing download)
       const response = await fetch(pdfPath);
-      if (!response.ok) {
-        throw new Error('Failed to fetch PDF file');
+      console.log('Fetch response status:', response.status, response.statusText);
+      
+      if (response.ok) {
+        const blob = await response.blob();
+        console.log('Blob created, size:', blob.size, 'type:', blob.type);
+        
+        const url = window.URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'ICCI-2025-Conference-Schedule.pdf';
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        console.log('Download triggered via blob');
+        
+        // Cleanup
+        setTimeout(() => {
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(url);
+        }, 200);
+      } else {
+        // If fetch fails, throw error to trigger fallback
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      
-      // Convert response to blob
-      const blob = await response.blob();
-      
-      // Create download link
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'ICCI-2025-Conference-Schedule.pdf';
-      
-      // Trigger download
-      document.body.appendChild(link);
-      link.click();
-      
-      // Cleanup
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
     } catch (error) {
-      console.error('Error downloading PDF:', error);
-      alert('Failed to download schedule. Please try again later.');
+      console.error('Blob download failed, trying direct link:', error);
+      
+      // Method 2: Direct link approach (fallback)
+      try {
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = 'ICCI-2025-Conference-Schedule.pdf';
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        console.log('Download triggered via direct link');
+        setTimeout(() => {
+          document.body.removeChild(link);
+        }, 200);
+      } catch (directError) {
+        console.error('Direct link also failed:', directError);
+        // Final fallback: Open in new tab
+        console.log('Opening PDF in new tab as final fallback');
+        window.open(pdfPath, '_blank');
+      }
     }
   };
     const day1Sessions = [
@@ -351,9 +375,9 @@ export default function Schedule() {
                 
             {day2Sessions.map((session) => (
               <ScheduleSection key={session.id} session={session} />
-            ))}
-          </div>
+                      ))}
+                    </div>
         </section>
-      </div>
-    );
+    </div>
+  );
 }
