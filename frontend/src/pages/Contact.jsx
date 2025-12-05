@@ -106,7 +106,7 @@ export default function Contact() {
       <section className="bg-background-white py-12 border-t">
   <div className="container-custom">
     <h2 className="text-section text-center mb-6 font-semibold text-text-primary">
-      Connect With Us
+      Connect With Us on Social Media
     </h2>
     <div className="w-20 h-1 bg-accent mx-auto mb-8"></div>
 
