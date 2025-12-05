@@ -26,7 +26,6 @@ export default function Committees() {
       name: "Dr. Muhammad Adnan Khan",
       title: "Co-Convenor/Co-Chair",
       affiliation: "Riphah School of Computing & Innovation, Riphah International University",
-    
       image: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=Pw_eGvsAAAAJ&citpid=1",
       email: "farrukh.arslan@riphah.edu.pk"
     },
