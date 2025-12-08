@@ -138,6 +138,13 @@ export default function Speakers() {
       image: "/invitedSpeaker/dr-bilal.jpg"
     },
     {
+      name:"Dr. Saad",
+      title:"Machine learning Engineer",
+      affiliation:"EMOTIV, Sydney",
+      image:"/invitedSpeaker/dr-saad.jpg"
+    }
+    ,
+    {
       name: "Dr Nisar Ahmad",
       title:"Assistant Professor",
       affiliation:"University of Management of Technology",
