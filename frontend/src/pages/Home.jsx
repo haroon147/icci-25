@@ -1,21 +1,13 @@
 import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';
 
 export default function Home() {
-  // Function to get the YouTube live link based on date/time
-  // Switches to Day02 link after December 8, 2025 11:50 PM
-  const getYouTubeLiveLink = () => {
-    // Cutoff date: December 8, 2025 11:50 PM (local time)
-    const cutoffDate = new Date('2025-12-08T23:50:00');
-    const currentDate = new Date();
-    
-    // If current date is after the cutoff date/time, use Day02 link
-    if (currentDate > cutoffDate) {
-      return 'https://youtube.com/live/qsgv-UX0wts?feature=share';
-    }
-    // Otherwise (before or on December 8, 2025 11:50 PM), use Day01 link
-    return 'https://youtube.com/live/5s0Ydizx9lI?feature=share';
+  const navigate = useNavigate();
+
+  // Function to navigate to virtual proceedings page
+  const navigateToVirtualProceedings = () => {
+    navigate('/virtual-proceedings');
   };
 
   const collaborators = [
@@ -108,16 +100,14 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             {/* LIVE Badge */}
-            <a 
-              href={getYouTubeLiveLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-badge-blink inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+            <button 
+              onClick={navigateToVirtualProceedings}
+              className="live-badge-blink inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               <Radio className="h-5 w-5 animate-pulse" />
               <span className="live-badge-text">LIVE Conference Streaming! Click Here</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </button>
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on

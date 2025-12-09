@@ -392,7 +392,7 @@ export default function Schedule() {
                   </div>
                 </div>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-primary mx-auto"></div>
-            </div>
+                </div>
                 
             {day2Sessions.map((session) => (
               <ScheduleSection key={session.id} session={session} />
