@@ -152,7 +152,7 @@ export default function VirtualProceedings() {
                 </div>
               </div>
 
-              {/* Track 3MT */}
+              {/* Track 3MT Session 1 */}
               <div className="group bg-gradient-to-br from-white to-purple-50 rounded-2xl shadow-xl p-5 lg:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-purple-200">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors duration-300">
@@ -160,7 +160,7 @@ export default function VirtualProceedings() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg lg:text-xl font-bold text-text-primary">
-                      Track 3MT
+                      Track 3MT - Session 1
                     </h3>
                     <p className="text-xs text-text-secondary mt-1">ICCI 2025 - Day 2</p>
                   </div>
@@ -173,6 +173,31 @@ export default function VirtualProceedings() {
                     allow="autoplay; encrypted-media; picture-in-picture"
                     allowFullScreen
                     title="ICCI 2025 - Day 2 - Track 3MT Live (09-DEC-2025)"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Track 3MT Session 2 */}
+              <div className="group bg-gradient-to-br from-white to-purple-50 rounded-2xl shadow-xl p-5 lg:p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2 border-transparent hover:border-purple-200">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors duration-300">
+                    <Radio className="text-purple-600 h-5 w-5 animate-pulse" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg lg:text-xl font-bold text-text-primary">
+                      Track 3MT - Session 2
+                    </h3>
+                    <p className="text-xs text-text-secondary mt-1">ICCI 2025 - Day 2</p>
+                  </div>
+                </div>
+
+                <div className="relative w-full pt-[56.25%] rounded-xl overflow-hidden shadow-lg bg-gray-100 group-hover:shadow-xl transition-shadow duration-300">
+                  <iframe
+                    src="https://www.youtube.com/embed/mPzH3wQ0p04"
+                    className="absolute inset-0 w-full h-full rounded-xl"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                    title="ICCI 2025 - Day 2 - Track 3MT - Session 2 Live (09-DEC-2025)"
                   ></iframe>
                 </div>
               </div>
