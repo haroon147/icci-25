@@ -110,7 +110,7 @@ export default function VirtualProceedings() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg lg:text-xl font-bold text-text-primary">
-                      Track 2 
+                      Track 1 Session 2
                     </h3>
                     <p className="text-xs text-text-secondary mt-1">ICCI 2025 - Day 2</p>
                   </div>
