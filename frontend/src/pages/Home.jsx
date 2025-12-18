@@ -334,52 +334,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-       {/* Collaborators & Sponsors Carousel */}
-       <section className="section-padding bg-background-light">
-        <div className="container-custom">
-          {/* Collaborators Section */}
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Our Collaborators
-            </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
-              We are proud to collaborate with leading organizations and institutions that share our vision for advancing computing and innovation.
-            </p>
-          </div>
-
-          {/* Collaborators Carousel */}
-          <div className="relative overflow-hidden mb-16 w-full">
-            <div className="flex animate-scroll gap-8">
-              {[...Array(6)].map((_, setIndex) => (
-                collaborators.map((collaborator, index) => (
-                  <div key={`collab-set${setIndex}-${index}`} className="flex-shrink-0 w-80 sm:w-96">
-                    <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
-                      <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
-                        <img
-                          src={collaborator.logo}
-                          alt={collaborator.name}
-                          className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
-                          onError={(e) => {
-                            e.currentTarget.style.display = 'none';
-                            const fallback = e.currentTarget.nextElementSibling;
-                            if (fallback) fallback.style.display = 'flex';
-                          }}
-                        />
-                        <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                          <Globe className="h-20 w-20 text-white" />
-                        </div>
-                      </div>
-                      <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
-                      <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
-                    </div>
-                  </div>
-                ))
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
 
       {/* Collaborators & Sponsors Carousel */}
@@ -399,52 +354,7 @@ export default function Home() {
           {/* Collaborators Carousel */}
           <div className="relative overflow-hidden mb-16 w-full">
             <div className="flex animate-none md:animate-scroll">
-              {/* First set */}
-              {collaborators.map((collaborator, index) => (
-                <div key={`first-${index}`} className="flex-shrink-0 w-80 sm:w-96 mx-4">
-                  <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
-                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
-                      <img
-                        src={collaborator.logo}
-                        alt={collaborator.name}
-                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
-                        }}
-                      />
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Globe className="h-20 w-20 text-white" />
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
-                  </div>
-                </div>
-              ))}
-              {/* Second set for seamless loop */}
-              {collaborators.map((collaborator, index) => (
-                <div key={`second-${index}`} className="flex-shrink-0 w-80 sm:w-96 mx-4">
-                  <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
-                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
-                      <img
-                        src={collaborator.logo}
-                        alt={collaborator.name}
-                        className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
-                        }}
-                      />
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Globe className="h-20 w-20 text-white" />
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
-                  </div>
-                </div>
-              ))}
+            
               {/* Third set for extra smoothness */}
               {collaborators.map((collaborator, index) => (
                 <div key={`third-${index}`} className="flex-shrink-0 w-80 sm:w-96 mx-4">
@@ -454,29 +364,6 @@ export default function Home() {
                         src={collaborator.logo}
                         alt={collaborator.name}
                         className="w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                          e.target.nextSibling.style.display = 'flex';
-                        }}
-                      />
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
-                        <Globe className="h-20 w-20 text-white" />
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-text-primary mb-3 text-break">{collaborator.name}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed text-break">{collaborator.description}</p>
-                  </div>
-                </div>
-              ))}
-              {/* Fourth set for perfect seamless loop */}
-              {collaborators.map((collaborator, index) => (
-                <div key={`fourth-${index}`} className="flex-shrink-0 w-80 sm:w-96 mx-4">
-                  <div className="sponsor-card p-10 rounded-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center">
-                    <div className="w-40 h-40 mx-auto mb-6 rounded-3xl overflow-hidden sponsor-image-container flex items-center justify-center transition-all duration-300 hover:scale-105">
-                      <img
-                        src={collaborator.logo}
-                        alt={collaborator.name}
-                        className=" w-full h-full object-contain p-4 hover:scale-110 transition-transform duration-300"
                         onError={(e) => {
                           e.target.style.display = 'none';
                           e.target.nextSibling.style.display = 'flex';
