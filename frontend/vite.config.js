@@ -28,5 +28,6 @@ export default defineConfig({
     }
   },
 
-  base: process.env.NODE_ENV === 'production' ? '/icci-25/' : '/',
+  // GitHub Pages needs a repo subpath, while Vercel needs root (/).
+  base: process.env.VERCEL ? '/' : (process.env.NODE_ENV === 'production' ? '/icci-25/' : '/'),
 });
