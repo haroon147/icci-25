@@ -15,6 +15,7 @@ import VirtualProceedings from './pages/VirtualProceedings';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import Workshops from './pages/Workshops';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/gallery" element={<Gallery />} />
                 <Route path="/scope" element={<Scope />} />
                 <Route path="/dates" element={<Dates />} />
                 <Route path="/speakers" element={<Speakers />} />
