@@ -60,8 +60,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/icci-25-gallery" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  ICCI-25 Gallery
+                <Link to="/icci-25" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  ICCI-25
                 </Link>
               </li>
               <li>

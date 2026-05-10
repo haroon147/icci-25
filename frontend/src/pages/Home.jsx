@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X } from 'lucide-react';
+import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';
 
@@ -36,9 +36,18 @@ const galleryItems = [
   },
 ];
 
+const heroBackgrounds = [
+  '/icci-pictures/main/IMG_9330.jpg',
+  '/icci-pictures/main/IMG_9337.jpg',
+  '/icci-pictures/main/IMG_9504.jpg',
+  '/icci-pictures/main/IMG_9508.jpg',
+  '/icci-pictures/main/IMG_9515.jpg',
+];
+
 export default function Home() {
   const navigate = useNavigate();
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [heroSlide, setHeroSlide] = useState(0);
 
   useEffect(() => {
     if (lightboxIndex === null) return;
@@ -53,6 +62,13 @@ export default function Home() {
       document.body.style.overflow = prevOverflow;
     };
   }, [lightboxIndex]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroSlide((prev) => (prev + 1) % heroBackgrounds.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
 
   // Function to navigate to virtual proceedings page
   const navigateToVirtualProceedings = () => {
@@ -138,12 +154,28 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
+            backgroundImage: `url(${heroBackgrounds[heroSlide]})`
           }}
         >
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
+        <button
+          type="button"
+          onClick={() => setHeroSlide((prev) => (prev - 1 + heroBackgrounds.length) % heroBackgrounds.length)}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          aria-label="Previous background image"
+        >
+          <ChevronLeft className="h-6 w-6" />
+        </button>
+        <button
+          type="button"
+          onClick={() => setHeroSlide((prev) => (prev + 1) % heroBackgrounds.length)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          aria-label="Next background image"
+        >
+          <ChevronRight className="h-6 w-6" />
+        </button>
         
         {/* Content */}
         <div className="container-custom relative z-10">
@@ -236,6 +268,19 @@ export default function Home() {
             </div>
           </div>
           </div>
+        </div>
+        <div className="absolute bottom-5 left-0 right-0 z-20 flex items-center justify-center gap-2">
+          {heroBackgrounds.map((_, index) => (
+            <button
+              key={`hero-dot-${index}`}
+              type="button"
+              onClick={() => setHeroSlide(index)}
+              className={`h-2.5 rounded-full transition-all ${
+                heroSlide === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50'
+              }`}
+              aria-label={`Show background image ${index + 1}`}
+            />
+          ))}
         </div>
       </section>
 

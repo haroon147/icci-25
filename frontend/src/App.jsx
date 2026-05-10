@@ -30,8 +30,10 @@ function App() {
             <Layout>
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/icci-26" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path="/icci-25-gallery" element={<Gallery />} />
                 <Route path="/scope" element={<Scope />} />
                 <Route path="/dates" element={<Dates />} />
                 <Route path="/speakers" element={<Speakers />} />
@@ -41,7 +43,7 @@ function App() {
                 <Route path="/workshops" element={<Workshops />} />
                 <Route path="/proceedings" element={<Schedule />} />
                 <Route path="/virtual-proceedings" element={<VirtualProceedings />} />
-                <Route path="/icci-25-gallery" element={<ICCI25Gallery />} />
+                <Route path="/icci-25" element={<ICCI25Gallery />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>

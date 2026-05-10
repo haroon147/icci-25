@@ -10,7 +10,7 @@ export default function Header() {
   const location = useLocation();
 
   const navigation = [
-    { name: 'Home', href: '/' },
+    { name: 'Home', href: '/icci-26' },
     { name: 'About', href: '/about' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Scope', href: '/scope' },
@@ -22,7 +22,7 @@ export default function Header() {
     { name: 'Workshops', href: '/workshops' },
     { name: 'Schedule', href: '/proceedings' },
     { name: 'Virtual Proceedings', href: '/virtual-proceedings' },
-    { name: 'ICCI-25 Gallery', href: '/icci-25-gallery' },
+    { name: 'ICCI-25', href: '/icci-25' },
     { name: 'Registration', href: '/registration' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -44,7 +44,7 @@ export default function Header() {
     }`}>
       <div className="container-custom">
         <div className="flex justify-between items-center py-2">
-          <Link to="/" className="flex items-center -ml-2">
+          <Link to="/icci-26" className="flex items-center -ml-2">
             <ConferenceLogo size="xlarge" />
           </Link>
 
