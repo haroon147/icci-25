@@ -58,7 +58,7 @@ export default function Logo({ className = "", size = "default" }) {
       {/* Logo Text */}
       <div className="flex flex-col">
         <div className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent leading-tight">
-          ICCI-2025
+          ICCI-2026
         </div>
         <div className="text-xs text-text-secondary leading-tight -mt-1 font-medium">
           1st International Conference
@@ -99,7 +99,7 @@ export function MinimalLogo({ className = "" }) {
         </svg>
       </div>
       <div className="text-xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-        ICCI-2025
+        ICCI-2026
       </div>
     </div>
   );

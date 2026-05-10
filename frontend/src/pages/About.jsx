@@ -20,7 +20,7 @@ export default function About() {
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">About ICCI-2025</h1>
+            <h1 className="text-hero mb-6 font-bold">About ICCI-2026</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
                International Conference on Computing & Innovation
             </p>
@@ -38,7 +38,7 @@ export default function About() {
               </h2>
               <div className="w-24 h-1 bg-accent mb-8"></div>
               <p className="text-body text-text-secondary mb-6 text-beautiful">
-              The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+              The International Conference on Computing & Innovation (ICCI-2026) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
               <p className="text-body text-text-secondary mb-6 text-beautiful">
               It will include keynote addresses, technical sessions, panel discussions, Three-Minutes Thesis (3MT) Competition, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.

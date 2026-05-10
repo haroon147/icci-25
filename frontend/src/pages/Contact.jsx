@@ -57,7 +57,7 @@ export default function Contact() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Contact Us</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
-              Get in touch with the ICCI-2025 organizing committee. We're here to help with 
+              Get in touch with the ICCI-2026 organizing committee. We're here to help with 
               any questions about the conference, registration, or submissions.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function Contact() {
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary max-w-3xl mx-auto">
-              Have questions about ICCI-2025? We're here to help. Contact us through any of the 
+              Have questions about ICCI-2026? We're here to help. Contact us through any of the 
               channels below, and we'll get back to you as soon as possible.
             </p>
           </div>
@@ -194,7 +194,7 @@ export default function Contact() {
         </h2>
 
         <p className="text-body text-text-secondary leading-relaxed">
-          ICCI-2025 will be held at Riphah International University, Raiwind Road, Lahore, Pakistan. 
+          ICCI-2026 will be held at Riphah International University, Raiwind Road, Lahore, Pakistan. 
           The venue offers state-of-the-art facilities and is easily accessible.
         </p>
 
@@ -322,7 +322,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium text-text-primary mb-1">When will I know if accepted?</h4>
                   <p className="text-small text-text-secondary">
-                    Acceptance notifications will be sent by 30 September 2025.
+                    Acceptance notifications will be sent by 30 September 2026.
                   </p>
                 </div>
               </div>

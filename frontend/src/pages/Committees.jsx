@@ -192,7 +192,7 @@ export default function Committees() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Conference Committees</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Meet the distinguished committee members and advisory board of ICCI-2025
+              Meet the distinguished committee members and advisory board of ICCI-2026
             </p>
           </div>
         </div>

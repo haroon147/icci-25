@@ -214,7 +214,7 @@ export default function Speakers() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Keynote Speakers</h1>
             <p className="text-body text-white/90 max-w-3xl mx-auto">
-              Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2025
+              Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2026
             </p>
           </div>
         </div>

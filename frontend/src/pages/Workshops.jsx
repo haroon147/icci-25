@@ -69,7 +69,7 @@ export default function Workshops() {
             <h2 className="text-section mb-6 font-semibold text-text-primary">Overview</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
             <p className="text-body text-text-secondary mb-6 text-break">
-            ICCI-2025 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
+            ICCI-2026 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
             <br />
             <br />
             <br/>
@@ -86,7 +86,7 @@ export default function Workshops() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">List of Workshops</h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-              Explore the complete line-up of ICCI-2025 hands-on workshops. Seats are limited, so secure your spot early.
+              Explore the complete line-up of ICCI-2026 hands-on workshops. Seats are limited, so secure your spot early.
             </p>
           </div>
 
@@ -236,7 +236,7 @@ export default function Workshops() {
                   </li>
                   <li className="flex items-start text-body text-text-secondary">
                     <CheckCircle className="h-4 w-4 text-accent mr-2 mt-0.5" />
-                    ICCI-2025 digital certificate
+                    ICCI-2026 digital certificate
                   </li>
                 </ul>
               </div>

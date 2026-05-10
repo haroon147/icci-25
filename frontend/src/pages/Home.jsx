@@ -165,7 +165,7 @@ export default function Home() {
               <span className="text-accent">Computing & Innovation</span>
               <br className="hidden sm:block" />
               <span className="block sm:inline"> </span>
-              <span className="text-accent">(ICCI-2025)</span>
+              <span className="text-accent">(ICCI-2026)</span>
             </h1>
             
             {/* Conference Date - Mobile Stacked, Desktop Rotating */}
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="date-card-blink bg-white/15 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/30 shadow-xl">
                   <div className="space-y-2">
                     <div className="text-white text-sm font-semibold text-center">
-                      📅 8-9 December 2025
+                      📅 8-9 December 2026
                     </div>
                     <div className="text-white text-sm font-semibold text-center">
                       📍 Riphah International University, Lahore
@@ -193,7 +193,7 @@ export default function Home() {
                   <div className="rotating-text-wrapper">
                     <div className="rotating-text">
                       <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
-                        📅 8-9 December 2025
+                        📅 8-9 December 2026
                       </span>
                       <span className="text-white text-xl font-semibold text-center whitespace-nowrap">
                         📍 Riphah International University, Lahore
@@ -208,7 +208,7 @@ export default function Home() {
             </div>
             <p className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful">
               Join leading researchers, innovators, practitioners, and students in computer science and related
-              disciplines at ICCI-2025, a premier international conference showcasing cutting-edge research,
+              disciplines at ICCI-2026, a premier international conference showcasing cutting-edge research,
               emerging technologies, and transformative ideas.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
@@ -249,13 +249,13 @@ export default function Home() {
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <div className="content-container-md">
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
-                The International Conference on Computing & Innovation (ICCI-2025) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+                The International Conference on Computing & Innovation (ICCI-2026) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
                 It will include keynote addresses, technical sessions, panel discussions, Three-Minutes Thesis (3MT) Competition, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
               </p>
               <p className="text-body text-text-secondary mb-8 text-content-justify text-break">
-                Together, let's pave the way for a smarter, more connected future. The ICCI-2025 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2025. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
+                Together, let's pave the way for a smarter, more connected future. The ICCI-2026 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2026. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
               </p>
             </div>
           </div>
@@ -264,7 +264,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
               <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-subheading font-medium text-text-primary mb-2">Conference Date</h3>
-              <p className="text-body text-text-secondary">December 8-9, 2025</p>
+              <p className="text-body text-text-secondary">December 8-9, 2026</p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
@@ -294,7 +294,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12  items-center">
             <div>
               <h2 className="text-section mb-6 font-semibold text-text-primary">
-                Why Attend ICCI-2025?
+                Why Attend ICCI-2026?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -364,19 +364,19 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-body">Submissions Deadline</span>
-                  <span className="text-body font-medium">15 September 2025</span>
+                  <span className="text-body font-medium">15 September 2026</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Acceptance Notification</span>
-                  <span className="text-body font-medium">30 September 2025</span>
+                  <span className="text-body font-medium">30 September 2026</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Camera-Ready Submission</span>
-                  <span className="text-body font-medium">15 October 2025</span>
+                  <span className="text-body font-medium">15 October 2026</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>
-                  <span className="text-body font-medium">December 8-9, 2025</span>
+                  <span className="text-body font-medium">December 8-9, 2026</span>
                 </div>
               </div>
             </div>
@@ -511,7 +511,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
-              Thank you to our valued sponsors who make ICCI-2025 possible through their generous support.
+              Thank you to our valued sponsors who make ICCI-2026 possible through their generous support.
             </p>
           </div>
 

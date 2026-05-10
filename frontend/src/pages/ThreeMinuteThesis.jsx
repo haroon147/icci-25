@@ -59,10 +59,10 @@ export default function ThreeMinuteThesis() {
   ];
 
   const importantDates = [
-    { event: "Submission Deadline (video + summary)", date: "15 September 2025" },
-    { event: "Finalists Announced", date: "30 September 2025" },
-    { event: "Final Competition at ICCI-2025", date: "December 8-9, 2025" },
-    { event: "Award Ceremony", date: "December 9, 2025" }
+    { event: "Submission Deadline (video + summary)", date: "15 September 2026" },
+    { event: "Finalists Announced", date: "30 September 2026" },
+    { event: "Final Competition at ICCI-2026", date: "December 8-9, 2026" },
+    { event: "Award Ceremony", date: "December 9, 2026" }
   ];
 
 
@@ -113,7 +113,7 @@ export default function ThreeMinuteThesis() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">THREE-MINUTE THESIS (3MT) COMPETITION</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              ICCI-2025 - THREE-MINUTE THESIS (3MT) COMPETITION
+              ICCI-2026 - THREE-MINUTE THESIS (3MT) COMPETITION
             </p>
             <p className="text-lg text-white/80 mt-4 font-medium">
               Call for Participation
@@ -129,7 +129,7 @@ export default function ThreeMinuteThesis() {
             <h2 className="text-section mb-6 font-semibold text-text-primary">OVERVIEW</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
             <p className="text-body text-text-secondary mb-4 text-break">
-              The International Conference on Computing & Innovation (ICCI-2025) is pleased to announce its Three-Minute Thesis (3MT) Competition. This competition challenges doctoral students, master's students, and recent graduates to distill the essence and significance of their research into a compelling three-minute presentation accessible to a broad technical audience.
+              The International Conference on Computing & Innovation (ICCI-2026) is pleased to announce its Three-Minute Thesis (3MT) Competition. This competition challenges doctoral students, master's students, and recent graduates to distill the essence and significance of their research into a compelling three-minute presentation accessible to a broad technical audience.
             </p>
           </div>
         </div>
@@ -238,7 +238,7 @@ export default function ThreeMinuteThesis() {
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
-                  <span className="text-body text-text-secondary text-break"><strong>Final Competition:</strong> In-person presentations at ICCI-2025</span>
+                  <span className="text-body text-text-secondary text-break"><strong>Final Competition:</strong> In-person presentations at ICCI-2026</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-accent mr-3 mt-0.5 flex-shrink-0" />

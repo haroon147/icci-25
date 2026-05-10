@@ -15,7 +15,7 @@ export default function VirtualProceedings() {
 
   // Get current streaming links based on date
   const getStreamingEmbeds = () => {
-    const cutoffDate = new Date('2025-12-08T23:50:00'); // December 8, 2025 11:50 PM
+    const cutoffDate = new Date('2026-12-08T23:50:00'); // December 8, 2026 11:50 PM
     const now = new Date();
     
     return now >= cutoffDate ? day02Links : day01Links;
@@ -71,7 +71,9 @@ export default function VirtualProceedings() {
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary to-primary-dark text-white rounded-full font-semibold shadow-lg">
                 <Radio className="h-5 w-5 animate-pulse" />
-                <span>Day 02 - Live Streaming (09-DEC-2025)</span>
+                <span>
+                  {new Date() >= new Date('2026-12-08T23:50:00') ? 'Day 02 - Live Streaming' : 'Day 01 - Live Streaming'}
+                </span>
               </div>
             </div>
 

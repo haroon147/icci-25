@@ -60,6 +60,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/icci-25-gallery" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  ICCI-25 Gallery
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
                   Contact Us
                 </Link>
@@ -72,19 +77,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-small text-white/80">
                 <span className="font-medium">Paper Submission:</span><br />
-                15 September 2025
+                15 September 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Acceptance Notification:</span><br />
-                30 September 2025
+                30 September 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Camera-Ready:</span><br />
-                15 October 2025
+                15 October 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Conference:</span><br />
-                December 8-9, 2025
+                December 8-9, 2026
               </li>
             </ul>
           </div>
@@ -124,7 +129,7 @@ export default function Footer() {
 
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-small text-white/60 mb-4 md:mb-0">
-            &copy; 2025 International Conference on Computing & Innovation. All rights reserved.
+            &copy; 2026 International Conference on Computing & Innovation. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-small text-white/60 hover:text-accent transition-colors duration-300">

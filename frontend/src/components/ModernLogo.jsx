@@ -67,7 +67,7 @@ export default function ModernLogo({ className = "", size = "default" }) {
       {/* Enhanced Logo Text */}
       <div className="flex flex-col">
         <div className="text-2xl font-bold bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent leading-tight tracking-tight">
-          ICCI-2025
+          ICCI-2026
         </div>
         <div className="text-xs text-text-secondary leading-tight -mt-1 font-medium tracking-wide">
           1st International Conference
@@ -108,7 +108,7 @@ export function SleekLogo({ className = "" }) {
         </svg>
       </div>
       <div className="text-xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-        ICCI-2025
+        ICCI-2026
       </div>
     </div>
   );
@@ -176,7 +176,7 @@ export function PremiumLogo({ className = "", size = "default" }) {
       
       <div className="flex flex-col">
         <div className="text-2xl font-bold bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent leading-tight">
-          ICCI-2025
+          ICCI-2026
         </div>
         <div className="text-xs text-text-secondary leading-tight -mt-1 font-medium">
           1st International Conference

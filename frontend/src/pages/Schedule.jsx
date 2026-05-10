@@ -3,7 +3,7 @@ import { Calendar, Clock, MapPin, Users, Download } from 'lucide-react';
 export default function Schedule() {
   // Function to download schedule as PDF file
   const downloadSchedule = async () => {
-    const pdfPath = '/ICCI 2025 Schedule 0.3.pdf';
+    const pdfPath = '/ICCI 2026 Schedule 0.3.pdf';
     console.log('Download button clicked, attempting to download:', pdfPath);
     
     try {
@@ -18,7 +18,7 @@ export default function Schedule() {
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = 'ICCI-2025-Conference-Schedule.pdf';
+        link.download = 'ICCI-2026-Conference-Schedule.pdf';
         link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
@@ -40,7 +40,7 @@ export default function Schedule() {
       try {
         const link = document.createElement('a');
         link.href = pdfPath;
-        link.download = 'ICCI-2025-Conference-Schedule.pdf';
+        link.download = 'ICCI-2026-Conference-Schedule.pdf';
         link.style.display = 'none';
         document.body.appendChild(link);
         link.click();
@@ -332,7 +332,7 @@ export default function Schedule() {
         
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-hero mb-6 font-bold">ICCI 2025 Conference Schedule</h1>
+              <h1 className="text-hero mb-6 font-bold">ICCI 2026 Conference Schedule</h1>
               <div className="flex flex-wrap justify-center items-center gap-6 text-lg mb-6">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" />
@@ -340,7 +340,7 @@ export default function Schedule() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  <span>8-9 December 2025</span>
+                  <span>8-9 December 2026</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-5 w-5" />
@@ -367,7 +367,7 @@ export default function Schedule() {
                   DAY 1
           </div>
                 <div className="text-2xl font-bold text-text-primary">
-                  December 8, 2025
+                  December 8, 2026
                   </div>
                 </div>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-primary mx-auto"></div>
@@ -388,7 +388,7 @@ export default function Schedule() {
                   DAY 2
           </div>
                 <div className="text-2xl font-bold text-text-primary">
-                  December 9, 2025
+                  December 9, 2026
                   </div>
                 </div>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-accent to-primary mx-auto"></div>

@@ -74,7 +74,7 @@ export default function AnimatedLogo({ className = "", size = "default" }) {
       {/* Logo Text */}
       <div className="flex flex-col">
         <div className="text-xl font-bold text-primary leading-tight">
-          ICCI-2025
+          ICCI-2026
         </div>
         <div className="text-xs text-text-secondary leading-tight -mt-1">
           1st International Conference
@@ -121,7 +121,7 @@ export function GlowingLogo({ className = "", size = "default" }) {
       
       <div className="flex flex-col">
         <div className="text-xl font-bold text-primary leading-tight">
-          ICCI-2025
+          ICCI-2026
         </div>
         <div className="text-xs text-text-secondary leading-tight -mt-1">
           1st International Conference

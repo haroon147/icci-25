@@ -78,7 +78,7 @@ export default function Scope() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Scope & Topics</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Explore the comprehensive range of computing and innovation topics covered at ICCI-2025
+              Explore the comprehensive range of computing and innovation topics covered at ICCI-2026
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Scope() {
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-            The ICCI-2025 will cover (but not be limited to) the following research and innovation areas:
+            The ICCI-2026 will cover (but not be limited to) the following research and innovation areas:
             </p>
           </div>
 

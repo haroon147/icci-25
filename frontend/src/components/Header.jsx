@@ -22,6 +22,7 @@ export default function Header() {
     { name: 'Workshops', href: '/workshops' },
     { name: 'Schedule', href: '/proceedings' },
     { name: 'Virtual Proceedings', href: '/virtual-proceedings' },
+    { name: 'ICCI-25 Gallery', href: '/icci-25-gallery' },
     { name: 'Registration', href: '/registration' },
     { name: 'Contact', href: '/contact' },
   ];

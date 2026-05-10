@@ -28,7 +28,7 @@ export default function Registration() {
         "Welcome reception",
         "Certificate of participation"
       ],
-      deadline: "Early Bird: Until 15 September 2025"
+      deadline: "Early Bird: Until 15 September 2026"
     },
     {
       type: "Academic",
@@ -43,7 +43,7 @@ export default function Registration() {
         "Certificate of participation",
         "Author presentation slots (if paper accepted)"
       ],
-      deadline: "Early Bird: Until 15 September 2025",
+      deadline: "Early Bird: Until 15 September 2026",
       popular: true
     },
     {
@@ -60,7 +60,7 @@ export default function Registration() {
         "Industry networking sessions",
         "Exhibition area access"
       ],
-      deadline: "Early Bird: Until 30 November 2025"
+      deadline: "Early Bird: Until 30 November 2026"
     }
   ];
 
@@ -102,7 +102,7 @@ export default function Registration() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-hero mb-6 font-bold">Registration</h1>
             <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Register for ICCI-2025 and join the Computing and innovation conference. 
+              Register for ICCI-2026 and join the Computing and innovation conference. 
               
             </p>
           </div>
@@ -278,8 +278,8 @@ export default function Registration() {
               {/* <div>
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Cancellation Policy</h3>
                 <ul className="content-spacing-sm text-body text-text-secondary">
-                  <li className="text-break">• Cancellation before 15 September 2025: 80% refund</li>
-                  <li className="text-break">• Cancellation after 15 September 2025: No refund</li>
+                  <li className="text-break">• Cancellation before 15 September 2026: 80% refund</li>
+                  <li className="text-break">• Cancellation after 15 September 2026: No refund</li>
                   <li className="text-break">• All cancellations subject to processing fees</li>
                   <li className="text-break">• Refunds processed within 14 business days</li>
                   <li className="text-break">• Contact icci@riphah.edu.pk for assistance</li>
@@ -298,7 +298,7 @@ export default function Registration() {
               <Calendar className="h-16 w-16 mx-auto mb-6 text-accent" />
               <h2 className="text-section font-semibold mb-4">Ready to Register?</h2>
               <p className="text-body text-white/90 content-container-sm text-content-center text-break mb-8">
-              Don't miss this opportunity to be part of ICCI-2025.
+              Don't miss this opportunity to be part of ICCI-2026.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
                 <a
