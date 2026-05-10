@@ -181,14 +181,14 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             {/* LIVE Badge */}
-            <button 
+            {/* <button 
               onClick={navigateToVirtualProceedings}
               className="live-badge-blink inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               <Radio className="h-5 w-5 animate-pulse" />
               <span className="live-badge-text">LIVE Conference Streaming! Click Here</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </button> */}
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on
