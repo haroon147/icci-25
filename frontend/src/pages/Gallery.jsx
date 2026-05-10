@@ -1,5 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ChevronLeft, ChevronRight, Images, X } from 'lucide-react';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Images,
+  X,
+  Camera,
+  Sparkles,
+} from 'lucide-react';
 
 const gallerySections = [
   {
@@ -14,11 +21,17 @@ const gallerySections = [
   },
   {
     title: 'Speakers',
-    images: ['/icci-pictures/speaker/IMG_1094.JPG', '/icci-pictures/speaker/IMG_1175.JPG'],
+    images: [
+      '/icci-pictures/speaker/IMG_1094.JPG',
+      '/icci-pictures/speaker/IMG_1175.JPG',
+    ],
   },
   {
     title: 'Panels',
-    images: ['/icci-pictures/panel/IMG_9341.jpg', '/icci-pictures/panel/IMG_9349.jpg'],
+    images: [
+      '/icci-pictures/panel/IMG_9341.jpg',
+      '/icci-pictures/panel/IMG_9349.jpg',
+    ],
   },
   {
     title: 'Workshops',
@@ -39,12 +52,17 @@ const gallerySections = [
   },
   {
     title: '3MT Moments',
-    images: ['/icci-pictures/3mt/IMG_1176.JPG', '/icci-pictures/3mt/IMG_1204.JPG', '/icci-pictures/3mt/IMG_1214.JPG'],
+    images: [
+      '/icci-pictures/3mt/IMG_1176.JPG',
+      '/icci-pictures/3mt/IMG_1204.JPG',
+      '/icci-pictures/3mt/IMG_1214.JPG',
+    ],
   },
 ];
 
 export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState(null);
+
   const allImages = useMemo(
     () =>
       gallerySections.flatMap((section) =>
@@ -59,8 +77,12 @@ export default function Gallery() {
 
   const moveLightbox = (direction) => {
     if (lightboxIndex === null) return;
+
     const total = allImages.length;
-    setLightboxIndex((lightboxIndex + direction + total) % total);
+
+    setLightboxIndex(
+      (lightboxIndex + direction + total) % total
+    );
   };
 
   useEffect(() => {
@@ -73,6 +95,7 @@ export default function Gallery() {
     };
 
     document.addEventListener('keydown', onKeyDown);
+
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
@@ -83,46 +106,134 @@ export default function Gallery() {
   }, [lightboxIndex]);
 
   return (
-    <section className="section-padding bg-background-light" aria-labelledby="gallery-page-heading">
-      <div className="container-custom">
-        <div className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center justify-center gap-2 text-primary mb-3">
-            <Images className="h-8 w-8" aria-hidden />
+    <section
+      className="relative overflow-hidden py-24 bg-gradient-to-b from-slate-50 via-white to-slate-100"
+      aria-labelledby="gallery-page-heading"
+    >
+      {/* Background Effects */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 blur-3xl rounded-full" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-accent/10 blur-3xl rounded-full" />
+
+      <div className="container-custom relative z-10">
+        {/* HERO */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-primary/20 bg-white/80 backdrop-blur-md shadow-sm mb-6">
+            <Sparkles className="h-5 w-5 text-primary" />
+            <span className="text-sm font-medium text-text-primary">
+              ICCI-25 Event Highlights
+            </span>
           </div>
-          <h1 id="gallery-page-heading" className="text-section mb-4 font-semibold text-text-primary">
-            Gallery
+
+          <div className="flex items-center justify-center mb-5">
+            <div className="p-5 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl">
+              <Images className="h-12 w-12 text-white" />
+            </div>
+          </div>
+
+          <h1
+            id="gallery-page-heading"
+            className="text-5xl md:text-6xl font-bold text-text-primary mb-6 tracking-tight"
+          >
+            Event Gallery
           </h1>
-          <div className="w-24 h-1 bg-accent mx-auto mb-8" />
-          <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-            ICCI-25 complete image gallery. Open any image and use left/right controls for a full carousel view.
+
+          <div className="w-32 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-8" />
+
+          <p className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed text-text-secondary">
+            Explore unforgettable moments from ICCI-25 including keynote
+            sessions, inspiring speakers, workshops, awards, and 3MT highlights.
           </p>
         </div>
 
-        <div className="space-y-10">
+        {/* GALLERY SECTIONS */}
+        <div className="space-y-20">
           {gallerySections.map((section) => (
             <div key={section.title}>
-              <h2 className="text-subheading font-semibold text-text-primary mb-4">{section.title}</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              {/* Section Header */}
+              <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
+                <div>
+                  <h2 className="text-3xl font-bold text-text-primary">
+                    {section.title}
+                  </h2>
+
+                  <div className="mt-3 w-20 h-1 rounded-full bg-gradient-to-r from-primary to-accent" />
+                </div>
+
+                <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-md border border-gray-100">
+                  <Camera className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-medium text-text-secondary">
+                    {section.images.length} Photos
+                  </span>
+                </div>
+              </div>
+
+              {/* Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7">
                 {section.images.map((src, index) => {
-                  const globalIndex = allImages.findIndex((item) => item.src === src);
+                  const globalIndex = allImages.findIndex(
+                    (item) => item.src === src
+                  );
+
                   return (
                     <button
                       key={`${section.title}-${src}`}
                       type="button"
-                      onClick={() => setLightboxIndex(globalIndex)}
-                      className="group text-left rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100 hover:shadow-md hover:border-accent/25 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                      onClick={() =>
+                        setLightboxIndex(globalIndex)
+                      }
+                      className="group relative overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
                     >
-                      <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+                      {/* Image */}
+                      <div className="relative aspect-[4/3] overflow-hidden">
                         <img
                           src={src}
                           alt={`${section.title} image ${index + 1}`}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           loading="lazy"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
+
+                        {/* Dark Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
+
+                        {/* Hover Overlay */}
+                        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                        {/* Floating Button */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30">
+                            <span className="text-white font-semibold text-sm tracking-wide">
+                              View Image
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Top Badge */}
+                        <div className="absolute top-4 left-4">
+                          <div className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/20">
+                            <span className="text-white text-xs font-medium">
+                              ICCI-25
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                      <div className="p-4">
-                        <p className="text-sm font-medium text-text-primary">{section.title}</p>
-                        <p className="text-xs text-text-secondary mt-1">Click to enlarge</p>
+
+                      {/* Bottom Content */}
+                      <div className="p-5 text-left">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <h3 className="text-lg font-semibold text-text-primary">
+                              {section.title}
+                            </h3>
+
+                            <p className="text-sm text-text-secondary mt-1">
+                              Click to preview
+                            </p>
+                          </div>
+
+                          <div className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            <Images className="h-5 w-5" />
+                          </div>
+                        </div>
                       </div>
                     </button>
                   );
@@ -133,51 +244,70 @@ export default function Gallery() {
         </div>
       </div>
 
+      {/* LIGHTBOX */}
       {lightboxIndex !== null && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-md flex items-center justify-center p-4"
           role="dialog"
           aria-modal="true"
           aria-label="Image preview"
           onClick={() => setLightboxIndex(null)}
         >
           <div
-            className="relative max-w-5xl w-full max-h-[90vh] flex flex-col rounded-xl overflow-hidden shadow-2xl bg-black"
+            className="relative w-full max-w-7xl"
             onClick={(e) => e.stopPropagation()}
           >
-              <button
+            {/* Close */}
+            <button
               type="button"
               onClick={() => setLightboxIndex(null)}
-              className="absolute top-3 right-3 z-10 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-              aria-label="Close gallery image"
+              className="absolute top-4 right-4 z-20 p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition"
             >
               <X className="h-6 w-6" />
             </button>
-              <button
-                type="button"
-                onClick={() => moveLightbox(-1)}
-                className="absolute left-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-                aria-label="Previous image"
-              >
-                <ChevronLeft className="h-6 w-6" />
-              </button>
-              <button
-                type="button"
-                onClick={() => moveLightbox(1)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-                aria-label="Next image"
-              >
-                <ChevronRight className="h-6 w-6" />
-              </button>
-            <div className="flex-1 min-h-0 flex items-center justify-center bg-black">
+
+            {/* Left */}
+            <button
+              type="button"
+              onClick={() => moveLightbox(-1)}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition"
+            >
+              <ChevronLeft className="h-7 w-7" />
+            </button>
+
+            {/* Right */}
+            <button
+              type="button"
+              onClick={() => moveLightbox(1)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md transition"
+            >
+              <ChevronRight className="h-7 w-7" />
+            </button>
+
+            {/* Main Image */}
+            <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl bg-black">
               <img
-                  src={allImages[lightboxIndex].src}
-                  alt={allImages[lightboxIndex].alt}
-                className="max-h-[min(78vh,800px)] w-auto max-w-full object-contain"
+                src={allImages[lightboxIndex].src}
+                alt={allImages[lightboxIndex].alt}
+                className="w-full max-h-[85vh] object-contain"
               />
             </div>
-            <div className="px-4 py-3 bg-primary text-white text-center text-sm">
-                {allImages[lightboxIndex].caption}
+
+            {/* Footer */}
+            <div className="mt-5 flex items-center justify-between flex-wrap gap-4">
+              <div>
+                <h3 className="text-2xl font-semibold text-white">
+                  {allImages[lightboxIndex].caption}
+                </h3>
+
+                <p className="text-sm text-gray-300 mt-1">
+                  Image {lightboxIndex + 1} of {allImages.length}
+                </p>
+              </div>
+
+              <div className="px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white text-sm">
+                Use ← → arrow keys to navigate
+              </div>
             </div>
           </div>
         </div>

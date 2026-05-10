@@ -12,7 +12,7 @@ import Schedule from './pages/Schedule';
 import Registration from './pages/Registration';
 import Contact from './pages/Contact';
 import VirtualProceedings from './pages/VirtualProceedings';
-import ICCI25Gallery from './pages/ICCI25Gallery';
+import ICCI25Gallery from './pages/ICCI25';
 import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import Workshops from './pages/Workshops';
