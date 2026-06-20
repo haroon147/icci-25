@@ -54,7 +54,7 @@ const ResultCard = ({ result }) => {
   );
 };
 
-export default function ICCI25Gallery() {
+export default function Highlights() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const allSlides = useMemo(() => highlights, []);
 
@@ -146,7 +146,7 @@ export default function ICCI25Gallery() {
 
         {/* Footer Navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link to="/virtual-proceedings" className="group bg-slate-900 p-8 rounded-3xl text-white flex justify-between items-center hover:bg-slate-800 transition-all">
+          <Link to="/icci-25/virtual-proceedings" className="group bg-slate-900 p-8 rounded-3xl text-white flex justify-between items-center hover:bg-slate-800 transition-all">
             <div>
               <div className="flex items-center gap-2 text-red-400 mb-2 font-bold uppercase text-xs tracking-widest">
                 <Radio className="h-4 w-4 animate-pulse" /> Archive Available
@@ -157,7 +157,7 @@ export default function ICCI25Gallery() {
               <ExternalLink className="h-5 w-5" />
             </div>
           </Link>
-          <Link to="/gallery" className="group bg-white border border-slate-200 p-8 rounded-3xl flex justify-between items-center hover:shadow-xl transition-all">
+          <Link to="/icci-25/gallery" className="group bg-white border border-slate-200 p-8 rounded-3xl flex justify-between items-center hover:shadow-xl transition-all">
             <div>
               <span className="text-accent mb-2 block font-bold uppercase text-xs tracking-widest">Visual Log</span>
               <h3 className="text-2xl font-bold text-slate-900">Full Photo Gallery</h3>

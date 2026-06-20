@@ -1,0 +1,150 @@
+import { Link } from 'react-router-dom';
+import { Mail, MapPin, Phone, ArrowUp, ArrowRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { IconConferenceLogo } from '../ConferenceLogo';
+import SocialIcons from '../SocialIcons';
+
+export default function ArchiveFooter() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <footer className="bg-primary text-white relative">
+      <div className="container-custom py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="lg:col-span-1">
+            <div className="mb-6">
+              <div className="mb-4">
+                <IconConferenceLogo className="text-white" />
+              </div>
+              <p className="text-small text-white/80 leading-relaxed">
+                International Conference on Computing & Innovation — archived edition (2025).
+                Bringing together researchers, practitioners, and students in computing and
+                innovation from around the world.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-subheading font-medium mb-6">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/icci-25/about" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  About Conference
+                </Link>
+              </li>
+              <li>
+                <Link to="/icci-25/scope" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  Scope & Topics
+                </Link>
+              </li>
+              <li>
+                <Link to="/icci-25/submissions" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  Paper Submissions
+                </Link>
+              </li>
+              <li>
+                <Link to="/icci-25/highlights" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  Highlights & Awards
+                </Link>
+              </li>
+              <li>
+                <Link to="/icci-25/contact" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-subheading font-medium mb-6">Key Dates</h3>
+            <ul className="space-y-3">
+              <li className="text-small text-white/80">
+                <span className="font-medium">Paper Submission:</span><br />
+                15 September 2025
+              </li>
+              <li className="text-small text-white/80">
+                <span className="font-medium">Acceptance Notification:</span><br />
+                30 September 2025
+              </li>
+              <li className="text-small text-white/80">
+                <span className="font-medium">Camera-Ready:</span><br />
+                15 October 2025
+              </li>
+              <li className="text-small text-white/80">
+                <span className="font-medium">Conference:</span><br />
+                December 8-9, 2025
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-subheading font-medium mb-6">Contact Information</h3>
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 mr-3 mt-0.5 text-accent flex-shrink-0" />
+                <span className="text-small text-white/80">
+                  Riphah International University<br />
+                  Raiwind Road, Lahore, Pakistan
+                </span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
+                <a href="mailto:icci@riphah.edu.pk" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
+                  icci@riphah.edu.pk
+                </a>
+              </div>
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 mr-3 text-accent flex-shrink-0" />
+                <span className="text-small text-white/80">+92335546844</span>
+              </div>
+              <div className="pt-2">
+                <p className="text-small text-white/80 mb-3 font-medium">Follow Us</p>
+                <SocialIcons
+                  className=""
+                  iconSize="h-6 w-6"
+                  textColor="text-white/80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-small text-white/60">
+            &copy; 2025 International Conference on Computing & Innovation. Archived edition.
+          </div>
+          <Link
+            to="/"
+            className="inline-flex items-center gap-1 text-small font-medium text-accent hover:underline"
+          >
+            Visit the current ICCI-2026 site <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-accent text-primary p-3 rounded-full shadow-lg hover:bg-accent-dark transition-all duration-300 z-40"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="h-5 w-5" />
+        </button>
+      )}
+    </footer>
+  );
+}
