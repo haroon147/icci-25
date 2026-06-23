@@ -5,8 +5,9 @@ import {
   Images,
   X,
   Camera,
-  Sparkles,
 } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import Reveal from '../components/Reveal';
 
 const gallerySections = [
   {
@@ -69,7 +70,6 @@ export default function Gallery() {
         section.images.map((src, idx) => ({
           src,
           alt: `${section.title} image ${idx + 1}`,
-          caption: section.title,
         }))
       ),
     []
@@ -106,143 +106,86 @@ export default function Gallery() {
   }, [lightboxIndex]);
 
   return (
-    <section
-      className="relative overflow-hidden py-24 bg-gradient-to-b from-slate-50 via-white to-slate-100"
-      aria-labelledby="gallery-page-heading"
-    >
-      {/* Background Effects */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/10 blur-3xl rounded-full" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-accent/10 blur-3xl rounded-full" />
+    <div className="bg-background-white">
+      <PageHero
+        eyebrow="ICCI-25 Event Highlights"
+        title="Event Gallery"
+        subtitle="Explore unforgettable moments from ICCI-25 including keynote sessions, inspiring speakers, workshops, awards, and 3MT highlights."
+      />
 
-      <div className="container-custom relative z-10">
-        {/* HERO */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-primary/20 bg-white/80 backdrop-blur-md shadow-sm mb-6">
-            <Sparkles className="h-5 w-5 text-primary" />
-            <span className="text-sm font-medium text-text-primary">
-              ICCI-25 Event Highlights
-            </span>
-          </div>
+      {/* GALLERY SECTIONS */}
+      <section className="section-padding bg-background-white">
+        <div className="container-custom">
+          <div className="space-y-20">
+            {gallerySections.map((section) => (
+              <Reveal key={section.title}>
+                {/* Section Header */}
+                <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
+                  <div>
+                    <h2 className="text-3xl font-bold text-text-primary tracking-tight">
+                      {section.title}
+                    </h2>
 
-          <div className="flex items-center justify-center mb-5">
-            <div className="p-5 rounded-3xl bg-gradient-to-br from-primary to-accent shadow-2xl">
-              <Images className="h-12 w-12 text-white" />
-            </div>
-          </div>
+                    <div className="mt-3 w-16 h-1.5 rounded-full bg-gradient-to-r from-accent to-accent-dark" />
+                  </div>
 
-          <h1
-            id="gallery-page-heading"
-            className="text-5xl md:text-6xl font-bold text-text-primary mb-6 tracking-tight"
-          >
-            Event Gallery
-          </h1>
-
-          <div className="w-32 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-8" />
-
-          <p className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed text-text-secondary">
-            Explore unforgettable moments from ICCI-25 including keynote
-            sessions, inspiring speakers, workshops, awards, and 3MT highlights.
-          </p>
-        </div>
-
-        {/* GALLERY SECTIONS */}
-        <div className="space-y-20">
-          {gallerySections.map((section) => (
-            <div key={section.title}>
-              {/* Section Header */}
-              <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-text-primary">
-                    {section.title}
-                  </h2>
-
-                  <div className="mt-3 w-20 h-1 rounded-full bg-gradient-to-r from-primary to-accent" />
+                  <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-soft border border-gray-100">
+                    <Camera className="h-4 w-4 text-primary" />
+                    <span className="text-sm font-medium text-text-secondary">
+                      {section.images.length} Photos
+                    </span>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-md border border-gray-100">
-                  <Camera className="h-4 w-4 text-primary" />
-                  <span className="text-sm font-medium text-text-secondary">
-                    {section.images.length} Photos
-                  </span>
+                {/* Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7">
+                  {section.images.map((src, index) => {
+                    const globalIndex = allImages.findIndex(
+                      (item) => item.src === src
+                    );
+
+                    return (
+                      <button
+                        key={`${section.title}-${src}`}
+                        type="button"
+                        onClick={() =>
+                          setLightboxIndex(globalIndex)
+                        }
+                        className="group relative overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-soft hover:shadow-soft-lg transition-all duration-500 hover:-translate-y-2"
+                      >
+                        {/* Image */}
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img
+                            src={src}
+                            alt={`${section.title} image ${index + 1}`}
+                            loading="lazy"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          />
+
+                          {/* Dark Overlay */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
+
+                          {/* Hover Overlay */}
+                          <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition duration-500" />
+
+                          {/* Floating Button */}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30">
+                              <span className="text-white font-semibold text-sm tracking-wide">
+                                View Image
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
-              </div>
-
-              {/* Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-7">
-                {section.images.map((src, index) => {
-                  const globalIndex = allImages.findIndex(
-                    (item) => item.src === src
-                  );
-
-                  return (
-                    <button
-                      key={`${section.title}-${src}`}
-                      type="button"
-                      onClick={() =>
-                        setLightboxIndex(globalIndex)
-                      }
-                      className="group relative overflow-hidden rounded-3xl bg-white border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
-                    >
-                      {/* Image */}
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
-                          src={src}
-                          alt={`${section.title} image ${index + 1}`}
-                          loading="lazy"
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-
-                        {/* Dark Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80" />
-
-                        {/* Hover Overlay */}
-                        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition duration-500" />
-
-                        {/* Floating Button */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 px-5 py-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30">
-                            <span className="text-white font-semibold text-sm tracking-wide">
-                              View Image
-                            </span>
-                          </div>
-                        </div>
-
-                        {/* Top Badge */}
-                        <div className="absolute top-4 left-4">
-                          <div className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/20">
-                            <span className="text-white text-xs font-medium">
-                              ICCI-25
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Bottom Content */}
-                      <div className="p-5 text-left">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <h3 className="text-lg font-semibold text-text-primary">
-                              {section.title}
-                            </h3>
-
-                            <p className="text-sm text-text-secondary mt-1">
-                              Click to preview
-                            </p>
-                          </div>
-
-                          <div className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                            <Images className="h-5 w-5" />
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
+              </Reveal>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* LIGHTBOX */}
       {lightboxIndex !== null && (
@@ -295,15 +238,9 @@ export default function Gallery() {
 
             {/* Footer */}
             <div className="mt-5 flex items-center justify-between flex-wrap gap-4">
-              <div>
-                <h3 className="text-2xl font-semibold text-white">
-                  {allImages[lightboxIndex].caption}
-                </h3>
-
-                <p className="text-sm text-gray-300 mt-1">
-                  Image {lightboxIndex + 1} of {allImages.length}
-                </p>
-              </div>
+              <p className="text-sm text-gray-300">
+                Image {lightboxIndex + 1} of {allImages.length}
+              </p>
 
               <div className="px-5 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white text-sm">
                 Use ← → arrow keys to navigate
@@ -312,6 +249,6 @@ export default function Gallery() {
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 }
