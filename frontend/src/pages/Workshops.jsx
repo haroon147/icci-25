@@ -1,4 +1,6 @@
 import { Users, CheckCircle, ClipboardList, ExternalLink, AlertCircle, Calendar, Clock } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Workshops() {
   const workshops = [
@@ -28,46 +30,26 @@ export default function Workshops() {
 
   return (
     <div className="bg-background-white">
-      {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <p className="uppercase tracking-widest text-white/80 text-sm mb-4">Hands-On</p>
-            <h1 className="text-hero mb-6 font-bold"> Workshops</h1>
-            <p className="text-body text-white/85 content-container-md text-content-center text-break">
-              Eight high-demand, hands-on technical workshops conducted by industry experts and senior academicians.
-              Each workshop features practical labs, real-world projects, and digital certificates. Limited seats –
-              first come, first served.
-            </p>
-
-            <br />
-            <br />
-            <br />
-            <div className="flex justify-center mb-6">
-            <div className="relative inline-flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
-              <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
-                Free Registration
-              </span>
-            </div>
-          </div>
+      <PageHero
+        eyebrow="Hands-On"
+        title="Workshops"
+        subtitle="Eight high-demand, hands-on technical workshops conducted by industry experts and senior academicians. Each workshop features practical labs, real-world projects, and digital certificates. Limited seats – first come, first served."
+      >
+        <div className="flex justify-center mt-8">
+          <div className="relative inline-flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
+            <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
+              Free Registration
+            </span>
           </div>
         </div>
-      </section>
+      </PageHero>
 
       {/* Overview */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-section mb-6 font-semibold text-text-primary">Overview</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <SectionHeading eyebrow="Workshops" title="Overview" className="mb-6" />
             <p className="text-body text-text-secondary mb-6 text-break">
             ICCI-2026 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
             <br />
@@ -84,7 +66,7 @@ export default function Workshops() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-section mb-4 font-semibold text-text-primary">List of Workshops</h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
               Explore the complete line-up of ICCI-2026 hands-on workshops. Seats are limited, so secure your spot early.
             </p>
@@ -103,7 +85,7 @@ export default function Workshops() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {workshops.filter(w => w.day === "Day 1").map((workshop, index) => (
-                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm border-2 border-primary/20 hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden">
+                  <div key={index} className="bg-white p-8 rounded-2xl shadow-soft border-2 border-primary/20 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden">
                     <div className="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg text-xs font-bold">
                       {workshop.day}
                     </div>
@@ -135,7 +117,7 @@ export default function Workshops() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {workshops.filter(w => w.day === "Day 2").map((workshop, index) => (
-                  <div key={index} className="bg-white p-8 rounded-lg shadow-sm border-2 border-accent/20 hover:shadow-lg transition-all duration-300 flex flex-col relative overflow-hidden">
+                  <div key={index} className="bg-white p-8 rounded-2xl shadow-soft border-2 border-accent/20 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 flex flex-col relative overflow-hidden">
                     <div className="absolute top-0 right-0 bg-accent text-white px-4 py-1 rounded-bl-lg text-xs font-bold">
                       {workshop.day}
                     </div>
@@ -167,7 +149,7 @@ export default function Workshops() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">Objectives</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <ul className="space-y-3">
               {objectives.map((item, index) => (
                 <li key={index} className="flex items-start">
@@ -185,7 +167,7 @@ export default function Workshops() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">Eligibility / Who Should Attend</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <ul className="space-y-3">
               {eligibility.map((item, index) => (
                 <li key={index} className="flex items-start">

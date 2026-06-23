@@ -1,4 +1,5 @@
 import { Users, Award, Globe, BookOpen, Crown, UserCheck, Shield, User, GraduationCap, Building2 } from 'lucide-react';
+import PageHero from '../components/PageHero';
 
 export default function Committees() {
   const patronInChief = [
@@ -178,25 +179,11 @@ export default function Committees() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Conference Committees</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Meet the distinguished committee members and advisory board of ICCI-2026
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Committees"
+        title="Conference Committees"
+        subtitle="Meet the distinguished committee members and advisory board of ICCI-2026"
+      />
 
       {/* Patron-in-Chief */}
       <section className="section-padding bg-background-light">
@@ -205,7 +192,7 @@ export default function Committees() {
             <h2 className="text-section mb-2 font-semibold text-text-primary">
               Patron-in-Chief
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="max-w-6xl mx-auto">
@@ -283,7 +270,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Convenor/Chair
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="max-w-6xl mx-auto">
@@ -353,7 +340,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Co-Convenor/Co-Chair
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
@@ -423,7 +410,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Secretary
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="max-w-6xl mx-auto">
@@ -493,7 +480,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Technical/Track Committee Members
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="space-y-16">
@@ -550,7 +537,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Advisory Board
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -592,7 +579,7 @@ export default function Committees() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Organizing Committee Members
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

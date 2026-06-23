@@ -70,7 +70,7 @@ function DropdownMenu({ item, currentPath }) {
       <button
         onClick={() => setOpen((v) => !v)}
         onMouseEnter={() => setOpen(true)}
-        className={`flex items-center gap-1 text-sm font-medium transition-colors duration-300 ${
+        className={`group relative flex items-center gap-1 text-sm font-medium transition-colors duration-300 ${
           isActive ? 'text-accent' : 'text-text-primary hover:text-accent'
         }`}
       >
@@ -78,31 +78,36 @@ function DropdownMenu({ item, currentPath }) {
         <ChevronDown
           className={`h-3.5 w-3.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         />
+        <span
+          className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
+            isActive ? 'w-full' : 'w-0 group-hover:w-full'
+          }`}
+        />
       </button>
 
-      {open && (
-        <div
-          onMouseLeave={() => setOpen(false)}
-          className="absolute left-0 top-full mt-1 w-48 rounded-md bg-white shadow-lg ring-1 ring-black/5 z-50"
-        >
-          <div className="py-1">
-            {item.children.map((child) => (
-              <Link
-                key={child.name}
-                to={child.href}
-                onClick={() => setOpen(false)}
-                className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                  currentPath === child.href
-                    ? 'text-accent bg-accent/10 font-medium'
-                    : 'text-text-primary hover:text-accent hover:bg-gray-50'
-                }`}
-              >
-                {child.name}
-              </Link>
-            ))}
-          </div>
+      <div
+        onMouseLeave={() => setOpen(false)}
+        className={`absolute left-0 top-full mt-2 w-48 rounded-xl bg-white shadow-soft-lg ring-1 ring-black/5 z-50 origin-top transition-all duration-200 ${
+          open ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-95 -translate-y-1 pointer-events-none'
+        }`}
+      >
+        <div className="py-1.5">
+          {item.children.map((child) => (
+            <Link
+              key={child.name}
+              to={child.href}
+              onClick={() => setOpen(false)}
+              className={`block px-4 py-2 text-sm rounded-lg mx-1.5 transition-colors duration-200 ${
+                currentPath === child.href
+                  ? 'text-accent bg-accent/10 font-medium'
+                  : 'text-text-primary hover:text-accent hover:bg-gray-50'
+              }`}
+            >
+              {child.name}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -131,14 +136,20 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? 'sm:top-3' : ''
       }`}
     >
-      <div className="container-custom">
+      <div
+        className={`container-custom transition-all duration-500 ${
+          isScrolled
+            ? 'bg-white/95 backdrop-blur-md shadow-soft-lg ring-1 ring-black/5 sm:rounded-2xl'
+            : 'bg-white/95 backdrop-blur-sm'
+        }`}
+      >
         <div className="flex justify-between items-center py-2">
           {/* Logo */}
-          <Link to="/icci-26" className="flex items-center -ml-2">
+          <Link to="/icci-26" className="flex items-center -ml-2 transition-transform duration-300 hover:scale-105">
             <ConferenceLogo size="xlarge" />
           </Link>
 
@@ -155,13 +166,18 @@ export default function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors duration-300 ${
+                  className={`group relative text-sm font-medium transition-colors duration-300 ${
                     location.pathname === item.href
                       ? 'text-accent'
                       : 'text-text-primary hover:text-accent'
                   }`}
                 >
                   {item.name}
+                  <span
+                    className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
+                      location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  />
                 </Link>
               )
             )}

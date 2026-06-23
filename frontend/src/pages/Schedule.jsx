@@ -1,4 +1,5 @@
 import { Calendar, Clock, MapPin, Users, Download } from 'lucide-react';
+import PageHero from '../components/PageHero';
 
 export default function Schedule() {
   // Function to download schedule as PDF file
@@ -319,44 +320,29 @@ export default function Schedule() {
 
   return (
     <div className="bg-background-white">
-      {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-hero mb-6 font-bold">ICCI 2026 Conference Schedule</h1>
-              <div className="flex flex-wrap justify-center items-center gap-6 text-lg mb-6">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5" />
-                  <span>Riphah International University, Lahore</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                  <span>8-9 December 2026</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5" />
-                  <span>9:00 AM – 5:00 PM</span>
-                </div>
-              </div>
-              <button
-                onClick={downloadSchedule}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white rounded-full font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                <Download className="h-5 w-5" />
-                Download Complete Schedule
-              </button>
+      <PageHero eyebrow="Program" title="ICCI 2026 Conference Schedule">
+        <div className="flex flex-wrap justify-center items-center gap-6 text-lg mb-6">
+          <div className="flex items-center gap-2">
+            <MapPin className="h-5 w-5" />
+            <span>Riphah International University, Lahore</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Calendar className="h-5 w-5" />
+            <span>8-9 December 2026</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Clock className="h-5 w-5" />
+            <span>9:00 AM – 5:00 PM</span>
           </div>
         </div>
-      </section>
+        <button
+          onClick={downloadSchedule}
+          className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-dark text-white rounded-full font-semibold text-base shadow-soft-md hover:shadow-soft-lg hover:-translate-y-0.5 transition-all duration-300"
+        >
+          <Download className="h-5 w-5" />
+          Download Complete Schedule
+        </button>
+      </PageHero>
 
         {/* Day 1 Schedule */}
       <section className="section-padding bg-background-light">

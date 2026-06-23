@@ -19,15 +19,66 @@
   }
 }
 
+@layer base {
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.DEFAULT');
+    outline-offset: 2px;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.01em;
+  }
+}
+
 @layer components {
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-primary-dark transition-colors duration-300;
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium shadow-soft hover:bg-primary-dark hover:shadow-soft-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300;
   }
-  
+
   .btn-secondary {
-    @apply border-2 border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary hover:text-white transition-colors duration-300;
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white hover:shadow-soft-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300;
   }
-  
+
+  /* Modern card: the default surface for content blocks across the site */
+  .card-modern {
+    @apply bg-white rounded-2xl shadow-soft border border-gray-100 transition-all duration-300;
+  }
+
+  .card-modern-hover {
+    @apply card-modern hover:shadow-soft-lg hover:-translate-y-1 hover:border-gray-200;
+  }
+
+  /* Section heading accent underline */
+  .section-accent {
+    @apply w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full;
+  }
+
+  /* Eyebrow / kicker label shown above section & hero headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-full text-xs font-semibold uppercase tracking-widest bg-accent/10 text-primary border border-accent/20;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-full text-xs font-semibold uppercase tracking-widest bg-white/10 text-white border border-white/20 backdrop-blur-sm;
+  }
+
+  /* Scroll-reveal: paired with the Reveal component, which toggles is-visible via IntersectionObserver */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
   .section-padding {
     @apply py-section;
   }
@@ -344,6 +395,12 @@
   .blink,
   .rotating-text span {
     animation: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 

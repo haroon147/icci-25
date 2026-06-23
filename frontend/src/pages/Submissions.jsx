@@ -1,4 +1,6 @@
 import { Upload, FileText, CheckCircle, AlertCircle, Calendar, ExternalLink } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Submissions() {
   const defaultSubmissionFormUrl = "https://forms.gle/SoyN5JGZqBq5b1sY7";
@@ -58,48 +60,26 @@ export default function Submissions() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Submissions</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Submit your research contributions to ICCI-2026 and be part of our premier academic conference
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Call for Papers"
+        title="Submissions"
+        subtitle="Submit your research contributions to ICCI-2026 and be part of our premier academic conference"
+      />
 
       {/* Submission Types */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Submission Types
-            </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-              We welcome different types of submissions to accommodate various stages of research 
-              and different presentation formats.
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Submit"
+            title="Submission Types"
+            subtitle="We welcome different types of submissions to accommodate various stages of research and different presentation formats."
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {submissionTypes.map((type, index) => {
               const Icon = type.icon;
               return (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="text-center">
                     <div className="bg-primary p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
                       <Icon className="h-8 w-8 text-white" />
@@ -141,12 +121,12 @@ export default function Submissions() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Submission Guidelines
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {submissionGuidelines.map((section, index) => (
-              <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-soft">
                 <h3 className="text-subheading font-medium text-text-primary mb-6 text-break">{section.title}</h3>
                 <ul className="content-spacing-sm">
                   {section.items.map((item, itemIndex) => (
@@ -169,10 +149,10 @@ export default function Submissions() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Important Dates
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-sm">
+          <div className="bg-white p-8 rounded-2xl shadow-soft">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -221,7 +201,7 @@ export default function Submissions() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Submissions
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-8">
               Ready to submit your Research/Proposal/Symposium? Use our online submission system to upload your work 
               and track the review process.

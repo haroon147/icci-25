@@ -1,4 +1,6 @@
 import { Mic, Award, Globe, Users, Star, Sparkles } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Speakers() {
   const keynoteSpeakers = [
@@ -197,28 +199,11 @@ export default function Speakers() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Keynote Speakers</h1>
-            <p className="text-body text-white/90 max-w-3xl mx-auto">
-              Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2026
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Speakers"
+        title="Keynote Speakers"
+        subtitle="Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2026"
+      />
 
       {/* Keynote Speakers */}
       <section className="section-padding bg-gradient-to-br from-background-light via-background-white to-background-light relative overflow-hidden">
@@ -385,12 +370,7 @@ export default function Speakers() {
       {/* Speaker Highlights */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Why Our Speakers Matter
-            </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-          </div>
+          <SectionHeading eyebrow="Speakers" title="Why Our Speakers Matter" />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">

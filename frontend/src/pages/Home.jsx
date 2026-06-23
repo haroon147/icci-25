@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';
+import Reveal from '../components/Reveal';
 
 const galleryItems = [
   {
@@ -163,7 +164,7 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setHeroSlide((prev) => (prev - 1 + heroBackgrounds.length) % heroBackgrounds.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Previous background image"
         >
           <ChevronLeft className="h-6 w-6" />
@@ -171,7 +172,7 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setHeroSlide((prev) => (prev + 1) % heroBackgrounds.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300"
           aria-label="Next background image"
         >
           <ChevronRight className="h-6 w-6" />
@@ -190,7 +191,7 @@ export default function Home() {
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button> */}
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
+            <Reveal as="h1" className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on
               <br className="hidden sm:block" />
               <span className="block sm:inline"> </span>
@@ -198,10 +199,10 @@ export default function Home() {
               <br className="hidden sm:block" />
               <span className="block sm:inline"> </span>
               <span className="text-accent">(ICCI-2026)</span>
-            </h1>
-            
+            </Reveal>
+
             {/* Conference Date - Mobile Stacked, Desktop Rotating */}
-            <div className="mb-8 flex justify-center px-4">
+            <Reveal delay={1} className="mb-8 flex justify-center px-4">
               {/* Mobile: Stack all items */}
               <div className="md:hidden w-full">
                 <div className="date-card-blink bg-white/15 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/30 shadow-xl">
@@ -237,13 +238,17 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <p className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful">
+            </Reveal>
+            <Reveal
+              as="p"
+              delay={2}
+              className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful"
+            >
               Join leading researchers, innovators, practitioners, and students in computer science and related
               disciplines at ICCI-2026, a premier international conference showcasing cutting-edge research,
               emerging technologies, and transformative ideas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
+            </Reveal>
+            <Reveal delay={3} className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
               <Link
                 to="/submissions"
                 className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
@@ -258,15 +263,15 @@ export default function Home() {
             </Link>
               <br />
               <br />
-            </div>
-            <div className="flex justify-center mb-6">
+            </Reveal>
+            <Reveal delay={4} className="flex justify-center mb-6">
             <div className="relative inline-flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
               <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
                 Free Registration
               </span>
             </div>
-          </div>
+          </Reveal>
           </div>
         </div>
         <div className="absolute bottom-5 left-0 right-0 z-20 flex items-center justify-center gap-2">
@@ -287,11 +292,12 @@ export default function Home() {
       {/* Conference Overview */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <div className="text-center mb-16">
+          <Reveal className="text-center mb-16">
+            <span className="eyebrow">Overview</span>
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Conference Overview
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="section-accent"></div>
             <div className="content-container-md">
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
                 The International Conference on Computing & Innovation (ICCI-2026) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
@@ -303,32 +309,23 @@ export default function Home() {
                 Together, let's pave the way for a smarter, more connected future. The ICCI-2026 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2026. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
               </p>
             </div>
-          </div>
+          </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
-              <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Conference Date</h3>
-              <p className="text-body text-text-secondary">December 8-9, 2026</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
-              <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Location</h3>
-              <p className="text-body text-text-secondary">Riphah International University, Raiwind Road Lahore</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
-              <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Expected Attendees</h3>
-              <p className="text-body text-text-secondary">500+ Researchers</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
-              <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Total Submissions</h3>
-              <p className="text-body text-text-secondary">100+</p>
-            </div>
+            {[
+              { Icon: Calendar, title: 'Conference Date', value: 'December 8-9, 2026' },
+              { Icon: MapPin, title: 'Location', value: 'Riphah International University, Raiwind Road Lahore' },
+              { Icon: Users, title: 'Expected Attendees', value: '500+ Researchers' },
+              { Icon: BookOpen, title: 'Total Submissions', value: '100+' },
+            ].map(({ Icon, title, value }, index) => (
+              <Reveal key={title} delay={Math.min(index, 4)} className="group bg-white p-8 rounded-2xl shadow-soft text-center hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="h-16 w-16 rounded-2xl bg-primary/10 text-primary mx-auto mb-4 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <Icon className="h-8 w-8" />
+                </div>
+                <h3 className="text-subheading font-medium text-text-primary mb-2">{title}</h3>
+                <p className="text-body text-text-secondary">{value}</p>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
@@ -337,94 +334,57 @@ export default function Home() {
       <section className="section-padding bg-background-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12  items-center">
-            <div>
+            <Reveal>
+              <span className="eyebrow">Why Attend</span>
               <h2 className="text-section mb-6 font-semibold text-text-primary">
                 Why Attend ICCI-2026?
               </h2>
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                    	Knowledge Transfer 
-                    </h3>
-                    <p className="text-body text-text-secondary text-break">
-                    Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.
-                    </p>
+              <div className="space-y-3">
+                {[
+                  { title: 'Knowledge Transfer', body: 'Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.' },
+                  { title: 'Skill Development', body: 'Hands-on workshops will equip participants with emerging technological competencies.' },
+                  { title: 'Research Collaboration', body: 'Facilitate networking for joint research, funded projects, and innovation ecosystems.' },
+                  { title: 'Community Empowerment', body: 'Inspire young researchers and students to pursue computing solutions for sustainable development.' },
+                  { title: 'Economic Impact', body: 'Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.' },
+                ].map(({ title, body }) => (
+                  <div key={title} className="group flex items-start p-3 -mx-3 rounded-xl transition-colors duration-300 hover:bg-accent/5">
+                    <div className="w-2.5 h-2.5 bg-accent rounded-full mt-3 mr-4 flex-shrink-0 transition-transform duration-300 group-hover:scale-150"></div>
+                    <div>
+                      <h3 className="text-subheading font-medium text-text-primary mb-1">
+                        {title}
+                      </h3>
+                      <p className="text-body text-text-secondary text-break">
+                        {body}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                  	Skill Development
-                    </h3>
-                    <p className="text-body text-text-secondary text-break">
-                     Hands-on workshops will equip participants with emerging technological competencies.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                    Research Collaboration
-                    </h3>
-                    <p className="text-body text-text-secondary text-break">
-                    Facilitate networking for joint research, funded projects, and innovation ecosystems.
-                    </p>
-                  </div>
-                </div>
-                 <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                  Community Empowerment
-                    </h3>
-                    <p className="text-body text-text-secondary text-break">
-                    Inspire young researchers and students to pursue computing solutions for sustainable development.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <div>
-                    <h3 className="text-subheading font-medium text-text-primary mb-2">
-                      Economic Impact
-                    </h3>
-                    <p className="text-body text-text-secondary text-break">
-                    Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
-            </div>
-         
-            
-            <div className="bg-primary p-8 rounded-lg text-white">
-              <h3 className="text-subheading font-medium mb-4">
+            </Reveal>
+
+            <Reveal delay={1} className="bg-gradient-to-br from-primary to-primary-dark p-8 rounded-2xl shadow-soft-lg text-white">
+              <h3 className="text-subheading font-medium mb-6">
                 Important Dates
               </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-body">Submissions Deadline</span>
-                  <span className="text-body font-medium">15 September 2026</span>
+              <div className="divide-y divide-white/10">
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-body text-white/80">Submissions Deadline</span>
+                  <span className="text-body font-semibold">15 September 2026</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-body">Acceptance Notification</span>
-                  <span className="text-body font-medium">30 September 2026</span>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-body text-white/80">Acceptance Notification</span>
+                  <span className="text-body font-semibold">30 September 2026</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-body">Camera-Ready Submission</span>
-                  <span className="text-body font-medium">15 October 2026</span>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-body text-white/80">Camera-Ready Submission</span>
+                  <span className="text-body font-semibold">15 October 2026</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-body">Conference Dates</span>
-                  <span className="text-body font-medium">December 8-9, 2026</span>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-body text-white/80">Conference Dates</span>
+                  <span className="text-body font-semibold text-accent">December 8-9, 2026</span>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -439,7 +399,7 @@ export default function Home() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Our Collaborators
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
               We are proud to collaborate with leading organizations and institutions that share our vision for advancing computing and innovation.
             </p>
@@ -480,7 +440,7 @@ export default function Home() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Our Sponsors
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break mb-12">
               Thank you to our valued sponsors who make ICCI-2026 possible through their generous support.
             </p>
@@ -634,12 +594,13 @@ export default function Home() {
 
       {/* Call to Action */}
       <section className="section-padding bg-background-light">
-        <div className="container-custom text-center">
+        <Reveal className="container-custom text-center">
+          <span className="eyebrow">Get Involved</span>
           <h2 className="text-section mb-4 font-semibold text-text-primary">
             Ready to Join Us?
           </h2>
           <p className="text-body text-text-secondary content-container-sm text-content-center text-break mb-6">
-            Don't miss this opportunity to present your research, learn from experts, 
+            Don't miss this opportunity to present your research, learn from experts,
             and network with peers in the computer science community.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
               <Link
@@ -650,7 +611,7 @@ export default function Home() {
               </Link>
             <Link
               to="/registration#ready-to-register"
-              className="btn-secondary border-white text-black hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
+              className="btn-secondary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
             >
               Register Now
             </Link>
@@ -665,7 +626,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </div>
+        </Reveal>
       </section>
       <style>{`
         @keyframes pulseGlow {

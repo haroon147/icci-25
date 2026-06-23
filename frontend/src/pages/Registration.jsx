@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Users, CreditCard, Calendar, CheckCircle, ExternalLink } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Registration() {
   const { hash } = useLocation();
@@ -85,29 +87,11 @@ export default function Registration() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Registration</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Register for ICCI-2026 and join the Computing and innovation conference. 
-              
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Join Us"
+        title="Registration"
+        subtitle="Register for ICCI-2026 and join the Computing and innovation conference."
+      />
 
       {/* Registration Types */}
       {/* <section className="section-padding bg-background-light">
@@ -116,7 +100,7 @@ export default function Registration() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Registration Packages
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary max-w-3xl mx-auto">
               Choose the registration package that best suits your needs. All packages include 
               access to conference sessions and networking opportunities.
@@ -125,7 +109,7 @@ export default function Registration() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {registrationTypes.map((pkg, index) => (
-              <div key={index} className={`bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 relative ${
+              <div key={index} className={`bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 relative ${
                 pkg.popular ? 'ring-2 ring-accent' : ''
               }`}>
                 {pkg.popular && (
@@ -182,7 +166,7 @@ export default function Registration() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Registration Process
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -236,12 +220,12 @@ export default function Registration() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Payment Methods
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {paymentMethods.map((method, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div key={index} className="bg-white p-6 rounded-2xl shadow-soft text-center">
                 <div className="text-4xl mb-4">{method.icon}</div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">{method.name}</h3>
                 <p className="text-body text-text-secondary">{method.description}</p>
@@ -254,13 +238,8 @@ export default function Registration() {
       {/* Important Information */}
       <section className="section-padding bg-background-white">
         <div className="container-custom">
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <div className="text-center mb-8">
-              <h2 className="text-section mb-4 font-semibold text-text-primary">
-                Important Registration Information
-              </h2>
-              <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            </div>
+          <div className="bg-white p-8 rounded-2xl shadow-soft">
+            <SectionHeading title="Important Registration Information" className="text-center mb-8" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>

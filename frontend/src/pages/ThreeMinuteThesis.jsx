@@ -1,4 +1,6 @@
 import { Award, FileText, Video, Calendar, CheckCircle, AlertCircle, Mail, ExternalLink, PowerSquare, Presentation } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function ThreeMinuteThesis() {
   const objectives = [
@@ -95,39 +97,17 @@ export default function ThreeMinuteThesis() {
 
   return (
     <div className="bg-background-white">
-      {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">THREE-MINUTE THESIS (3MT) COMPETITION</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              ICCI-2026 - THREE-MINUTE THESIS (3MT) COMPETITION
-            </p>
-            <p className="text-lg text-white/80 mt-4 font-medium">
-              Call for Participation
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Call for Participation"
+        title="Three-Minute Thesis (3MT) Competition"
+        subtitle="ICCI-2026 — Three-Minute Thesis (3MT) Competition"
+      />
 
       {/* Overview Section */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-section mb-6 font-semibold text-text-primary">OVERVIEW</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <SectionHeading eyebrow="3MT" title="Overview" className="mb-6" />
             <p className="text-body text-text-secondary mb-4 text-break">
               The International Conference on Computing & Innovation (ICCI-2026) is pleased to announce its Three-Minute Thesis (3MT) Competition. This competition challenges doctoral students, master's students, and recent graduates to distill the essence and significance of their research into a compelling three-minute presentation accessible to a broad technical audience.
             </p>
@@ -140,7 +120,7 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">OBJECTIVES</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <p className="text-body text-text-secondary mb-4">The 3MT competition aims to:</p>
             <ul className="space-y-3">
               {objectives.map((objective, index) => (
@@ -159,7 +139,7 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">ELIGIBILITY</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <ul className="space-y-3">
               {eligibility.map((item, index) => (
                 <li key={index} className="flex items-start">
@@ -177,7 +157,7 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">SUBMISSION REQUIREMENTS</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <p className="text-body text-text-secondary mb-6 text-break">
               Participants must submit two components:
             </p>
@@ -223,9 +203,9 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">COMPETITION STRUCTURE</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <div className="bg-white p-6 rounded-2xl shadow-soft mb-6">
               <h3 className="text-subheading font-medium text-text-primary mb-4">Selection Process</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
@@ -247,7 +227,7 @@ export default function ThreeMinuteThesis() {
               </ul>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-2xl shadow-soft">
               <h3 className="text-subheading font-medium text-text-primary mb-4">Final Competition Requirements</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
@@ -273,7 +253,7 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">EVALUATION CRITERIA</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             <div className="bg-white p-8 rounded-lg shadow-md border border-gray-100">
               <p className="text-body text-text-secondary mb-6 text-break">
                 Presentations will be evaluated based on the following criteria:
@@ -303,10 +283,10 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">PRESENTATION GUIDELINES</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-2xl shadow-soft">
                 <h3 className="text-subheading font-medium text-text-primary mb-4">What Makes an Effective 3MT Presentation:</h3>
                 <ul className="space-y-2">
                   {presentationGuidelines.effective.map((item, index) => (
@@ -318,7 +298,7 @@ export default function ThreeMinuteThesis() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-2xl shadow-soft">
                 <h3 className="text-subheading font-medium text-text-primary mb-4">Common Pitfalls to Avoid:</h3>
                 <ul className="space-y-2">
                   {presentationGuidelines.pitfalls.map((item, index) => (
@@ -339,7 +319,7 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">AWARDS</h2>
-            <div className="w-24 h-1 bg-accent mb-6"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mb-6 rounded-full"></div>
             
             <div className="mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

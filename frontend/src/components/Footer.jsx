@@ -20,8 +20,17 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const quickLinks = [
+    { to: '/about', label: 'About Conference' },
+    { to: '/scope', label: 'Scope & Topics' },
+    { to: '/submissions', label: 'Paper Submissions' },
+    { to: '/registration', label: 'Registration' },
+    { to: '/icci-25', label: 'ICCI-25' },
+    { to: '/contact', label: 'Contact Us' },
+  ];
+
   return (
-    <footer className="bg-primary text-white relative">
+    <footer className="bg-gradient-to-b from-primary to-primary-dark text-white relative">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
@@ -30,7 +39,7 @@ export default function Footer() {
                 <IconConferenceLogo className="text-white" />
               </div>
               <p className="text-small text-white/80 leading-relaxed">
-                 International Conference on Computing & Innovation - Bringing together 
+                 International Conference on Computing & Innovation - Bringing together
                 researchers, practitioners, and students in computing and innovation from around the world.
               </p>
             </div>
@@ -39,36 +48,17 @@ export default function Footer() {
           <div>
             <h3 className="text-subheading font-medium mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li>
-                <Link to="/about" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  About Conference
-                </Link>
-              </li>
-              <li>
-                <Link to="/scope" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  Scope & Topics
-                </Link>
-              </li>
-              <li>
-                <Link to="/submissions" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  Paper Submissions
-                </Link>
-              </li>
-              <li>
-                <Link to="/registration" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  Registration
-                </Link>
-              </li>
-              <li>
-                <Link to="/icci-25" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  ICCI-25
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-small text-white/80 hover:text-accent transition-colors duration-300">
-                  Contact Us
-                </Link>
-              </li>
+              {quickLinks.map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    className="group inline-flex items-center text-small text-white/80 hover:text-accent transition-colors duration-300"
+                  >
+                    <span className="mr-0 max-w-0 overflow-hidden text-accent transition-all duration-300 group-hover:mr-1.5 group-hover:max-w-[1rem]">→</span>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -146,7 +136,7 @@ export default function Footer() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-accent text-primary p-3 rounded-full shadow-lg hover:bg-accent-dark transition-all duration-300 z-40"
+          className="fixed bottom-8 right-8 bg-accent text-primary p-3 rounded-full shadow-soft-lg hover:bg-accent-dark hover:-translate-y-1 transition-all duration-300 z-40 animate-fade-in"
           aria-label="Scroll to top"
         >
           <ArrowUp className="h-5 w-5" />

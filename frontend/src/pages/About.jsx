@@ -1,42 +1,23 @@
 import { Target, Eye, Users, Award, BookOpen, Globe } from 'lucide-react';
 import { IconConferenceLogo } from '../components/ConferenceLogo';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function About() {
   return (
     <div className="bg-background-white">
-      {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">About ICCI-2026</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-               International Conference on Computing & Innovation
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="About ICCI"
+        title="About ICCI-2026"
+        subtitle="International Conference on Computing & Innovation"
+      />
 
       {/* About Content */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-section mb-6 font-semibold text-text-primary">
-                About the Conference
-              </h2>
-              <div className="w-24 h-1 bg-accent mb-8"></div>
+              <SectionHeading eyebrow="Overview" title="About the Conference" className="mb-8" />
               <p className="text-body text-text-secondary mb-6 text-beautiful">
               The International Conference on Computing & Innovation (ICCI-2026) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
@@ -45,7 +26,7 @@ export default function About() {
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-soft">
               <h3 className="text-subheading font-medium mb-6 text-text-primary">
                 Conference Highlights
               </h3>
@@ -110,11 +91,11 @@ export default function About() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Our Mission & Vision
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-soft">
               <div className="flex items-center mb-6">
                 <Target className="h-8 w-8 text-accent mr-3" />
                 <h3 className="text-subheading font-medium text-text-primary">Our Mission</h3>
@@ -125,7 +106,7 @@ computing and emerging technologies, empowering communities to build a smarter, 
 sustainable digital future.              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-soft">
               <div className="flex items-center mb-6">
                 <Globe className="h-8 w-8 text-accent mr-3" />
                 <h3 className="text-subheading font-medium text-text-primary">Our Vision</h3>
@@ -146,7 +127,7 @@ practitioners to drive sustainable digital transformation.              </p>
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Conference Objectives
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -240,12 +221,12 @@ practitioners to drive sustainable digital transformation.              </p>
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Organizer & Collaborators
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Organizer */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-soft">
               <div className="text-center mb-8">
                 <div className="bg-primary w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="h-10 w-10 text-white" />
@@ -266,7 +247,7 @@ practitioners to drive sustainable digital transformation.              </p>
             </div>
 
             {/* Collaborators */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-8 rounded-2xl shadow-soft">
               <div className="text-center mb-8">
                 <div className="bg-accent w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Globe className="h-10 w-10 text-white" />

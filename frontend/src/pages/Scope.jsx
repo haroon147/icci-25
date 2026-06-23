@@ -1,4 +1,6 @@
 import { Brain, Shield, Database, Cpu, Network, Code, Eye, Users, Lightbulb, Globe } from 'lucide-react';
+import PageHero from '../components/PageHero';
+import SectionHeading from '../components/SectionHeading';
 
 export default function Scope() {
   const topics = [
@@ -61,47 +63,26 @@ export default function Scope() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
-        </div>
-        
-        {/* Content */}
-        <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-hero mb-6 font-bold">Scope & Topics</h1>
-            <p className="text-body text-white/90 content-container-md text-content-center text-break">
-              Explore the comprehensive range of computing and innovation topics covered at ICCI-2026
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Scope & Topics"
+        title="Scope & Topics"
+        subtitle="Explore the comprehensive range of computing and innovation topics covered at ICCI-2026"
+      />
 
       {/* Topics Overview */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Research Topics
-            </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
-            <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-            The ICCI-2026 will cover (but not be limited to) the following research and innovation areas:
-            </p>
-          </div>
+          <SectionHeading
+            eyebrow="Topics"
+            title="Research Topics"
+            subtitle="The ICCI-2026 will cover (but not be limited to) the following research and innovation areas:"
+          />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {topics.map((topic, index) => {
               const Icon = topic.icon;
               return (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
                   <div className="flex items-start">
                     <div className="bg-primary p-3 rounded-lg mr-6 flex-shrink-0">
                       <Icon className="h-6 w-6 text-white" />
@@ -129,11 +110,11 @@ export default function Scope() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Social and Academic Impact
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
               <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
@@ -143,7 +124,7 @@ export default function Scope() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
               <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Code className="h-8 w-8 text-white" />
               </div>
@@ -153,7 +134,7 @@ export default function Scope() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
               <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Network className="h-8 w-8 text-white" />
               </div>
@@ -163,7 +144,7 @@ export default function Scope() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
               <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="h-8 w-8 text-white" />
               </div>
@@ -173,7 +154,7 @@ export default function Scope() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
               <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Lightbulb className="h-8 w-8 text-white" />
               </div>
@@ -193,7 +174,7 @@ export default function Scope() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">
               Submission Guidelines
             </h2>
-            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
