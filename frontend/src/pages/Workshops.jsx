@@ -8,10 +8,10 @@ export default function Workshops() {
     { title: "Digital Forensics Lab: Tracing Evidence in Cybercrime", summary: "Acquire evidence collection, chain-of-custody, and investigative tooling skills to track digital footprints securely.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Practical DevOps: Automating Deployments with CI/CD", summary: "Implement automated build, test, and deployment pipelines using industry-standard DevOps toolchains.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Intelligent Vision Systems: Practical Training in Computer Vision & Pattern Recognition", summary: "Build CV pipelines for detection, classification, and tracking with OpenCV libraries and annotated datasets.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
-    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2",time: "10:00 AM - 4:00 PM" }
+    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2", time: "10:00 AM - 4:00 PM" }
   ];
 
   const objectives = [
@@ -51,11 +51,11 @@ export default function Workshops() {
           <div className="max-w-4xl mx-auto">
             <SectionHeading eyebrow="Workshops" title="Overview" className="mb-6" />
             <p className="text-body text-text-secondary mb-6 text-break">
-            ICCI-2026 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
-            <br />
-            <br />
-            <br/>
-            Led by top-tier industry experts and senior academicians with decades of real-world experience, these workshops go far beyond theory. Participants will work on live tools, build complete end-to-end projects, solve industry-relevant challenges, and leave with strong portfolio pieces, practical skills, and internationally recognized digital certificates.
+              ICCI-2026 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring Multiple high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
+              <br />
+              <br />
+              <br />
+              Led by top-tier industry experts and senior academicians with decades of real-world experience, these workshops go far beyond theory. Participants will work on live tools, build complete end-to-end projects, solve industry-relevant challenges, and leave with strong portfolio pieces, practical skills, and internationally recognized digital certificates.
             </p>
           </div>
         </div>
@@ -68,13 +68,13 @@ export default function Workshops() {
             <h2 className="text-section mb-4 font-semibold text-text-primary">List of Workshops</h2>
             <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-              Explore the complete line-up of ICCI-2026 hands-on workshops. Seats are limited, so secure your spot early.
+              Will be Annouced Soon
             </p>
           </div>
 
           <div className="space-y-12">
             {/* Day 1 Workshops */}
-            <div>
+            {/* <div>
               <div className="flex items-center gap-3 mb-8 pb-4 border-b-2 border-primary">
                 <Calendar className="h-6 w-6 text-primary" />
                 <h3 className="text-2xl font-bold text-primary">Day 1 Workshops</h3>
@@ -107,10 +107,10 @@ export default function Workshops() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Day 2 Workshops */}
-            <div>
+            {/* <div>
               <div className="flex items-center gap-3 mb-8 pb-4 border-b-2 border-accent">
                 <Calendar className="h-6 w-6 text-accent" />
                 <h3 className="text-2xl font-bold text-accent">Day 2 Workshops</h3>
@@ -139,7 +139,7 @@ export default function Workshops() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function Workshops() {
       </section>
 
       {/* Registration */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -202,7 +202,7 @@ export default function Workshops() {
               </div>
               <div className="bg-background-light rounded-xl p-6">
                 <div className="flex items-start mb-4">
-                  
+
                 </div>
                 <p className="text-body text-text-secondary mb-2">
                   Each confirmed participant receives:
@@ -225,7 +225,7 @@ export default function Workshops() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

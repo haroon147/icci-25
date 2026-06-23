@@ -6,10 +6,10 @@ export default function Workshops() {
     { title: "Digital Forensics Lab: Tracing Evidence in Cybercrime", summary: "Acquire evidence collection, chain-of-custody, and investigative tooling skills to track digital footprints securely.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Practical DevOps: Automating Deployments with CI/CD", summary: "Implement automated build, test, and deployment pipelines using industry-standard DevOps toolchains.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
     { title: "Intelligent Vision Systems: Practical Training in Computer Vision & Pattern Recognition", summary: "Build CV pipelines for detection, classification, and tracking with OpenCV libraries and annotated datasets.", day: "Day 1", time: "10:00 AM - 4:00 PM" },
-    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2",time: "10:00 AM - 4:00 PM" },
-    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2",time: "10:00 AM - 4:00 PM" }
+    { title: "Enterprise Networking & Security: VLANs, ACLs, NAT & Site-to-Site VPN", summary: "Configure enterprise-grade network topologies, segmentation strategies, and secure remote connectivity.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Innovation, Entrepreneurship & Tech Startups", summary: "Translate ideas into viable ventures with guidance on product-market fit, fundraising, and go-to-market planning.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Internet of Things (IoT): From Architecture to Hands-On Implementation", summary: "Prototype end-to-end IoT stacks covering sensors, connectivity, edge logic, and cloud dashboards.", day: "Day 2", time: "10:00 AM - 4:00 PM" },
+    { title: "Cloud Computing Fundamentals and Deployment", summary: "Deploy cloud workloads, manage resources, and apply best practices for scalability and cost optimization.", day: "Day 2", time: "10:00 AM - 4:00 PM" }
   ];
 
   const objectives = [
@@ -51,13 +51,13 @@ export default function Workshops() {
             <br />
             <br />
             <div className="flex justify-center mb-6">
-            <div className="relative inline-flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
-              <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
+              <div className="relative inline-flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
+                {/* <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
                 Free Registration
-              </span>
+              </span> */}
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -69,11 +69,11 @@ export default function Workshops() {
             <h2 className="text-section mb-6 font-semibold text-text-primary">Overview</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
             <p className="text-body text-text-secondary mb-6 text-break">
-            ICCI-2025 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
-            <br />
-            <br />
-            <br/>
-            Led by top-tier industry experts and senior academicians with decades of real-world experience, these workshops go far beyond theory. Participants will work on live tools, build complete end-to-end projects, solve industry-relevant challenges, and leave with strong portfolio pieces, practical skills, and internationally recognized digital certificates.
+              ICCI-2025 brings you one of the most comprehensive and diverse hands-on workshop series in Pakistan, featuring 8 high-impact, full-day practical workshops that span every major domain of modern computing: Artificial Intelligence & Computer Vision, Data Science, Cybersecurity, IoT & Robotics, DevOps, Cloud Computing, Enterprise Networking, and Digital Forensics.
+              <br />
+              <br />
+              <br />
+              Led by top-tier industry experts and senior academicians with decades of real-world experience, these workshops go far beyond theory. Participants will work on live tools, build complete end-to-end projects, solve industry-relevant challenges, and leave with strong portfolio pieces, practical skills, and internationally recognized digital certificates.
             </p>
           </div>
         </div>
@@ -148,9 +148,9 @@ export default function Workshops() {
                     <h3 className="text-subheading font-semibold text-text-primary mb-3 text-break">{workshop.title}</h3>
                     <p className="text-body text-text-secondary mb-4 text-break">{workshop.summary}</p>
                     <div className="flex items-center gap-2 text-sm text-primary font-medium">
-                        <Clock className="h-4 w-4" />
-                        <span>{workshop.time}</span>
-                      </div>
+                      <Clock className="h-4 w-4" />
+                      <span>{workshop.time}</span>
+                    </div>
                     <div className="mt-auto">
                       <p className="text-sm text-text-muted">Format: Hands-on labs · Real-world projects · Digital certificate</p>
                     </div>
@@ -204,11 +204,11 @@ export default function Workshops() {
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h2 className="text-section mb-4 font-semibold text-text-primary">Registration</h2>
+                {/* <h2 className="text-section mb-4 font-semibold text-text-primary">Registration</h2>
                 <p className="text-body text-text-secondary mb-4 text-break">
                   Reserve your seat today. Limited seats!
-                </p>
-                <a
+                </p> */}
+                {/* <a
                   href="https://forms.gle/xKo1GwKUofU9wGQLA"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -216,11 +216,11 @@ export default function Workshops() {
                 >
                   <ExternalLink className="h-5 w-5 mr-2" />
                   Register for Workshops Here
-                </a>
+                </a> */}
               </div>
               <div className="bg-background-light rounded-xl p-6">
                 <div className="flex items-start mb-4">
-                  
+
                 </div>
                 <p className="text-body text-text-secondary mb-2">
                   Each confirmed participant receives:

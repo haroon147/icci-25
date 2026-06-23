@@ -87,7 +87,7 @@ export default function Registration() {
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
@@ -96,7 +96,7 @@ export default function Registration() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
-        
+
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -297,16 +297,16 @@ export default function Registration() {
               <Lock className="h-16 w-16 mx-auto mb-6 text-accent" />
               <h2 className="text-section font-semibold mb-4">Registration Closed</h2>
               <p className="text-body text-white/90 content-container-sm text-content-center text-break mb-8">
-                ICCI-2025 has concluded. Registration forms for participants, workshops, and the 3MT competition
-                are no longer accepting submissions. Visit the current edition to register for ICCI-2026.
+                {/* ICCI-2025 has concluded. Registration forms for participants, workshops, and the 3MT competition
+                are no longer accepting submissions. Visit the current edition to register for ICCI-2026. */}
               </p>
-              <Link
+              {/* <Link
                 to="/registration"
                 className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
               >
                 <ExternalLink className="h-5 w-5 mr-2" />
                 Go to ICCI-2026 Registration
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -6,14 +6,14 @@ export default function ThreeMinuteThesis() {
 
     "Increase the visibility, reach, and impact of emerging scholars’ research within the broader scientific community.",
 
-  
+
     "Promote meaningful engagement and cross-disciplinary dialogue through clear, concise communication across research domains.",
   ];
 
   const eligibility = [
 
     "Open to all current MS and PhD students worldwide, with no institutional or regional restrictions.",
-    
+
     "All applicants must have research related to Computer Science and Related Domains ",
   ];
 
@@ -27,7 +27,7 @@ export default function ThreeMinuteThesis() {
         { type: "bullet", content: "Research objectives" },
         { type: "bullet", content: "Methodology" },
         { type: "bullet", content: "Key contributions and findings" },
-    
+
       ]
     },
     {
@@ -47,7 +47,7 @@ export default function ThreeMinuteThesis() {
       icon: CheckCircle,
       title: "Submission Process",
       items: [
-        { type: "text", content  : "Complete the Google Form (https://forms.gle/ZFEwn4Cw1xDy3AHz5)" },
+        { type: "text", content: "Complete the Google Form (https://forms.gle/ZFEwn4Cw1xDy3AHz5)" },
         { type: "text", content: "The form will require:" },
         { type: "bullet", content: "Personal and institutional information" },
         { type: "bullet", content: "Upload of one-page summary (PDF)" },
@@ -98,7 +98,7 @@ export default function ThreeMinuteThesis() {
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
@@ -107,7 +107,7 @@ export default function ThreeMinuteThesis() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
-        
+
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -224,7 +224,7 @@ export default function ThreeMinuteThesis() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">COMPETITION STRUCTURE</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
               <h3 className="text-subheading font-medium text-text-primary mb-4">Selection Process</h3>
               <ul className="space-y-3">
@@ -304,7 +304,7 @@ export default function ThreeMinuteThesis() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">PRESENTATION GUIDELINES</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <h3 className="text-subheading font-medium text-text-primary mb-4">What Makes an Effective 3MT Presentation:</h3>
@@ -340,7 +340,7 @@ export default function ThreeMinuteThesis() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-section mb-6 font-semibold text-text-primary">AWARDS</h2>
             <div className="w-24 h-1 bg-accent mb-6"></div>
-            
+
             <div className="mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white p-6 rounded-lg shadow-md text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -348,23 +348,23 @@ export default function ThreeMinuteThesis() {
                     <Award className="h-10 w-10 text-white" />
                   </div>
                   <h4 className="text-subheading font-semibold text-text-primary mb-3">First Place</h4>
-                  <p className="text-body text-accent  text-lg">Sheild  &<br/> Certificate of Appreciation</p>
+                  <p className="text-body text-accent  text-lg">Sheild  &<br /> Certificate of Appreciation</p>
                 </div>
-                
+
                 <div className="bg-white p-6 rounded-lg shadow-md text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                   <div className="bg-gradient-to-br from-gray-400 to-gray-600 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-md">
                     <Award className="h-10 w-10 text-white" />
                   </div>
                   <h4 className="text-subheading font-semibold text-text-primary mb-3">Second Place</h4>
-                  <p className="text-body text-accent font-medium">Sheild  &<br/> Certificate of Appreciation</p>
+                  <p className="text-body text-accent font-medium">Sheild  &<br /> Certificate of Appreciation</p>
                 </div>
-                
+
                 <div className="bg-white p-6 rounded-lg shadow-md text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                   <div className="bg-gradient-to-br from-orange-400 to-orange-600 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-md">
                     <Award className="h-10 w-10 text-white" />
                   </div>
                   <h4 className="text-subheading font-semibold text-text-primary mb-3">Third Place</h4>
-                  <p className="text-body text-accent font-medium">Sheild  &<br/> Certificate of Appreciation</p>
+                  <p className="text-body text-accent font-medium">Sheild  &<br /> Certificate of Appreciation</p>
                 </div>
               </div>
             </div>
@@ -377,11 +377,11 @@ export default function ThreeMinuteThesis() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary p-8 rounded-lg text-white text-center">
-              <h2 className="text-section mb-4 font-semibold">Submission</h2>
-              <p className="text-body text-white/90 mb-4 text-break">
-              Submit your Proposal through the following link:
-              </p>
-              <a
+              <h2 className="text-section mb-4 font-semibold">Registration Closed </h2>
+              {/* <p className="text-body text-white/90 mb-4 text-break">
+                Submit your Proposal through the following link:
+              </p> */}
+              {/* <a
                 href="https://forms.gle/ZFEwn4Cw1xDy3AHz5"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -389,7 +389,7 @@ export default function ThreeMinuteThesis() {
               >
                 <ExternalLink className="h-5 w-5 mr-2" />
                 Submit Your Application
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

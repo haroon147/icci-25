@@ -3,6 +3,7 @@ import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award,
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';
 import Reveal from '../components/Reveal';
+import { icci25HighlightImages } from '../data/icci25Highlights';
 
 const galleryItems = [
   {
@@ -37,13 +38,7 @@ const galleryItems = [
   },
 ];
 
-const heroBackgrounds = [
-  '/icci-pictures/main/IMG_9330.jpg',
-  '/icci-pictures/main/IMG_9337.jpg',
-  '/icci-pictures/main/IMG_9504.jpg',
-  '/icci-pictures/main/IMG_9508.jpg',
-  '/icci-pictures/main/IMG_9515.jpg',
-];
+const heroBackgrounds = icci25HighlightImages;
 
 export default function Home() {
   const navigate = useNavigate();

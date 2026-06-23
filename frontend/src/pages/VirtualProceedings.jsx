@@ -35,18 +35,34 @@ export default function VirtualProceedings() {
 
   return (
     <div className="bg-background-white min-h-screen">
-      <PageHero
-        before={
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <Radio className="h-8 w-8 animate-pulse text-red-500" />
-            <span className="px-4 py-2 bg-red-500 text-white rounded-full font-bold text-sm uppercase tracking-wider animate-pulse">
-              LIVE
-            </span>
+      {/* Hero Section */}
+      <section className="relative text-white section-padding-lg overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-dark/90"></div>
+        </div>
+        
+        <div className="container-custom relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Radio className="h-8 w-8 animate-pulse text-red-500" />
+              <span className="px-4 py-2 bg-red-500 text-white rounded-full font-bold text-sm uppercase tracking-wider animate-pulse">
+                LIVE
+              </span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
+              Virtual Proceedings – Live Streaming
+            </h1>
+            <p className="text-lg sm:text-xl mb-8 text-white/90">
+              Join the conference proceedings live and watch the sessions in real-time.
+            </p>
           </div>
-        }
-        title="Virtual Proceedings – Live Streaming"
-        subtitle="Join the conference proceedings live and watch the sessions in real-time."
-      />
+        </div>
+      </section>
 
       {/* Live Embeds - Day 02 and Day 01 Tracks */}
       <section className="section-padding bg-background-light">

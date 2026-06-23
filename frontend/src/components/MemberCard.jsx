@@ -11,8 +11,8 @@ export default function MemberCard({ image, name, title, affiliation, icon: Icon
   const badge = accentStyles[accent] || accentStyles.primary;
 
   return (
-    <div className="card-modern-hover bg-white p-6 text-center">
-      <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden ring-4 ring-white shadow-soft mb-4 relative bg-gray-50">
+    <div className="card-modern-hover bg-white p-7 text-center">
+      <div className="w-32 h-32 mx-auto rounded-2xl overflow-hidden ring-4 ring-white shadow-soft mb-5 relative bg-gray-50">
         <img
           src={image}
           alt={name}
@@ -24,13 +24,13 @@ export default function MemberCard({ image, name, title, affiliation, icon: Icon
         />
         {Icon && (
           <div className={`hidden absolute inset-0 items-center justify-center bg-gradient-to-br ${badge}`}>
-            <Icon className="h-8 w-8 text-white" />
+            <Icon className="h-10 w-10 text-white" />
           </div>
         )}
       </div>
-      <h3 className="font-semibold text-text-primary text-sm leading-snug">{name}</h3>
-      {title && <p className="text-accent text-xs font-medium mt-1">{title}</p>}
-      <p className="text-text-secondary text-xs mt-1.5 leading-relaxed">{affiliation}</p>
+      <h3 className="font-semibold text-text-primary text-base leading-snug">{name}</h3>
+      {title && <p className="text-accent text-sm font-medium mt-1.5">{title}</p>}
+      <p className="text-text-secondary text-sm mt-1.5 leading-relaxed">{affiliation}</p>
     </div>
   );
 }

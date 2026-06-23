@@ -6,14 +6,14 @@ const HERO_BG = 'https://moellim.com/wp-content/uploads/2025/02/Riphah-Internati
 // Committees, Submissions, 3MT, Workshops, Schedule, Virtual Proceedings, Registration, Contact).
 // Keeping this in one place is what guarantees those pages stay visually consistent —
 // edit the template here once instead of nudging matching classes in every page file.
-export default function PageHero({ before, eyebrow, title, subtitle, children, overlayClassName = 'bg-gradient-to-br from-primary/90 to-primary-dark/90' }) {
+export default function PageHero({ eyebrow, title, subtitle, children }) {
   return (
     <section className="relative text-white section-padding-lg overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       >
-        <div className={`absolute inset-0 ${overlayClassName}`}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
       </div>
 
       {/* Decorative depth */}
@@ -22,7 +22,6 @@ export default function PageHero({ before, eyebrow, title, subtitle, children, o
 
       <div className="container-custom relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {before && <Reveal>{before}</Reveal>}
           {eyebrow && (
             <Reveal>
               <span className="eyebrow-light">{eyebrow}</span>

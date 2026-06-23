@@ -1,9 +1,4 @@
-import { Mic, Award, Globe } from 'lucide-react';
-import PageHero from '../components/PageHero';
-import SectionHeading from '../components/SectionHeading';
-import LeaderCard from '../components/LeaderCard';
-import MemberCard from '../components/MemberCard';
-import Reveal from '../components/Reveal';
+import { Mic, Award, Globe, Users, Star, Sparkles } from 'lucide-react';
 
 export default function Speakers() {
   const keynoteSpeakers = [
@@ -12,7 +7,7 @@ export default function Speakers() {
       title: "Global Network Professor at Tandon School of Engineering, New York University, USA",
       affiliation: "New York University (NYU) Abu Dhabi",
       expertise: "Brain-Inspired Computing, AI/ML Hardware, Energy-Efficient Systems, Robust Computing",
-      bio:"",
+      bio: "",
       image: "/committee-members/dr-shaffique.png"
     },
     {
@@ -20,18 +15,18 @@ export default function Speakers() {
       title: "Associate Professor ",
       affiliation: "COMSATS University Islamabad, Lahore Campus ",
       expertise: "Product and Engineering Manager, AI-enabled healthcare",
-      bio:"",
+      bio: "",
       image: "/committee-members/dr-usama.png"
     },
     {
-      name:"Mr. Waqar Azeem",
-      title:"Lead Bussiness Incubation Centre",
-      affiliation:"Forman Cristian Univeristy ",
-      expertise:"Project Manager, Management Consultant and Business Incubation & Tech Parks ",
-      bio:"",
-      image:"data:image/jpeg;base64,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",
+      name: "Mr. Waqar Azeem",
+      title: "Lead Bussiness Incubation Centre",
+      affiliation: "Forman Cristian Univeristy ",
+      expertise: "Project Manager, Management Consultant and Business Incubation & Tech Parks ",
+      bio: "",
+      image: "data:image/jpeg;base64,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",
 
-      
+
     }
     // {
     // //   name: "Prof. Dr. Fatima Al-Zahra",
@@ -70,10 +65,10 @@ export default function Speakers() {
       image: "/invitedSpeaker/dr-atta.png"
     },
     {
-      name:"Dr. Khaoula Taji",
+      name: "Dr. Khaoula Taji",
       title: "Assistant Professor",
-      affiliation:" Chouaib Doukkali University, El Jadida, Morocco.",
-      image:"/invitedSpeaker/dr-khola.png"
+      affiliation: " Chouaib Doukkali University, El Jadida, Morocco.",
+      image: "/invitedSpeaker/dr-khola.png"
     },
     {
       name: "Dr. Nouh Sabri Elmitwally",
@@ -82,10 +77,10 @@ export default function Speakers() {
       image: "/invitedSpeaker/dr-nouh.png"
     },
     {
-      name:"Dr Sadaf Hina",
-      title:"Lecturer in Cybersecurity",
-      affiliation:" University of Salford, Manchester, UK.",
-      image:"https://www.salford.ac.uk/sites/default/files/staff-profiles/1178861.jpeg",
+      name: "Dr Sadaf Hina",
+      title: "Lecturer in Cybersecurity",
+      affiliation: " University of Salford, Manchester, UK.",
+      image: "https://www.salford.ac.uk/sites/default/files/staff-profiles/1178861.jpeg",
     },
     {
       name: "Dr. Safiullah Khan",
@@ -93,7 +88,7 @@ export default function Speakers() {
       affiliation: "Department of Computing & Mathematics, Manchester Metropolitan University, United Kingdom",
       image: "/invitedSpeaker/dr-safiullah.png"
     },
-   
+
     {
       name: "Dr. Inam Ullah Khan",
       title: "Post-Doctoral Research Fellow",
@@ -101,10 +96,10 @@ export default function Speakers() {
       image: "/invitedSpeaker/dr-inam.png"
     },
     {
-      name:"Dr. Muhammad Aamir",
-      title:"Senior Research Scientist ",
-      affiliation:"Department of Computer Science University of Oxford ",
-      image:"/invitedSpeaker/dr-amir.jpg"
+      name: "Dr. Muhammad Aamir",
+      title: "Senior Research Scientist ",
+      affiliation: "Department of Computer Science University of Oxford ",
+      image: "/invitedSpeaker/dr-amir.jpg"
     },
     {
       name: "Dr. Rizwana Naz Asif",
@@ -143,23 +138,23 @@ export default function Speakers() {
       image: "/invitedSpeaker/dr-bilal.jpg"
     },
     {
-      name:"Dr. Saad",
-      title:"Machine learning Engineer",
-      affiliation:"EMOTIV, Sydney",
-      image:"/invitedSpeaker/dr-saad.jpg"
+      name: "Dr. Saad",
+      title: "Machine learning Engineer",
+      affiliation: "EMOTIV, Sydney",
+      image: "/invitedSpeaker/dr-saad.jpg"
     }
     ,
     {
       name: "Dr Nisar Ahmad",
-      title:"Assistant Professor",
-      affiliation:"University of Management of Technology",
-      image:"/invitedSpeaker/dr-nisar.jpg",
+      title: "Assistant Professor",
+      affiliation: "University of Management of Technology",
+      image: "/invitedSpeaker/dr-nisar.jpg",
     },
     {
-      name:"Dr Allah Ditta",
-      title:"Associate Professor",
-      affiliation:"University of Education, Lahore",
-      image:"https://i1.rgstatic.net/ii/profile.image/11431281185149765-1693560557532_Q512/Allah-Ditta-9.jpg",
+      name: "Dr Allah Ditta",
+      title: "Associate Professor",
+      affiliation: "University of Education, Lahore",
+      image: "https://i1.rgstatic.net/ii/profile.image/11431281185149765-1693560557532_Q512/Allah-Ditta-9.jpg",
     },
     {
       name: "Dr. Adnan Ahmad Khan",
@@ -202,36 +197,134 @@ export default function Speakers() {
   return (
     <div className="bg-background-white">
       {/* Hero Section */}
-      <PageHero
-        eyebrow="Speakers"
-        title="Keynote Speakers"
-        subtitle="Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2026"
-      />
+      <section className="relative text-white section-padding-lg overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
+          }}
+        >
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
+        </div>
+
+        {/* Content */}
+        <div className="container-custom relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-hero mb-6 font-bold">Keynote Speakers</h1>
+            <p className="text-body text-white/90 max-w-3xl mx-auto">
+              Meet the distinguished researchers and industry leaders who will share their insights at ICCI-2025
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Keynote Speakers */}
-      <section className="section-padding bg-background-light">
-        <div className="container-custom">
-          <SectionHeading
-            eyebrow="Featured"
-            title="Distinguished Keynote Speakers"
-            subtitle="Our keynote speakers are internationally recognized experts who will provide insights into the latest developments and future directions in computer science."
-          />
+      <section className="section-padding bg-gradient-to-br from-background-light via-background-white to-background-light relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -ml-48 -mb-48"></div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center gap-2 mb-6">
+              <Sparkles className="h-6 w-6 text-accent" />
+              <span className="text-sm font-bold text-accent uppercase tracking-wider bg-accent/10 px-4 py-2 rounded-full">
+                Featured
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl mb-4 font-bold text-text-primary">
+              Distinguished Keynote Speakers
+            </h2>
+            <div className="w-32 h-1.5 bg-gradient-to-r from-primary via-accent to-primary mx-auto mb-8 rounded-full"></div>
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
+              Our keynote speakers are internationally recognized experts who will provide
+              insights into the latest developments and future directions in computer science.
+            </p>
+            <br />
+          </div>
+
+          <div className="space-y-16">
             {keynoteSpeakers.map((speaker, index) => (
-              <Reveal key={index} delay={Math.min(index, 4)}>
-                <LeaderCard
-                  image={speaker.image}
-                  name={speaker.name}
-                  roleBadge="Keynote Speaker"
-                  title={speaker.title}
-                  affiliation={speaker.affiliation}
-                  expertise={speaker.expertise}
-                  bio={speaker.bio}
-                  icon={Mic}
-                  accent="primary"
-                />
-              </Reveal>
+              <div
+                key={index}
+                className="relative bg-gradient-to-br from-white to-primary/5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden border-2 border-primary/20 hover:border-primary/40 group"
+              >
+                {/* Premium Badge */}
+                <div className="absolute top-6 right-6 z-20">
+                  <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                    <Star className="h-4 w-4 fill-white" />
+                    <span className="text-sm font-bold uppercase tracking-wide">Keynote</span>
+                  </div>
+                </div>
+
+                {/* Decorative Corner Accent */}
+                <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-primary/20 to-transparent rounded-br-3xl"></div>
+
+                <div className="relative p-8 md:p-12">
+                  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-center">
+                    {/* Enhanced Image Section */}
+                    <div className="lg:col-span-1 text-center lg:text-left relative">
+                      <div className="relative inline-block">
+                        {/* Glow Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-pulse"></div>
+
+                        {/* Image Frame */}
+                        <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 p-2 rounded-full">
+                          <img
+                            src={speaker.image}
+                            alt={speaker.name}
+                            className="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover shadow-2xl ring-4 ring-white relative z-10 group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+
+                        {/* Decorative Rings */}
+                        <div className="absolute -inset-4 border-2 border-primary/30 rounded-full animate-pulse"></div>
+                      </div>
+                    </div>
+
+                    {/* Enhanced Content Section */}
+                    <div className="lg:col-span-3">
+                      <div className="flex items-center gap-3 mb-6">
+                        <div className="bg-gradient-to-r from-primary to-accent p-2 rounded-lg shadow-lg">
+                          <Mic className="h-6 w-6 text-white" />
+                        </div>
+                        <h3 className="text-3xl md:text-4xl font-bold text-text-primary group-hover:text-primary transition-colors duration-300">
+                          {speaker.name}
+                        </h3>
+                      </div>
+
+                      <div className="space-y-4 mb-6">
+                        <div className="flex items-start gap-2">
+                          <Award className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
+                          <p className="text-lg font-semibold text-accent leading-relaxed">{speaker.title}</p>
+                        </div>
+
+                        <div className="flex items-start gap-2">
+                          <Globe className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                          <p className="text-lg font-medium text-primary leading-relaxed">{speaker.affiliation}</p>
+                        </div>
+                      </div>
+
+                      <div className="mb-6">
+                        <span className="bg-gradient-to-r from-accent/20 to-primary/20 text-accent px-6 py-3 rounded-full text-base font-semibold border border-accent/30 inline-block shadow-md">
+                          {speaker.expertise}
+                        </span>
+                      </div>
+
+                      {speaker.bio && (
+                        <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary/20">
+                          <p className="text-base text-text-secondary leading-relaxed">{speaker.bio}</p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Accent Line */}
+                <div className="h-2 bg-gradient-to-r from-primary via-accent to-primary"></div>
+              </div>
             ))}
           </div>
         </div>
@@ -240,31 +333,64 @@ export default function Speakers() {
       {/* Invited Speakers */}
       <section className="section-padding bg-background-white">
         <div className="container-custom">
-          <SectionHeading
-            eyebrow="Program"
-            title="Invited Speakers"
-            subtitle="Join us for presentations by leading researchers and practitioners from around the world, covering diverse topics in computing domain."
-          />
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl mb-4 font-semibold text-text-primary">
+              Invited Speakers
+            </h2>
+            <div className="w-20 h-1 bg-gray-300 mx-auto mb-6"></div>
+            <p className="text-base text-text-secondary max-w-3xl mx-auto">
+              Join us for presentations by leading researchers and practitioners from around the world,
+              covering diverse topics in computing domain.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {invitedSpeakers.map((speaker, index) => (
-              <MemberCard
+              <div
                 key={index}
-                image={speaker.image}
-                name={speaker.name}
-                title={speaker.title}
-                affiliation={speaker.affiliation}
-                accent="accent"
-              />
+                className="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 p-4 group"
+              >
+                {/* Circular Avatar */}
+                <div className="flex justify-center -mt-2">
+                  <img
+                    src={speaker.image}
+                    alt={speaker.name}
+                    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-md transition-transform duration-300 group-hover:scale-105"
+                    onError={(e) => {
+                      e.target.src =
+                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face";
+                    }}
+                  />
+                </div>
+
+                {/* Content Section */}
+                <div className="text-center mt-3">
+                  <h3 className="text-lg font-semibold text-text-primary">
+                    {speaker.name}
+                  </h3>
+                  <p className="text-sm text-accent font-medium mt-2">
+                    {speaker.title}
+                  </p>
+                  <p className="text-sm text-text-secondary mt-1 line-clamp-2">
+                    {speaker.affiliation}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
+
         </div>
       </section>
 
       {/* Speaker Highlights */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <SectionHeading eyebrow="Speakers" title="Why Our Speakers Matter" />
+          <div className="text-center mb-16">
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              Why Our Speakers Matter
+            </h2>
+            <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -273,7 +399,7 @@ export default function Speakers() {
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Award-Winning Researchers</h3>
               <p className="text-body text-text-secondary">
-                Our speakers include recipients of prestigious awards including the Turing Award, 
+                Our speakers include recipients of prestigious awards including the Turing Award,
                 IEEE Fellows, and ACM Distinguished Scientists.
               </p>
             </div>
@@ -284,7 +410,7 @@ export default function Speakers() {
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Global Perspective</h3>
               <p className="text-body text-text-secondary">
-                Speakers represent leading institutions from around the world, providing 
+                Speakers represent leading institutions from around the world, providing
                 diverse perspectives on computer science research and applications.
               </p>
             </div>
@@ -295,7 +421,7 @@ export default function Speakers() {
               </div>
               <h3 className="text-subheading font-medium text-text-primary mb-4">Cutting-Edge Topics</h3>
               <p className="text-body text-text-secondary">
-                Presentations cover the latest developments in AI, cybersecurity, quantum computing, 
+                Presentations cover the latest developments in AI, cybersecurity, quantum computing,
                 and other emerging technologies.
               </p>
             </div>

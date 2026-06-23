@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight, Radio, Trophy, Medal, ExternalLink, Users, Mic2, FileText, Timer } from 'lucide-react';
 import { useMemo, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { icci25HighlightImages } from '../../data/icci25Highlights';
 
 const msResults = [
   { rank: 'winner', title: '1st Winner - MS', name: 'Ms. Farwa Khan', image: '/icci-pictures/3mt award/ms/Ms.-Farwa-Khan-1st-winner.jpg' },
@@ -12,17 +13,6 @@ const phdResults = [
   { rank: 'winner', title: '1st Winner - PhD', name: 'Mr. Muhammad Mohsin', image: '/icci-pictures/3mt award/phd/Mr.-Muhammad-Mohsin-1st-winner.jpg' },
   { rank: 'runner-up', title: '1st Runner-Up - PhD', name: 'Ms. Abida Rashid', image: '/icci-pictures/3mt award/phd/Ms.--Abida-Rashid-1st-Runer-Up.jpg' },
   { rank: 'runner-up', title: '2nd Runner-Up - PhD', name: 'Ms. Nadia Qureshi', image: '/icci-pictures/3mt award/phd/Ms.--Nadia-Qureshi-2nd-Runer-Up.jpg' },
-];
-
-const highlights = [
-  '/icci-pictures/main/IMG_9330.jpg',
-  '/icci-pictures/main/IMG_9337.jpg',
-  '/icci-pictures/main/IMG_9504.jpg',
-  '/icci-pictures/main/IMG_9508.jpg',
-  '/icci-pictures/main/IMG_9515.jpg',
-  '/icci-pictures/3mt/IMG_1176.JPG',
-  '/icci-pictures/3mt/IMG_1204.JPG',
-  '/icci-pictures/3mt/IMG_1214.JPG',
 ];
 
 const stats = [
@@ -56,7 +46,7 @@ const ResultCard = ({ result }) => {
 
 export default function Highlights() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const allSlides = useMemo(() => highlights, []);
+  const allSlides = useMemo(() => icci25HighlightImages, []);
 
   // Automatic Carousel Logic (1 second interval)
   useEffect(() => {

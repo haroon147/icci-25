@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../../components/SocialIcons';
+import { icci25HighlightImages } from '../../data/icci25Highlights';
 
 const galleryItems = [
   {
@@ -39,6 +40,15 @@ const galleryItems = [
 export default function Home() {
   const navigate = useNavigate();
   const [lightboxIndex, setLightboxIndex] = useState(null);
+  const [heroSlide, setHeroSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroSlide((prev) => (prev + 1) % icci25HighlightImages.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     if (lightboxIndex === null) return;
@@ -134,13 +144,17 @@ export default function Home() {
     <div className="bg-background-white">
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
-          }}
-        >
+        {/* Background Carousel */}
+        <div className="absolute inset-0">
+          {icci25HighlightImages.map((image, index) => (
+            <div
+              key={image}
+              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
+                index === heroSlide ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{ backgroundImage: `url(${image})` }}
+            />
+          ))}
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
@@ -149,14 +163,14 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             {/* LIVE Badge */}
-            <button
+            {/* <button
               onClick={navigateToVirtualProceedings}
               className="live-badge-blink inline-flex items-center gap-2 px-6 py-3 mb-6 bg-red-500 hover:bg-red-600 text-white rounded-full font-bold text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group cursor-pointer"
             >
               <Radio className="h-5 w-5 animate-pulse" />
               <span className="live-badge-text">LIVE Conference Streaming! Click Here</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </button> */}
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on
@@ -212,18 +226,18 @@ export default function Home() {
               emerging technologies, and transformative ideas.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center py-8 px-4  sm:px-0">
-              <Link
+              {/* <Link
                 to="/icci-25/submissions"
                 className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
               >
                 Submission
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 to="/icci-25/registration#ready-to-register"
                 className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
               >
                 Register Now
-              </Link>
+              </Link> */}
               <Link
                 to="/icci-25/highlights"
                 className="btn-secondary border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-semibold text-center inline-flex items-center justify-center"
@@ -236,9 +250,9 @@ export default function Home() {
             <div className="flex justify-center mb-6">
               <div className="relative inline-flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
-                <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
+                {/* <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
                   Free Registration
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
@@ -664,7 +678,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-background-light">
+      {/* <section className="section-padding bg-background-light">
         <div className="container-custom text-center">
           <h2 className="text-section mb-4 font-semibold text-text-primary">
             Ready to Join Us?
@@ -697,7 +711,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <style>{`
         @keyframes pulseGlow {
           0% { opacity: 0.3; transform: scale(0.95); }

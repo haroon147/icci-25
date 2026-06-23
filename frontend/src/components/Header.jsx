@@ -34,7 +34,7 @@ const navigation = [
       { name: 'Schedule', href: '/proceedings' },
       { name: 'Workshops', href: '/workshops' },
       { name: '3MT', href: '/3mt' },
-      { name: 'Virtual Proceedings', href: '/virtual-proceedings' },
+      // { name: 'Virtual Proceedings', href: '/virtual-proceedings' },
     ],
   },
 
@@ -70,26 +70,23 @@ function DropdownMenu({ item, currentPath }) {
       <button
         onClick={() => setOpen((v) => !v)}
         onMouseEnter={() => setOpen(true)}
-        className={`group relative flex items-center gap-1 text-sm font-medium transition-colors duration-300 ${
-          isActive ? 'text-accent' : 'text-text-primary hover:text-accent'
-        }`}
+        className={`group relative flex items-center gap-1 text-sm font-medium transition-colors duration-300 ${isActive ? 'text-accent' : 'text-text-primary hover:text-accent'
+          }`}
       >
         {item.name}
         <ChevronDown
           className={`h-3.5 w-3.5 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
         />
         <span
-          className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
-            isActive ? 'w-full' : 'w-0 group-hover:w-full'
-          }`}
+          className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}
         />
       </button>
 
       <div
         onMouseLeave={() => setOpen(false)}
-        className={`absolute left-0 top-full mt-2 w-48 rounded-xl bg-white shadow-soft-lg ring-1 ring-black/5 z-50 origin-top transition-all duration-200 ${
-          open ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-95 -translate-y-1 pointer-events-none'
-        }`}
+        className={`absolute left-0 top-full mt-2 w-48 rounded-xl bg-white shadow-soft-lg ring-1 ring-black/5 z-50 origin-top transition-all duration-200 ${open ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' : 'opacity-0 scale-95 -translate-y-1 pointer-events-none'
+          }`}
       >
         <div className="py-1.5">
           {item.children.map((child) => (
@@ -97,11 +94,10 @@ function DropdownMenu({ item, currentPath }) {
               key={child.name}
               to={child.href}
               onClick={() => setOpen(false)}
-              className={`block px-4 py-2 text-sm rounded-lg mx-1.5 transition-colors duration-200 ${
-                currentPath === child.href
-                  ? 'text-accent bg-accent/10 font-medium'
-                  : 'text-text-primary hover:text-accent hover:bg-gray-50'
-              }`}
+              className={`block px-4 py-2 text-sm rounded-lg mx-1.5 transition-colors duration-200 ${currentPath === child.href
+                ? 'text-accent bg-accent/10 font-medium'
+                : 'text-text-primary hover:text-accent hover:bg-gray-50'
+                }`}
             >
               {child.name}
             </Link>
@@ -136,16 +132,14 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'sm:top-3' : ''
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'sm:top-3' : ''
+        }`}
     >
       <div
-        className={`container-custom transition-all duration-500 ${
-          isScrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-soft-lg ring-1 ring-black/5 sm:rounded-2xl'
-            : 'bg-white/95 backdrop-blur-sm'
-        }`}
+        className={`container-custom transition-all duration-500 ${isScrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-soft-lg ring-1 ring-black/5 sm:rounded-2xl'
+          : 'bg-white/95 backdrop-blur-sm'
+          }`}
       >
         <div className="flex justify-between items-center py-2">
           {/* Logo */}
@@ -166,17 +160,15 @@ export default function Header() {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`group relative text-sm font-medium transition-colors duration-300 ${
-                    location.pathname === item.href
-                      ? 'text-accent'
-                      : 'text-text-primary hover:text-accent'
-                  }`}
+                  className={`group relative text-sm font-medium transition-colors duration-300 ${location.pathname === item.href
+                    ? 'text-accent'
+                    : 'text-text-primary hover:text-accent'
+                    }`}
                 >
                   {item.name}
                   <span
-                    className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
-                      location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}
+                    className={`absolute -bottom-1.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${location.pathname === item.href ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}
                   />
                 </Link>
               )
@@ -217,17 +209,15 @@ export default function Header() {
                         onClick={() =>
                           setMobileOpenGroup(isGroupOpen ? null : item.name)
                         }
-                        className={`w-full flex items-center justify-between px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${
-                          isGroupActive
-                            ? 'text-accent bg-accent/10'
-                            : 'text-text-primary hover:text-accent hover:bg-gray-50'
-                        }`}
+                        className={`w-full flex items-center justify-between px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${isGroupActive
+                          ? 'text-accent bg-accent/10'
+                          : 'text-text-primary hover:text-accent hover:bg-gray-50'
+                          }`}
                       >
                         {item.name}
                         <ChevronDown
-                          className={`h-4 w-4 transition-transform duration-200 ${
-                            isGroupOpen ? 'rotate-180' : ''
-                          }`}
+                          className={`h-4 w-4 transition-transform duration-200 ${isGroupOpen ? 'rotate-180' : ''
+                            }`}
                         />
                       </button>
 
@@ -238,11 +228,10 @@ export default function Header() {
                               key={child.name}
                               to={child.href}
                               onClick={() => setIsMenuOpen(false)}
-                              className={`block px-3 py-2 text-sm font-medium transition-colors duration-300 rounded-md ${
-                                location.pathname === child.href
-                                  ? 'text-accent bg-accent/10'
-                                  : 'text-text-primary hover:text-accent hover:bg-gray-50'
-                              }`}
+                              className={`block px-3 py-2 text-sm font-medium transition-colors duration-300 rounded-md ${location.pathname === child.href
+                                ? 'text-accent bg-accent/10'
+                                : 'text-text-primary hover:text-accent hover:bg-gray-50'
+                                }`}
                             >
                               {child.name}
                             </Link>
@@ -259,11 +248,10 @@ export default function Header() {
                     key={item.name}
                     to={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${
-                      location.pathname === item.href
-                        ? 'text-accent bg-accent/10'
-                        : 'text-text-primary hover:text-accent hover:bg-gray-50'
-                    }`}
+                    className={`block px-3 py-2 text-base font-medium transition-colors duration-300 rounded-md ${location.pathname === item.href
+                      ? 'text-accent bg-accent/10'
+                      : 'text-text-primary hover:text-accent hover:bg-gray-50'
+                      }`}
                   >
                     {item.name}
                   </Link>

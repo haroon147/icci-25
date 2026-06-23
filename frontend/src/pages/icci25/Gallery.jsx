@@ -2,36 +2,27 @@ import { useEffect, useState } from 'react';
 import { Images, X } from 'lucide-react';
 
 const galleryItems = [
-  {
-    src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Conference attendees networking',
-    caption: 'Networking and collaboration',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Audience in a large conference hall',
-    caption: 'Plenary and keynote sessions',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46638?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Speaker presenting to an audience',
-    caption: 'Research presentations',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Workshop or classroom setting',
-    caption: 'Workshops and learning',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Theatre-style seating for an event',
-    caption: 'Venue experience',
-  },
-  {
-    src: 'https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp',
-    alt: 'Riphah International University Lahore campus',
-    caption: 'Host campus - Riphah International University',
-  },
+  { src: '/icci-pictures/main/IMG_9330.jpg', alt: 'ICCI-25 main event', caption: 'Main Event' },
+  { src: '/icci-pictures/main/IMG_9337.jpg', alt: 'ICCI-25 main event', caption: 'Main Event' },
+  { src: '/icci-pictures/main/IMG_9504.jpg', alt: 'ICCI-25 main event', caption: 'Main Event' },
+  { src: '/icci-pictures/main/IMG_9508.jpg', alt: 'ICCI-25 main event', caption: 'Main Event' },
+  { src: '/icci-pictures/main/IMG_9515.jpg', alt: 'ICCI-25 main event', caption: 'Main Event' },
+  { src: '/icci-pictures/speaker/IMG_1094.JPG', alt: 'ICCI-25 speaker session', caption: 'Speakers' },
+  { src: '/icci-pictures/speaker/IMG_1175.JPG', alt: 'ICCI-25 speaker session', caption: 'Speakers' },
+  { src: '/icci-pictures/panel/IMG_9341.jpg', alt: 'ICCI-25 panel discussion', caption: 'Panels' },
+  { src: '/icci-pictures/panel/IMG_9349.jpg', alt: 'ICCI-25 panel discussion', caption: 'Panels' },
+  { src: '/icci-pictures/workshop/IMG_1224.JPG', alt: 'ICCI-25 workshop', caption: 'Workshops' },
+  { src: '/icci-pictures/award/IMG_9331-(1).jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9373.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9388.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9395.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9454.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9483.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9504---Copy.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/award/IMG_9504.jpg', alt: 'ICCI-25 awards', caption: 'Awards' },
+  { src: '/icci-pictures/3mt/IMG_1176.JPG', alt: 'ICCI-25 3MT competition', caption: '3MT Moments' },
+  { src: '/icci-pictures/3mt/IMG_1204.JPG', alt: 'ICCI-25 3MT competition', caption: '3MT Moments' },
+  { src: '/icci-pictures/3mt/IMG_1214.JPG', alt: 'ICCI-25 3MT competition', caption: '3MT Moments' },
 ];
 
 export default function Gallery() {
@@ -87,8 +78,7 @@ export default function Gallery() {
                 />
               </div>
               <div className="p-4">
-                <p className="text-sm font-medium text-text-primary">{item.caption}</p>
-                <p className="text-xs text-text-secondary mt-1">Click to enlarge</p>
+
               </div>
             </button>
           ))}

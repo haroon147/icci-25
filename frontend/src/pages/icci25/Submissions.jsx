@@ -20,7 +20,7 @@ export default function Submissions() {
       deadline: "15 September 2025",
       formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
     },
-   
+
   ];
 
   const submissionGuidelines = [
@@ -60,7 +60,7 @@ export default function Submissions() {
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: 'url(https://moellim.com/wp-content/uploads/2025/02/Riphah-International-University-Lahore-900x580-1.webp)'
@@ -69,7 +69,7 @@ export default function Submissions() {
           {/* Overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-primary-dark/90"></div>
         </div>
-        
+
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -90,7 +90,7 @@ export default function Submissions() {
             </h2>
             <div className="w-24 h-1 bg-accent mx-auto mb-8"></div>
             <p className="text-body text-text-secondary content-container-md text-content-center text-break">
-              We welcome different types of submissions to accommodate various stages of research 
+              We welcome different types of submissions to accommodate various stages of research
               and different presentation formats.
             </p>
           </div>
@@ -111,13 +111,13 @@ export default function Submissions() {
                         <span className="text-small text-text-muted">Pages:</span>
                         <span className="text-small font-medium text-primary">{type.pages}</span>
                       </div>
-                      
+
                       <div className="flex items-center justify-between">
                         <span className="text-small text-text-muted">Deadline:</span>
                         <span className="text-small font-medium text-accent">{type.deadline}</span>
                       </div>
                     </div>
-                    <a
+                    {/* <a
                       href={type.formUrl || defaultSubmissionFormUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -125,7 +125,7 @@ export default function Submissions() {
                     >
                       Submit Now
                       <ExternalLink className="h-4 w-4" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               );
