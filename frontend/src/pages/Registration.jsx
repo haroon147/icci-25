@@ -356,33 +356,15 @@ export default function Registration() {
               Don't miss this opportunity to be part of ICCI-2026.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-                <a
-                  href="https://forms.gle/U7ejNthhXqh4h11J8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  Participant Registration
-                </a>
-                <a
-                  href="https://forms.gle/hVWWPhEAwxgetCVM9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-primary inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  Workshop Registration
-                </a>
-                <a
-                  href="https://forms.gle/ZFEwn4Cw1xDy3AHz5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary bg-accent hover:bg-accent-dark text-primary inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2" />
-                  3MT Registration
-                </a>
+                <div className="bg-white/20 text-white font-medium py-3 px-6 rounded-lg cursor-default select-none inline-flex items-center justify-center">
+                  Participant Registration — Will be Announced
+                </div>
+                <div className="bg-white/20 text-white font-medium py-3 px-6 rounded-lg cursor-default select-none inline-flex items-center justify-center">
+                  Workshop Registration — Will be Announced
+                </div>
+                <div className="bg-white/20 text-white font-medium py-3 px-6 rounded-lg cursor-default select-none inline-flex items-center justify-center">
+                  3MT Registration — Will be Announced
+                </div>
               </div>
               
             </div>
