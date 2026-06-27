@@ -97,15 +97,9 @@ export default function Submissions() {
                         <span className="text-small font-medium text-accent">{type.deadline}</span>
                       </div>
                     </div>
-                    <a
-                      href={type.formUrl || defaultSubmissionFormUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full mt-6 inline-flex items-center justify-center gap-2"
-                    >
-                      Submit Now
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
+                    <div className="w-full mt-6 inline-flex items-center justify-center gap-2 bg-gray-100 text-text-secondary font-medium py-3 px-6 rounded-lg cursor-default select-none">
+                      Will be Announced
+                    </div>
                   </div>
                 </div>
               );
