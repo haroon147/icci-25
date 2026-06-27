@@ -102,7 +102,7 @@ export default function Home() {
       description: "Riphah School of Computing and Innovation",
       website: "https://www.riphah.edu.pk"
     },
-  
+
   ];
 
   const sponsors = [
@@ -118,7 +118,7 @@ export default function Home() {
       tier: "Silver",
       description: "Technology Innovation Partner"
     },
-    
+
 
   ];
 
@@ -127,7 +127,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative text-white section-padding-lg overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${heroBackgrounds[heroSlide]})`
@@ -152,7 +152,7 @@ export default function Home() {
         >
           <ChevronRight className="h-6 w-6" />
         </button>
-        
+
         {/* Content */}
         <div className="container-custom relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -165,7 +165,7 @@ export default function Home() {
               <span className="live-badge-text">LIVE Conference Streaming! Click Here</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button> */}
-            
+
             <Reveal as="h1" className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
               International Conference on
               <br className="hidden sm:block" />
@@ -194,7 +194,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Desktop: Rotating animation */}
               <div className="hidden md:block">
                 <div className="date-card-blink bg-white/15 backdrop-blur-md rounded-2xl px-4 border border-white/30 shadow-xl inline-block max-w-full overflow-hidden">
@@ -219,7 +219,7 @@ export default function Home() {
               delay={2}
               className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful"
             >
-              Join leading researchers, innovators, practitioners, and students in computer science and related
+              Join leading researchers, innovators, practitioners, and students in computing related
               disciplines at ICCI-2026, a premier international conference showcasing cutting-edge research,
               emerging technologies, and transformative ideas.
             </Reveal>
@@ -232,9 +232,8 @@ export default function Home() {
               key={`hero-dot-${index}`}
               type="button"
               onClick={() => setHeroSlide(index)}
-              className={`h-2.5 rounded-full transition-all ${
-                heroSlide === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50'
-              }`}
+              className={`h-2.5 rounded-full transition-all ${heroSlide === index ? 'w-8 bg-white' : 'w-2.5 bg-white/50'
+                }`}
               aria-label={`Show background image ${index + 1}`}
             />
           ))}
@@ -252,7 +251,7 @@ export default function Home() {
             <div className="section-accent"></div>
             <div className="content-container-md">
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
-                The International Conference on Computing & Innovation (ICCI-2026) aims to bring together researchers, academicians, practitioners, and industry experts from around the world to exchange knowledge and discuss cutting-edge developments shaping the future of computing and digital innovation. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
+                The International Conference on Computing and Innovation (ICCI-2026) invites researchers, academicians, industry practitioners, innovators, entrepreneurs, policymakers, and students from around the world to share their latest research findings, technological innovations, and practical experiences in computing and emerging digital technologies. The conference will serve as a platform for interdisciplinary collaboration, knowledge dissemination, and capacity building.
               </p>
               <p className="text-body text-text-secondary mb-6 text-content-justify text-break">
                 It will include keynote addresses, technical sessions, panel discussions, Three-Minutes Thesis (3MT) Competition, and hands-on workshops focused on the latest technologies transforming industries, education, and society. The conference will explore how recent advancements are not only redefining computing but also enhancing our daily lives, driving economic growth, and addressing global challenges.
@@ -263,7 +262,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               { Icon: Calendar, title: 'Conference Date', value: 'December 8-9, 2026' },
               { Icon: MapPin, title: 'Location', value: 'Riphah International University, Raiwind Road Lahore' },
@@ -340,7 +339,7 @@ export default function Home() {
         </div>
       </section>
 
-     
+
 
       {/* Collaborators & Sponsors Carousel */}
       <section className="section-padding bg-background-light">
@@ -359,7 +358,7 @@ export default function Home() {
           {/* Collaborators Carousel */}
           <div className="relative overflow-hidden mb-16 w-full">
             <div className="flex animate-none md:animate-scroll">
-            
+
               {/* Third set for extra smoothness */}
               {collaborators.map((collaborator, index) => (
                 <div key={`third-${index}`} className="flex-shrink-0 w-80 sm:w-96 mx-4">
@@ -374,7 +373,7 @@ export default function Home() {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center" style={{ display: 'none' }}>
                         <Globe className="h-20 w-20 text-white" />
                       </div>
                     </div>
@@ -406,16 +405,15 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
-                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
-                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${sponsor.tier === 'Gold' ? 'tier-badge-gold' :
                         sponsor.tier === 'Silver' ? 'tier-badge-silver' :
-                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
-                        'tier-badge-media'
-                      }`}>
+                          sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                            'tier-badge-media'
+                        }`}>
                         {sponsor.tier}
                       </span>
                     </div>
-                    
+
                     <div className="w-60 h-60 mx-auto mb-4 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
                       <img
                         src={sponsor.logo}
@@ -426,7 +424,7 @@ export default function Home() {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{ display: 'none' }}>
                         <Award className="h-20 w-20 text-white" />
                       </div>
                     </div>
@@ -441,16 +439,15 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
-                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
-                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${sponsor.tier === 'Gold' ? 'tier-badge-gold' :
                         sponsor.tier === 'Silver' ? 'tier-badge-silver' :
-                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
-                        'tier-badge-media'
-                      }`}>
+                          sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                            'tier-badge-media'
+                        }`}>
                         {sponsor.tier}
                       </span>
                     </div>
-                    
+
                     <div className="w-60 h-60 mx-auto mb-4 rounded-3xl overflow-hidden bg-white shadow-2xl flex items-center justify-center border-4 border-gray-100 hover:border-accent/40 transition-all duration-300 hover:scale-105">
                       <img
                         src={sponsor.logo}
@@ -461,7 +458,7 @@ export default function Home() {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{ display: 'none' }}>
                         <Award className="h-20 w-20 text-white" />
                       </div>
                     </div>
@@ -476,12 +473,11 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
-                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
-                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${sponsor.tier === 'Gold' ? 'tier-badge-gold' :
                         sponsor.tier === 'Silver' ? 'tier-badge-silver' :
-                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
-                        'tier-badge-media'
-                      }`}>
+                          sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                            'tier-badge-media'
+                        }`}>
                         {sponsor.tier}
                       </span>
                     </div>
@@ -495,7 +491,7 @@ export default function Home() {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{ display: 'none' }}>
                         <Award className="h-20 w-20 text-white" />
                       </div>
                     </div>
@@ -510,12 +506,11 @@ export default function Home() {
                   <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 text-center h-80 flex flex-col justify-center border-2 border-gray-100 hover:border-accent/30 hover:scale-105 relative overflow-hidden backdrop-blur-sm">
                     {/* Sponsor tier badge */}
                     <div className="absolute top-6 right-6">
-                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${
-                        sponsor.tier === 'Gold' ? 'tier-badge-gold' :
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold text-white ${sponsor.tier === 'Gold' ? 'tier-badge-gold' :
                         sponsor.tier === 'Silver' ? 'tier-badge-silver' :
-                        sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
-                        'tier-badge-media'
-                      }`}>
+                          sponsor.tier === 'Bronze' ? 'tier-badge-bronze' :
+                            'tier-badge-media'
+                        }`}>
                         {sponsor.tier}
                       </span>
                     </div>
@@ -529,7 +524,7 @@ export default function Home() {
                           e.target.nextSibling.style.display = 'flex';
                         }}
                       />
-                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{display: 'none'}}>
+                      <div className="w-full h-full bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center" style={{ display: 'none' }}>
                         <Award className="h-20 w-20 text-white" />
                       </div>
                     </div>
