@@ -235,6 +235,82 @@ export default function Registration() {
         </div>
       </section> */}
 
+      {/* Registration Fee Table */}
+      <section className="section-padding bg-background-light">
+        <div className="container-custom">
+          <SectionHeading
+            eyebrow="Fees"
+            title="Registration Fee"
+            className="mb-10"
+          />
+
+          {/* Conference Registration */}
+          <div className="mb-12">
+            <h3 className="text-subheading font-semibold text-text-primary mb-6 text-center">Conference Registration</h3>
+            <div className="overflow-x-auto rounded-2xl shadow-soft">
+              <table className="w-full bg-white">
+                <thead>
+                  <tr className="bg-primary text-white">
+                    <th className="px-6 py-4 text-left font-semibold">Category</th>
+                    <th className="px-6 py-4 text-center font-semibold">Overseas Professional</th>
+                    <th className="px-6 py-4 text-center font-semibold">Local Professional</th>
+                    <th className="px-6 py-4 text-center font-semibold">Overseas Student</th>
+                    <th className="px-6 py-4 text-center font-semibold">Local Student</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100 hover:bg-background-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-text-primary">Authors</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">USD 150</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">PKR 15,000</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">USD 120</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">PKR 12,000</td>
+                  </tr>
+                  <tr className="hover:bg-background-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-text-primary">General Participants</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">USD 100</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">PKR 7,500</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">USD 75</td>
+                    <td className="px-6 py-4 text-center text-primary font-semibold">PKR 5,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-small text-text-secondary mt-4 text-center">
+              Conference fee covers: lunches, refreshments, and conference kit.
+            </p>
+          </div>
+
+          {/* Workshop Fee */}
+          <div>
+            <h3 className="text-subheading font-semibold text-text-primary mb-6 text-center">Workshop Fee</h3>
+            <div className="overflow-x-auto rounded-2xl shadow-soft max-w-lg mx-auto">
+              <table className="w-full bg-white">
+                <thead>
+                  <tr className="bg-accent text-white">
+                    <th className="px-6 py-4 text-left font-semibold">Category</th>
+                    <th className="px-6 py-4 text-center font-semibold">Fee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-100 hover:bg-background-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-text-primary">Professional</td>
+                    <td className="px-6 py-4 text-center text-accent font-semibold">PKR 2,000</td>
+                  </tr>
+                  <tr className="hover:bg-background-light transition-colors">
+                    <td className="px-6 py-4 font-medium text-text-primary">Student</td>
+                    <td className="px-6 py-4 text-center text-accent font-semibold">PKR 1,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-small text-text-secondary mt-4 text-center">
+              Workshop fee covers: certificates and refreshments.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Important Information */}
       <section className="section-padding bg-background-white">
         <div className="container-custom">

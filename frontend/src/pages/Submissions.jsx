@@ -10,7 +10,7 @@ export default function Submissions() {
       icon: FileText,
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
-      pages: "2-4 pages",
+      pages: "8-12 pages (full papers)",
       deadline: "15 September 2026",
       formUrl: "https://forms.gle/SoyN5JGZqBq5b1sY7"
     },
@@ -29,21 +29,21 @@ export default function Submissions() {
     {
       title: "Paper Format",
       items: [
-        "Papers must be written in English",
-        "Use IEEE conference template (double-column format)",
-        "Maximum 8 pages for full papers, 4 pages for short papers",
-        "PDF format only, no other formats accepted"
+        "Paper size: A4, single-column layout",
+        "Font: Times New Roman, 11–12 pt with 1-inch (2.54 cm) margins on all sides",
+        "Maximum 12 pages; full papers should be 8–12 pages",
+        "Number all figures, tables, and equations consistently",
+        "Use a consistent reference style throughout (IEEE or APA format)"
       ]
     },
     {
-      title: "Content Requirements",
+      title: "Submission Requirements",
       items: [
-        "Original work not previously published or under review",
-        "Clear problem statement and motivation",
-        "Comprehensive literature review and related work",
-        "Detailed methodology and experimental setup",
-        "Results and analysis with proper evaluation metrics",
-        "Conclusions and future work directions"
+        "Double-blind review: do not include author names, affiliations, or self-identifying references",
+        "Papers must be original, unpublished, and not under review elsewhere",
+        "Submissions must be plagiarism-free and pass a plagiarism check",
+        "Camera-ready papers must follow Springer or ACM formatting guidelines",
+        "PDF format only; ensure all fonts are embedded"
       ]
     },
     {

@@ -245,87 +245,14 @@ export default function Speakers() {
             <br />
           </div>
 
-          <div className="space-y-16">
-            {keynoteSpeakers.map((speaker, index) => (
-              <div
-                key={index}
-                className="relative bg-gradient-to-br from-white to-primary/5 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden border-2 border-primary/20 hover:border-primary/40 group"
-              >
-                {/* Premium Badge */}
-                <div className="absolute top-6 right-6 z-20">
-                  <div className="bg-gradient-to-r from-primary to-accent text-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
-                    <Star className="h-4 w-4 fill-white" />
-                    <span className="text-sm font-bold uppercase tracking-wide">Keynote</span>
-                  </div>
-                </div>
-
-                {/* Decorative Corner Accent */}
-                <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-primary/20 to-transparent rounded-br-3xl"></div>
-
-                <div className="relative p-8 md:p-12">
-                  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-center">
-                    {/* Enhanced Image Section */}
-                    <div className="lg:col-span-1 text-center lg:text-left relative">
-                      <div className="relative inline-block">
-                        {/* Glow Effect */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-pulse"></div>
-
-                        {/* Image Frame */}
-                        <div className="relative bg-gradient-to-br from-primary/20 to-accent/20 p-2 rounded-full">
-                          <img
-                            src={speaker.image}
-                            alt={speaker.name}
-                            className="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover shadow-2xl ring-4 ring-white relative z-10 group-hover:scale-105 transition-transform duration-500"
-                          />
-                        </div>
-
-                        {/* Decorative Rings */}
-                        <div className="absolute -inset-4 border-2 border-primary/30 rounded-full animate-pulse"></div>
-                      </div>
-                    </div>
-
-                    {/* Enhanced Content Section */}
-                    <div className="lg:col-span-3">
-                      <div className="flex items-center gap-3 mb-6">
-                        <div className="bg-gradient-to-r from-primary to-accent p-2 rounded-lg shadow-lg">
-                          <Mic className="h-6 w-6 text-white" />
-                        </div>
-                        <h3 className="text-3xl md:text-4xl font-bold text-text-primary group-hover:text-primary transition-colors duration-300">
-                          {speaker.name}
-                        </h3>
-                      </div>
-
-                      <div className="space-y-4 mb-6">
-                        <div className="flex items-start gap-2">
-                          <Award className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                          <p className="text-lg font-semibold text-accent leading-relaxed">{speaker.title}</p>
-                        </div>
-
-                        <div className="flex items-start gap-2">
-                          <Globe className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                          <p className="text-lg font-medium text-primary leading-relaxed">{speaker.affiliation}</p>
-                        </div>
-                      </div>
-
-                      <div className="mb-6">
-                        <span className="bg-gradient-to-r from-accent/20 to-primary/20 text-accent px-6 py-3 rounded-full text-base font-semibold border border-accent/30 inline-block shadow-md">
-                          {speaker.expertise}
-                        </span>
-                      </div>
-
-                      {speaker.bio && (
-                        <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 border border-primary/20">
-                          <p className="text-base text-text-secondary leading-relaxed">{speaker.bio}</p>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom Accent Line */}
-                <div className="h-2 bg-gradient-to-r from-primary via-accent to-primary"></div>
+          <div className="flex flex-col items-center justify-center py-16">
+            <div className="bg-white rounded-2xl shadow-soft p-12 text-center max-w-xl w-full border-2 border-primary/10">
+              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Mic className="h-10 w-10 text-primary" />
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-text-primary mb-4">Keynote Speakers</h3>
+              <p className="text-lg text-text-secondary">Will be announced soon</p>
+            </div>
           </div>
         </div>
       </section>

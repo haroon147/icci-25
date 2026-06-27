@@ -1,4 +1,4 @@
-import { Brain, Shield, Database, Cpu, Network, Code, Eye, Users, Lightbulb, Globe } from 'lucide-react';
+import { Brain, Shield, Database, Cpu, Network, Code, Eye, Users, Lightbulb, Globe, Heart, Zap } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 
@@ -6,57 +6,69 @@ export default function Scope() {
   const topics = [
     {
       icon: Brain,
-      title: "Artificial Intelligence and Machine Learning",
+      title: "Artificial Intelligence, Foundation Models and Intelligent Agents",
       description:
-        "Explainable AI (XAI), Generative AI, Agentic AI, Reinforcement Learning, Responsible AI Practices, Prompt Engineering for Generative Models, and Building Trustworthy and Transparent AI Systems."
+        "Foundation Models and Large Language Models (LLMs), Generative AI and Multimodal AI, Agentic AI and Multi-Agent Systems, Explainable and Interpretable AI, Trustworthy and Responsible AI, Reinforcement Learning, Federated Learning, Neuro-Symbolic AI, Prompt Engineering, AI Alignment and Safety, AI Governance and Ethics."
     },
     {
       icon: Database,
-      title: "Data Science and Big Data Analytics",
+      title: "Data Science, Knowledge Engineering and Intelligent Analytics",
       description:
-        "Predictive Analytics, Data-driven Decision Making, Big Data Pipelines (Hadoop, Spark), Data Engineering Frameworks, Real-world Dataset Modeling, and Scalable Data Processing."
+        "Big Data Analytics, Predictive Analytics, Knowledge Graphs, Business Intelligence, Data Engineering, Data Mining, MLOps, AI-driven Decision Support, Real-Time Data Processing, Data Visualization."
     },
     {
       icon: Shield,
-      title: "Cybersecurity and Privacy",
+      title: "AI for Cybersecurity, Privacy and Digital Trust",
       description:
-        "Secure Computing, Blockchain Technology, Digital Forensics, Cyber Attack Simulations, Smart Contracts and Digital Identity, and Threat Mitigation Strategies."
+        "AI-powered Cyber Defense, Digital Forensics, Blockchain Technologies, Smart Contracts, Digital Identity, Zero Trust Security, Privacy-Preserving Machine Learning, Adversarial AI, Threat Intelligence, Secure Cloud Computing."
     },
     {
       icon: Network,
-      title: "Internet of Things (IoT), Robotics and Smart Systems",
+      title: "Intelligent IoT, Robotics and Autonomous Systems",
       description:
-        "Smart Cities, Industry 4.0, Edge Computing, IoT Security and Privacy by Design, AI-Driven Predictive Maintenance in Industrial IoT, and Energy Harvesting for Low-Power IoT Devices."
+        "AIoT, Smart Cities, Industry 5.0, Digital Twins, Edge AI, TinyML, Autonomous Robots, UAV Systems, Predictive Maintenance, Smart Agriculture, Smart Healthcare, Sustainable IoT."
     },
     {
       icon: Code,
-      title: "Software Engineering and DevOps",
+      title: "Intelligent Software Engineering, DevOps and Cloud Computing",
       description:
-        "Agile Transformation, Sustainable Software Practices, CI/CD Automation (Git, Docker, Kubernetes), Multi-cloud Deployment, Application Monitoring and Scaling, and Lean Adaptive Development Processes."
+        "AI-assisted Software Engineering, AI-powered Software Testing, DevSecOps, Cloud-native Applications, Microservices, Kubernetes, Multi-cloud Computing, Software Quality, AI for DevOps, Sustainable Software Engineering."
     },
     {
       icon: Eye,
-      title: "Computer Vision and Pattern Recognition",
+      title: "Computer Vision, Multimedia Intelligence and Extended Reality",
       description:
-        "Autonomous Systems, AR/VR/MR Technologies, Object Detection (YOLO, ResNet), SLAM and Visual Navigation, Real-time Image Recognition, and Immersive Application Development."
+        "Vision-Language Models, Image and Video Analytics, Medical Image Analysis, Object Detection and Tracking, Autonomous Driving, Remote Sensing, SLAM, AR/VR/MR, Human Activity Recognition, Generative Vision Models."
     },
     {
-      icon: Lightbulb,
-      title: "Innovation, Entrepreneurship, and Tech Startups",
+      icon: Heart,
+      title: "Computing for Digital Health, Bioinformatics and Biomedical Innovation",
       description:
-        "AI in Business, Technology Commercialization, MVP Development, Lean Startup Methodologies, Investment Readiness for AI Startups, and Rapid Prototyping Techniques."
+        "Biomedical Informatics, Clinical AI, Precision Medicine, Bioinformatics, Genomics, Medical Imaging, Wearable Healthcare, Digital Health, Telemedicine, AI-assisted Diagnosis, Computational Biology, Drug Discovery, Public Health Informatics."
     },
     {
       icon: Users,
-      title: "Computing for Social Good and HCI",
+      title: "Human-Centered Computing, Digital Society and Intelligent Interaction",
       description:
-        "Green Computing, Digital Inclusion, Assistive Technologies, Human-Centered AI for Social Impact, and AI for Disaster Response and Humanitarian Aid."
+        "Human-Computer Interaction, Human-AI Collaboration, User Experience (UX), Explainable Interfaces, AI in Education, Intelligent Tutoring Systems, Smart Learning Systems, Smart Governance, Disaster Management, Accessibility Technologies, Human-Centered AI, AI for Social Good, Assistive Technologies, Wearable Computing."
+    },
+    {
+      icon: Lightbulb,
+      title: "Digital Innovation, Entrepreneurship and Future Workforce",
+      description:
+        "AI Startups, Technology Commercialization, Digital Economy, FinTech, GovTech, Innovation Ecosystems, Human-AI Collaboration, Future of Work, AI Business Models, Digital Transformation."
+    },
+    {
+      icon: Globe,
+      title: "Sustainable Computing, Green AI and Future Digital Infrastructure",
+      description:
+        "Green AI, Sustainable Computing, Cloud Computing, High Performance Computing, Quantum Computing, 6G Networks, SDN and NFV, Smart Infrastructure, Energy-efficient Data Centers, Carbon-aware Computing."
     },
     {
       icon: Cpu,
-      title: "ICT Infrastructure and Cloud Computing",
+      title: "Emerging Computing Paradigms and Future Technologies",
       description:
-        "Scalable and reliable architectures for data transmission and connectivity, Software-Defined Networking (SDN) and Network Function Virtualization (NFV), Hybrid Multi-Cloud Management and Orchestration, Cloud-based Solutions for Smart Infrastructure and IoT Integration, and Energy-efficient Data Centers with Sustainable Cloud Technologies."
+        "Quantum Computing and Quantum Machine Learning, Neuromorphic Computing, High Performance Computing (HPC), Distributed and Parallel Computing, Bio-inspired Computing, Evolutionary Computation, Swarm Intelligence, Digital Twins, Ambient Intelligence, Ubiquitous and Pervasive Computing, Space Computing, Next-Generation Internet Architectures, 6G and Beyond Networks."
     }
   ];
 
@@ -68,6 +80,30 @@ export default function Scope() {
         title="Scope & Topics"
         subtitle="Explore the comprehensive range of computing and innovation topics covered at ICCI-2026"
       />
+
+      {/* Conference Theme */}
+      <section className="section-padding bg-background-white">
+        <div className="container-custom">
+          <SectionHeading
+            eyebrow="Theme"
+            title="Conference Theme"
+            className="mb-8"
+          />
+          <div className="bg-gradient-to-r from-primary to-primary-dark p-8 rounded-2xl text-white text-center mb-8">
+            <p className="text-xl md:text-2xl font-semibold italic">
+              "Beyond Intelligence: AI for Sustainable Innovation, Human Empowerment, and Global Impact"
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-body text-text-secondary text-beautiful">
+              The rapid evolution of Artificial Intelligence is reshaping every aspect of society—from healthcare and education to manufacturing, cybersecurity, finance, agriculture, and public services. ICCI-2026 aims to provide an international platform for discussing how AI and intelligent computing can drive sustainable innovation, foster economic growth, enhance human well-being, and address global challenges responsibly.
+            </p>
+            <p className="text-body text-text-secondary mt-4 text-beautiful">
+              The conference encourages interdisciplinary research that bridges theoretical advances with practical applications while promoting ethical, transparent, secure, and human-centered AI technologies.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Topics Overview */}
       <section className="section-padding bg-background-light">
@@ -102,148 +138,6 @@ export default function Scope() {
           </div>
         </div>
       </section>
-
-      {/* Social and Academic Impact */}
-      {/* <section className="section-padding bg-background-white">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Social and Academic Impact
-            </h2>
-            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Knowledge Transfer</h3>
-              <p className="text-body text-text-secondary">
-                Strengthen the bridge between academia and industry through exchange of ideas, case studies, and success stories.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Code className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Skill Development</h3>
-              <p className="text-body text-text-secondary">
-                Hands-on workshops will equip participants with emerging technological competencies.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Network className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Research Collaboration</h3>
-              <p className="text-body text-text-secondary">
-                Facilitate networking for joint research, funded projects, and innovation ecosystems.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Globe className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Community Empowerment</h3>
-              <p className="text-body text-text-secondary">
-                Inspire young researchers and students to pursue computing solutions for sustainable development.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Lightbulb className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-subheading font-medium text-text-primary mb-4">Economic Impact</h3>
-              <p className="text-body text-text-secondary">
-                Promote innovation-led entrepreneurship, encourage local startups and digital transformation initiatives.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Submission Guidelines */}
-      {/* <section className="section-padding bg-background-light">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-4 font-semibold text-text-primary">
-              Submission Guidelines
-            </h2>
-            <div className="w-16 h-1.5 bg-gradient-to-r from-accent to-accent-dark mx-auto mb-8 rounded-full"></div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-subheading font-medium text-text-primary mb-6">
-                Paper Requirements
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Papers must be original and not previously published or under review elsewhere
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Maximum length: 8 pages for full papers, 4 pages for short papers
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Format: IEEE conference template (double-column)
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Language: English only
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-subheading font-medium text-text-primary mb-6">
-                Review Process
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Double-blind peer review by at least three reviewers
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Evaluation based on originality, significance, and technical quality
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Accepted papers will be published in conference proceedings
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-body text-text-secondary text-break">
-                    Best paper awards will be given in each track
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }

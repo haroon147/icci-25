@@ -256,16 +256,12 @@ practitioners to drive sustainable digital transformation.              </p>
               </div>
               <div className="space-y-6">
                 <div className="text-center">
-                  <h4 className="text-lg font-semibold text-text-primary mb-2">IEEE</h4>
-                  <p className="text-text-secondary">Institute of Electrical and Electronics Engineers</p>
+                  <h4 className="text-lg font-semibold text-text-primary mb-2">HEC</h4>
+                  <p className="text-text-secondary">Higher Education Commission of Pakistan</p>
                 </div>
                 <div className="text-center">
-                  <h4 className="text-lg font-semibold text-text-primary mb-2">Software Industry</h4>
-                  <p className="text-text-secondary">Industry partners and technology companies</p>
-                </div>
-                <div className="text-center">
-                  <h4 className="text-lg font-semibold text-text-primary mb-2">AWS Cloud Computing Club</h4>
-                  <p className="text-text-secondary">Amazon Web Services community and resources</p>
+                  <h4 className="text-lg font-semibold text-text-primary mb-2">PHEC</h4>
+                  <p className="text-text-secondary">Punjab Higher Education Commission</p>
                 </div>
               </div>
             </div>

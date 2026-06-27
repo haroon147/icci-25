@@ -35,14 +35,6 @@ export default function Workshops() {
         title="Workshops"
         subtitle="Eight high-demand, hands-on technical workshops conducted by industry experts and senior academicians. Each workshop features practical labs, real-world projects, and digital certificates. Limited seats – first come, first served."
       >
-        <div className="flex justify-center mt-8">
-          <div className="relative inline-flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-80 blur-lg rounded-full animate-pulseGlow pointer-events-none"></div>
-            <span className="relative z-10 text-xl font-semibold text-white bg-accent px-6 py-2 rounded-full shadow-lg animate-floatBadge">
-              Free Registration
-            </span>
-          </div>
-        </div>
       </PageHero>
 
       {/* Overview */}
