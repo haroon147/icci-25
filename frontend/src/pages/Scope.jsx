@@ -69,6 +69,12 @@ export default function Scope() {
       title: "Emerging Computing Paradigms and Future Technologies",
       description:
         "Quantum Computing and Quantum Machine Learning, Neuromorphic Computing, High Performance Computing (HPC), Distributed and Parallel Computing, Bio-inspired Computing, Evolutionary Computation, Swarm Intelligence, Digital Twins, Ambient Intelligence, Ubiquitous and Pervasive Computing, Space Computing, Next-Generation Internet Architectures, 6G and Beyond Networks."
+    },
+    {
+      icon: Zap,
+      title: "Intelligent Information Systems and Knowledge Technologies",
+      description:
+        "Information Retrieval, Knowledge Representation, Knowledge Graphs, Semantic Web, Digital Libraries, Natural Language Processing, Multilingual AI, Information Extraction, Search Technologies, Question Answering, Recommender Systems, Intelligent Decision Support, Enterprise Knowledge Management."
     }
   ];
 
@@ -83,22 +89,22 @@ export default function Scope() {
 
       {/* Conference Theme */}
       <section className="section-padding bg-background-white">
-        <div className="container-custom">
+        <div className="container-custom max-w-5xl mx-auto">
           <SectionHeading
             eyebrow="Theme"
             title="Conference Theme"
-            className="mb-8"
+            className="mb-10 text-center"
           />
-          <div className="bg-gradient-to-r from-primary to-primary-dark p-8 rounded-2xl text-white text-center mb-8">
-            <p className="text-xl md:text-2xl font-semibold italic">
+          <div className="bg-gradient-to-r from-primary to-primary-dark px-10 py-10 rounded-2xl text-white text-center mb-10 shadow-soft">
+            <p className="text-xl md:text-2xl font-semibold italic leading-relaxed">
               "Beyond Intelligence: AI for Sustainable Innovation, Human Empowerment, and Global Impact"
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-body text-text-secondary text-beautiful">
+          <div className="text-center">
+            <p className="text-body text-text-secondary leading-relaxed mb-4">
               The rapid evolution of Artificial Intelligence is reshaping every aspect of society—from healthcare and education to manufacturing, cybersecurity, finance, agriculture, and public services. ICCI-2026 aims to provide an international platform for discussing how AI and intelligent computing can drive sustainable innovation, foster economic growth, enhance human well-being, and address global challenges responsibly.
             </p>
-            <p className="text-body text-text-secondary mt-4 text-beautiful">
+            <p className="text-body text-text-secondary leading-relaxed">
               The conference encourages interdisciplinary research that bridges theoretical advances with practical applications while promoting ethical, transparent, secure, and human-centered AI technologies.
             </p>
           </div>
@@ -112,26 +118,29 @@ export default function Scope() {
             eyebrow="Topics"
             title="Research Topics"
             subtitle="The ICCI-2026 will cover (but not be limited to) the following research and innovation areas:"
+            className="text-center mb-12"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {topics.map((topic, index) => {
               const Icon = topic.icon;
               return (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
-                  <div className="flex items-start">
-                    <div className="bg-primary p-3 rounded-lg mr-6 flex-shrink-0">
-                      <Icon className="h-6 w-6 text-white" />
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl shadow-soft hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col h-full"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="bg-primary p-3 rounded-xl flex-shrink-0">
+                      <Icon className="h-7 w-7 text-white" />
                     </div>
-                    <div>
-                      <h3 className="text-subheading font-medium text-text-primary mb-3 text-break">
-                        {topic.title}
-                      </h3>
-                      <p className="text-body text-text-secondary text-break">
-                        {topic.description}
-                      </p>
-                    </div>
+                    <h3 className="text-lg font-semibold text-text-primary leading-snug">
+                      {topic.title}
+                    </h3>
                   </div>
+                  <div className="w-full h-px bg-gray-100 mb-4" />
+                  <p className="text-base text-text-secondary leading-relaxed">
+                    {topic.description}
+                  </p>
                 </div>
               );
             })}
