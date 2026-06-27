@@ -271,39 +271,14 @@ export default function Speakers() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {invitedSpeakers.map((speaker, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 p-4 group"
-              >
-                {/* Circular Avatar */}
-                <div className="flex justify-center -mt-2">
-                  <img
-                    src={speaker.image}
-                    alt={speaker.name}
-                    className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white shadow-md transition-transform duration-300 group-hover:scale-105"
-                    onError={(e) => {
-                      e.target.src =
-                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face";
-                    }}
-                  />
-                </div>
-
-                {/* Content Section */}
-                <div className="text-center mt-3">
-                  <h3 className="text-lg font-semibold text-text-primary">
-                    {speaker.name}
-                  </h3>
-                  <p className="text-sm text-accent font-medium mt-2">
-                    {speaker.title}
-                  </p>
-                  <p className="text-sm text-text-secondary mt-1 line-clamp-2">
-                    {speaker.affiliation}
-                  </p>
-                </div>
+          <div className="flex flex-col items-center justify-center py-16">
+            <div className="bg-white rounded-2xl shadow-soft p-12 text-center max-w-xl w-full border-2 border-primary/10">
+              <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-10 w-10 text-primary" />
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-text-primary mb-4">Invited Speakers</h3>
+              <p className="text-lg text-text-secondary">Will be announced soon</p>
+            </div>
           </div>
 
         </div>
