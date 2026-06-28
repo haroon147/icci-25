@@ -16,10 +16,10 @@ const phdResults = [
 ];
 
 const stats = [
-  { label: 'Participants', value: '1000+', icon: Users },
+  { label: 'Participants', value: '500+', icon: Users },
   { label: 'Speakers', value: '30+', icon: Mic2 },
-  { label: 'Papers', value: '20+', icon: FileText },
-  { label: '3MT Entries', value: '25+', icon: Timer },
+  { label: 'Papers', value: '30+', icon: FileText },
+  { label: '3MT Entries', value: '45+', icon: Timer },
 ];
 
 const ResultCard = ({ result }) => {

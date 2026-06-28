@@ -219,7 +219,7 @@ export default function Home() {
               delay={2}
               className="text-sm sm:text-base lg:text-body text-white/90 mb-6 sm:mb-8 px-4 sm:px-0 content-container-md text-beautiful"
             >
-              Join leading researchers, innovators, practitioners, and students in computing related
+              Join leading researchers, innovators, practitioners, and students in computing Domains and related
               disciplines at ICCI-2026, a premier international conference showcasing cutting-edge research,
               emerging technologies, and transformative ideas.
             </Reveal>
@@ -266,7 +266,7 @@ export default function Home() {
             {[
               { Icon: Calendar, title: 'Conference Date', value: 'December 8-9, 2026' },
               { Icon: MapPin, title: 'Location', value: 'Riphah International University, Raiwind Road Lahore' },
-              { Icon: Users, title: 'Expected Attendees', value: '500+ Researchers' },
+              { Icon: Users, title: 'Expected Attendees', value: '600+ Researchers' },
             ].map(({ Icon, title, value }, index) => (
               <Reveal key={title} delay={Math.min(index, 4)} className="group bg-white p-8 rounded-2xl shadow-soft text-center hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
                 <div className="h-16 w-16 rounded-2xl bg-primary/10 text-primary mx-auto mb-4 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
