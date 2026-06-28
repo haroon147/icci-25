@@ -295,7 +295,7 @@ export default function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
               <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-subheading font-medium text-text-primary mb-2">Expected Attendees</h3>
+              <h3 className="text-subheading font-medium text-text-primary mb-2">Expected Attendance</h3>
               <p className="text-body text-text-secondary">500+ Researchers</p>
             </div>
 
