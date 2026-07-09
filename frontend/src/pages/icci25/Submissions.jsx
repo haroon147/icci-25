@@ -180,7 +180,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Paper Submission</h3>
                 <p className="text-body text-text-secondary mb-2">Deadline</p>
-                <p className="text-2xl font-bold text-primary">15 September 2025</p>
+                <p className="text-2xl font-bold text-primary">30 September 2025</p>
               </div>
 
               <div className="text-center">
@@ -189,7 +189,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Acceptance</h3>
                 <p className="text-body text-text-secondary mb-2">Notification</p>
-                <p className="text-2xl font-bold text-primary">Sep 30, 2025</p>
+                <p className="text-2xl font-bold text-primary">October 15, 2025</p>
               </div>
 
               <div className="text-center">
@@ -198,7 +198,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Camera-Ready</h3>
                 <p className="text-body text-text-secondary mb-2">Submission</p>
-                <p className="text-2xl font-bold text-primary">15 October 2025</p>
+                <p className="text-2xl font-bold text-primary">30 October 2025</p>
               </div>
 
               <div className="text-center">

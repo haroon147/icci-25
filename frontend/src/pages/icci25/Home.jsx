@@ -149,9 +149,8 @@ export default function Home() {
           {icci25HighlightImages.map((image, index) => (
             <div
               key={image}
-              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-                index === heroSlide ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === heroSlide ? 'opacity-100' : 'opacity-0'
+                }`}
               style={{ backgroundImage: `url(${image})` }}
             />
           ))}
@@ -384,15 +383,15 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-body">Submissions Deadline</span>
-                  <span className="text-body font-medium">15 September 2025</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-body">Acceptance Notification</span>
                   <span className="text-body font-medium">30 September 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-body">Camera-Ready Submission</span>
+                  <span className="text-body">Acceptance Notification</span>
                   <span className="text-body font-medium">15 October 2025</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-body">Camera-Ready Submission</span>
+                  <span className="text-body font-medium">31 October 2025</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-body">Conference Dates</span>

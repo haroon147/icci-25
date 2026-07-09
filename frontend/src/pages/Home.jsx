@@ -319,15 +319,15 @@ export default function Home() {
               <div className="divide-y divide-white/10">
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Submissions Deadline</span>
-                  <span className="text-body font-semibold">15 September 2026</span>
-                </div>
-                <div className="flex justify-between items-center py-3">
-                  <span className="text-body text-white/80">Acceptance Notification</span>
                   <span className="text-body font-semibold">30 September 2026</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
-                  <span className="text-body text-white/80">Camera-Ready Submission</span>
+                  <span className="text-body text-white/80">Acceptance Notification</span>
                   <span className="text-body font-semibold">15 October 2026</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-body text-white/80">Camera-Ready Submission</span>
+                  <span className="text-body font-semibold">31 October 2026</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Conference Dates</span>

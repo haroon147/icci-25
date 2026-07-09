@@ -39,7 +39,7 @@ export default function Footer() {
                 <IconConferenceLogo className="text-white" />
               </div>
               <p className="text-small text-white/80 leading-relaxed">
-                 International Conference on Computing & Innovation - Bringing together
+                International Conference on Computing & Innovation - Bringing together
                 researchers, practitioners, and students in computing and innovation from around the world.
               </p>
             </div>
@@ -67,15 +67,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-small text-white/80">
                 <span className="font-medium">Paper Submission:</span><br />
-                15 September 2026
-              </li>
-              <li className="text-small text-white/80">
-                <span className="font-medium">Acceptance Notification:</span><br />
                 30 September 2026
               </li>
               <li className="text-small text-white/80">
-                <span className="font-medium">Camera-Ready:</span><br />
+                <span className="font-medium">Acceptance Notification:</span><br />
                 15 October 2026
+              </li>
+              <li className="text-small text-white/80">
+                <span className="font-medium">Camera-Ready:</span><br />
+                31 October 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Conference:</span><br />
@@ -107,8 +107,8 @@ export default function Footer() {
               {/* Social Media Icons */}
               <div className="pt-2">
                 <p className="text-small text-white/80 mb-3 font-medium">Follow Us</p>
-                <SocialIcons 
-                  className="" 
+                <SocialIcons
+                  className=""
                   iconSize="h-6 w-6"
                   textColor="text-white/80"
                 />

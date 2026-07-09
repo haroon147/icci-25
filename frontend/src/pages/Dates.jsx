@@ -7,21 +7,21 @@ export default function Dates() {
     {
       icon: Calendar,
       title: "Call for Technical Paper / Proposal / PhD Symposia",
-      date: "15 September 2026",
+      date: "30 September 2026",
       status: "upcoming",
       description: "Last date for submitting technical papers, proposals, and PhD symposium abstracts"
     },
     {
       icon: Clock,
       title: "Notification of Acceptance",
-      date: "30 September 2026",
+      date: "15 October 2026",
       status: "upcoming",
       description: "Authors will be notified about decisions"
     },
     {
       icon: CheckCircle,
       title: "Camera Ready Submission",
-      date: "15 October 2026",
+      date: "31 October 2026",
       status: "upcoming",
       description: "Final version must be submitted"
     },
@@ -76,7 +76,7 @@ export default function Dates() {
                         <Icon className="h-6 w-6 text-primary" />
                       </div>
                     </div>
-                    
+
                     <div className="ml-8 flex-1">
                       <div className="bg-white p-6 rounded-2xl shadow-soft">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -91,8 +91,8 @@ export default function Dates() {
                           <div className="mt-4 md:mt-0 md:ml-6">
                             <div className="flex items-center">
                               <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getStatusColor(item.status)}`}>
-                                {item.status === 'upcoming' ? 'Upcoming' : 
-                                 item.status === 'current' ? 'Current' : 'Completed'}
+                                {item.status === 'upcoming' ? 'Upcoming' :
+                                  item.status === 'current' ? 'Current' : 'Completed'}
                               </span>
                             </div>
                           </div>
@@ -103,7 +103,7 @@ export default function Dates() {
                       </div>
                     </div>
                   </div>
-                  
+
                   {index < dates.length - 1 && (
                     <div className="absolute left-8 top-16 w-0.5 h-8 bg-gray-300"></div>
                   )}
@@ -144,7 +144,7 @@ export default function Dates() {
               <p className="text-body text-text-secondary mb-4 text-break">
                 Standard registration rates apply after the early bird deadline.
               </p>
-              <div className="text-2xl font-bold text-primary">Till 7 December, 2026</div>
+              <div className="text-2xl font-bold text-primary">Till 4 December, 2026</div>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-soft text-center">
