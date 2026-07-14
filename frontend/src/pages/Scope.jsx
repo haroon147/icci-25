@@ -1,4 +1,4 @@
-import { Brain, Shield, Database, Cpu, Network, Code, Eye, Users, Lightbulb, Globe, Heart, Zap } from 'lucide-react';
+import { Brain, MessageSquare, Eye, Database, Shield, Code, Cloud, Cpu, Heart, Leaf, Lightbulb, Zap } from 'lucide-react';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 
@@ -6,75 +6,75 @@ export default function Scope() {
   const topics = [
     {
       icon: Brain,
-      title: "Artificial Intelligence, Foundation Models and Intelligent Agents",
+      title: "Artificial Intelligence and Intelligent Computing",
       description:
-        "Foundation Models and Large Language Models (LLMs), Generative AI and Multimodal AI, Agentic AI and Multi-Agent Systems, Explainable and Interpretable AI, Trustworthy and Responsible AI, Reinforcement Learning, Federated Learning, Neuro-Symbolic AI, Prompt Engineering, AI Alignment and Safety, AI Governance and Ethics."
+        "Machine Learning and Deep Learning, Generative AI and Agentic AI, Explainable and Responsible AI, Reinforcement Learning, Intelligent Decision Support Systems, Knowledge Representation and Reasoning, AI Applications."
     },
     {
-      icon: Database,
-      title: "Data Science, Knowledge Engineering and Intelligent Analytics",
+      icon: MessageSquare,
+      title: "Natural Language Processing and Human-Centered AI",
       description:
-        "Big Data Analytics, Predictive Analytics, Knowledge Graphs, Business Intelligence, Data Engineering, Data Mining, MLOps, AI-driven Decision Support, Real-Time Data Processing, Data Visualization."
-    },
-    {
-      icon: Shield,
-      title: "AI for Cybersecurity, Privacy and Digital Trust",
-      description:
-        "AI-powered Cyber Defense, Digital Forensics, Blockchain Technologies, Smart Contracts, Digital Identity, Zero Trust Security, Privacy-Preserving Machine Learning, Adversarial AI, Threat Intelligence, Secure Cloud Computing."
-    },
-    {
-      icon: Network,
-      title: "Intelligent IoT, Robotics and Autonomous Systems",
-      description:
-        "AIoT, Smart Cities, Industry 5.0, Digital Twins, Edge AI, TinyML, Autonomous Robots, UAV Systems, Predictive Maintenance, Smart Agriculture, Smart Healthcare, Sustainable IoT."
-    },
-    {
-      icon: Code,
-      title: "Intelligent Software Engineering, DevOps and Cloud Computing",
-      description:
-        "AI-assisted Software Engineering, AI-powered Software Testing, DevSecOps, Cloud-native Applications, Microservices, Kubernetes, Multi-cloud Computing, Software Quality, AI for DevOps, Sustainable Software Engineering."
+        "Large Language Models (LLMs), Natural Language Processing, Conversational AI and Chatbots, Human-AI Interaction, AI Ethics, Fairness, and Transparency, Affective Computing."
     },
     {
       icon: Eye,
-      title: "Computer Vision, Multimedia Intelligence and Extended Reality",
+      title: "Computer Vision and Pattern Recognition",
       description:
-        "Vision-Language Models, Image and Video Analytics, Medical Image Analysis, Object Detection and Tracking, Autonomous Driving, Remote Sensing, SLAM, AR/VR/MR, Human Activity Recognition, Generative Vision Models."
+        "Image and Video Processing, Object Detection and Tracking, Medical Image Analysis, Biometrics, Augmented, Virtual, and Mixed Reality, Autonomous Vision Systems."
     },
     {
-      icon: Heart,
-      title: "Computing for Digital Health, Bioinformatics and Biomedical Innovation",
+      icon: Database,
+      title: "Data Science, Big Data and Analytics",
       description:
-        "Biomedical Informatics, Clinical AI, Precision Medicine, Bioinformatics, Genomics, Medical Imaging, Wearable Healthcare, Digital Health, Telemedicine, AI-assisted Diagnosis, Computational Biology, Drug Discovery, Public Health Informatics."
+        "Data Mining, Big Data Analytics, Data Engineering, Predictive Analytics, Business Intelligence, Data Visualization."
     },
     {
-      icon: Users,
-      title: "Human-Centered Computing, Digital Society and Intelligent Interaction",
+      icon: Shield,
+      title: "Cybersecurity, Privacy and Digital Trust",
       description:
-        "Human-Computer Interaction, Human-AI Collaboration, User Experience (UX), Explainable Interfaces, AI in Education, Intelligent Tutoring Systems, Smart Learning Systems, Smart Governance, Disaster Management, Accessibility Technologies, Human-Centered AI, AI for Social Good, Assistive Technologies, Wearable Computing."
+        "Network Security, Blockchain Technologies, Digital Forensics, Privacy-Preserving Computing, Cryptography, Secure AI, Digital Identity."
     },
     {
-      icon: Lightbulb,
-      title: "Digital Innovation, Entrepreneurship and Future Workforce",
+      icon: Code,
+      title: "Software Engineering, Systems and DevOps",
       description:
-        "AI Startups, Technology Commercialization, Digital Economy, FinTech, GovTech, Innovation Ecosystems, Human-AI Collaboration, Future of Work, AI Business Models, Digital Transformation."
+        "Software Architecture, DevOps and CI/CD, Software Testing and Quality Assurance, Requirements Engineering, Human-Computer Interaction, Operating Systems, High-Performance Computing, Programming Languages."
     },
     {
-      icon: Globe,
-      title: "Sustainable Computing, Green AI and Future Digital Infrastructure",
+      icon: Cloud,
+      title: "Cloud, Edge, Distributed Computing and ICT Infrastructure",
       description:
-        "Green AI, Sustainable Computing, Cloud Computing, High Performance Computing, Quantum Computing, 6G Networks, SDN and NFV, Smart Infrastructure, Energy-efficient Data Centers, Carbon-aware Computing."
+        "Cloud Computing, Edge and Fog Computing, Distributed Systems, Blockchain Technologies, Software-Defined Networking, Network Function Virtualization, Cloud Security, Smart Infrastructure."
     },
     {
       icon: Cpu,
-      title: "Emerging Computing Paradigms and Future Technologies",
+      title: "Internet of Things, Robotics and Smart Systems",
       description:
-        "Quantum Computing and Quantum Machine Learning, Neuromorphic Computing, High Performance Computing (HPC), Distributed and Parallel Computing, Bio-inspired Computing, Evolutionary Computation, Swarm Intelligence, Digital Twins, Ambient Intelligence, Ubiquitous and Pervasive Computing, Space Computing, Next-Generation Internet Architectures, 6G and Beyond Networks."
+        "Internet of Things, Industrial IoT, Smart Cities, Robotics, Autonomous Systems, Embedded Systems, Smart Manufacturing."
+    },
+    {
+      icon: Heart,
+      title: "Biomedical Engineering and Digital Health",
+      description:
+        "AI in Healthcare, Medical Imaging and Image Analysis, Biomedical Signal Processing, Clinical Decision Support Systems, Health Informatics and Electronic Health Records, Wearable and Remote Healthcare Technologies, Telemedicine and e-Health, Precision and Personalized Medicine, Digital Therapeutics, Healthcare Data Analytics."
+    },
+    {
+      icon: Leaf,
+      title: "Sustainable and Green Computing",
+      description:
+        "Green Computing, Energy-Efficient Computing, Sustainable Software Engineering, Green Data Centers, Carbon-Aware Computing, Circular Digital Economy, AI for Social Good, Educational Technologies, Humanitarian Technologies, Disaster Management Systems."
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovation and Entrepreneurship",
+      description:
+        "Digital Transformation, Technology Innovation, Entrepreneurship, Startups, Technology Commercialization, FinTech, Digital Business Models, Assistive Technologies."
     },
     {
       icon: Zap,
-      title: "Intelligent Information Systems and Knowledge Technologies",
+      title: "Emerging Computing Technologies",
       description:
-        "Information Retrieval, Knowledge Representation, Knowledge Graphs, Semantic Web, Digital Libraries, Natural Language Processing, Multilingual AI, Information Extraction, Search Technologies, Question Answering, Recommender Systems, Intelligent Decision Support, Enterprise Knowledge Management."
+        "Quantum Computing, Neuromorphic Computing, Digital Twins, Web3, Metaverse, Bio-inspired Computing, Future Internet, Next-Generation Computing Paradigms."
     }
   ];
 
