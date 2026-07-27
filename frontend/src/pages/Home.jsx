@@ -1,5 +1,5 @@
 ﻿import { useState, useEffect } from 'react';
-import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Calendar, MapPin, Users, BookOpen, ArrowRight, Globe, Building2, Award, Radio, Images, X, ChevronLeft, ChevronRight, Download, Eye } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialIcons from '../components/SocialIcons';
 import Reveal from '../components/Reveal';

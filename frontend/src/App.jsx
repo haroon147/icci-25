@@ -7,6 +7,7 @@ import Scope from './pages/Scope';
 import Dates from './pages/Dates';
 import Speakers from './pages/Speakers';
 import Committees from './pages/Committees';
+import CallForPapers from './pages/CallForPapers';
 import Submissions from './pages/Submissions';
 import ThreeMinuteThesis from './pages/ThreeMinuteThesis';
 import Schedule from './pages/Schedule';
@@ -81,6 +82,7 @@ function App() {
                 <Route path="/dates" element={<Dates />} />
                 <Route path="/speakers" element={<Speakers />} />
                 <Route path="/committees" element={<Committees />} />
+                <Route path="/call-for-papers" element={<CallForPapers />} />
                 <Route path="/submissions" element={<Submissions />} />
                 <Route path="/3mt" element={<ThreeMinuteThesis />} />
                 <Route path="/workshops" element={<Workshops />} />

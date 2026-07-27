@@ -38,6 +38,7 @@ const navigation = [
     ],
   },
 
+  { name: 'Call for Papers', href: '/call-for-papers' },
   { name: 'Submissions', href: '/submissions' },
   { name: 'Dates', href: '/dates' },
   { name: 'Registration', href: '/registration' },
