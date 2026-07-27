@@ -97,6 +97,22 @@ export default function CallForPapers() {
         subtitle="Call for Submissions for Papers, Workshops and 3-Minute Thesis — December 8-9, 2026 · Lahore, Pakistan (Hybrid)"
       />
 
+      {/* Conference Poster */}
+      <section className="pt-12 pb-4 bg-background-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-soft-lg border border-gray-100 hover:shadow-soft-lg hover:-translate-y-1 transition-all duration-300">
+              <img
+                src="/dist/icci-pictures/icci-poster-26.jpg"
+                alt="ICCI-2026 Conference Poster"
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Introduction */}
       <section className="section-padding bg-background-white">
         <div className="container-custom max-w-5xl mx-auto">
