@@ -22,7 +22,7 @@ export default function Submissions() {
       deadline: "30 September 2026",
       formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
     },
-   
+
   ];
 
   const submissionGuidelines = [
@@ -75,6 +75,24 @@ export default function Submissions() {
             subtitle="We welcome different types of submissions to accommodate various stages of research and different presentation formats."
           />
 
+          <section className="bg-gray-50 py-16">
+            <div className="mx-auto max-w-5xl px-6">
+              <div className="rounded-2xl bg-white p-8 shadow-md md:p-12">
+                <h2 className="mb-6 text-3xl font-bold  text-gray-900">
+                  CMT Acknowledgement
+                </h2>
+
+                <p className="text-lg leading-8 text-gray-600">
+                  The Microsoft Conference Management Toolkit (CMT) was used to
+                  manage the peer-reviewing process for this conference. This service was
+                  provided free by Microsoft and they bore all
+                  expenses, including the costs of Azure cloud services, software
+                  development and support.
+                </p>
+              </div>
+            </div>
+          </section>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {submissionTypes.map((type, index) => {
               const Icon = type.icon;
@@ -91,7 +109,7 @@ export default function Submissions() {
                         <span className="text-small text-text-muted">Pages:</span>
                         <span className="text-small font-medium text-primary">{type.pages}</span>
                       </div>
-                      
+
                       <div className="flex items-center justify-between">
                         <span className="text-small text-text-muted">Deadline:</span>
                         <span className="text-small font-medium text-accent">{type.deadline}</span>
