@@ -67,15 +67,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-small text-white/80">
                 <span className="font-medium">Paper Submission:</span><br />
-                30 September 2026
+                October 15, 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Acceptance Notification:</span><br />
-                15 October 2026
+                October 31, 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Camera-Ready:</span><br />
-                31 October 2026
+                November 15, 2026
               </li>
               <li className="text-small text-white/80">
                 <span className="font-medium">Conference:</span><br />

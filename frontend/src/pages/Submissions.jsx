@@ -11,7 +11,7 @@ export default function Submissions() {
       title: "Technical Papers",
       description: "Original research contributions with complete results and analysis",
       pages: "8-12 pages (full papers)",
-      deadline: "30 September 2026",
+      deadline: "October 15, 2026",
       formUrl: "https://forms.gle/SoyN5JGZqBq5b1sY7"
     },
     {
@@ -19,7 +19,7 @@ export default function Submissions() {
       title: " Proposal for Three-Minutes (3MT) Competition ",
       description: "PhD/MS students present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
-      deadline: "30 September 2026",
+      deadline: "October 15, 2026",
       formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
     },
 
@@ -52,7 +52,7 @@ export default function Submissions() {
         "Double-blind peer review by at least 3 reviewers",
         "Evaluation based on originality, significance, and technical quality",
         "Review decisions: Accept, Minor Revision, Major Revision, Reject",
-        "Camera-ready submission deadline: 31 October 2026"
+        "Camera-ready submission deadline: November 15, 2026"
       ]
     }
   ];
@@ -75,23 +75,7 @@ export default function Submissions() {
             subtitle="We welcome different types of submissions to accommodate various stages of research and different presentation formats."
           />
 
-          <section className="bg-gray-50 py-16">
-            <div className="mx-auto max-w-5xl px-6">
-              <div className="rounded-2xl bg-white p-8 shadow-md md:p-12">
-                <h2 className="mb-6 text-3xl font-bold  text-gray-900">
-                  CMT Acknowledgement
-                </h2>
 
-                <p className="text-lg leading-8 text-gray-600">
-                  The Microsoft Conference Management Toolkit (CMT) was used to
-                  manage the peer-reviewing process for this conference. This service was
-                  provided free by Microsoft and they bore all
-                  expenses, including the costs of Azure cloud services, software
-                  development and support.
-                </p>
-              </div>
-            </div>
-          </section>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {submissionTypes.map((type, index) => {
@@ -172,7 +156,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Paper Submission</h3>
                 <p className="text-body text-text-secondary mb-2">Deadline</p>
-                <p className="text-2xl font-bold text-primary">30 September 2026</p>
+                <p className="text-2xl font-bold text-primary">October 15, 2026</p>
               </div>
 
               <div className="text-center">
@@ -181,7 +165,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Acceptance</h3>
                 <p className="text-body text-text-secondary mb-2">Notification</p>
-                <p className="text-2xl font-bold text-primary">Oct 15, 2026</p>
+                <p className="text-2xl font-bold text-primary">October 31, 2026</p>
               </div>
 
               <div className="text-center">
@@ -190,7 +174,7 @@ export default function Submissions() {
                 </div>
                 <h3 className="text-subheading font-medium text-text-primary mb-2">Camera-Ready</h3>
                 <p className="text-body text-text-secondary mb-2">Submission</p>
-                <p className="text-2xl font-bold text-primary">31 October 2026</p>
+                <p className="text-2xl font-bold text-primary">November 15, 2026</p>
               </div>
 
               <div className="text-center">

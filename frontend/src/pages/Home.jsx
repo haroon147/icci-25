@@ -225,6 +225,9 @@ export default function Home() {
             </Reveal>
             {/* Hero buttons hidden: Submission, Register Now, Free Registration badge */}
           </div>
+          <p className="text-sm sm:text-base text-center lg:text-body text-accent mb-6 sm:mb-8 pl-12 px-4 sm:px-0 content-container-md text-beautiful font-bold">
+            The accepted papers will be published in HEC-recognized and Scopus-indexed journals.
+          </p>
         </div>
         <div className="absolute bottom-5 left-0 right-0 z-20 flex items-center justify-center gap-2">
           {heroBackgrounds.map((_, index) => (
@@ -258,6 +261,9 @@ export default function Home() {
               </p>
               <p className="text-body text-text-secondary mb-8 text-content-justify text-break">
                 Together, let's pave the way for a smarter, more connected future. The ICCI-2026 will be held at Riphah School of Computing and Innovation (RSCI), Lahore, Pakistan on 8th - 9th December 2026. The conference will be organized in hybrid mode, and the authors/speakers have the option to present physically or remotely using online mode of presentation.
+              </p>
+              <p className="text-body text-text-secondary mb-8 text-content-justify text-break font-bold">
+                The accepted papers will be published in HEC-recognized and Scopus-indexed journals.
               </p>
             </div>
           </Reveal>
@@ -319,15 +325,15 @@ export default function Home() {
               <div className="divide-y divide-white/10">
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Submissions Deadline</span>
-                  <span className="text-body font-semibold">30 September 2026</span>
+                  <span className="text-body font-semibold">October 15, 2026</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Acceptance Notification</span>
-                  <span className="text-body font-semibold">15 October 2026</span>
+                  <span className="text-body font-semibold">October 31, 2026</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Camera-Ready Submission</span>
-                  <span className="text-body font-semibold">31 October 2026</span>
+                  <span className="text-body font-semibold">November 15, 2026</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
                   <span className="text-body text-white/80">Conference Dates</span>
@@ -339,7 +345,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="rounded-2xl bg-white p-8 shadow-md md:p-12">
+            <h2 className="mb-6 text-3xl font-bold  text-gray-900">
+              CMT Acknowledgement
+            </h2>
 
+            <p className="text-lg leading-8 text-gray-600">
+              The Microsoft Conference Management Toolkit (CMT) was used to
+              manage the peer-reviewing process for this conference. This service was
+              provided free by Microsoft and they bore all
+              expenses, including the costs of Azure cloud services, software
+              development and support.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Collaborators & Sponsors Carousel */}
       <section className="section-padding bg-background-light">
@@ -533,6 +555,63 @@ export default function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-900/5 md:p-14">
+            {/* Signature accent bar — subtle nod to the four Microsoft brand hues */}
+            <div className="absolute inset-x-0 top-0 flex h-1.5">
+              <span className="flex-1 bg-[#F25022]" />
+              <span className="flex-1 bg-[#7FBA00]" />
+              <span className="flex-1 bg-[#00A4EF]" />
+              <span className="flex-1 bg-[#FFB900]" />
+            </div>
+
+            <div className="flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
+              {/* Badge mark */}
+              <div className="flex-shrink-0">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#00A4EF]/10 ring-1 ring-[#00A4EF]/20">
+                  <svg
+                    className="h-7 w-7 text-[#00A4EF]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.75"
+                  >
+                    <path
+                      d="M9 12.5l2 2 4-4.5M12 3l7 3.2v5.1c0 4.6-2.9 8.7-7 10.2-4.1-1.5-7-5.6-7-10.2V6.2L12 3z"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#00A4EF]">
+                  Peer Review Infrastructure
+                </p>
+                <h2 className="mb-5 font-serif text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+                  CMT Acknowledgement
+                </h2>
+
+                <p className="text-lg leading-8 text-gray-600">
+                  The Microsoft Conference Management Toolkit (CMT) was used to
+                  manage the peer-reviewing process for this conference. This
+                  service was provided free by Microsoft, who bore all expenses,
+                  including the costs of Azure cloud services, software
+                  development, and support.
+                </p>
+
+                <div className="mt-6 flex items-center gap-2 text-sm text-gray-400">
+                  <span className="h-px w-8 bg-gray-300" />
+                  <span>Hosted on Microsoft Azure</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

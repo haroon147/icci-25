@@ -7,21 +7,21 @@ export default function Dates() {
     {
       icon: Calendar,
       title: "Call for Technical Paper / Proposal / PhD Symposia",
-      date: "30 September 2026",
+      date: "October 15, 2026",
       status: "upcoming",
       description: "Last date for submitting technical papers, proposals, and PhD symposium abstracts"
     },
     {
       icon: Clock,
       title: "Notification of Acceptance",
-      date: "15 October 2026",
+      date: "October 31, 2026",
       status: "upcoming",
       description: "Authors will be notified about decisions"
     },
     {
       icon: CheckCircle,
       title: "Camera Ready Submission",
-      date: "31 October 2026",
+      date: "November 15, 2026",
       status: "upcoming",
       description: "Final version must be submitted"
     },

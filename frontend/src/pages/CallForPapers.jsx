@@ -48,7 +48,7 @@ export default function CallForPapers() {
       iconColor: 'text-red-600',
       label: 'Paper Submission',
       sublabel: 'Deadline',
-      date: '30 September 2026',
+      date: 'October 15, 2026',
     },
     {
       icon: Calendar,
@@ -56,7 +56,7 @@ export default function CallForPapers() {
       iconColor: 'text-blue-600',
       label: 'Acceptance',
       sublabel: 'Notification',
-      date: '15 October 2026',
+      date: 'October 31, 2026',
     },
     {
       icon: CheckCircle,
@@ -64,7 +64,7 @@ export default function CallForPapers() {
       iconColor: 'text-green-600',
       label: 'Camera-Ready',
       sublabel: 'Submission',
-      date: '31 October 2026',
+      date: 'November 15, 2026',
     },
     {
       icon: FileText,
