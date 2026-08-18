@@ -28,6 +28,7 @@ export default defineConfig({
     }
   },
 
-  // GitHub Pages needs a repo subpath, while Vercel needs root (/).
-  base: process.env.VERCEL ? '/' : (process.env.NODE_ENV === 'production' ? '/icci-25/' : '/'),
+  // GitHub Pages is served from a repository subpath. Vercel, GoDaddy, and
+  // other root-domain hosts should load assets from the domain root.
+  base: process.env.VITE_BASE_PATH || (process.env.GITHUB_ACTIONS ? '/icci-25/' : '/'),
 });
