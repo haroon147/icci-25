@@ -592,9 +592,7 @@ export default function Home() {
               </div>
 
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#00A4EF]">
-                  Peer Review Infrastructure
-                </p>
+
                 <h2 className="mb-5 font-serif text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
                   CMT Acknowledgement
                 </h2>
@@ -609,7 +607,7 @@ export default function Home() {
 
                 <div className="mt-6 flex items-center gap-2 text-sm text-gray-400">
                   <span className="h-px w-8 bg-gray-300" />
-                  <span>Hosted on Microsoft Azure</span>
+
                 </div>
               </div>
             </div>
