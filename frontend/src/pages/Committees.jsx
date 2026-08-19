@@ -386,7 +386,7 @@ export default function Committees() {
       {/* Technical Program Committee */}
       <section className="section-padding bg-background-light">
         <div className="container-custom">
-          <SectionHeader eyebrow="Tier III" title="Technical Program Committee" icon={GraduationCap} />
+          <SectionHeader title="Technical Program Committee" icon={GraduationCap} />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-14">
             {tpcChairs.map((p, i) => (
