@@ -47,7 +47,7 @@ export default function CMTAcknowledgement() {
                 </h2>
 
                 <p className="text-lg leading-8 text-gray-600">
-                  The Microsoft CMT Service was used to manage the peer-reviewing process for this conference. This service was provided free of charge by Microsoft, which covered all associated expenses, including the costs of Azure cloud services, software development, and technical support.
+                  The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
                 </p>
 
                 <div className="mt-6 flex items-center gap-2 text-sm text-gray-400">

@@ -544,42 +544,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="relative overflow-hidden rounded-2xl bg-white p-8 shadow-md ring-1 ring-gray-900/5 md:p-14">
-            {/* Signature accent bar — subtle nod to the four Microsoft brand hues */}
-            <div className="absolute inset-x-0 top-0 flex h-1.5">
-              <span className="flex-1 bg-[#F25022]" />
-              <span className="flex-1 bg-[#7FBA00]" />
-              <span className="flex-1 bg-[#00A4EF]" />
-              <span className="flex-1 bg-[#FFB900]" />
-            </div>
-
-            <div className="flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
-              {/* Badge mark */}
-              <div className="flex-shrink-0">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#00A4EF]/10 ring-1 ring-[#00A4EF]/20">
-                  <svg
-                    className="h-7 w-7 text-[#00A4EF]"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.75"
-                  >
-                    <path
-                      d="M9 12.5l2 2 4-4.5M12 3l7 3.2v5.1c0 4.6-2.9 8.7-7 10.2-4.1-1.5-7-5.6-7-10.2V6.2L12 3z"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Call to Action section hidden */}
       <style>{`
         @keyframes pulseGlow {
