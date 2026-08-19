@@ -18,6 +18,7 @@ import Login from './pages/admin/Login';
 import Dashboard from './pages/admin/Dashboard';
 import Workshops from './pages/Workshops';
 import Gallery from './pages/Gallery';
+import CMTAcknowledgement from './pages/CMTAcknowledgement';
 
 // ICCI-25 archive site
 import ArchiveLayout from './components/icci25/ArchiveLayout';
@@ -90,6 +91,7 @@ function App() {
                 <Route path="/virtual-proceedings" element={<VirtualProceedings />} />
                 <Route path="/registration" element={<Registration />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/cmt-acknowledgement" element={<CMTAcknowledgement />} />
               </Routes>
             </Layout>
           }

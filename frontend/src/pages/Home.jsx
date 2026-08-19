@@ -575,21 +575,6 @@ export default function Home() {
                 </div>
               </div>
 
-              <div>
-
-                <h2 className="mb-5 font-serif text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
-                  CMT Acknowledgement
-                </h2>
-
-                <p className="text-lg leading-8 text-gray-600">
-                  The Microsoft CMT Service was used to manage the peer-reviewing process for this conference. This service was provided free of charge by Microsoft, which covered all associated expenses, including the costs of Azure cloud services, software development, and technical support.
-                </p>
-
-                <div className="mt-6 flex items-center gap-2 text-sm text-gray-400">
-                  <span className="h-px w-8 bg-gray-300" />
-
-                </div>
-              </div>
             </div>
           </div>
         </div>
