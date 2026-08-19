@@ -345,23 +345,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-16">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="rounded-2xl bg-white p-8 shadow-md md:p-12">
-            <h2 className="mb-6 text-3xl font-bold  text-gray-900">
-              CMT Acknowledgement
-            </h2>
 
-            <p className="text-lg leading-8 text-gray-600">
-              The Microsoft Conference Management Toolkit (CMT) was used to
-              manage the peer-reviewing process for this conference. This service was
-              provided free by Microsoft and they bore all
-              expenses, including the costs of Azure cloud services, software
-              development and support.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Collaborators & Sponsors Carousel */}
       <section className="section-padding bg-background-light">
