@@ -20,8 +20,10 @@ export default function Submissions() {
       description: "PhD/MS students present their research work in Three-Minutes Thesis (3MT) Competition",
       pages: "Static One Page PowerPoint Slide",
       deadline: "October 15, 2026",
-      formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5"
+      formUrl: "https://forms.gle/ZFEwn4Cw1xDy3AHz5",
+      isOpen: true
     },
+
 
   ];
 
@@ -42,7 +44,7 @@ export default function Submissions() {
         "Double-blind review: do not include author names, affiliations, or self-identifying references",
         "Papers must be original, unpublished, and not under review elsewhere",
         "Submissions must be plagiarism-free and pass a plagiarism check",
-        "Camera-ready papers must follow Springer or ACM formatting guidelines",
+        "Camera-ready papers must adhere to the guidelines of the journal in which they will be published.",
         "PDF format only; ensure all fonts are embedded"
       ]
     },
@@ -93,15 +95,30 @@ export default function Submissions() {
                         <span className="text-small text-text-muted">Pages:</span>
                         <span className="text-small font-medium text-primary">{type.pages}</span>
                       </div>
-
                       <div className="flex items-center justify-between">
                         <span className="text-small text-text-muted">Deadline:</span>
                         <span className="text-small font-medium text-accent">{type.deadline}</span>
+                    
+
+    
                       </div>
                     </div>
-                    <div className="w-full mt-6 inline-flex items-center justify-center gap-2 bg-gray-100 text-text-secondary font-medium py-3 px-6 rounded-lg cursor-default select-none">
-                      Will be Announced
-                    </div>
+                    {type.isOpen ? (
+                      <a
+                        href={type.formUrl || defaultSubmissionFormUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary bg-accent hover:bg-accent-dark text-primary w-full mt-6 inline-flex items-center justify-center gap-2"
+                      >
+                        Submit Now
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    ) : (
+                      <div className="w-full mt-6 inline-flex items-center justify-center bg-gray-100 text-text-secondary font-medium py-3 px-6 rounded-lg cursor-default select-none">
+                        Will Be Announced Later
+                      </div>
+                    )}
+
                   </div>
                 </div>
               );

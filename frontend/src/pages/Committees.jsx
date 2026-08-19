@@ -232,17 +232,19 @@ export default function Committees() {
     ,
     { name: 'Prof. Dr. Maaz Bin Ahmad', affiliation: 'Karachi Institute of Economics and Technology, Karachi, Pakistan' },
     { name: 'Prof. Dr. Mehtab Afzal', affiliation: 'University of Lahore, Lahore, Pakistan' },
-    { name: 'Dr. Ali Haider Khan', affiliation: 'Beijing University of Technology, China' },
+    { name: 'Prof. Dr. Muhammad Zubair', affiliation: 'Riphah International University, Islamabad, Pakistan' },
     { name: 'Dr. Farooq Ahmad', affiliation: 'COMSATS University Islamabad, Lahore Campus, Pakistan' },
     { name: 'Dr. Hamid Turab', affiliation: 'COMSATS University Islamabad, Lahore Campus, Pakistan' },
     { name: 'Dr. Waqar Azeem', affiliation: 'University of Management and Technology, Lahore, Pakistan' },
+    { name: 'Dr. Naveed Ikram', affiliation: 'Riphah International University, Islamabad,, Pakistan' },
     { name: 'Dr Allah Dita', affiliation: 'University of Education, Lahore, Pakistan' },
     { name: 'Dr. Tauqeer Mehmood', affiliation: 'National Textile University, Faisalabad, Pakistan' },
     { name: 'Dr Zafar Iqbal', affiliation: 'FAST NUCES, Islamabad, Pakistan' },
-    { name: 'Dr. Kashif Shahzad', affiliation: 'CEO, PITC, Lahore, Pakistan' },
+    { name: 'Dr. Musharif Ahmad', affiliation: 'Riphah International University, Islamabad,, Pakistan' },
     { name: 'Dr. Muhammad Azeem', affiliation: 'University of Sialkot, Sialkot, Pakistan' },
     { name: 'Dr. Salman Ahmad', affiliation: 'University of Lahore, Lahore, Pakistan' },
     { name: 'Dr. Muhammad Hasnain', affiliation: 'Lahore Leads University, Lahore, Pakistan' },
+    { name: 'Dr. Muhammad Mansoor Alam', affiliation: 'Riphah International University, Islamabad,, Pakistan' },
   ];
 
   const organizingCommittee = [
