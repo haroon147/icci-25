@@ -346,6 +346,21 @@ export default function Home() {
       </section>
 
 
+      {/* CMT Acknowledgement */}
+      <section className="section-padding bg-background-white">
+        <div className="container-custom">
+          <Reveal className="text-center content-container-md">
+            <span className="eyebrow">Acknowledgement</span>
+            <h2 className="text-section mb-4 font-semibold text-text-primary">
+              CMT Acknowledgement
+            </h2>
+            <div className="section-accent"></div>
+            <p className="text-body text-text-secondary text-content-justify text-break">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+          </Reveal>
+        </div>
+      </section>
 
       {/* Collaborators & Sponsors Carousel */}
       <section className="section-padding bg-background-light">
