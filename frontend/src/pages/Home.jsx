@@ -167,7 +167,7 @@ export default function Home() {
             </button> */}
 
             <Reveal as="h1" className="text-3xl sm:text-4xl md:text-5xl lg:text-hero mb-4 sm:mb-6 font-bold leading-tight">
-              International Conference on
+              2<sup>nd</sup> International Conference on
               <br className="hidden sm:block" />
               <span className="block sm:inline"> </span>
               <span className="text-accent">Computing & Innovation</span>
